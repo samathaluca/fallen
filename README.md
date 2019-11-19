@@ -1,6 +1,6 @@
-#Fallen
+# Fallen
 
-##App to help connect addicts who want to recover. 
+## App to help connect addicts who want to recover. 
 
 Latest studies reveal that addiction may be the direct result of lack of human connection. 
 Addiction is a desperate and lonely place.
@@ -18,7 +18,7 @@ Her recovery may need the opposite methods to that of a 22 year old man, sexuall
 This app will filter out backgrounds and differences that are of no relevance to the user. presenting them with similarities and not differences amongst the success stories.
 
 
-##How to use
+## How to use
 
 Users will be asked a series of questions.
 Depending on how the questions are answered the user is presented with a series of stories from the data base written by addicts who are 12 months free from dependence. 
@@ -27,12 +27,15 @@ I would almost describe it as a recovery recipe.
 User provides the ingredients and this app presents the method to get to their tailored recovery recipe from the database. 
 
 
-###Features
+### Features
 - Nav bar
 - Grid of recovered user recipes (maybe with images/maybe not)
 - side bar with the questions user is presented to answer. 
 - search bar to add key words linking to user recipes for recovery
 - both side bar and search bar load stories relevant to user input. 
+
+
+### Wireframes
 
 
 
@@ -46,5 +49,6 @@ User provides the ingredients and this app presents the method to get to their t
 7. GITPOD IDE 
 8. HEROKU deployment
 9. GITHUB version control.
+
 
 
