@@ -1,14 +1,10 @@
-<html>
-    <head>
-
-    </head>
-    <body>
+{% extends 'base.html' %}
+{% block content %}
         {% for firstSteps in firstSteps %}
-            {{firstSteps.belief1}}
-            {{firstSteps.belief2}}
-            {{firstSteps.belief3}}
-            {{firstSteps.belief4}}
-            {{firstSteps.belief5}}
+        {{firstSteps.belief1}}
+        {{firstSteps.belief2}}
+        {{firstSteps.belief3}}
+        {{firstSteps.belief4}}
+        {{firstSteps.belief5}}
         {% endfor %}
-    </body>
-</html>
+{% endblock %}
