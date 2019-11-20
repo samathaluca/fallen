@@ -1,5 +1,25 @@
 {% extends 'base.html' %}
 {% block content %}
+    <ul class="collapsible" data-collapsible="accordion">
+        {% for firstSteps in firstSteps %}
+        <li>
+            <div class="collapsible-header">
+
+                <div class=" task_header col s9">
+                    <i class="material-icons">expand_more</i><strong>{{firstSteps.belief1}}</strong> - {{firstSteps.belief5}}
+                </div>
+            </div>
+            <div class="collapsible-body">
+                <span>
+                    {{firstSteps.belief3}}
+                </span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
         {% for firstSteps in firstSteps %}
         {{firstSteps.belief1}}
         {{firstSteps.belief2}}
