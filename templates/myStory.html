@@ -1,19 +1,111 @@
 {% extends 'base.html' %} {% block content %}
-<h3>Add Task</h3>
-<div class="row">
-    <form  action="" method="POST" class="col s12">
-        <div class="row">
-            <div class="input-field col s6">
-                <i class="material-icons prefix">account_circle</i>
-                <input id="icon_prefix" type="text" class="validate">
-                <label for="icon_prefix">First Name</label>
-            </div>
-            <div class="input-field col s6">
-                <i class="material-icons prefix">phone</i>
-                <input id="icon_telephone" type="tel" class="validate">
-                <label for="icon_telephone">Telephone</label>
-            </div>
-        </div>
-    </form>
-</div>
+<h3>My Story</h3>
+<div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>My Problem-WHAT?</option>
+      <option value="1">Alcohol</option>
+      <option value="2">Prescription Drugs</option>
+      <option value="3">Illegal Drugs</option>
+      <option value="4">Food</option>
+      <option value="5">Sex/Porn/Toxic relationships</option>
+      <option value="6">Gambling</option>
+      <option value="7">Exercise</option>
+      <option value="8">Obsession with health</option>
+      <option value="9">Attention/Chaos/Drama</option>
+      <option value="10">Physical Self Harm</option>
+      <option value="11">Thinking Harmful Thoughts</option>
+      <option value="12">Fantasy</option>
+      <option value="13">Social Media</option>
+      <option value="14">Gaming</option>
+
+    </select>
+    <label>My Problem</label>
+  </div>
+
+  <div class="input-field col s12">
+    <select>
+      <option value="" disabled selected>WHERE</option>
+      <option value="1">Isolated at home</option>
+      <option value="2">Socially With Friends</option>
+      <option value="3">Socially With Strangers</option>
+      <option value="4">Socially With Family</option>
+      <option value="5">Licensed Premises</option>
+      <option value="6">Casino/betting shop</option>
+      <option value="7">Gym</option>
+      <option value="8">In bed</option>
+      <option value="9">School</option>
+      <option value="10">In the car/bus/train</option>
+      <option value="11">Outdoors</option>
+      <option value="12">Anywhere/Everywhere</option>
+      <option value="13">At Work</option>
+
+    </select>
+    <label>My Problem</label>
+  </div>
+
+
+
+  <div class="input-field col s12">
+    <select>
+      <optgroup label="Substance Problem">
+        <option value="1">Alcohol</option>
+        <option value="2">Prescription Drugs</option>
+        <option value="1">Illegal Drugs</option>
+        <option value="2">Food</option>
+        <option value="1">Option 1</option>
+        <option value="2">Option 2</option>
+      </optgroup>
+      <optgroup label="Behaviour Problem">
+        <option value="3">Option 3</option>
+        <option value="4">Option 4</option>
+      </optgroup>
+      <optgroup label="Thinking Problem">
+        <option value="3">Obsession with health</option>
+        <option value="4">Fantasy</option>
+        <option value="4">Thinking Harmful Thoughts</option>
+      </optgroup>
+    </select>
+    <label>Optgroups</label>
+  </div>
+
+  <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg">example 1</option>
+      <option value="" data-icon="images/office.jpg">example 2</option>
+      <option value="" data-icon="images/yuna.jpg">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div>
+  
+
 {% endblock %}
+
+  <!-- <div class="input-field col s12">
+    <select multiple>
+      <option value="" disabled selected>Choose your option</option>
+      <option value="1">Option 1</option>
+      <option value="2">Option 2</option>
+      <option value="3">Option 3</option>
+    </select>
+    <label>Materialize Multiple Select</label>
+  </div> -->
+
+  <!-- <div class="input-field col s12 m6">
+    <select class="icons">
+      <option value="" disabled selected>Choose your option</option>
+      <option value="" data-icon="images/sample-1.jpg" class="left">example 1</option>
+      <option value="" data-icon="images/office.jpg" class="left">example 2</option>
+      <option value="" data-icon="images/yuna.jpg" class="left">example 3</option>
+    </select>
+    <label>Images in select</label>
+  </div>
+
+  <label>Browser Select</label>
+  <select class="browser-default">
+    <option value="" disabled selected>Choose your option</option>
+    <option value="1">Option 1</option>
+    <option value="2">Option 2</option>
+    <option value="3">Option 3</option>
+  </select> -->
+            
