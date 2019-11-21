@@ -16,9 +16,9 @@ mongo = PyMongo(app)
 def get_tasks():
     return render_template("firstSteps.html", firstSteps=mongo.db.firstSteps.find())
 
-@app.route('/add_task')
-def add_task():
-    return render_template('addtasks.html')
+@app.route('/add_myStory')
+def add_myStory():
+    return render_template('myStory.html')
 
 
 if __name__ == '__main__':
