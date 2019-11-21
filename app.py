@@ -18,7 +18,7 @@ def get_tasks():
 
 @app.route('/add_myStory')
 def add_myStory():
-    return render_template('myStory.html')
+    return render_template("myStory.html")
 
 
 if __name__ == '__main__':
