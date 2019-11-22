@@ -16,10 +16,16 @@ mongo = PyMongo(app)
 def get_tasks():
     return render_template("firstSteps.html", firstSteps=mongo.db.firstSteps.find())
 
-@app.route('/add_myStory')
-def add_myStory():
-    return render_template("myStory.html")
+@app.route('/add_tasks')
+def add_tasks():
+    return render_template("myProblem.html", myProblem=mongo.db.myProblem.find())
 
+
+@app.route('/insert_task', methods=['POST'])
+def insert_task():
+    myProblem = mongo.db.Problem
+    myProblem.insert_one(request.form.to_dict())
+    return redirect(url_for('get_tasks'))
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),
