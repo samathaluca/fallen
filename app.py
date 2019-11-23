@@ -12,15 +12,15 @@ mongo = PyMongo(app)
 
 @app.route('/')
 def index():
-    return render_template("index.html")
+    return render_template('index.html')
 
 @app.route('/firstSteps')
 def firstSteps():
-    return render_template("firstSteps.html", firstSteps=mongo.db.firstSteps.find())
+    return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
 
 @app.route('/myProblem')
 def myProblem():
-    return render_template("myProblem.html", myProblem=mongo.db.myProblem.find())
+    return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
 
 @app.route('/insert_task', methods=['POST'])
 def insert_task():
