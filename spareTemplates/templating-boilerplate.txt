@@ -1,0 +1,37 @@
+
+
+app.py:
+
+
+@app.route('/', methods=['GET'])
+def index():
+
+    # Assuming you have a collection called elements, this returns all of them
+    elements = mongo.db.elements.find()
+
+
+    return render_template("index.html",
+                           elements=elements,
+                           some_boolean_flag=True)
+
+
+
+index.html:
+
+{% for element in list_of_elements %}
+
+  <!-- Assuming each element has an attribute/field called 'name', this prints it out -->
+  <p> {{ element.name }}</p>
+
+{% endfor %}
+
+
+{% if some_boolean_flag %}
+
+  <p> This only displays if the boolean flag is set to True</p>
+
+{% else %}
+
+  <p> This only displays if the boolean flag is set to False</p>
+
+{% endif %}

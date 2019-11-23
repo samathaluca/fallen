@@ -9,15 +9,15 @@
         <header>
         <nav>
             <div class="nav-wrapper">
-                <a href="{{url_for('get_tasks')}}" class="brand-logo">Task Manager</a>
+                <a href="{{url_for('firstSteps')}}" class="brand-logo">Task Manager</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
                 <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
-                    <li><a href="{{url_for('add_task')}}">New Task</a></li>
+                    <li><a href="{{url_for('firstSteps')}}">Home</a></li>
+                    <li><a href="{{url_for('add_tasks')}}">New Task</a></li>
                     <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
+                    <li><a href="{{url_for('firstSteps')}}">Home</a></li>
                     <li><a href="{{url_for('add_task')}}">New Task</a></li>
                     <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
                 </ul>
@@ -32,12 +32,15 @@
     <script type="text/javascript">
         $(document).ready(function() {
             $('.collapsible').collapsible();
-        })
-    
-        $(document).ready(function(){
+        
+        
             $('select').formSelect();
-        });
-
+            
+            $('.sidenav').sidenav();
+            <!-- $(".button-collapse").sideNav(); -->
+  });
+        
+{
         $(document).ready(function(){
             $('.datepicker').datepicker();
         });
