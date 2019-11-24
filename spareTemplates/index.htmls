@@ -12,18 +12,48 @@
   <link href="assets/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-  <nav class="light-blue lighten-1" role="navigation">
-    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Human Connection</a></li>
-      </ul>
+        <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{url_for('firstSteps')}}" class="brand-logo">Task Manager</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('firstSteps')}}">Home</a></li>
+                    <li><a href="{{url_for('myProblem')}}">New Task</a></li>
+                    <li><a href="{{url_for('myProblem')}}">Manage Categories</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{url_for('firstSteps')}}">Home</a></li>
+                    <li><a href="{{url_for('add_task')}}">New Task</a></li>
+                    <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <nav class="light-blue lighten-1">
+        <div class="nav-wrapper">
+        <a href="#" class="brand-logo">Logo</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="{{url_for('firstSteps')}}">FirstSteps</a></li>
+            <li><a href="{{url_for('myProblem')}}">MyProblem</a></li>
+        </ul>
+        </div>
+    </nav>
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Human Connection</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-    </div>
-  </nav>
+  <!-- <nav class="light-blue lighten-1" role="navigation"> -->
+    <!-- <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Logo</a> -->
+      <!-- <ul class="right hide-on-med-and-down"> -->
+        <!-- <li><a href="#">Human Connection</a></li> -->
+      <!-- </ul> -->
+
+      <!-- <ul id="nav-mobile" class="sidenav"> -->
+        <!-- <li><a href="#">Human Connection</a></li> -->
+      <!-- </ul> -->
+      <!-- <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a> -->
+    <!-- </div> -->
+  <!-- </nav> -->
+
+
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <br><br>
