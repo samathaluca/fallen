@@ -23,13 +23,12 @@ def firstSteps():
 def myProblem():
     return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
 
-@app.route('/insert_task', methods=['POST'])
-def insert_task():
-    myProblem = mongo.db.myProblem
-    print(request.form)
+@app.route('/insert_form', methods=['POST'])
+def insert_form():
+    myProblem =  mongo.db.myProblem
     myProblem.insert_one(request.form.to_dict())
-    return redirect(url_for('firstSteps'))
-  
+    return redirect(url_for('myProblem'))
+
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'),

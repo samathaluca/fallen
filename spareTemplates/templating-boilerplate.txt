@@ -35,3 +35,15 @@ index.html:
   <p> This only displays if the boolean flag is set to False</p>
 
 {% endif %}
+
+
+
+print(request.form)
+
+@app.route('/insert_task', methods=['POST'])
+def insert_task():
+    myProblem = mongo.db.myProblem
+    print(request.form)
+    myProblem.insert_one(request.form.to_dict())
+    return render_template('myProblem')
+
