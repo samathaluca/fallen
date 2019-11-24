@@ -51,4 +51,13 @@ User provides the ingredients and this app presents the method to get to their t
 9. GITHUB version control.
 
 
+### Testing
+1. Chrome Devtools
+2. HTML Validator
+3. CSS VALIDATOR
+4. HTML AND CSS Beautifier
+5. Javascript Validator
+6. Markdown live-preview -This project used markdown previewer to check the rendering of the readme.md file content.
+7. AutoPrefixer -This project used AutoPrefixer to make sure the css code is valid for all browsers.
+8. JASMINE- framework for testing javascript code.
 

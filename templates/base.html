@@ -8,7 +8,7 @@
     <body>
         <header>
     
-        <!-- <nav>
+        <nav>
             <div class="nav-wrapper">
                 <a href="{{url_for('firstSteps')}}" class="brand-logo">Task Manager</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
@@ -23,7 +23,7 @@
                     <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
                 </ul>
             </div>
-        </nav> -->
+        </nav>
     </header>
         <h1>Recovery is possible!</h1>
         {% block content %}
@@ -37,11 +37,11 @@
         
             $('select').formSelect();
             
-            $('.sidenav').sidenav();
+            
            
   });
         
-{
+
         $(document).ready(function(){
             $('.datepicker').datepicker();
         });
@@ -50,13 +50,6 @@
     </script>
     </body>
 </html>
-
-        <!-- $(document).ready(function(){
-            $('.datepicker').datepicker();
-         }); -->
-
-        <!-- document.getElementById("matfix").addEventListener("click", function(e) {e.stopPropagation();
-        }); -->
 
 
 
