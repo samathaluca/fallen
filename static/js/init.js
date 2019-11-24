@@ -17,8 +17,8 @@ $(document).ready(function() {
     }
     initMaterialize();
     
-    document.getElementById("matfix").addEventListener("click", function(e) {
-        e.stopPropagation();
-    });
+    // document.getElementById("matfix").addEventListener("click", function(e) {
+    //     e.stopPropagation();
+    // });
 
 });
