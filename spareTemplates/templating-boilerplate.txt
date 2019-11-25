@@ -47,3 +47,6 @@ def insert_task():
     myProblem.insert_one(request.form.to_dict())
     return render_template('myProblem')
 
+
+    <br><br>
+
