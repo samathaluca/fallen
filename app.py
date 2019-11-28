@@ -11,8 +11,9 @@ app.config["MONGO_URI"] = 'mongodb+srv://rOOtUser:betteroption@myfirstcluster-97
 mongo = PyMongo(app)
 
 @app.route('/')
-def index():
-    return render_template('index.html')
+# @app.route('/loading_page')
+# def loading_page():
+#     return render_template('index.html')
 
 
 @app.route('/firstSteps')
@@ -23,11 +24,11 @@ def firstSteps():
 def myProblem():
     return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
 
-@app.route('/insert_form', methods=['POST'])
-def insert_form():
-    myProblem =  mongo.db.myProblem
-    myProblem.insert_one(request.form.to_dict())
-    return redirect(url_for('myProblem'))
+# @app.route('/insert_form', methods=['POST'])
+# def insert_form():
+#     myProblem =  mongo.db.myProblem
+#     myProblem.insert_one(request.form.to_dict())
+#     return redirect(url_for('editForm.html'))
 
 # @app.route('/edit_task/<task_id>')
 # def edit_task(task_id):

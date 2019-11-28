@@ -1,0 +1,437 @@
+{% extends 'base.html' %} 
+{% block content %}
+<!-- Page Layout here -->
+<section>        <div class="input-field col s12">
+            <select name="connections">
+                <optgroup label="who gave you first time">
+                    <option value="1">Alone</option>
+                    <option value="2">someone you trusted</option>
+                    <option value="3">strangers</option>
+                </optgroup>
+                <optgroup label="who do you use with now">
+                    <option value="4">Alone</option>
+                    <option value="5">family</option>
+                    <option value="6">friends</option>
+                    <option value="7">rivals</option>
+                    <option value="8">work collegues</option>
+                    <option value="9">customers</option>
+                    <option value="10">adversaries</option>
+                    <option value="11">acquaintances</option>
+                    <option value="12">strangers</option>
+                </optgroup>
+                <optgroup label="who has been most effected">
+                    <option value="13">you</option>
+                    <option value="14">family</option>
+                    <option value="15">Alone</option>
+                    <option value="16">family</option>
+                    <option value="17">Alone</option>
+                    <option value="18">family</option>
+                </optgroup>
+<optgroup label="what do you want to change most?">
+ <form action="#">
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>Fill in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" />
+        <span>Yellow</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id="indeterminate-checkbox" type="checkbox" />
+        <span>Indeterminate Style</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" disabled="disabled" />
+        <span>Green</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" disabled="disabled" />
+        <span>Brown</span>
+      </label>
+    </p>
+  </form>
+</optgroup>
+</select>
+</div>
+
+                <div class="row">
+            <div class="switch">
+                <label>
+                <input id="is_urgent" name="is_urgent" type="checkbox">
+                <span class="lever"></span>
+                Is Urgent
+                </label>
+            </div>
+        </div>
+        </section>
+ <form action="#">
+    <p>
+      <label>
+        <input type="checkbox" />
+        <span>Red</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" />
+        <span>Yellow</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" class="filled-in" checked="checked" />
+        <span>Filled in</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input id="indeterminate-checkbox" type="checkbox" />
+        <span>Indeterminate Style</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" checked="checked" disabled="disabled" />
+        <span>Green</span>
+      </label>
+    </p>
+    <p>
+      <label>
+        <input type="checkbox" disabled="disabled" />
+        <span>Brown</span>
+      </label>
+    </p>
+  </form>
+  
+<main class="row">
+    <div class="col s12 m3 hide-on-small-only">
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">Diet Labels<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <form method="POST" action="/filtered_search">
+                        <select multiple name="diet_labels">
+                              <option value="" disabled selected>Choose your options</option>
+                              <option value="Low-Carb">Low-Carb</option>
+                              <option value="Fat-Free">Fat-Free</option>
+                              <option value="Gluten-Free">Gluten-Free</option>
+                              <option value="High-Protein">High-Protein</option>
+                              <option value="Balanced">Balanced</option>
+                            </select>
+                        <button class="btn waves-effect waves-light filter-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">Health Labels<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
+                <div class="collapsible-body">
+                    <form method="POST" action="/filtered_search">
+                        <select multiple name="health_labels">
+                              <option value="" disabled selected>Choose your options</option>
+                              <option value="Sugar-Conscious">Sugar-Conscious</option>
+                              <option value="Peanut-Free">Peanut-Free</option>
+                              <option value="Tree-Nut-Free">Tree-Nut-Free</option>
+                              <option value="Alcohol-Free">Alcohol-Free</option>
+                              <option value="Vegan">Vegan</option>
+                              <option value="Vegetarian">Vegetarian</option>
+                            </select>
+                        <button class="btn waves-effect waves-light filter-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col s12 m9">
+<h3>My Story</h3>
+
+<div class="row">
+    
+
+    <form action="{{ url_for('myProblem') }}" method="POST"  class="col s12">
+
+        <div class="input-field col s12">
+            <select name="addiction">
+                <option value="" disabled selected>WHAT IS YOUR ADDICTION?</option>
+                <option value="1">Alcohol</option>
+                <option value="2">Prescription Drugs</option>
+                <option value="3">Illegal Drugs</option>
+                <option value="4">Food</option>
+                <option value="5">Sex/Porn/Toxic relationships</option>
+                <option value="6">Gambling</option>
+                <option value="7">Exercise</option>
+                <option value="8">Obsession with health</option>
+                <option value="9">Attention/Chaos/Drama</option>
+                <option value="10">Physical Self Harm</option>
+                <option value="11">Thinking Harmful Thoughts</option>
+                <option value="12">Fantasy</option>
+                <option value="13">Social Media</option>
+                <option value="14">Gaming</option>
+                <option value="15">Spending</option>
+                <option value="16">horoscopes/psychics</option>
+                <option value="17">chatlines</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="WHERE DO YOU ACT OUT MOST OFTEN">
+                <option value="" disabled selected>WHERE?</option>
+                <option value="1">AT HOME</option>
+                <option value="2">AT SCHOOL</option>
+                <option value="3">AT WORK</option>
+                <option value="4">HOTELS/RESTAURANTS</option>
+                <option value="5">BARS/CLUBS</option>
+                <option value="6">BINGO/CASINO/BETTING SHOPS</option>
+                <option value="7">GYM/SPORTS CLUB</option>
+                <option value="8">CLINICS/HOSPITALS</option>
+                <option value="9">OUTDOORS/PARKS/STREET CORNERS</option>
+                <option value="10">CAR/TRANSPORT</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select  name="WHERE">
+                <option value="" disabled selected>WHERE</option>
+                <option value="1">Isolated at home</option>
+                <option value="2">Socially With Friends</option>
+                <option value="3">Socially With Strangers</option>
+                <option value="4">Socially With Family</option>
+                <option value="5">Licensed Premises</option>
+                <option value="6">Casino/betting shop</option>
+                <option value="7">Gym</option>
+                <option value="8">In bed</option>
+                <option value="9">School</option>
+                <option value="10">In the car/bus/train</option>
+                <option value="11">Outdoors</option>
+                <option value="12">Anywhere/Everywhere</option>
+                <option value="13">At Work</option>
+            </select>
+            <label>My Problem</label>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="when">
+                <option value="" disabled selected>WHEN?</option>
+                <option value="1">EVENINGS</option>
+                <option value="2">WEEKENDS</option>
+                <option value="3">BINGES</option>
+                <option value="4">ALL DAY EVERY DAY</option>
+                <option value="5">DAYTIMES</option>
+                <option value="6">ODD TIMES</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="how">
+                <option value="" disabled selected>HOW?</option>
+                <option value="1">ORAL</option>
+                <option value="2">SNIFFED</option>
+                <option value="3">SMOKED</option>
+                <option value="4">INJECTED</option>
+                <option value="5">VISUAL</option>
+                <option value="6">BODILY</option>
+                <option value="7">THINKING/IMAGINATIVELY</option>
+                <option value="8">EQUIPMENT</option>
+                <option value="9">LISTENING</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="why">
+                <option value="" disabled selected>WHY?</option>
+                <option value="1">Alcohol</option>
+                <option value="2">Prescription Drugs</option>
+                <option value="3">Illegal Drugs</option>
+                <option value="4">Food</option>
+                <option value="5">Sex/Porn/Toxic relationships</option>
+                <option value="6">Gambling</option>
+                <option value="7">Exercise</option>
+                <option value="8">Obsession with health</option>
+                <option value="9">Attention/Chaos/Drama</option>
+                <option value="10">Physical Self Harm</option>
+                <option value="11">Thinking Harmful Thoughts</option>
+                <option value="12">Fantasy</option>
+                <option value="13">Social Media</option>
+                <option value="14">Gaming</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="WHO">
+                <option value="" disabled selected>WHO?</option>
+                <option value="1">Alcohol</option>
+                <option value="2">Prescription Drugs</option>
+                <option value="3">Illegal Drugs</option>
+                <option value="4">Food</option>
+                <option value="5">Sex/Porn/Toxic relationships</option>
+                <option value="6">Gambling</option>
+                <option value="7">Exercise</option>
+                <option value="8">Obsession with health</option>
+                <option value="9">Attention/Chaos/Drama</option>
+                <option value="10">Physical Self Harm</option>
+                <option value="11">Thinking Harmful Thoughts</option>
+                <option value="12">Fantasy</option>
+                <option value="13">Social Media</option>
+                <option value="14">Gaming</option>
+            </select>
+        </div>
+
+        <div class="input-field col s12">
+            <select name="WHENEVER">
+                <option value="" disabled selected>WHENEVER-ARE YOU READY?</option>
+                <option value="1">TODAY</option>
+                <option value="2">ON MONDAY</option>
+                <option value="3">NEXT WEEK</option>
+                <option value="4">NEXT MONTH</option>
+                <option value="5">IN THE FUTURE</option>
+                <option value="6">WHEN A PROBLEM HAS GONE AWAY</option>
+            </select>
+        </div>
+
+
+
+        <div class="row">
+            <button class="btn waves-effect waves-light" type="submit" name="action">
+            SUBMIT <i class="material-icons right">playlist_add</i>
+            </button>
+        </div>
+
+    </form>
+
+</div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Chicken Vesuvio</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76ae457ef270150e390b9a">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/e12/e12b8c5581226d7639168f41d126f2ff.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Chicken Paprikash</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76af3e7ef27015e7d31263">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/4d9/4d9084cbc170789caa9e997108b595de.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Catalan Chicken</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76afa77ef270162aa33707">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/98a/98aa5d5cc0d88b28c2b9221a099b1a14.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Roast Beef</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76b0257ef2701673ce23e8">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/d37/d376c145f2a59befa7738a2c35caab31.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Roast Sirloin Of Beef</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76b05c7ef27016929761c9">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card hoverable">
+                <div class="card-image">
+                    <img src="https://www.edamam.com/web-img/deb/debce0693c8d8a6988af80e1f94e4c4c.jpg">
+                </div>
+                <div class="card-title">
+                    <span>Beef Brisket</span>
+                </div>
+                <div class="card-action">
+                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <ul class="pagination">
+             
+            <li class="active"><a>1</a></li>
+              
+            <li class="waves-effect"><a href="/?current_page=2">2</a></li>
+              
+            <li class="waves-effect"><a href="/?current_page=3">3</a></li>
+              
+            <li class="waves-effect"><a href="/?current_page=4">4</a></li>
+             
+        </ul>
+        <!-- end of col-9 -->
+    </div>
+    <!-- end of row -->
+</main>
+  <footer class="site-footer">
+    <div class="footer">
+        <div class="container">
+            <span class="ft-me">< / > By Shane Muirhead</span>
+            
+            
+        </div>
+    </div>
+
+     {% endblock %}
