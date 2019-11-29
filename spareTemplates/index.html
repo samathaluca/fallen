@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% block content %}
+<h1>Hi, {{ user.username }}!</h1>
+    {% for post in posts %}
+    <div><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    {% endfor %}
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center blue-text">HABIT OR ADDICTION - Get out of the fire</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">To be human is to grow and accept change or wither and die</h5>
+      </div>
+      <div class="row center">
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Burnt out?</h5>
+
+            <p class="light">Lack of support and direction or family/socialies pressure to be soemthing we are not can literally fry our brains. Nerve pathways that fire togther will wire together. In order to stop behaviours or substance abuse that is shrinking our lives in a pattern or self destruction can feel like a one way track. IT IS NOT. Millions of people have walked through the pain and withdrawal and reclaimed their lives.  </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">You are not the only one</h5>
+
+            <p class="light">When the feelings in our day to day lives become too much we naturally seek escape. Depending on our personal experiences and connections we opt for many different ways to cope. If we become reliant on these strategies what initally gave us relief will get a grip of our lives and take over. Mental and physical health will begin to suffer and eveuntually nothing else will matter. All our potential evaporates and we start to feel lost and alone.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Who else walked in your shoes</h5>
+
+            <p class="light">Seeking help from people who do not share out experience may not fill the void. Once you fill out a simple and anonymous form and submit it, you will be shown other stories that relate to your own. 
+            The idea being that an alcohol dependent mother of three , who is also bulemic and suffering flash backs from abuse is likely to use different startegies to break her habits than a gambling addict you only feels alive in the casino.
+            Different stories need different healing. 
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    
+  </div>
+
+  {% endblock %}

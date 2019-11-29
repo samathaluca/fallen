@@ -10,71 +10,32 @@ app.config["MONGO_URI"] = 'mongodb+srv://rOOtUser:betteroption@myfirstcluster-97
 
 mongo = PyMongo(app)
 
-
 @app.route('/')
+def index():
+    return render_template('index.html')
+
+
 @app.route('/firstSteps')
 def firstSteps():
     return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
 
-    
-@app.route('/myProblem')
+#@app.route('/myProblem')
+#def myProblem():
+#    return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
+
+@app.route('/myProblem', methods=['GET', 'POST'])
 def myProblem():
-    return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
-
-
+    if request.method == 'GET':
+        return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
+    else:
+        insert_myProblem = mongo.db.myProblem
+        insert_myProblem.insert_one(request.form.to_dict())
+        return redirect(url_for('index'))
 
 if __name__ == '__main__':
-    app.run(host=os.environ.get('IP'),
+    app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),
             debug=True)
-
-
-import os
-from flask import Flask, render_template, redirect, request, url_for, request
-from flask_pymongo import PyMongo
-from bson.objectid import ObjectId
-
-
-app = Flask(__name__)
-app.config["MONGO_DBNAME"] = 'task_manager'
-app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
-
-mongo = PyMongo(app)
-
-@app.route('/')
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template("tasks.html", 
-                           tasks=mongo.db.tasks.find())
-
-@app.route('/get_categories')
-def get_categories():
-    return render_template('categories.html',
-                           categories=mongo.db.categories.find())
-
-
-@app.route('/add_task')
-def add_task():
-    return render_template('addtask.html',
-                           categories=mongo.db.categories.find())
-
-@app.route('/add_category')
-def add_category():
-    return render_template('addcategory.html')
-
-
-@app.route('/insert_task', methods=['POST'])
-def insert_task():
-    tasks =  mongo.db.tasks
-    tasks.insert_one(request.form.to_dict())
-    return redirect(url_for('get_tasks'))
-
-
-@app.route('/insert_category', methods=['POST'])
-def insert_category():
-    category_doc = {'category_name': request.form.get('category_name')}
-    mongo.db.categories.insert_one(category_doc)
-    return redirect(url_for('get_categories'))
 
 
 @app.route('/edit_task/<task_id>')

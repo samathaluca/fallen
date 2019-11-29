@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">//
 <head>
 <!-- CSS  -->
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -11,14 +12,16 @@
 <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
 </head>
 <body>
- 
+
   <nav>
     <div class="nav-wrapper">
-      <a href="{{ url_for('index') }}" class="brand-logo">Logo</a>
+      <a href="{{ url_for('firstSteps') }}" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="{{ url_for('firstSteps') }}">First Steps</a></li>
         <li><a href="{{ url_for('myProblem') }}">My Problem</a></li>
+        <!--from flask lesson <div>Microblog: <a href="/index">Home</a></div>
+         <li><a href="{{ url_for('editForm') }}">EDIT</a></li> -->
       </ul>
     </div>
   </nav>
@@ -26,9 +29,8 @@
   <ul class="sidenav" id="mobile-demo">
     <li><a href="{{ url_for('firstSteps') }}">First Steps</a></li>
     <li><a href="{{ url_for('myProblem') }}">My Problem</a></li>
-  </ul>
-   
-
+    <!-- <li><a href="{{ url_for('editForm') }}">EDIT</a></li> -->
+  <firstStepsfirstSteps
 
 
   {% block content %} {% endblock %}
@@ -72,13 +74,66 @@
 
 
     <!--  Scripts-->
-    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://materializecss.com/bin/materialize.js"></script>
-    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/layout.js') }}"></script>
 
+   
     </body>
+</html>
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <a href="{{url_for('get_tasks')}}" class="brand-logo">Task Manager</a>
+                <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
+                    <li><a href="{{url_for('add_task')}}">New Task</a></li>
+                    <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    <li><a href="{{url_for('get_tasks')}}">Home</a></li>
+                    <li><a href="{{url_for('add_task')}}">New Task</a></li>
+                    <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        {% block content %} {% endblock %}
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $(".button-collapse").sideNav();
+        });
+        $('.datepicker').pickadate({
+            selectMonths: true, // Creates a dropdown to control month
+            selectYears: 15, // Creates a dropdown of 15 years to control year,
+            today: 'Today',
+            clear: 'Clear',
+            close: 'Ok',
+            closeOnSelect: false // Close upon selecting a date,
+        });
+    </script>
+</body>
+
 </html>
 
 
