@@ -14,10 +14,10 @@ mongo = PyMongo(app)
 def index():
     return render_template('index.html')
 
-
 @app.route('/firstSteps')
 def firstSteps():
     return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
+
 
 #@app.route('/myProblem')
 #def myProblem():
