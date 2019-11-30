@@ -29,9 +29,14 @@ def myProblem():
 
 
 @app.route('/alias')
-def alias(alias):
-    return render_template('alias.html', alias=mongo.db.user.find())
+def alias():
+    # return render_template('alias.html', alias=mongo.db.user.find())
+    return render_template('alias.html', alias=mongo.db.user.all())
 
+# @app.route('/users/')
+# def users():
+#     users = User.objects.all()
+#     return render_template('users.html', u=users)
     
 @app.route('/hello/<user>')
 def hello_name(user):
