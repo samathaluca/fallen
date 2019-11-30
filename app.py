@@ -35,29 +35,23 @@ class aliasx:
 @app.route('/alias')
 def alias():
     # return render_template('alias.html', alias=mongo.db.user.find())
-    # return render_template('alias.html', alias=mongo.db.user.find_one())
-    a = aliasx()
-    return render_template('alias.html', alias=a)
+    return render_template('alias.html', alias=mongo.db.user.find_one())
+    # return render_template('alias.html', alias=aliasx())
 
 # @app.route('/users/')
 # def users():
 #     users = User.objects.all()
 #     return render_template('users.html', u=users)
     
-@app.route('/hello/<user>')
-def hello_name(user):
-   return render_template('hello.html', name = user)
+# @app.route('/hello/<user>')
+# def hello_name(user):
+#    return render_template('hello.html', name = user)
 
 @app.route('/alias/<alias_id>', methods=['POST'])
 def editAlias(alias_id):
-    mongo.db.user.update( {'_id': ObjectId(alias_id)},
-    {
-        'username':request.form.get('username'),
-        # 'date_registered ':request.form.get('category_name'),
-        'password': request.form.get('password'),
-        # 'due_date': request.form.get('due_date'),
-        # 'is_urgent':request.form.get('is_urgent')
-    })
+    myquery = { '_id': alias_id) }
+    newvalues = { "$set": { "username": request.form.get('username'), "password": request.form.get('password') } }
+    mongo.db.user.update_one(myquery, newvalues)
     return redirect(url_for('aliasConfirmed'))
 
 
