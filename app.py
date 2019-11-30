@@ -28,10 +28,16 @@ def myProblem():
         return redirect(url_for('index'))
 
 
+class aliasx:
+    username = 'hhh'
+    password = 'uuu'
+
 @app.route('/alias')
 def alias():
     # return render_template('alias.html', alias=mongo.db.user.find())
-    return render_template('alias.html', alias=mongo.db.user.find_one())
+    # return render_template('alias.html', alias=mongo.db.user.find_one())
+    a = aliasx()
+    return render_template('alias.html', alias=a)
 
 # @app.route('/users/')
 # def users():
