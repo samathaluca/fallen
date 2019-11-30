@@ -29,8 +29,13 @@ def myProblem():
 
 
 @app.route('/alias')
-def alias():
+def alias(alias):
     return render_template('alias.html', alias=mongo.db.user.find())
+
+    
+@app.route('/hello/<user>')
+def hello_name(user):
+   return render_template('hello.html', name = user)
 
 @app.route('/alias/<alias_id>', methods=['POST'])
 def editAlias(alias_id):
