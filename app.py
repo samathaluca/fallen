@@ -31,7 +31,7 @@ def myProblem():
 @app.route('/alias')
 def alias():
     # return render_template('alias.html', alias=mongo.db.user.find())
-    return render_template('alias.html', alias=mongo.db.user.findOne({ username:"me me me" }))
+    return render_template('alias.html', alias=mongo.db.user.find_one())
 
 # @app.route('/users/')
 # def users():
