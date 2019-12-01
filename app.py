@@ -32,27 +32,31 @@ def myProblem():
 #     username = 'hhh'
 #     password = 'uuu'
 
-@app.route('/alias')
-def alias():
-    # return render_template('alias.html', alias=mongo.db.user.find())
-    return render_template('alias.html', alias=mongo.db.user.find())
-    # return render_template('alias.html', alias=aliasx())
-
-# @app.route('/users/')
-# def users():
-#     users = User.objects.all()
-#     return render_template('users.html', u=users)
+@app.route('/get_tasks')
+def get_tasks():
+    return render_template("tasks.html", tasks=mongo.db.tasks.find())
     
-# @app.route('/hello/<user>')
-# def hello_name(user):
-#    return render_template('hello.html', name = user)
 
-@app.route('/alias/<alias_id>', methods=['POST'])
-def editAlias(alias_id):
-    editAlias = { '_id': (alias_id) }
-    newvalues = { "$set": { "username": request.form.get('username'), "password": request.form.get('password') } }
-    mongo.db.user.update(editAlias, newvalues)
-    return redirect(url_for('aliasConfirmed'))
+
+# @app.route('/alias', methods=['GET', 'POST'])
+# def alias():
+#     if request.method == 'GET':
+#     # return render_template('alias.html', alias=mongo.db.user.find())
+#     return render_template('alias.html', alias=mongo.db.user.find())
+#     # return render_template('alias.html', alias=aliasx())
+#      else:
+#         editt_user = mongo.db.user
+#         edit_user.update_one(request.form.to_dict())
+#         return redirect(url_for('index'))
+
+
+
+# @app.route('/alias/<alias_id>', methods=['GET','POST'])
+# def editAlias(alias_id):
+#     editAlias = { '_id': (alias_id) }
+#     newvalues = { "$set": { "username": request.form.get('username'), "password": request.form.get('password') } }
+#     mongo.db.user.update(editAlias, newvalues)
+#     return redirect(url_for('aliasConfirmed'))
 
 
 
@@ -147,3 +151,12 @@ if __name__ == '__main__':
 #         'is_urgent':request.form.get('is_urgent')
 #     })
 #     return redirect(url_for('get_tasks'))
+
+# @app.route('/users/')
+# def users():
+#     users = User.objects.all()
+#     return render_template('users.html', u=users)
+    
+# @app.route('/hello/<user>')
+# def hello_name(user):
+#    return render_template('hello.html', name = user)
