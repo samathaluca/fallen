@@ -32,9 +32,9 @@ def myProblem():
 #     username = 'hhh'
 #     password = 'uuu'
 
-@app.route('/get_tasks')
-def get_tasks():
-    return render_template("tasks.html", tasks=mongo.db.tasks.find())
+@app.route('/')
+def tasks():
+    return render_template("tasks.html")
     
 
 
