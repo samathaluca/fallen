@@ -1,23 +1,26 @@
 {% extends 'base.html' %}
 {% block content %}
   <div class="row">
-  <h1>alias id: {{ alias.id }}!</h1>
-    <h1>Helloapp {{ alias.username }}!</h1>
-    <h1>password: {{ alias.password }}!</h1>
-    <form action="{{ url_for('alias')}}" method="POST"  class="col s12">
+ 
+    <h1>My Plan</h1>
+    <h3>One step at a time</h3>
+    
+    <form action="{{ url_for('alias') }}" method="POST"  class="col s12">
       <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
           <input id="username" type="text" class="validate" value={{ alias.username }}>
-          <label for="username">username</label>
+          <label for="username">Pseudonym (Alias)</label>
         </div>
         <div class="input-field col s6">
           <i class="material-icons prefix">add</i>
           <input id="password" class="validate" value={{ alias.password }}>
-          <label for="password">password</label>
+          <label for="password">Favourite place/spot</label>
         </div>
       </div>
-      <!-- <div class="row">
+      <!--  <h1>alias id: {{ alias.id }}!</h1>
+      
+      <div class="row">
         <div class="input-field col s6">
           <i class="material-icons prefix">account_circle</i>
           <input id="icon_prefix" type="text" class="validate">
