@@ -4,6 +4,7 @@ $(document).ready(function() {
         $('.collapsible').collapsible();
         $('select').formSelect();
         $('.sidenav').sidenav();
+        $('.parallax').parallax();
         $(".datepicker").datepicker({
             yearRange: 15,
             autoClose: false,
