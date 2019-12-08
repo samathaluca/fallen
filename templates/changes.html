@@ -1,10 +1,35 @@
 {% extends 'base.html' %}
 {% block content %}
-        {% for change in changes %}
-            {{change.habit}}
-            {{change.alias}}
-            {{change.start_date}}
-            {{change.feelings}}
+
+
+  <ul class="collapsible">
+    {% for change in changes %}
+    <li>
+      <div class="collapsible-header"><i class="material-icons">eject</i>{{change.habit}}</div>
+      <div class="collapsible-body"><span>Alcohol binges</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">face</i>{{change.alias}}</div>
+      <div class="collapsible-body"><span>Pseudonym (street name)</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">event</i>{{change.start_date}}</div>
+      <div class="collapsible-body"><span>Diary day 1</span></div>
+    </li>
+    <li>
+      <div class="collapsible-header"><i class="material-icons">insert_emoticon</i>{{change.feelings}}</div>
+      <div class="collapsible-body"><span>How do you feel about change</span></div>
+    </li>
+    {% endfor %}
+  </ul>
+
+{% endblock %}
+
+
+        
+            
+           
+            
             {{change.day1}}
             {{change.day2}}
             {{change.day3}}
@@ -20,5 +45,4 @@
             {{change.year1}}
             {{change.year2}}
             {{change.year3}}
-    {% endfor %}
-{% endblock %}
+ 

@@ -5,6 +5,8 @@ $(document).ready(function() {
         $('select').formSelect();
         $('.sidenav').sidenav();
         $('.parallax').parallax();
+        $('#textarea1').val('New Text');
+        M.textareaAutoResize($('#textarea1'));
         $(".datepicker").datepicker({
             yearRange: 15,
             autoClose: false,

@@ -20,6 +20,18 @@ def index():
 def changes():
     return render_template('changes.html', changes=mongo.db.changes.find())
 
+@app.route('/add_changes')
+def add_changes():
+    return render_template('add_changes.html', categories=mongo.db.categories.find())
+
+@app.route('/insert_changes', methods=['POST'])
+def insert_changes():
+    changes = mongo.db.changes
+    changes.insert_one(request.form.to_dict())
+    return redirect(url_for('changes'))
+
+
+
 
 @app.route('/firstSteps')
 def firstSteps():
