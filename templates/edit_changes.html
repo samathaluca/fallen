@@ -24,7 +24,7 @@
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">today</i>
-                <input id="start_date" name="start_date" type="text" class="datepicker">
+                <input id="start_date" name="start_date" type="text" class="datepicker" value="{{changes.start_date}}">
                 <label for="start_date">Start Date</label>
             </div>
             <div class="input-field col s12">
@@ -79,10 +79,11 @@
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Change Habit
+            <button class="btn waves-effect waves-light" type="submit">Update Habit
                 <i class="material-icons right">playlist_add</i>
             </button>
         </div>
     </form>
 </div>
+
 {% endblock %}
