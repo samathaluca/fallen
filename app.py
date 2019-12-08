@@ -58,6 +58,11 @@ def update_changes(changes_id):
     })
     return redirect(url_for('changes'))
 
+@app.route('/delete_changes/<changes_id>')
+def delete_changes(changes_id):
+    mongo.db.changes.remove({'_id': ObjectId(changes_id)})
+    return redirect(url_for('changes'))
+
 
 @app.route('/firstSteps')
 def firstSteps():
