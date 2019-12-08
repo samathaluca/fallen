@@ -24,14 +24,18 @@ def changes():
 def add_changes():
     return render_template('add_changes.html', categories=mongo.db.categories.find())
 
+
 @app.route('/insert_changes', methods=['POST'])
 def insert_changes():
     changes = mongo.db.changes
     changes.insert_one(request.form.to_dict())
     return redirect(url_for('changes'))
 
-
-
+@app.route('/edit_changes/<changes_id>')
+def edit_changes(changes_id):
+    the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template('edit_changes.html', changes=the_change, categories=all_categories)
 
 @app.route('/firstSteps')
 def firstSteps():
