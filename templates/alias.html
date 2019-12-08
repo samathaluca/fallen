@@ -6,7 +6,7 @@
     <h3>One step at a time</h3>
 {% for user in alias %}
 
-    <form action="{{ url_for('update_my_details', user_id=user.user_name)}}" method="POST"  class="col s12">
+    <form action="{{ url_for('alias', user_id=user.user_name)}}" method="POST"  class="col s12">
   
       <div class="row">
         <div class="input-field col s6">

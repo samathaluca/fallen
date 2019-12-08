@@ -12,8 +12,13 @@ mongo = PyMongo(app)
 
 
 @app.route('/')
+@app.route('/index')
 def index():
     return render_template('index.html')
+
+@app.route('/changes')
+def changes():
+    return render_template('changes.html', changes=mongo.db.changes.find())
 
 
 @app.route('/firstSteps')
@@ -29,16 +34,6 @@ def myProblem():
         insert_myProblem = mongo.db.myProblem
         insert_myProblem.insert_one(request.form.to_dict())
         return redirect(url_for('index'))
-
-
-@app.route('/alias')
-def alias():
-    return render_template("alias.html")
-
-
-@app.route('/aliasConfirmed')
-def aliasConfirmed():
-    return render_template("aliasConfirmed.html")
 
 
 @app.route('/tasks')

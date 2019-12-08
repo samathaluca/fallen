@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+        {% for change in changes %}
+            {{change.habit}}
+            {{change.alias}}
+            {{change.start_date}}
+            {{change.feelings}}
+            {{change.day1}}
+            {{change.day2}}
+            {{change.day3}}
+            {{change.week1}}
+            {{change.week2}}
+            {{change.week3}}
+            {{change.month1}}
+            {{change.month2}}
+            {{change.month3}}
+            {{change.quarter1}}
+            {{change.quarter2}}
+            {{change.quarter3}}
+            {{change.year1}}
+            {{change.year2}}
+            {{change.year3}}
+    {% endfor %}
+{% endblock %}
