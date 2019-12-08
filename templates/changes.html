@@ -2,47 +2,92 @@
 {% block content %}
 
 
-  <ul class="collapsible">
-    {% for change in changes %}
+  <ul class="collapsible" data-collapsible="expandable">
+    {% for changes in changes %}
     <li>
-      <div class="collapsible-header"><i class="material-icons">eject</i>{{change.habit}}</div>
-      <div class="collapsible-body"><span>Alcohol binges</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">face</i>{{change.alias}}</div>
-      <div class="collapsible-body"><span>Pseudonym (street name)</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">event</i>{{change.start_date}}</div>
-      <div class="collapsible-body"><span>Diary day 1</span></div>
-    </li>
-    <li>
-      <div class="collapsible-header"><i class="material-icons">insert_emoticon</i>{{change.feelings}}</div>
-      <div class="collapsible-body"><span>How do you feel about change</span></div>
+        <div class="collapsible-header">
+            <div class="task_header col s9">
+                <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
+
+            </div>
+            <div class="col s3">
+                    <a class="waves-effect waves-light btn btn_small">Done</a>
+                    <a class="waves-effect waves-light btn btn_small blue">Edit</a>
+            </div>
+        </div>
+
+        <div class="collapsible-body">
+            <span>
+                {{changes.start_date}}
+                <div>
+                    <span>
+                        {{changes.feelings}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.day1}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.day2}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.day3}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.week1}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.week2}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.week3}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.month1}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.month2}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.month3}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.year1}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.year2}}
+                    </span>
+                </div>
+                <div>
+                    <span>
+                        {{changes.year3}}
+                    </span>
+                </div>
+            </span>
+        </div>
     </li>
     {% endfor %}
   </ul>
 
 {% endblock %}
-
-
-        
-            
-           
-            
-            {{change.day1}}
-            {{change.day2}}
-            {{change.day3}}
-            {{change.week1}}
-            {{change.week2}}
-            {{change.week3}}
-            {{change.month1}}
-            {{change.month2}}
-            {{change.month3}}
-            {{change.quarter1}}
-            {{change.quarter2}}
-            {{change.quarter3}}
-            {{change.year1}}
-            {{change.year2}}
-            {{change.year3}}
- 

@@ -6,6 +6,15 @@
  * Made By MaterializeCSS.com
  */
  
+.btn_small {
+    height: 24px;
+    width: 60px;
+    line-height: 24px;
+    margin: 5px 5px;
+    padding: 0 0.5em;
+    float: right;
+}
+
 nav ul a,
 nav .brand-logo {
   color: #444444;
