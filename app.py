@@ -37,6 +37,28 @@ def edit_changes(changes_id):
     all_categories = mongo.db.categories.find()
     return render_template('edit_changes.html', changes=the_change, categories=all_categories)
 
+@app.route('/update_changes/<changes_id>', methods=["POST"])
+def update_changes(changes_id):
+    changes = mongo.db.changes
+    changes.update({'_id': ObjectId(changes_id)},
+    {
+        'alias':request.form.get('alias'),
+        'habit':request.form.get('habit'),
+        'start_date':request.form.get('start_date'),
+        'feelings':request.form.get('feelings'),
+        'day1':request.form.get('day1'),
+        'day2':request.form.get('day2'),
+        'day3':request.form.get('day3'),
+        'week1':request.form.get('week1'),
+        'week2':request.form.get('week2'),
+        'week3':request.form.get('week3'),
+        'year1':request.form.get('year1'),
+        'year2':request.form.get('year2'),
+        'year3':request.form.get('year3'),
+    })
+    return redirect(url_for('changes'))
+
+
 @app.route('/firstSteps')
 def firstSteps():
     return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())

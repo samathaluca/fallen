@@ -1,10 +1,10 @@
 {% extends 'base.html' %} {% block content %}
 <h3>Edit Changes</h3>
 <div class="row">
-    <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
+    <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select id="category" name="category_name">
+            <select id="habit" name="habit">
                 
             <option value="" disabled selected>Click here</option>
             {% for cat in categories %}
