@@ -4,17 +4,22 @@
     <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select id="category" name="habit">
-        <option value="" disabled selected>Click here</option>
-        {% for cat in categories %}
-            <option value="{{cat.habit}}">{{cat.habit}}</option>
-        {% endfor %}
+            <select id="category" name="category_name">
+                
+            <option value="" disabled selected>Click here</option>
+            {% for cat in categories %}
+                {% if cat.habit == changes.habit%}
+            <option value= "{{cat.habit}}" selected>{{cat.habit}}</option>
+                {% else%}
+                <option value="{{cat.habit}}">{{cat.habit}}</option>
+                {% endif %}
+            {% endfor %}
             </select>
                 <label>Choose your habit</label>
         </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
-                <input id="alias" name="alias" type="text" class="validate">
+                <input id="alias" name="alias" type="text" class="validate" value="{{changes.alias}}">
                 <label for="alias">Alias</label>
             </div>
             <div class="input-field col s12">
@@ -24,52 +29,52 @@
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="feelings" name="feelings" type="text" class="validate">
+                <input id="feelings" name="feelings" type="text" class="validate" value="{{changes.feelings}}">
                 <label for="feelings">How do you feel?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="day1" name="day1" type="text" class="validate">
+                <input id="day1" name="day1" type="text" class="validate" value="{{changes.day1}}">
                 <label for="day1">Your first day of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
-                <input id="day2" name="day2" type="text" class="validate">
+                <input id="day2" name="day2" type="text" class="validate" value="{{changes.day2}}">
                 <label for="day2">Your second day of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="day3" name="day3" type="text" class="validate">
+                <input id="day3" name="day3" type="text" class="validate" value="{{changes.day3}}">
                 <label for="day3">Your third day of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="week1" name="week1" type="text" class="validate">
+                <input id="week1" name="week1" type="text" class="validate" value="{{changes.week1}}">
                 <label for="week1">Your first week of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="week2" name="week2" type="text" class="validate">
+                <input id="week2" name="week2" type="text" class="validate" value="{{changes.week2}}">
                 <label for="week2">Your second week of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="week3" name="week3" type="text" class="validate">
+                <input id="week3" name="week3" type="text" class="validate" value="{{changes.week3}}">
                 <label for="week3">Your third week of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="year1" name="year1" type="text" class="validate">
+                <input id="year1" name="year1" type="text" class="validate" value="{{changes.year1}}">
                 <label for="year1">Your first year of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="year2" name="year2" type="text" class="validate">
+                <input id="year2" name="year2" type="text" class="validate" value="{{changes.year2}}">
                 <label for="year2">Your second year of freedom</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
-                <input id="year3" name="year3" type="text" class="validate">
+                <input id="year3" name="year3" type="text" class="validate" value="{{changes.year3}}">
                 <label for="year3">Your third year of freedom</label>
             </div>
         </div>
