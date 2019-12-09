@@ -14,7 +14,8 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    return render_template('index.html', categories=mongo.db.categories.find())
+    changes=mongo.db.changes.find()
+    return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 
 @app.route('/changes')
 def changes():

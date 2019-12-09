@@ -113,22 +113,24 @@
             <div class="heading-block">
                 <h2 class="center blue-grey-text">Hold on to your seat</h2>
                 <h5 class="center">Burnt out?</h5>
-
+        {% for changes in changes %}
         <div class="col s12 m2">
             <div class="card hoverable">
                 <div class="card-image">
-                    <img src="static/images/MatrixSquare.jpg">
-                    <span class="card-title">Card Title</span>
+                    <img src="static/images/{{ changes.habit }}.jpg">
+                </div>
+                <div class="card-title">
+                    <span>{{changes.alias}}</span>
                 </div>
                 <div class="card-content">
-                    <p>Changing drugs is like changing rooms on the titanic.</p>
+                    <p>{{changes.habit}}</p>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="{{url_for('changes', changes_id=changes._id)}}">View Story</a>
                 </div>
             </div>
         </div>
-
+        {% endfor %}
         <div class="col s12 m2">
             <div class="card hoverable">
                 <div class="card-image">
