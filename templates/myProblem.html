@@ -1,6 +1,15 @@
 {% extends 'base.html' %} 
 {% block content %}
-<h3>My Story</h3>
+
+<h3>Tell Us Your Story Anonymously</h3>
+<h4>My Habit/Problem/Addiction</h4>
+<p> Voicing what is really going for us, without fear of being judged or rejected or social services arriving, can release the pain, shame and longing to be understood.
+Human connection is the perfect antidote to many illnesses. Physical, mental, emotional and spiritual illnesses heal if we find a way of expressing matters that are important to us.
+Recent studies show that connection is an effective way to tackle addiction. 
+Perhaps a structured thought process can dip in to the recesses of our minds to lead us out of isolation and the shadows. 
+Beating to the sound of our drum means recognising who we are and who we want to be not what we think others expect us to be. 
+<h3>Self Acceptance starts with tackling habits and addictions that are stunting or ruining our lives.</h3>
+<p>Addiction is a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.</p>
 
 <div class="row">
     <!-- <label><h5>My Problem</h5></label> -->
@@ -21,132 +30,176 @@
                 <option value="9">Attention/Chaos/Drama</option>
                 <option value="10">Physical Self Harm</option>
                 <option value="11">Thinking Harmful Thoughts</option>
-                <option value="12">Fantasy</option>
+                <option value="12">Violence</option>
                 <option value="13">Social Media</option>
                 <option value="14">Gaming</option>
                 <option value="15">Spending</option>
-                <option value="16">horoscopes/psychics</option>
-                <option value="17">chatlines</option>
+                <option value="16">Horoscopes/Psychics</option>
+                <option value="18">Chatlines</option>
+                <option value="19">Fantasy</option>
+                <option value="20">Gossip</option>
+                <option value="21">Materialism/Academia/Image</option>
+                <option value="21">Other</option>
+                
+                
             </select>
         </div>
 
+
         <div class="input-field col s12">
-            <select name="WHERE DO YOU ACT OUT MOST OFTEN">
+            <select name="where">
                 <option value="" disabled selected>WHERE?</option>
-                <option value="1">AT HOME</option>
-                <option value="2">AT SCHOOL</option>
-                <option value="3">AT WORK</option>
-                <option value="4">HOTELS/RESTAURANTS</option>
-                <option value="5">BARS/CLUBS</option>
-                <option value="6">BINGO/CASINO/BETTING SHOPS</option>
-                <option value="7">GYM/SPORTS CLUB</option>
-                <option value="8">CLINICS/HOSPITALS</option>
-                <option value="9">OUTDOORS/PARKS/STREET CORNERS</option>
-                <option value="10">CAR/TRANSPORT</option>
-            </select>
-        </div>
-
-        <div class="input-field col s12">
-            <select>
-                <option value="" disabled selected>WHERE</option>
                 <option value="1">Isolated at home</option>
                 <option value="2">Socially With Friends</option>
                 <option value="3">Socially With Strangers</option>
                 <option value="4">Socially With Family</option>
                 <option value="5">Licensed Premises</option>
-                <option value="6">Casino/betting shop</option>
-                <option value="7">Gym</option>
+                <option value="6">Casino/bingo/betting shop</option>
+                <option value="7">Gym/sports club</option>
                 <option value="8">In bed</option>
                 <option value="9">School</option>
                 <option value="10">In the car/bus/train</option>
-                <option value="11">Outdoors</option>
+                <option value="11">Outdoors/public places</option>
                 <option value="12">Anywhere/Everywhere</option>
                 <option value="13">At Work</option>
             </select>
-            <label>My Problem</label>
+            <label>Places you partake</label>
         </div>
 
         <div class="input-field col s12">
             <select name="when">
                 <option value="" disabled selected>WHEN?</option>
-                <option value="1">EVENINGS</option>
-                <option value="2">WEEKENDS</option>
-                <option value="3">BINGES</option>
-                <option value="4">ALL DAY EVERY DAY</option>
-                <option value="5">DAYTIMES</option>
-                <option value="6">ODD TIMES</option>
+                <option value="1">Evenings</option>
+                <option value="2">Weekends</option>
+                <option value="3">Binges</option>
+                <option value="4">All day every day</option>
+                <option value="5">Daytimes</option>
+                <option value="6">Odd/random times</option>
             </select>
+            <label>Times you partake</label>
         </div>
 
         <div class="input-field col s12">
             <select name="how">
                 <option value="" disabled selected>HOW?</option>
-                <option value="1">ORAL</option>
-                <option value="2">SNIFFED</option>
-                <option value="3">SMOKED</option>
-                <option value="4">INJECTED</option>
-                <option value="5">VISUAL</option>
-                <option value="6">BODILY</option>
-                <option value="7">THINKING/IMAGINATIVELY</option>
-                <option value="8">EQUIPMENT</option>
-                <option value="9">LISTENING</option>
+                <option value="1">Oral/swallowed</option>
+                <option value="2">Sniffed/inhaled</option>
+                <option value="3">Smoked</option>
+                <option value="4">Injected</option>
+                <option value="5">Visual</option>
+                <option value="6">Bodily</option>
+                <option value="7">Thinking/Imaginatively</option>
+                <option value="8">Indirectly/remotely</option>
+                <option value="9">Listening</option>
             </select>
+            <label>How do you injest or otherwise partake?</label>
         </div>
 
         <div class="input-field col s12">
             <select name="why">
                 <option value="" disabled selected>WHY?</option>
-                <option value="1">Alcohol</option>
-                <option value="2">Prescription Drugs</option>
-                <option value="3">Illegal Drugs</option>
-                <option value="4">Food</option>
-                <option value="5">Sex/Porn/Toxic relationships</option>
-                <option value="6">Gambling</option>
-                <option value="7">Exercise</option>
-                <option value="8">Obsession with health</option>
-                <option value="9">Attention/Chaos/Drama</option>
-                <option value="10">Physical Self Harm</option>
-                <option value="11">Thinking Harmful Thoughts</option>
-                <option value="12">Fantasy</option>
-                <option value="13">Social Media</option>
-                <option value="14">Gaming</option>
+                <option value="1">No clear reason</option>
+                <option value="2">Physical illness or pain</option>
+                <option value="3">Social anxiety/phobias</option>
+                <option value="4">Self medicating</option>
+                <option value="5">Grief or loss</option>
+                <option value="6">Loneliness/ isolation</option>
+                <option value="7">Anger/resentment</option>
+                <option value="8">Low self esteem</option>
+                <option value="9">poor self image</option>
+                <option value="10">Rejection/ abandonment</option>
+                <option value="11">Stress/ pressure</option>
+                <option value="12">Mental illness</option>
+                <option value="13">Personality disorder</option>
+                <option value="14">PTSD</option>
             </select>
+            <label>Do you know why?</label>
         </div>
 
         <div class="input-field col s12">
             <select name="WHO">
                 <option value="" disabled selected>WHO?</option>
-                <option value="1">Alcohol</option>
-                <option value="2">Prescription Drugs</option>
-                <option value="3">Illegal Drugs</option>
-                <option value="4">Food</option>
-                <option value="5">Sex/Porn/Toxic relationships</option>
-                <option value="6">Gambling</option>
-                <option value="7">Exercise</option>
-                <option value="8">Obsession with health</option>
-                <option value="9">Attention/Chaos/Drama</option>
-                <option value="10">Physical Self Harm</option>
-                <option value="11">Thinking Harmful Thoughts</option>
-                <option value="12">Fantasy</option>
-                <option value="13">Social Media</option>
-                <option value="14">Gaming</option>
+                <option value="1">Alone</option>
+                <option value="2">With friends</option>
+                <option value="3">With family</option>
+                <option value="4">With acquaintances</option>
+                <option value="5">With strangers</option>
+                <option value="6">With anyone</option>
+
             </select>
+            <label>Who do you partake with?</label>
         </div>
 
         <div class="input-field col s12">
             <select name="WHENEVER">
-                <option value="" disabled selected>WHENEVER-ARE YOU READY?</option>
-                <option value="1">TODAY</option>
-                <option value="2">ON MONDAY</option>
-                <option value="3">NEXT WEEK</option>
-                <option value="4">NEXT MONTH</option>
-                <option value="5">IN THE FUTURE</option>
-                <option value="6">WHEN A PROBLEM HAS GONE AWAY</option>
+                <option value="" disabled selected>WHENEVER?</option>
+                <option value="1">Today</option>
+                <option value="2">On Monday</option>
+                <option value="3">Next week</option>
+                <option value="4">Next month</option>
+                <option value="5">In the FUTURE</option>
+                <option value="6">When your problem has gone away?</option>
             </select>
+            <label>When do you want to stop?</label>
         </div>
-
+                <div class="input-field col s12">
+            <select name="WHEREVER">
+                <option value="" disabled selected>WHEREVER?</option>
+                <option value="1">Anywhere</option>
+                <option value="2">At home independently</option>
+                <option value="3">Supervised home detox</option>
+                <option value="4">Service or therapy</option>
+                <option value="5">Out patient/day patient</option>
+                <option value="6">Residential detox</option>
+                <option value="7">In hospital</option>
+                <option value="8">In prison</option>
+                <option value="9">On holiday</option>
+                <option value="10">With friends</option>
+                <option value="11">No preference/other</option>
+            </select>
+            <label>Where would you prefer to go to stop?</label>
+        </div>
+                <div class="input-field col s12">
+            <select name="WHATEVER">
+                <option value="" disabled selected>WHOEVER?</option>
+                <option value="1">Yourself</option>
+                <option value="2">Your children/grandchildren</option>
+                <option value="3">Your parents</option>
+                <option value="4">Your spouse or partner</option>
+                <option value="5">Your friends</option>
+                <option value="6">Study or work collegues</option>
+            </select>
+            <label>Who do you want to stop for?</label>
+        </div>
+                        <div class="input-field col s12">
+            <select name="HOWEVER">
+                <option value="" disabled selected>HOWEVER?</option>
+                <option value="1">I am too busy</option>
+                <option value="2">I am too anxious/depressed</option>
+                <option value="3">I am too stressed out</option>
+                <option value="4">My problems are insurmountable</option>
+                <option value="5">I may lose my job</option>
+                <option value="6">I will lose my friends</option>
+                <option value="7">My relationship will be over</option>
+            </select>
+            <label>BUT BUT BUT....... </label>
+        </div>
+                        <div class="input-field col s12">
+            <select name="WHATEVER">
+                <option value="" disabled selected>WHATEVER?</option>
+                <option value="1">I don't care</option>
+                <option value="2">I have tried before and given up</option>
+                <option value="3">My life will be/feel worse without my comfort</option>
+                <option value="4">My escape is my only solace</option>
+                <option value="5">I want to die</option>
+                <option value="6">Life is hopeless and pointless</option>
+                <option value="7">Life will be dull</option>
+                <option value="8">My crutch will be gone</option>
+            </select>
+            <label>Your belief of how life will be without your addiction?</label>
+        </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">
+            <button class="btn waves-effect waves-light" type="submit">
             SUBMIT <i class="material-icons right">playlist_add</i>
             </button>
         </div>
