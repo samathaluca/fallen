@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 {% block content %}
-
+<h4>This is how others did it.</h4>
+<h6>Shared, real experience, good and bad</h6>
 
   <ul class="collapsible" data-collapsible="expandable">
     {% for changes in changes %}
@@ -18,70 +19,70 @@
 
         <div class="collapsible-body">
             <span>
-                <strong>How long have you been clean?</strong>- {{changes.start_date}}
+                <strong>When did you stop?</strong>- {{changes.start_date}}
                 <div>
                     <span>
-                        How do you feel? - {{changes.feelings}}
+                        <strong>How did you feel in the beginning?</strong> - {{changes.feelings}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.day1}}
+                        <strong>How did you get through the first day? What helped?</strong>{{changes.day1}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.day2}}
+                        <strong></strong>{{changes.day2}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.day3}}
+                        <strong></strong>{{changes.day3}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.week1}}
+                        <strong>How did you manage the cravings in the first week?</strong>{{changes.week1}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.week2}}
+                        <strong>What ingredients and tools helped you get through the second week?</strong>{{changes.week2}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.week3}}
+                        <strong>Did you feel better or worse by the third week?</strong>{{changes.week3}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.month1}}
+                        <strong>After one month which thoughts, actions and places felt you cope?</strong>{{changes.month1}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.month2}}
+                        <strong>At the end of the second month did you change your job, friendships, place of work/home?</strong>{{changes.month2}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.month3}}
+                        <strong>At the end of the third month did you start to feel any benefits?</strong>{{changes.month3}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.year1}}
+                        <strong>How was your first year's journey after breaking free?</strong>{{changes.year1}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.year2}}
+                        <strong>Did you feel free and had you life changed end of year 2?</strong>{{changes.year2}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        {{changes.year3}}
+                        <strong>Was life beyond your wildest dream by the end of year three or harder?</strong>{{changes.year3}}
                     </span>
                 </div>
             </span>

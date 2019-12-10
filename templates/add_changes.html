@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block content %}
-<h3>Add Changes</h3>
+<h4>How did you do it?</h4>
+<h6>Please share your recovery experience, mistakes and all.</h6>
 <div class="row">
     <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
             <select id="category" name="habit">
-        <option value="" disabled selected>Click here</option>
+        <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
         {% for cat in categories %}
             <option value="{{cat.habit}}">{{cat.habit}}</option>
         {% endfor %}
@@ -21,62 +22,76 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
                 <input id="alias" name="alias" type="text" class="validate">
-                <label for="alias">Alias</label>
+                <label for="alias">Alias - No need for real names.</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">today</i>
                 <input id="start_date" name="start_date" type="text" class="datepicker">
-                <label for="start_date">Start Date</label>
+                <label for="start_date">Start Date- When did you stop?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="feelings" name="feelings" type="text" class="validate">
-                <label for="feelings">How do you feel?</label>
+                <label for="feelings">How did you feel at the beginning?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="day1" name="day1" type="text" class="validate">
-                <label for="day1">Your first day of freedom</label>
+                <label for="day1">How did you get through the first day? What helped? Where did you go?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
                 <input id="day2" name="day2" type="text" class="validate">
-                <label for="day2">Your second day of freedom</label>
+                <label for="day2">How did you get through the second day? What helped? What did you do?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="day3" name="day3" type="text" class="validate">
-                <label for="day3">Your third day of freedom</label>
+                <label for="day3">How did you get through the third day? What helped? Who did you see?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="week1" name="week1" type="text" class="validate">
-                <label for="week1">Your first week of freedom</label>
+                <label for="week1">How did you manage the cravings in the first week?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="week2" name="week2" type="text" class="validate">
-                <label for="week2">Your second week of freedom</label>
+                <label for="week2">What ingredients and tools helped you get through the second week?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="week3" name="week3" type="text" class="validate">
-                <label for="week3">Your third week of freedom</label>
+                <label for="week3">Did you feel better or worse by the third week?</label>
+            </div>
+                        <div class="input-field col s12">
+                <i class="material-icons prefix">mood</i>
+                <input id="month1" name="month1" type="text" class="validate">
+                <label for="month1">After one month which thoughts, actions and places helped you cope?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
+                <input id="month2" name="month2" type="text" class="validate">
+                <label for="month2">At the end of the second month did you change your job, friendships, place of work/home?</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mood</i>
+                <input id="month3" name="month3" type="text" class="validate">
+                <label for="month3">At the end of the third month did you start to feel any benefits?</label>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">mood</i>
                 <input id="year1" name="year1" type="text" class="validate">
-                <label for="year1">Your first year of freedom</label>
+                <label for="year1">How was your first year's journey after breaking free?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="year2" name="year2" type="text" class="validate">
-                <label for="year2">Your second year of freedom</label>
+                <label for="year2">Did you feel free and had your life changed by the end of year 2?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
                 <input id="year3" name="year3" type="text" class="validate">
-                <label for="year3">Your third year of freedom</label>
+                <label for="year3">Was life beyond your wildest dream by the end of year three or harder?</label>
             </div>
             <!-- <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
@@ -101,7 +116,7 @@
             </div>
         </div> -->
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Change Habit
+            <button class="btn waves-effect waves-light" type="submit">Tell us your secrets
                 <i class="material-icons right">playlist_add</i>
             </button>
         </div>

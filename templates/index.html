@@ -2,10 +2,10 @@
 {% extends 'base.html' %}
 {% block content %}
 <container>
-                <div class="col s12 m2">
+                <div class="col s12">
             <div class="card hoverable">
                 <div class="card-image">
-                    <img src="static/images/Eyes.jpg" alt="Girl in a jacket" style="width:100% ;height:450px;">
+                    <img src="static/images/Eyes.jpg" alt="Girl in a jacket" style="width:100% ;height:100%;">
                     <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
                 </div>
                 <div class="card-title">
@@ -117,12 +117,12 @@
                 <h5 class="center">Burnt out?</h5>
         {% for changes in changes %}
         <div class="col s12 m2">
-            <div class="card hoverable">
+            <div class="card hoverable" style="width:100% ;height:335px;">
                 <div class="card-image">
                     <img src="static/images/{{ changes.habit }}.jpg">
-                </div>
-                <div class="card-title">
-                    <span>{{changes.alias}}</span>
+                    <div class="card-title">
+                        <span>{{changes.alias}}</span>
+                    </div>
                 </div>
                 <div class="card-content">
                     <p>{{changes.habit}}</p>
@@ -133,171 +133,7 @@
             </div>
         </div>
         {% endfor %}
-        <div class="col s12 m2">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/CrushSquare.jpg">
-                    <span class="card-title">Card Title</span>
-                </div>
-                <div class="card-content">
-                    <p>Changing drugs is like changing rooms on the titanic.</p>
-                </div>
-                <div class="card-action">
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
-        </div>
 
-    <div class="col s12 m2">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="static/images/FacelessSquare.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Changing drugs is like changing rooms on the titanic.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-        <div class="col s12 m2">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="static/images/CloseUpSquare.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Changing drugs is like changing rooms on the titanic.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    <div class="col s12 m2">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="static/images/CrackedSquare.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Changing drugs is like changing rooms on the titanic.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-
-    
-
-   
-    <div class="col s12 m2">
-      <div class="card hoverable">
-        <div class="card-image">
-          <img src="static/images/CultModelSquare.jpg">
-            <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>Changing drugs is like changing rooms on the titanic.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
- 
-        <div class="col s12 m3">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/HijabSquare.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
-                </div>
-                <div class="card-title">
-                    <span>Area</span>
-                </div>
-                <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col s12 m3">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/HiddenSquare.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
-                </div>
-                <div class="card-title">
-                    <span>Area</span>
-                </div>
-                <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
-                </div>
-            </div>
-
-        </div>
-
-                <div class="col s12 m3">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/HoodieSquare.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
-                </div>
-                <div class="card-title">
-                    <span>Area</span>
-                </div>
-                <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="col s12 m3">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/CrushSquare.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
-                </div>
-                <div class="card-title">
-                    <span>Area</span>
-                </div>
-                <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
-                </div>
-            </div>
-
-        </div>
-
-        <section>
-        
-        <div class="col s12 m6 lg3">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/Matrix.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
-                </div>
-                <div class="card-title">
-                    <span>Area</span>
-                </div>
-                <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
-                    
-                </div>
-            </div>
-
-        </div>
-        
-        </section>
             
         </div>
 
