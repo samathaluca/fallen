@@ -1,41 +1,55 @@
 
 {% extends 'base.html' %}
 {% block content %}
-<container>
+<!-- Eye catching header -->
+<section>
+<div class="container">
+
                 <div class="col s12">
+                            <div class="card-title">
+                    <h5><strong>Waking up to the truth and seeing the reality of your life is when change becomes possible.</strong></h5>
+                </div>
             <div class="card hoverable">
                 <div class="card-image">
-                    <img src="static/images/Eyes.jpg" alt="Girl in a jacket" style="width:100% ;height:100%;">
+                    <img src="static/images/Eyes.jpg" alt="Fired up eyes" style="width:100%;height:100%;">
                     <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
                 </div>
-                <div class="card-title">
-                    <span>Can you see Reality?</span>
-                </div>
+
                 <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View the truth</a>
+                    <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Search, read and gain insight</a>
             </div>
         </div>
-</container>
+    </div>
+    </div>
 
-  <div class="col s12 m7 blue-grey-text">
-    <h2 class="header">Managing emotions</h2>
+<!-- Letting go image of burning hand and text -->
+    <div class="container">
+    <div class="row">
+
+  <div class="col s12 m12 blue-grey-text">
+    <h2 class="header">Managing emotions is key</h2>
     <div class="card horizontal">
       <div class="card-image">
         <img src="static/images/resentment.jpg">
       </div>
       <div class="card-stacked">
         <div class="card-content">
-          <h3>Drop the hot coal</h3>
-          <p>Anger, Blame and Resentment all scorch yourself.</p>
-          <h4>Apparently "pain is inevitable but suffering is a choice"</h4>
+          <h4>Drop the hot coal</h4>
+          <h5>Feeling Anger, Blame and Resentment all scorch you from the inside. <br>"Pain is inevitable but suffering is a choice"</h5>
         </div>
+        
         <div class="card-action">
-          <a href="#">This is a link</a>
+          <a href="https://dontjudgeyourlife.com/2016/10/07/resentment-how-it-destroys-your-mind-and-body-and-how-to-fix-it/" target="_blank">Ruminating and holding on to bad thoughts can retraumatize you and ruin your health </a>
         </div>
       </div>
-    </div>
-  </div>
-<div class="row tp-search">
+</container>
+</section>
+
+    <!-- </div>
+  </div> -->
+
+<!-- search section probably not necessary using filters instead -->
+<!-- <div class="row tp-search">
     <div class="col hide-item-medium l3">
         <span class="v-align site-logo"><i class="small material-icons nav-icon">we_do_recover</i>Recovery Recipe</span>
     </div>
@@ -47,10 +61,10 @@
                 <button class="btn waves-effect waves-light search-btn" type="submit">GO<i class="material-icons right">send</i></button>
             </div>
         </form>
-    </div>
+    </div> -->
 </div>
           
-<!-- Page Layout here -->
+<!-- Filter stories section -->
 
 <main class="row" style="background-color:lightgrey;">
     <div class="col s12 m3 hide-on-small-only">
@@ -74,49 +88,38 @@
             </li>
         </ul>
 
-        <!-- <ul class="collapsible">
-            <li class="active">
-                <div class="collapsible-header">Tried it<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
-                <div class="collapsible-body">
-                    <form method="POST" action="/filtered_search">
-                        <select multiple name="recovery_labels">
-                              <option value="" disabled selected>Choose your options</option>
-                              <option value="Medication">Medication</option>
-                              <option value="12-steps">12-steps</option>
-                              <option value="Counselling">Counselling</option>
-                              <option value="Professionals">Professionals</option>
-                              <option value="day treatment">day treatment</option>
-                              <option value="residential">residential</option>
-                            </select>
-                        <button class="btn waves-effect waves-light filter-btn" type="submit">Tried it</button>
-                    </form>
-                </div>
-            </li>
-        </ul> -->
-    </div>
 
+    </div>
+<!-- tell your story banner and button -->
     <div class="col s12 m8 l9">
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
-                <h3 class="header center blue-grey-text">HABIT OR ADDICTION - Get out of the fire</h3>
+                <h4 class="header center blue-grey-text">HABIT OR ADDICTION <br>Battered and bruised- Leave the fight. <br>Burnt- Get out of the fire</h4>
                     <div class="row center">
                         <h5 class="header col s12 light">To be human is to grow and accept change or wither and die</h5>
                     </div>
                         <div class="row center">
-                            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
+                            <a href="{{ url_for('myProblem') }}" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
                         </div>
                     </div>
             </div>
         </div>
 
 </main>
+<!-- Lots of recovery stories stored in MongoDB -->
+
+    <div class="container">
     <div class="row">
-        <div class="col s12 m12">
+
+
+    <div class="row">
+        <div class="col s12">
             <div class="heading-block">
-                <h2 class="center blue-grey-text">Hold on to your seat</h2>
-                <h5 class="center">Burnt out?</h5>
+                <h3 class="center blue-grey-text">Learning from others</h3>
+                <h4 class="center blue-grey-text">Monkey see, Monkey do</h4>
+                <h5 class="center">Open your mind as wide as it will go</h5>
         {% for changes in changes %}
-        <div class="col s12 m2">
+        <div class="col s12 m3">
             <div class="card hoverable" style="width:100% ;height:335px;">
                 <div class="card-image">
                     <img src="static/images/{{ changes.habit }}.jpg">
@@ -143,21 +146,19 @@
 
     </div>
 
-    <div class="row">
-    <div class="col s12 m6 l3"><p>s12 m6 l3</p>
-     <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Like teaching a pig to sing</span>
-          <p>You get frustrated and the pig gets frustrated.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
+       </div>
+
     </div>
-  </div></div>
-    <div class="col s12 m6 l3"><p>s12 m6 l3</p>
+</div>
+
+<!-- links and negative feelings awareness -->
+
+<section>
+<div class="container">
+<h4>Untwisting thinking</h4>
+<h5>Feelings that risk relapse</h5>
+  </div>
+    <div class="col s12 m6 l3"><h6>Frustration</h6>
      <div class="card blue-grey darken-1">
         <div class="card-content white-text">
           <span class="card-title">Like teaching a pig to sing</span>
@@ -197,9 +198,11 @@
     </div>
   </div></div>
   </div>
+  </div>
+  </div>
+</section>
 
-
-   <div class="row">
+   <!-- <div class="row">
 
       <div class="col s4">
       
@@ -253,7 +256,7 @@
           <a href="#">This is a link</a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
         <!-- Promo Content 3 goes here -->
       </div>
@@ -305,7 +308,7 @@
         <div class="col s12 m4">
           <div class="icon-block">
             <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Burnt out?</h5>
+            <h5 class="center">Frazzled?</h5>
 
             <p class="light">Lack of support and direction or family/socialies pressure to be soemthing we are not can literally fry our brains. Nerve pathways that fire togther will wire together. In order to stop behaviours or substance abuse that is shrinking our lives in a pattern or self destruction can feel like a one way track. IT IS NOT. Millions of people have walked through the pain and withdrawal and reclaimed their lives.  </p>
           </div>
@@ -336,22 +339,22 @@
     </div>
     <br><br>
   </div>
-<a class="waves-effect waves-light btn-large">Button</a>
+<!-- <a class="waves-effect waves-light btn-large">Button</a>
 <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
-<a class="waves-effect waves-light btn-large blue"><i class="material-icons right">cloud</i>button</a>
+<a class="waves-effect waves-light btn-large blue"><i class="material-icons right">cloud</i>button</a> -->
 
 
         <div class="col s12 m2">
             <div class="card hoverable">
                 <div class="card-image">
-                    <img src="static/images/CrushSquare.jpg">
+                    <img src="static/images/WordArtSquare.jpg">
                     <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
                 </div>
                 <div class="card-title">
-                    <span>Area</span>
+                    <span><strong>Find the Courage change.</strong> Start by replacing negative thinking with an image of yourself next year. Maybe free, laughing and happy</span>
                 </div>
                 <div class="card-action">
-                    <a href="/recipe/5c76b21c7ef27016cd5f5056">View Reicpe</a>
+                    <a href="https://www.smartrecovery.org/smart-articles/core-beliefs/">Morph the outdated beliefs about yourself, the world and others</a>
             </div>
         </div>
 
