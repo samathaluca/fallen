@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- 1. Generating the link to add to the story cards on the homepage: -->
+
+<div>
+<!-- .. The story title and description -- you already have these -->
+    <a href="{{url_for('storyDetail', changes_id=changes._id)}}">View Story</a>
+<!-- </div> -->
+
+
+<div class="col m5 img-container section">
+            <img class="responsive-img" src="https://www.edamam.com/web-img/e42/e42f9119813e890af34c259785ae1cfb.jpg">
+            <p class="center-align labels">36 People have made this.</p>
+            <div class="btn-centre"><a id="i-made-it" href="/i-made-it/5c76ae457ef270150e390b9a" class="waves-effect waves-light btn btn-style"><i class="material-icons left i-made-it-icon">favorite</i>I made this</a></div>
+        </div>
+    
+<img src="static/images/Other.jpg">
+
+
+ <div class="divider"></div>
+  <div class="section">
+
+
+<img src="static/images/{{ changes.habit }}.jpg" width="120" height="90" />
+
+    <h5>{{changes.alias}}'s Story Battling with {{changes.habit}}</h5>
+    <p>Since {{changes.start_date}}</p>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h5>Section 2</h5>
+    <p>Stuff</p>
+  </div>
+  <div class="divider"></div>
+  <div class="section">
+    <h5>Section 3</h5>
+    <p>Stuff</p>
+  </div>
+
+
+
+
+{% endblock %}

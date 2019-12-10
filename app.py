@@ -64,6 +64,25 @@ def delete_changes(changes_id):
     mongo.db.changes.remove({'_id': ObjectId(changes_id)})
     return redirect(url_for('changes'))
 
+@app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
+def storyDetail(changes_id):
+    print(changes_id)
+#   """
+#   Given story ID get a specific user story.
+#   """
+# Render HTML page for 1 document, pulled from the database.
+    changes = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
+    return render_template('storyDetail.html', changes=changes)
+                #   <any other variables you want to pass on to template>)
+
+# def create_story():
+  # Do whatever you're doing so far to insert a story
+  # Saving a story to database should return an object with the story id in an attribute
+  # called inserted_id. See https://www.w3schools.com/python/python_mongodb_insert.asp
+
+    # new_story = mongo.db.changes.insert_one(changes)
+    # story_id = new_story.inserted_id
+    # return redirect(url_for('storyDetail', changes_id=changes_id))
 
 @app.route('/firstSteps')
 def firstSteps():
