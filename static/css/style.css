@@ -54,6 +54,21 @@ p {
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #fist {
+    border-radius: 8px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #fist2 {
+    border-radius: 8px;
+    display: none;
+  }
+}
+
+
 .icon-block {
   padding: 0 15px;
 }
@@ -63,4 +78,8 @@ p {
 
 footer.page-footer {
   margin: 0;
+}
+
+#shadow {
+  text-shadow: 1px 1px 2px #000000;
 }
