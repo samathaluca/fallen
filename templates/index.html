@@ -89,19 +89,19 @@
     <div class="col s12 m3 hide-on-small-only">
         <ul class="collapsible">
             <li class="active">
-                <div class="collapsible-header">Bad Habits<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
+                <div class="collapsible-header">How have others stopped?<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
                 <div class="collapsible-body">
                     <form action="{{ url_for('changes') }}" method="POST"> <!-- eventually should be url for 'filter' when working -->
                         <div class="input-field col s12">
                             <select id="habit" name="habit">
-                        <option value="" disabled selected>Choose your habit</option>
+                        <option value="" disabled selected>Choose your habit or addiction</option>
                         {% for cat in categories %}
                             <option value="{{cat.habit}}">{{cat.habit}}</option>
                         {% endfor %}
                             </select>
                         </div>
 
-                        <button class="btn waves-effect waves-light filter-btn" type="submit">So they say</button>
+                        <button class="btn waves-effect waves-light filter-btn" type="submit" >Recovery Recipes</button>
                     </form>
                     
                     
@@ -121,10 +121,10 @@
                     <div class="row center">
                         <h5 class="header col s12 light">To be human is to grow and accept change or wither and die</h5>
                     </div>
-                        <div class="row center">
+                    <div class="row center">
                             <a href="{{ url_for('myProblem') }}" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
-                        </div>
                     </div>
+                </div>
             </div>
         </div>
 
@@ -263,133 +263,7 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Like teaching a pig to sing</span>
-                        <p>You get frustrated and the pig gets frustrated.</p>
-                    </div>
-                <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
-                </div>
-            </div>
     
-  </div>
-    <div class="col s12 m6 l3"><p>s12 m6 l3</p>
-     <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Like teaching a pig to sing</span>
-          <p>You get frustrated and the pig gets frustrated.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div></div>
-    <div class="col s12 m6 l3"><p>s12 m6 l3</p>
-     <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Like teaching a pig to sing</span>
-          <p>You get frustrated and the pig gets frustrated.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div></div> -->
-  </div>
-  </div>
-  </div>
-</section>
-
-   <!-- <div class="row">
-
-      <div class="col s4">
-      
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Like teaching a pig to sing</span>
-          <p>You get frustrated and the pig gets frustrated.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-        Promo Content 1 goes here
-      </div>
-      <div class="col s4">
-
-  
-        
-      </div>
-      <div class="col s4">
-
-      
-  <div class="row">
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-1">
-        <div class="card-content white-text">
-          <span class="card-title">Monkey see, Monkey do</span>
-          <p>Monkey Wee, Monkey Poo- Like listening to a road sign.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div> -->
-  <!-- </div>
-    
-      </div>
-
-    </div>
-    <div class="col s12 m9">
-
-    <div class="row">
-    <div class="col s12 m3">
-      <div class="card blue-grey darken-1">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content  white-text">
-          <p style="text-align:center;"> I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-    <div class="col s12 m6">
-      <div class="card blue-grey darken-9">
-        <div class="card-image">
-          <img src="images/sample-1.jpg">
-          <span class="card-title">Card Title</span>
-        </div>
-        <div class="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div> -->
-      
-    <div class="col s12 m9">    
- 
-
-  <div class="container">
-    <div class="section">
 
       <!--   Icon Section   -->
       <div class="row">
@@ -425,45 +299,39 @@
       </div>
 
     </div>
-    <br><br>
-  </div>
+
+</section>
+<div class="col s12 m2">
+    <div class="card hoverable">
+        <div class="card-image">
+            <img src="static/images/WordArtSquare.jpg">
+        </div>
+        <div class="card-title">
+            <span><strong>Find the Courage change.</strong> Start by replacing negative thinking with an image of yourself next year. Maybe free, laughing and happy</span>
+        </div>
+        <div class="card-action">
+            <a href="https://www.smartrecovery.org/smart-articles/core-beliefs/">Morph the outdated beliefs about yourself, the world and others</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
 <!-- <a class="waves-effect waves-light btn-large">Button</a>
 <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
 <a class="waves-effect waves-light btn-large blue"><i class="material-icons right">cloud</i>button</a> -->
-
-
-        <div class="col s12 m2">
-            <div class="card hoverable">
-                <div class="card-image">
-                    <img src="static/images/WordArtSquare.jpg">
-                    
-                </div>
-                <div class="card-title">
-                    <span><strong>Find the Courage change.</strong> Start by replacing negative thinking with an image of yourself next year. Maybe free, laughing and happy</span>
-                </div>
-                <div class="card-action">
-                    <a href="https://www.smartrecovery.org/smart-articles/core-beliefs/">Morph the outdated beliefs about yourself, the world and others</a>
-            </div>
+<div class="col s12 m2">
+    <div class="card hoverable">
+        <div class="card-image">
+            <img src="static/images/WordArtSquare.jpg">
         </div>
+        <div class="card-title">
+            <span><strong>Find the Courage change.</strong> Start by replacing negative thinking with an image of yourself next year. Maybe free, laughing and happy</span>
+        </div>
+        <div class="card-action">
+            <a href="https://www.smartrecovery.org/smart-articles/core-beliefs/">Morph the outdated beliefs about yourself, the world and others</a>
+        </div>
+    </div>
+</div>
 
-<!-- <main class="row" style="background-color:lightgrey;">
-    <div class="col s12 m3 hide-on-small-only">
-        <ul class="collapsible">
-            <li class="active">
-                <div class="collapsible-header">Bad Habits<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
-                <div class="collapsible-body"> -->
-                    <form action="{{ url_for('changes') }}" method="POST"> <!-- eventually should be url for 'filter' when working -->
-                        <div class="input-field col s12">
-                            <select id="habit" name="habit">
-                        <option value="" disabled selected>Choose your habit</option>
-                        {% for cat in categories %}
-                            <option value="{{cat.habit}}">{{cat.habit}}</option>
-                        {% endfor %}
-                            </select>
-                        </div>
 
-                        <button class="btn waves-effect waves-light filter-btn" type="submit">So they say</button>
-                    </form>
 
         
-  {% endblock %}

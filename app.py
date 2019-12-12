@@ -69,7 +69,20 @@ def changes():
         # Did we get results?  Lets check by rendering them
         return render_template('changes.html', changes=changes)
 
-
+# @app.route('/deleteButton', methods=['GET', 'POST'])
+# def deleteButton():
+#     # gets all Changes if method is a GET
+#     if request.method == 'GET':
+#         return render_template('deleteButton.html', changes=mongo.db.changes.find())
+#         # if we have a POST, lets use the form we posted
+#     else:
+#         #Let check if we are able to get the habit - habit is the name of the field
+#         habit=(request.form.get("habit"))
+#         print(habit)
+#         #  Cool! We found the value!  Now lets search
+#         changes = mongo.db.changes.find({"habit":habit})
+#         # Did we get results?  Lets check by rendering them
+#         return render_template('deleteButton.html', changes=changes)
 
 
 
@@ -77,9 +90,9 @@ def changes():
 # In the GET
 # myProblem just changes to changes.  Its the exact same bit of logic. 
 
-# @app.route('/changes')
-# def changes():
-#     return render_template('changes.html', changes=mongo.db.changes.find())
+@app.route('/deleteButton')
+def deleteButton():
+    return render_template('deleteButton.html', changes=mongo.db.changes.find())
 
 @app.route('/add_changes')
 def add_changes():
@@ -106,7 +119,11 @@ def update_changes(changes_id):
         'alias':request.form.get('alias'),
         'habit':request.form.get('habit'),
         'start_date':request.form.get('start_date'),
+        'whyStop':request.form.get('whyStop'),
+        'whatStop':request.form.get('whatStop'),
         'feelings':request.form.get('feelings'),
+        'recipe':request.form.get('recipe'),
+        'ingredients':request.form.get('ingredients'),
         'day1':request.form.get('day1'),
         'day2':request.form.get('day2'),
         'day3':request.form.get('day3'),

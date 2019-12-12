@@ -1,0 +1,26 @@
+  <nav>
+    <div class="nav-wrapper blue-grey darken-1">
+      <a href="{{ url_for('index') }}" class="brand-logo pink-text"><strong>Home</strong></a>
+      
+      <!-- <a href="{{ url_for('static', filename='images/logo/favicon.ico') }}" class="brand-logo">Logo</a> -->
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="white-text" href="{{ url_for('firstSteps') }}">First Steps</a></li>
+        <li><a class="white-text" href="{{ url_for('myProblem') }}">Tell Your Story</a></li>
+        <li><a class="white-text" href="{{ url_for('changes') }}">Recovery stories</a></li>
+        <li><a class="white-text" href= "{{ url_for('add_changes') }}">Over 12 months recovery</a></li>
+        <li><a class="white-text" href="{{ url_for('tasks') }}">Diary</a></li>
+        <li><a class="white-text" href="{{ url_for('nineMinutes') }}">Notice your life</a></li>
+     </ul>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="{{ url_for('firstSteps') }}">First Steps</a></li>
+    <li><a href="{{ url_for('myProblem') }}">All About You</a></li>
+    <li><a href="{{ url_for('changes') }}">changes</a></li>
+    <li><a href="{{ url_for('add_changes') }}">Over 12 months recovery</a></li>
+    <li><a href="{{ url_for('tasks') }}">Diary</a></li>
+    <li><a href="{{ url_for('nineMinutes') }}">Notice your life</a></li>
+</ul>
+   
