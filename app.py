@@ -14,8 +14,26 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
+    # if request.method == "POST":
+        # changes = mongo.db.changes.find({'habit': habit})
+        # return redirect(url_for('changes', changes=changes))
     changes=mongo.db.changes.find()
     return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
+
+ ###################################################### this is the original / old one ... new one below
+# @app.route('/filter/<changes_id>', methods=['GET'])
+# def filter(changes_id):
+#     changes = mongo.db.changes.find_one({'_id': habit_id})
+#     return render_template('index.html', changes=changes)
+
+
+#################################### this is the one we're working on, so keep this for now
+# @app.route('/filter/<habit>', methods=['POST'])
+# def filter(habit):
+#     changes = mongo.db.changes.find({'habit': habit})
+#     return redirect(url_for('changes', changes=changes))
+
+
 
 @app.route('/changes')
 def changes():
@@ -64,6 +82,8 @@ def delete_changes(changes_id):
     mongo.db.changes.remove({'_id': ObjectId(changes_id)})
     return redirect(url_for('changes'))
 
+
+
 @app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
 def storyDetail(changes_id):
     print(changes_id)
@@ -88,6 +108,9 @@ def storyDetail(changes_id):
 def firstSteps():
     return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
 
+@app.route('/imageTest')
+def imageTest():
+    return render_template('imageTest.html')
 
 @app.route('/myProblem', methods=['GET', 'POST'])
 def myProblem():

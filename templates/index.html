@@ -6,29 +6,30 @@
 <div class="row">
     <div class="col s12">
         <div class="card-title">
-            <h5><strong>Waking up to the truth and seeing the reality of your life is when change becomes possible.</strong></h5>
+            <!-- <h5><strong>Waking up to the truth and seeing the reality of your life is when change becomes possible.</strong></h5> -->
         </div>
         <div class="card hoverable">
             <div class="card-image">
-                <img src="static/images/FryingPan.png" alt="Fired up eyes" style="width:100%;height:100%;">
-                <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
+                <img src="static/images/FryingPan.png" alt="Recovery Wok" style="width:100%;height:100%;">
+               
             </div>
             <div class="card-action">
-                <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Search, read and gain insight</a>
+                <h3>Recipes for Recovery</h3>
+                <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Recognising an Addiction Problem</a>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Letting go image of burning hand and text -->
+<!-- Letting go image of burning hand and text Version for Desktop-->
     <div class="row">
         <!-- <div class="col s12 m6"> -->
             <!-- <img src="static/images/resentment.jpg"> -->
             <div class="col s12 m12 blue-grey-text">
-                <h2 class="header">Managing emotions is key</h2>
+                <h3 class="header">Managing emotions is key</h3>
                 <div id="fist" class="card horizontal">
                     <div class="card-image">
-                        <img class="responsive-img" src="static/images/resentment.jpg">
+                        <img class="responsive-img" src="static/images/resentment.jpg" alt="Burning Fist">
                     </div>
                     <div class="card-stacked">
                         <div class="card-content">
@@ -43,11 +44,12 @@
             </div>
         <!-- </div> -->
     </div>
+    <!-- Letting go image of burning hand and text Version for mobiles-->
 <div class="row">
     <div class="col s12 m12">
       <div id='fist2' class="card">
         <div class="card-image">
-          <img src="static/images/resentment.jpg">
+          <img src="static/images/resentment.jpg"  alt="Burning Fist">
           <span class="card-title"><h4>Drop the hot coal</h4></span>
         </div>
         <div class="card-content">
@@ -89,9 +91,9 @@
             <li class="active">
                 <div class="collapsible-header">Bad Habits<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
                 <div class="collapsible-body">
-                    <form action="{{ url_for('insert_changes') }}" method="POST">
+                    <form action="{{ url_for('changes') }}" method="POST"> <!-- eventually should be url for 'filter' when working -->
                         <div class="input-field col s12">
-                            <select multiple id="category" name="habit">
+                            <select id="habit" name="habit">
                         <option value="" disabled selected>Choose your habit</option>
                         {% for cat in categories %}
                             <option value="{{cat.habit}}">{{cat.habit}}</option>
@@ -101,13 +103,17 @@
 
                         <button class="btn waves-effect waves-light filter-btn" type="submit">So they say</button>
                     </form>
+                    
+                    
+                    
+
                 </div>
             </li>
         </ul>
 
 
     </div>
-<!-- tell your story banner and button -->
+<!-- tell your story banner and button linking to Myproblem -->
     <div class="col s12 m8 l9">
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
@@ -193,8 +199,8 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Like teaching a pig to sing</span>
-                        <p>You get frustrated and the pig gets frustrated.</p>
+                        <span class="card-title">On using different drugs to manage the problem</span>
+                        <p>Changing drugs is like changing rooms on the titanic.</p>
                     </div>
                 <div class="card-action">
                    <a href="#">This is a link</a>
@@ -206,8 +212,8 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Like teaching a pig to sing</span>
-                        <p>You get frustrated and the pig gets frustrated.</p>
+                        <span class="card-title">Terminal Uniqueness</span>
+                        <p>The belief that we are special and different, often leading to isolation and death.</p>
                     </div>
                 <div class="card-action">
                    <a href="#">This is a link</a>
@@ -219,8 +225,8 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Like teaching a pig to sing</span>
-                        <p>You get frustrated and the pig gets frustrated.</p>
+                        <span class="card-title">BUT BUT BUT</span>
+                        <p>Everything you say before the BUT is nonsense.</p>
                     </div>
                 <div class="card-action">
                    <a href="#">This is a link</a>
@@ -232,8 +238,8 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Like teaching a pig to sing</span>
-                        <p>You get frustrated and the pig gets frustrated.</p>
+                        <span class="card-title">Human being or Human doing?</span>
+                        <p>Running running running- where the ???? to?.</p>
                     </div>
                 <div class="card-action">
                    <a href="#">This is a link</a>
@@ -430,7 +436,7 @@
             <div class="card hoverable">
                 <div class="card-image">
                     <img src="static/images/WordArtSquare.jpg">
-                    <!-- <<img src="{{ url_for('static', filename='images/CrushSquare.jpg') }}" alt="crushed image">> -->
+                    
                 </div>
                 <div class="card-title">
                     <span><strong>Find the Courage change.</strong> Start by replacing negative thinking with an image of yourself next year. Maybe free, laughing and happy</span>
@@ -440,7 +446,24 @@
             </div>
         </div>
 
+<!-- <main class="row" style="background-color:lightgrey;">
+    <div class="col s12 m3 hide-on-small-only">
+        <ul class="collapsible">
+            <li class="active">
+                <div class="collapsible-header">Bad Habits<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
+                <div class="collapsible-body"> -->
+                    <form action="{{ url_for('changes') }}" method="POST"> <!-- eventually should be url for 'filter' when working -->
+                        <div class="input-field col s12">
+                            <select id="habit" name="habit">
+                        <option value="" disabled selected>Choose your habit</option>
+                        {% for cat in categories %}
+                            <option value="{{cat.habit}}">{{cat.habit}}</option>
+                        {% endfor %}
+                            </select>
+                        </div>
 
+                        <button class="btn waves-effect waves-light filter-btn" type="submit">So they say</button>
+                    </form>
 
         
   {% endblock %}
