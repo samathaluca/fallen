@@ -23,7 +23,9 @@ This app will filter out backgrounds and differences that are of no relevance to
 Users will be asked  'TELL YOU STORY'. A simple form guides the user through a  series of questions using options to make the process effortless.
 Depending on how the questions are answered the user is presented with a series of stories from the data base written by addicts who are 12 months free from dependence. 
 
-I would almost describe it as a recovery recipe. 
+Users can use a dropdown to filter and find stories written by people with a similar problem habit or addiction to their own. 
+
+Thes stories or recovery recipies, will be gathered and inputted by the website developers initally but the option for additional stries to be added by clicking  . 
 User provides the ingredients and this app presents the method to get to their tailored recovery recipe from the database. 
 
 
@@ -49,6 +51,9 @@ User provides the ingredients and this app presents the method to get to their t
 7. GITPOD IDE 
 8. HEROKU deployment
 9. GITHUB version control.
+<!-- 10. FAVICON
+11. GIMP
+12. PHOTOSHOP -->
 
 
 ### Testing
