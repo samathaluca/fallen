@@ -28,16 +28,58 @@ def index():
 
 
 #################################### this is the one we're working on, so keep this for now
+
 # @app.route('/filter/<habit>', methods=['POST'])
 # def filter(habit):
 #     changes = mongo.db.changes.find({'habit': habit})
-#     return redirect(url_for('changes', changes=changes))
+#     return redirect('changes', changes=changes)
+
+
+# #################   ADVISED
+# @app.route('/filter/<habit>', methods=['POST'])
+# def filter(habit):
+#     changes = mongo.db.changes.find({'habit': habit})
+#     return rendertemplate('changes.html', changes=changes)
 
 
 
-@app.route('/changes')
+# 
+# @app.route('/habit<habit>', methods=['GET', 'POST'])
+# def habit():
+#     # gets all Changes
+#     if request.method == 'GET':
+#         return render_template('changes.html', myProblem=mongo.db.changes.find())
+#     else:
+#         getChanges = mongo.db.changes
+#         myProblem = mongo.db.changes.find()
+#         return redirect(url_for('index'))
+
+@app.route('/changes', methods=['GET', 'POST'])
 def changes():
-    return render_template('changes.html', changes=mongo.db.changes.find())
+    # gets all Changes if method is a GET
+    if request.method == 'GET':
+        return render_template('changes.html', changes=mongo.db.changes.find())
+        # if we have a POST, lets use the form we posted
+    else:
+        #Let check if we are able to get the habit - habit is the name of the field
+        habit=(request.form.get("habit"))
+        print(habit)
+        #  Cool! We found the value!  Now lets search
+        changes = mongo.db.changes.find({"habit":habit})
+        # Did we get results?  Lets check by rendering them
+        return render_template('changes.html', changes=changes)
+
+
+
+
+
+
+# In the GET
+# myProblem just changes to changes.  Its the exact same bit of logic. 
+
+# @app.route('/changes')
+# def changes():
+#     return render_template('changes.html', changes=mongo.db.changes.find())
 
 @app.route('/add_changes')
 def add_changes():

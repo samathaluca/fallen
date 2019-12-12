@@ -1,4 +1,4 @@
-# Fallen
+# CHANGE IS GOOD
 
 ## App to help connect addicts who want to recover. 
 
@@ -8,7 +8,7 @@ The belief that you are alone and the only one to have suffered the same experie
 Addiction presents with the symptom of a feeling uniqueness, a sense of being special and different. Both a sense of grandiosity  and the flip side of pitifully low self esteem are often present. 
 If this is not tackled this pattern of thinking will end in escalating drug use inevitably leading to prison, hospitalisation, institutions or death by suicide, accident or violence.
 
-This app is designed to treat the thinking that results in the feelings that ultimately lead to loss of hope and self destructive behaviours.
+This app is designed to be used as a tool to treat the thinking that results in the feelings that ultimately lead to loss of hope and self destructive behaviours.
 The aim is to present the user with stories similar to their own from people who have recovered from addiction.
 
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers may cause suicide and death in another.
@@ -20,7 +20,7 @@ This app will filter out backgrounds and differences that are of no relevance to
 
 ## How to use
 
-Users will be asked a series of questions.
+Users will be asked  'TELL YOU STORY'. A simple form guides the user through a  series of questions using options to make the process effortless.
 Depending on how the questions are answered the user is presented with a series of stories from the data base written by addicts who are 12 months free from dependence. 
 
 I would almost describe it as a recovery recipe. 
