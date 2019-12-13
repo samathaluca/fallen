@@ -21,13 +21,17 @@ Addiction presents with the symptom of a feeling uniqueness, a sense of being sp
 If this is not tackled this pattern of thinking will end in escalating drug use inevitably leading to prison, hospitalisation, institutions or death by suicide, accident or violence.
 
 This project will 
-1. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction
-2. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societital influences and . Many other factors can easily be explored by presenting them  within the questionnaires to gather facts of statistical significance if many stories can be gathered. 
+1. Offer an environment where isolated people suffering with addiction issues can reach out. 
+2. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction
+3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societital influences, family history and environment. Many other factors can easily be explored by presenting them  within the questionnaires to gather facts of statistical significance. 
+
+
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers may cause suicide and death in another.
 As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence.
 Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11. 
 
-This app will filter out backgrounds and differences that are of no relevance to the user. presenting them with similarities and not differences amongst the success stories.
+This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
+Presenting the user with similarities and not differences amongst the success stories.
 
 
 ## How to use
