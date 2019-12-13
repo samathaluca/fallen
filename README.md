@@ -2,15 +2,27 @@
 
 ## App to help connect addicts who want to recover. 
 
+The aim of this project was to create an app which presents the user with stories similar to their own from people who have found a solution.
+The idea came from the milestone3 project guideline which suggested we make an app which stores recipes. 
+The automatic thought is to develop an app which stores cooking recipes but the term recipe can apply to other structured methods.
+
+Having myself volunteered helping alcoholics, drug addicts and sex/love addicts for alomst 20 years, I know that the current treatments in place do not work for the majority of people.
+New approaches are necessary and the gathering of data is currently not independent. Many of the current recovery models have been set up to support men. In particular male offernders.
+The fear of social services being involved prevents many mothers from seeking the help they desperately need. This is believed to contribute to the 
+fact that momen may be more likely to go to A&E or die from overdose or other effects of certain substances.
+The difficulty women with children have attending 12 step meetings or other recovery programmes reliably means fresh methods need to be devloped to support these women.
+Not neglecting men, many of whom state that their social anxiety prevents them in engaging with currently favoured treatment programs which are geared towards group therapy and effectively revealing all your past and inner most thoughts to an audience.
+
+
 Latest studies reveal that addiction may be the direct result of lack of human connection. 
 Addiction is a desperate and lonely place.
 The belief that you are alone and the only one to have suffered the same experiences is the final song of many addicts who tragically die. Often leaving young children to the social care system. 
 Addiction presents with the symptom of a feeling uniqueness, a sense of being special and different. Both a sense of grandiosity  and the flip side of pitifully low self esteem are often present. 
 If this is not tackled this pattern of thinking will end in escalating drug use inevitably leading to prison, hospitalisation, institutions or death by suicide, accident or violence.
 
-This app is designed to be used as a tool to treat the thinking that results in the feelings that ultimately lead to loss of hope and self destructive behaviours.
-The aim is to present the user with stories similar to their own from people who have recovered from addiction.
-
+This project will 
+1. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction
+2. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societital influences and . Many other factors can easily be explored by presenting them  within the questionnaires to gather facts of statistical significance if many stories can be gathered. 
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers may cause suicide and death in another.
 As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence.
 Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11. 
