@@ -14,54 +14,23 @@ mongo = PyMongo(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    # if request.method == "POST":
-        # changes = mongo.db.changes.find({'habit': habit})
-        # return redirect(url_for('changes', changes=changes))
+
     changes=mongo.db.changes.find()
     return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
-
- ###################################################### this is the original / old one ... new one below
-# @app.route('/filter/<changes_id>', methods=['GET'])
-# def filter(changes_id):
-#     changes = mongo.db.changes.find_one({'_id': habit_id})
-#     return render_template('index.html', changes=changes)
-
-
-#################################### this is the one we're working on, so keep this for now
-
-# @app.route('/filter/<habit>', methods=['POST'])
-# def filter(habit):
-#     changes = mongo.db.changes.find({'habit': habit})
-#     return redirect('changes', changes=changes)
-
-
-# #################   ADVISED
-# @app.route('/filter/<habit>', methods=['POST'])
-# def filter(habit):
-#     changes = mongo.db.changes.find({'habit': habit})
-#     return rendertemplate('changes.html', changes=changes)
 
 
 
 # 
-# @app.route('/habit<habit>', methods=['GET', 'POST'])
-# def habit():
-#     # gets all Changes
-#     if request.method == 'GET':
-#         return render_template('changes.html', myProblem=mongo.db.changes.find())
-#     else:
-#         getChanges = mongo.db.changes
-#         myProblem = mongo.db.changes.find()
-#         return redirect(url_for('index'))
+
 
 @app.route('/changes', methods=['GET', 'POST'])
 def changes():
-    # gets all Changes if method is a GET
+    
     if request.method == 'GET':
         return render_template('changes.html', changes=mongo.db.changes.find())
-        # if we have a POST, lets use the form we posted
+       
     else:
-        #Let check if we are able to get the habit - habit is the name of the field
+        
         habit=(request.form.get("habit"))
         print(habit)
         #  Cool! We found the value!  Now lets search
@@ -145,7 +114,7 @@ def delete_changes(changes_id):
 
 @app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
 def storyDetail(changes_id):
-    print(changes_id)
+    # print(changes_id)
 #   """
 #   Given story ID get a specific user story.
 #   """

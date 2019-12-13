@@ -1,8 +1,10 @@
 {% extends 'base.html' %} {% block content %}
-<h4>How did you do it?</h4>
-<h6>Please share your recovery experience, mistakes and all.</h6>
+
+
 <section class="container">
 <div class="row">
+<h4>How did you do it?</h4>
+<h6>Please share your recovery experience, mistakes and all.</h6>
     <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
@@ -16,7 +18,6 @@
         </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
-                <!-- <input id="alias" name="alias" type="text" class="validate" data-length="10"> -->
                 <input id="alias" name="alias" type="text" class="validate" maxlength="15">
                 <label for="alias">Alias - No need for real names.</label>
             </div>
@@ -38,7 +39,7 @@
             <div class="input-field col s12">
                 <i class="material-icons prefix">insert_emoticon</i>
                 <input id="feelings" name="feelings" type="text" class="validate"></input> 
-                <label for="feelings">How did you feel at the beginning?</label>
+                <label for="feelings">Describe how you felt?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">star</i>
@@ -46,24 +47,24 @@
                 <label for="recipe">Recovery Recipe. Your method.</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">music_note</i>
+                <i class="material-icons prefix">star</i>
                 <input id="ingredients" name="ingredients" type="text" class="validate"></input> 
-                <label for="ingredients">Ingredients? Music/sleep/company?</label>
+                <label for="ingredients">Ingredients ?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">loyalty</i>
+                <i class="material-icons prefix">nature_people</i>
                 <input id="dayToDay" name="dayToDay" type="text" class="validate">
                 <label for="dayToDay">Day to day routine changes?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">nature_people</i>
+                <i class="material-icons prefix">face</i>
                 <input id="day1" name="day1" type="text" class="validate">
-                <label for="day1">Day 1. Thoughts, feelings and action</label>
+                <label for="day1">Describe Day 1.</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
                 <input id="day2" name="day2" type="text" class="validate">
-                <label for="day2">Day 2. What helped? What did you do?</label>
+                <label for="day2">What did you do Day 2?</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">mood</i>
@@ -71,48 +72,49 @@
                 <label for="day3">Day 3? How was the withdrawal?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">near_me</i>
+                <i class="material-icons prefix">filter_1</i>
                 <input id="week1" name="week1" type="text" class="validate">
                 <label for="week1">Week 1? How were the cravings</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">nature_people</i>
+                <i class="material-icons prefix">filter_2</i>
                 <input id="week2" name="week2" type="text" class="validate">
                 <label for="week2">Week 2. What tools did you use?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">mood_bad</i>
+                <i class="material-icons prefix">filter_3</i>
                 <input id="week3" name="week3" type="text" class="validate">
                 <label for="week3">Week 3. Feeling better or worse?</label>
             </div>
-                        <div class="input-field col s12">
-                <i class="material-icons prefix">panorama</i>
+                <div class="input-field col s12">
+                <i class="material-icons prefix">filter_1</i>
                 <input id="month1" name="month1" type="text" class="validate">
-                <label for="month1">Month 1. Safest actions and places?</label>
+                <label for="month1">Month 1 where were you safest?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">wb_sunny</i>
+                <i class="material-icons prefix">filter_2</i>
                 <input id="month2" name="month2" type="text" class="validate">
-                <label for="month2">Month 2. Any big changes? Job, home?</label>
+                <label for="month2">Month 2 what had changed?</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">note_add</i>
+                <i class="material-icons prefix">filter_3</i>
                 <input id="month3" name="month3" type="text" class="validate">
-                <label for="month3">Month 3. What benefits did you feel?</label>
+                <label for="month3">Month 3. Describe the benefits?</label>
+            </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">power</i>
+                <i class="material-icons prefix">looks_one</i>
                 <input id="year1" name="year1" type="text" class="validate">
-                <label for="year1">Year 1 summary</label>
+                <label for="year1">Year 1 summary.</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">public</i>
+                <i class="material-icons prefix">looks_two</i>
                 <input id="year2" name="year2" type="text" class="validate">
-                <label for="year2">Year 2 summary?</label>
+                <label for="year2">Year 2 summary.</label>
             </div>
             <div class="input-field col s12">
-                <i class="material-icons prefix">palette</i>
+                <i class="material-icons prefix">looks_3</i>
                 <textarea id="year3" name="year3" type="textarea" class="validate"></textarea>
-                <label for="year3">Year 3. living your wildest dream or harder?</label>
+                <label for="year3">Overall summary.</label>
             </div>
         </div>
 
