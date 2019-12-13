@@ -4,7 +4,7 @@
     <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select id="habit" name="habit">
+            <select id="habit" name="habit" required>
                 
             <option value="" disabled selected>Click here</option>
             {% for cat in categories %}
@@ -19,7 +19,7 @@
         </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
-                <input id="alias" name="alias" type="text" class="validate">
+                <input id="alias" name="alias" type="text" class="validate" maxlength="15">
                 <label for="alias">Alias - No need for real names.</label>
             </div>
             <div class="input-field col s12">

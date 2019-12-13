@@ -84,8 +84,8 @@
 <!-- </div> -->
           
 <!-- Filter stories section -->
-
-<main class="row" style="background-color:lightgrey;">
+<main class="container">
+<div class="row" style="background-color:lightgrey;">
     <div class="col s12 m3 hide-on-small-only">
         <ul class="collapsible">
             <li class="active">
@@ -127,8 +127,9 @@
                 </div>
             </div>
         </div>
-
+</div>
 </main>
+
 <!-- Lots of recovery stories stored in MongoDB presented in cards-->
 
     <div class="container">
@@ -142,7 +143,7 @@
                 <h4 class="center blue-grey-text">Monkey see, Monkey do</h4>
                 <h5 class="center">Open your mind as wide as it will go</h5>
         {% for changes in changes %}
-        <div class="col s12 m3">
+        <div class="col s6 m3">
             <div class="card hoverable" style="width:100% ;height:335px;">
                 <div class="card-image">
                     <img src="static/images/{{ changes.habit }}.jpg">
@@ -238,12 +239,12 @@
             <div class="col s12">
                 <div class="card blue-grey darken-1">
                     <div class="card-content white-text">
-                        <span class="card-title">Human being or Human doing?</span>
-                        <p>Running running running- where the ???? to?.</p>
+                        <span class="card-title">Women respond differently</span>
+                        <p>Women are more likely to die from addiction than men.</p>
                     </div>
                 <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                   <a href="https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women">Women and addiction</a>
+                    <a href="https://www.addictioncenter.com/addiction/differences-men-women/">The sex differences</a>
                 </div>
             </div>
         <div class="row">
@@ -266,6 +267,7 @@
     
 
       <!--   Icon Section   -->
+      <div class="container">
       <div class="row">
         <div class="col s12 m4">
           <div class="icon-block">
@@ -297,10 +299,11 @@
           </div>
         </div>
       </div>
-
+</div>
     </div>
 
 </section>
+<!-- <div class="container">
 <div class="col s12 m2">
     <div class="card hoverable">
         <div class="card-image">
@@ -314,11 +317,12 @@
         </div>
     </div>
 </div>
+</div> -->
 {% endblock %}
 <!-- <a class="waves-effect waves-light btn-large">Button</a>
 <a class="waves-effect waves-light btn-large"><i class="material-icons left">cloud</i>button</a>
 <a class="waves-effect waves-light btn-large blue"><i class="material-icons right">cloud</i>button</a> -->
-<div class="col s12 m2">
+<!-- <div class="col s12 m2">
     <div class="card hoverable">
         <div class="card-image">
             <img src="static/images/WordArtSquare.jpg">
@@ -330,7 +334,7 @@
             <a href="https://www.smartrecovery.org/smart-articles/core-beliefs/">Morph the outdated beliefs about yourself, the world and others</a>
         </div>
     </div>
-</div>
+</div> -->
 
 
 

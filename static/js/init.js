@@ -4,11 +4,15 @@ $(document).ready(function() {
         $('.collapsible').collapsible();
         $('select').formSelect();
         $('.sidenav').sidenav();
-        $('.parallax').parallax();
-        $(document).ready(function() {
-        M.updateTextFields();});
-        $('#textarea1').val('New Text');
-        M.textareaAutoResize($('#textarea1'));
+        
+        // $('.parallax').parallax();
+        
+
+    $('#alias').characterCounter();
+        // $(document).ready(function() {
+        // M.updateTextFields();});
+        // $('#textarea1').val('New Text');
+        // M.textareaAutoResize($('#textarea1'));
         $(".datepicker").datepicker({
             yearRange: 15,
             autoClose: false,

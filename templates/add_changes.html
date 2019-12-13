@@ -1,11 +1,12 @@
 {% extends 'base.html' %} {% block content %}
 <h4>How did you do it?</h4>
 <h6>Please share your recovery experience, mistakes and all.</h6>
+<section class="container">
 <div class="row">
     <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select id="category" name="habit">
+            <select id="category" name="habit" required>
         <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
         {% for cat in categories %}
             <option value="{{cat.habit}}">{{cat.habit}}</option>
@@ -15,7 +16,8 @@
         </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
-                <input id="alias" name="alias" type="text" class="validate">
+                <!-- <input id="alias" name="alias" type="text" class="validate" data-length="10"> -->
+                <input id="alias" name="alias" type="text" class="validate" maxlength="15">
                 <label for="alias">Alias - No need for real names.</label>
             </div>
             <div class="input-field col s12">
@@ -121,4 +123,5 @@
         </div>
     </form>
 </div>
+</section>
 {% endblock %}

@@ -5,7 +5,9 @@
  *
  * Made By MaterializeCSS.com
  */
- 
+ body{
+     background-color: rgb(241, 245, 250)
+ }
 
 
 .btn_small {
