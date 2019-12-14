@@ -13,7 +13,7 @@
 <div class="row">
     
 
-    <form action="{{ url_for('myProblem') }}" method="POST"  class="col s12">
+    <form action="{{ url_for('pastProblem') }}" method="POST"  class="col s12">
 
         <div class="input-field col s12">
             <select name="addiction">
@@ -43,7 +43,7 @@
                 
             </select>
         </div>
-                <div class="input-field col s12">
+                        <div class="input-field col s12">
             <select name="stopped">
                 <option value="" disabled selected>HAVE YOU STOPPED?</option>
                 <option value="1">No, I can't stop</option>
@@ -61,9 +61,30 @@
                 <option value="13">Other</option>
                 
             </select>
-            <label>Times you partake</label>
+            <label>Have you tried to stop?</label>
         </div>
 
+
+                <div class="input-field col s12">
+            <select name="stopping">
+                <option value="" disabled selected>ATTEMPTS TO STOP</option>
+                <option value="1">Never tried</option>
+                <option value="2">Tried numerous time and gave up</option>
+                <option value="3">Tried numerous time and still trying</option>
+                <option value="4">Tried but felt worse</option>
+                <option value="5">I stopped after 1 attempt</option>
+                <option value="6">I stopped after 2-3 attempts</option>
+                <option value="7">I stopped after 4-5 attempts</option>
+                <option value="8">I stopped after 6-7 attempts</option>
+                <option value="9">I stopped after 8-9 attempts</option>
+                <option value="10">I stopped after 10 attempts</option>
+                <option value="11">I stopped after 10-15 attempts</option>
+                <option value="12">I stopped after >15 attempts</option>
+
+                
+                
+            </select>
+        </div>
 
         <div class="input-field col s12">
             <select name="where">
@@ -83,7 +104,7 @@
             <label>Places you partake</label>
         </div>
 
-        <div class="input-field col s12">
+        <!-- <div class="input-field col s12">
             <select name="when">
                 <option value="" disabled selected>WHEN?</option>
                 <option value="1">Evenings</option>
@@ -261,7 +282,7 @@
                 <option value="15">I will have better self esteem</option>
                 <option value="16">Most of the above</option>
             </select>
-            <label>Your belief of how life will be without your addiction?</label>
+            <label>Your belief of how life will be without your addiction?</label>  -->
         </div>
         <div class="row">
             <button class="btn waves-effect waves-light" type="submit">

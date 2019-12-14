@@ -152,10 +152,10 @@ def myProblem():
 @app.route('/pastProblem', methods=['GET', 'POST'])
 def pastProblem():
     if request.method == 'GET':
-        return render_template('pastProblem.html', myProblem=mongo.db.pastProblem.find())
+        return render_template('pastProblem.html', pastProblem=mongo.db.pastProblem.find())
     else:
         insert_pastProblem = mongo.db.pastProblem
-        insert_past.insert_one(request.form.to_dict())
+        insert_pastProblem.insert_one(request.form.to_dict())
         return redirect(url_for('index'))
 
 
