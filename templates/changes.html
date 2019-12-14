@@ -1,12 +1,14 @@
 {% extends 'base.html' %}
 {% block content %}
-<h4>This is how others did it.</h4>
+<section class="container">
+<h4>Recovery Stories</h4>
+<h5>This is how others did it.</h5>
 <h6>Shared, real experience, good and bad</h6>
 
   <ul class="collapsible" data-collapsible="expandable">
     {% for changes in changes %}
     <li>
-        <div class="collapsible-header">
+        <div class="collapsible-header" style="background-color:Floralwhite;">
             <div class="task_header col s9">
                 <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
 
@@ -16,15 +18,15 @@
 
         <div class="collapsible-body">
             <span>
-                <strong>When did you stop?</strong>- {{changes.start_date}}
+                <strong style="color:Tomato;">When did you stop?</strong>- {{changes.start_date}}
                 <div>
                     <span>
-                        <strong>How did you feel in the beginning?</strong> - {{changes.feelings}}
+                        <strong style="color:Tomato;">How did you feel in the beginning?</strong> - {{changes.feelings}}
                     </span>
                 </div>
                 <div>
                     <span>
-                        <strong>How did you get through the first day? What helped?</strong>{{changes.day1}}
+                        <strong class= "Tomato-text">How did you get through the first day? What helped?= </strong>{{changes.day1}}
                     </span>
                 </div>
                 <div>
@@ -87,5 +89,5 @@
     </li>
     {% endfor %}
   </ul>
-
+</section>
 {% endblock %}

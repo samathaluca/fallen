@@ -3,8 +3,8 @@
 
 <section class="container">
 <div class="row">
-<h4>How did you do it?</h4>
-<h6>Please share your recovery experience, mistakes and all.</h6>
+<h4>Share your recovery experience, mistakes and all.</h4>
+<h6>How did you get where you are today?</h6>
     <form  action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
@@ -43,8 +43,13 @@
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">star</i>
+                <textarea id="rockBottom" name="rockBottom" type="textarea" class="active"></textarea> 
+                <label for="rockBottom">Describe your rock bottom.</label>
+            </div>
+            <div class="input-field col s12">
+                <i class="material-icons prefix">star</i>
                 <textarea id="recipe" name="recipe" type="textarea" class="active"></textarea> 
-                <label for="recipe">Recovery Recipe. Your method.</label>
+                <label for="recipe">Recipe. How you did it.</label>
             </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">star</i>

@@ -9,7 +9,13 @@
      background-color: rgb(241, 245, 250)
  }
 
+.Tomato-text {
+    color:Tomato;
+}
 
+/* #rock-button {
+    position: right;;
+} */
 .btn_small {
     height: 24px;
     width: 60px;

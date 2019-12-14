@@ -149,6 +149,15 @@ def myProblem():
         insert_myProblem.insert_one(request.form.to_dict())
         return redirect(url_for('index'))
 
+@app.route('/pastProblem', methods=['GET', 'POST'])
+def pastProblem():
+    if request.method == 'GET':
+        return render_template('pastProblem.html', myProblem=mongo.db.pastProblem.find())
+    else:
+        insert_pastProblem = mongo.db.pastProblem
+        insert_past.insert_one(request.form.to_dict())
+        return redirect(url_for('index'))
+
 
 @app.route('/tasks')
 def tasks():
