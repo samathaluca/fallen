@@ -11,10 +11,35 @@
 <h6><strong>Summary:</strong>  To eradicate the influence of bias or funding and ask the right questions</h6>
 <h6><strong>Conclusion: </strong>  Report due before December 2020</h6>
     <div class="row">
-    
-
-        <form action="{{ url_for('pastProblem') }}" method="POST"  class="col s12">
-
+    <form action="{{ url_for('pastProblem') }}" method="POST"  class="col s12">
+                <div class="input-field col s12">
+            <select name="thisForm">
+                <option value="" disabled selected>YOUR THOUGHTS</option>
+                <option value="1">To help others</option>
+                <option value="2">To help focus your thoughts</option>
+                <option value="3">You have been frustrated by treatment so far</option>
+                <option value="4">You have been frustrated by therapy so far</option>
+                
+                <option value="5">Your addiction has stopped working</option>
+                <option value="6">You get more pain than pleasure now</option>
+                <option value="7">The medication is not working for you</option>
+                <option value="8">You want to help the next generation</option>
+                <option value="9">You want to stop the misery of addiction</option>
+                <option value="10">You want to make a difference</option>
+                <option value="11">You have not felt free to talk openly in person</option>
+                <option value="12">You are worried about anonymity</option>
+                <option value="13">You are tired of feeling alone</option>
+                <option value="14">You have ideas as to what may work better</option>
+                <option value="15">You have had friends die</option>
+                <option value="16">A partner of family member died</option>
+                <option value="17">You have lost care of your children.</option>
+                <option value="18">You wanted to feel gratitude</option>
+                <option value="19">You wanted to feel relief</option>
+                <option value="20">You want healthy connections</option>
+                <option value="21">You want new friends</option>
+            </select>
+            <label>Reason for agreeing to provide study data</label>
+        </div>
         <div class="input-field col s12">
             <select name="addiction">
                 <option value="" disabled selected>WHAT IS YOUR ADDICTION?</option>
@@ -39,8 +64,6 @@
                 <option value="19">Gossip/Drama</option>
                 <option value="20">Materialism/Academia/Image</option>
                 <option value="21">Other</option>
-                
-                
             </select>
             <label>Pick the biggest issue for you</label>
         </div>
@@ -60,7 +83,6 @@
                 <option value="11">Yes, I stopped 10-20 years ago</option>
                 <option value="12">Yes, I stopped >20 years ago</option>
                 <option value="13">Other</option>
-                
             </select>
             <label>Have you tried to stop?</label>
         </div>
@@ -79,13 +101,34 @@
                 <option value="10">I stopped after 10 attempts</option>
                 <option value="11">I stopped after 10-15 attempts</option>
                 <option value="12">I stopped after >15 attempts</option>
-
-                
-                
             </select>
             <label>How many serious attempts to stop?</label>
         </div>
-
+                <div class="input-field col s12">
+            <select name="consequences">
+                <option value="" disabled selected>MOST SERIOUS CONSEQUENCES SO FAR</option>
+                <option value="1">Financial hardship/debts</option>
+                <option value="2">Relationship breakdown</option>
+                <option value="3">Loss of friendships</option>
+                <option value="4">Job loss</option>
+                <option value="5">Loss of family</option>
+                <option value="6">Depression/ Anxiety</option>
+                <option value="7">Paranoia/psychosis</option>
+                <option value="8">Accidents/self-harm</option>
+                <option value="9">Harm to yourself and/or others</option>
+                <option value="10">Breaking the law</option>
+                <option value="11">Imprisonment</option>
+                <option value="12">Involvement of social services</option>
+                <option value="13">Loss of home</option>
+                <option value="14">Forced to leave education</option>
+                <option value="15">Suicidal thoughts</option>
+                <option value="16">Suicide attempts</option>
+                <option value="17">Death of someone</option>
+                <option value="18">Most of the above</option>
+                <option value="19">All of the above</option>
+            </select>
+            <label>What has been your most serious consequence so far?</label>
+        </div>
         <div class="input-field col s12">
             <select name="sexuality">
                 <option value="" disabled selected>SEXUALITY</option>
@@ -105,7 +148,6 @@
             </select>
             <label>What is you sexuality?</label>
         </div>
-
         <div class="input-field col s12">
             <select name="where">
                 <option value="" disabled selected>WHERE?</option>
@@ -123,7 +165,6 @@
             </select>
             <label>Places you used</label>
         </div>
-        
         <div class="input-field col s12">
             <select name="abstinence">
                 <option value="" disabled selected>ABSTINENCE?</option>
@@ -135,7 +176,6 @@
             </select>
             <label>Opting for abstinence?</label>
         </div>
-
         <div class="input-field col s12">
             <select name="therapy">
                 <option value="" disabled selected>WHICH THERAPY WORKED BEST?</option>
@@ -148,9 +188,6 @@
                 <option value="7">Family therapy?</option>
                 <option value="8">A combination of therapies?</option>
                 <option value="9">Other?</option>
-            
-
-
             </select>
             <label>Which type of therapy worked best?</label>
         </div>
@@ -167,14 +204,10 @@
                 <option value="8">A combination of therapies?</option>
                 <option value="9">Self help?</option>
                 <option value="9">Other?</option>
-            
-
-
             </select>
             <label>Which type of therapy worked least?</label>
         </div>
-
-         <div class="input-field col s12">
+        <div class="input-field col s12">
             <select name="treatment">
                 <option value="" disabled selected>WHICH TREATMENT WORKED BEST?</option>
                 <option value="1">Daytime treatment services</option>
@@ -207,7 +240,6 @@
             </select>
             <label>Which treatment works least</label>
         </div>
-
         <div class="input-field col s12">
             <select name="medication">
                 <option value="" disabled selected>WHICH MEDICATION WORKED BEST?</option>
@@ -230,16 +262,13 @@
                 <option value="17">Combination of 5-10 of the above</option>
                 <option value="18">Combination of more than 10 of the above</option>
                 <option value="19">None of the above</option>
-                
-
             </select>
             <label>Medication that worked best</label>
         </div>
-
         <div class="input-field col s12">
             <select name="medicationFailed">
                 <option value="" disabled selected>WHICH MEDICATION WORKED LEAST?</option>
-                                <option value="1">Home detox 1-2 times</option>
+                <option value="1">Home detox 1-2 times</option>
                 <option value="2">Home detox 3-5 times</option>
                 <option value="3">Home detox 5-10 times</option>
                 <option value="4">Home detox more than 10 times</option>
@@ -261,7 +290,27 @@
             </select>
             <label>Medication that worked best</label>
         </div>
-
+         <div class="input-field col s12">
+            <select name="professionals">
+                <option value="" disabled selected>PROFESSIONAL HELP?</option>
+                <option value="1">drug worker</option>
+                <option value="2">Multiple GP visits</option>
+                <option value="3">Counsellor</option>
+                <option value="4">Psychologists</option>
+                <option value="5">Psychiatrists</option>
+                <option value="6">Multiple A&E visits 1-5</option>
+                <option value="7">Multiple A&E visits 5-10</option>
+                <option value="8">Multiple A&E visits 10-15</option>
+                <option value="9">Multiple A&E visits more than 10</option>
+                <option value="10">Hospital admission and stay 1-5 times</option>
+                <option value="11">Hospital admission and stay 5-10 times</option>
+                <option value="12">Hospital admission and stay >10 times</option>
+                <option value="13">Psychiatric ward admission</option>
+                <option value="14">No medical treatments sought</option>
+                <option value="15">Most or all of the above</option>
+            </select>
+            <label>Times you partake</label>
+        </div>
         <div class="input-field col s12">
             <select name="when">
                 <option value="" disabled selected>WHEN?</option>
@@ -272,10 +321,8 @@
                 <option value="5">Daytimes</option>
                 <option value="6">Odd/random times</option>
             </select>
-            <label>Times you partake</label>
+            <label>Times you induldged</label>
         </div>
-
-
         <div class="input-field col s12">
             <select name="how">
                 <option value="" disabled selected>HOW?</option>
@@ -291,7 +338,6 @@
             </select>
             <label>How do you injest or otherwise partake?</label>
         </div>
-
         <div class="input-field col s12">
             <select name="why">
                 <option value="" disabled selected>WHY?</option>
@@ -313,11 +359,9 @@
                 <option value="16">Abuse</option>
                 <option value="17">PTSD</option>
                 <option value="18">Poverty</option>
-
             </select>
             <label>Do you know why?</label>
         </div>
-
         <div class="input-field col s12">
             <select name="WHO">
                 <option value="" disabled selected>WHO?</option>
@@ -327,11 +371,9 @@
                 <option value="4">With acquaintances</option>
                 <option value="5">With strangers</option>
                 <option value="6">With anyone</option>
-
             </select>
-            <label>Who do you partake with?</label>
+            <label>Who do you indulge with?</label>
         </div>
-
         <div class="input-field col s12">
             <select name="WHENEVER">
                 <option value="" disabled selected>WHENEVER?</option>
@@ -362,7 +404,7 @@
             <label>Where would you prefer to go to stop?</label>
         </div>
         <div class="input-field col s12">
-            <select name="WHATEVER">
+            <select name="WH0EVER">
                 <option value="" disabled selected>WHOEVER?</option>
                 <option value="1">Yourself</option>
                 <option value="2">Your children/grandchildren</option>
@@ -448,6 +490,8 @@
             SHARE <i class="material-icons right">playlist_add</i>
             </button>
         </div>
+    <H6>THANK YOU. By filling in and submission of  this form you agree for the independent and anonymous data to be used to find new , effective treatments and detox schemes to help others.</H6>
+    <H6>If you would like to receive more information or have any improvements to the questions please email samsiexpress@aol.com</H6>
     <!-- </div> -->
     </form>
 <!-- gratitude list and journal option  -->
