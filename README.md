@@ -45,8 +45,13 @@ Presenting the user with similarities and not differences amongst the success st
 **The strategy plan**The aim of this project was to create an app which presents the user with stories similar to their own from people who have found a solution.
 
 USER SECTION- Those still suffering from addiction
+The definition of addiction considered in developing this app is as follows:
+Addiction is a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
 
-The user will be asked a series of direct questions with different predetermined options. The answers to these questions will be assigned an integer which will be stored in the database so that processing the data will be simplified. 
+On the home page the user will be asked 
+
+then invited to 'tell you story' 
+a series of direct questions with different predetermined options. The answers to these questions will be assigned an integer which will be stored in the database so that processing the data will be simplified. 
 
 CONTRIBUTOR SECTION= Those sharing their story having recovered from addiction
 
@@ -65,6 +70,7 @@ There is no login currently for admin as whole. There is no requirement for logi
 Anyone can remove it who is offended by it. There is an appreciation that this may lead to malicious emptying of the database but while the sale of the project is still small the threat is considered small.
 
 The community interest goals of this website are
+<!--  because currently treatment is geared towards crisis and not prevention.  -->
 - To collect data useful to the NHS, drug treatment agencies and private recovery organisations.
 - To provide hope, comfort and a community for people trying to recover from addiction and isolation.
 - To help mothers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
@@ -136,10 +142,46 @@ when they submit the form it is added to the mongoDB and then displayed on the a
 but then the additional stries to be added by clicking
 
 ##User stories
-There will be two types of user anticipated to benefit from use of the site
-1. People who are suffering from addiction, self destructive habits or problems with a substance.
-The definition of Addiction is 'a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm'.
-This type of user is attracted to the app feel part of a community. In accessing the app, they will gain understanding, insight, awareness.
+
+with limited funding open source support would be a real help.
+The current treatment programmes demand commitment that is unachievebale and unaffordable for normal life so are reserved for people in crisis rather than tackling the problem early .
+Early intervention can help stop issues escalating and prevent huge costs to the addict and the people around them including families, work places, social service, the NHS, the emergency services, hospitals and the criminal justice system
+Addiction is a progressive illness, left untreated mostl likely terminates in jails, institutions of death by direct consequences, accident or suicide. There will be two types of user anticipated to benefit from use of the site
+1. People who are suffering from addiction, self destructive habits or problems with a substance or activity.
+Within group 1 there are different sub-types of users as follows:
+- 21 different choices of addiction. 
+- Young people who are most likely addicted to social media, gaming, self harm  and porn addiction. Possibly using alcohol and drugs to excess but not addicted YET. Maybe abusing food too.
+These users can gain knowledge about their condition and hopefully prevent addictions escalating.
+- Mothers isolated and looking after young children who do not feel able to engage in the currently available treatments 
+a) for fear of social services being involved
+b) limited time
+c) limited emotional and physical energy
+d) risk of losing their relationship and financial support . Couples often use drugs together so when one tries to get help the other feels threatens and prevents this.
+e) the mother can seek help when the children have gone to bed on her phone without the pressure of sticking to a rigorous regime.
+f) mothers may come motivated to reach out for the help earlier if they read success stories and gain hope.
+
+
+g) in helping the mother you lower the burden on social services and stop the damage to the family unit and the children.
+- Introverted and shy users may veer away from the current treatments which demand face to face attendance and engagement in front of an audience.
+it is possible that the available therapies favour the extroverted so will present at the GP surgery with depression or anxiety without ever revealing the real problem.
+if the real problems is not tackled recovery is impossible . 
+Currently most treatments available for drug addicts involve more drugs. This has been likened to offering a drowing man a drink if water. 
+The data collected will reveal whether or not this is effective without the need for prohibitely expensive studies which the NHS can not afford and the drug companies or treatment centres will avoid in case the findings risk 
+disproving their effectiveness. 
+- Physically ill or disable people who can not leave the home easily
+- Men and women who are keeping their secret and feel too ashamed to tell anyone or who are not quite ready to stop yet but are getting ready so reaearching what my help.
+- men and women who have tried the currently available treatments that have not worked
+- men and women 
+
+
+There is a a lot of shame attached to addiction so denial is one of the most common symptoms. 
+this is 
+This type of user is attracted to the app from the earliest stages of seeking help for an addiction problem.
+Users may be put off by the term addiction so the app offers habit or problem or poison as alterative term to maximise the chance of engagement 
+so starting the process of recovery in the users mind. The user mya initially read the stories and believe they arent that bad so may 
+try to moderate their using or reach out and try to get support in the earlier stages of the progressive illness.
+
+to feel part of a community. In accessing the app, they will gain understanding, insight, awareness.
 There is a a lot of shame attached to addiction so denial is one of the most common symptoms. 
 People may take years to come to terms with their addiction and be ready to stop. 
 This user will be offered solutions in practical, real stories that they can identify with. These stories will be short and eaily digested but can spark hope in to the lives of lonely, isolated addicts who are too afraid to 
@@ -156,7 +198,23 @@ may help suffering addicts to get well.
 Benefits- why recovered addicts will bother visiting the app and making the effort to fill in the forms.
 When this type of user contributes to the site and share their story they will feel part of a community, relief that their life has changed, useful, healthy and a sense of gratitude that is essential to maintain their current level of good mental health.
 I initially asked 3 addicts to complete the form and they became distracted towards the end of the open question section.
-This would be a problem risking aborted submisson and 
+This would be a problem risking aborted submisson.
+I split contributors efforts in to two sections.
+1. Share your recovery- this is a small list of inputted answers that are believed to be what the user group 1 will most likely want to know.
+Finding identification is key. Initially the only filter offered is a choice of addiction type e.g. social media/porn/ alcohol/ food etc.
+As the stories become more plentiful a second filter can be added e.g. sex or age or education or stress levels or social anxiety, the list is endless. 
+One of the key factors in getting through to addicts is for them to identify and recongnise that the person trying to help them has walked in their shoes.
+This app is set out to gather an abundance of information to do that.
+2. Soul searching- this is currently presented as a list of selectable answers which will be collected and stored in Mongo DB. The user is informed that this will be a report made on the data collected.
+As both providers and recipients of currently available treatment for addictions know, the current solutions  for this global epidemic are costly (treatment costs for one month is the priory are £18,000), ineffective as most people struggle for year getting free from it's grip for year,
+Frightening studies have revealed that women who receive the currently available treatment for alcohol addiction are more likely to die than women who do not get any treatment.
+David Nutt (the government advisor sacked for claiming that horse riding is more deadly than ecstasy) states that when , for example, Amy whitehouse got clean and sober, her tolerance went. As the body returns to normal in a period of abstinance the risk of relapse causing overdose increases greatly.
+It may be that the focus of this app becomes the collection of data for women because all the available currently therapies have been researched soley in men.
+The possible third user in the future will be recipients of the data . I spoke to one interested party who advised me that men would still visit the site and complete the forms to get the benefits of gratitude and usefulness , the result the of analysing the data expecting it all to be relevant to women will be flawed.
+Anything that diminished the potential accuracy and usefulness of the collected data was eradicated.
+A potential user of the data advised me to include researched academically validated forms so that the data has been proven to be reliable in some way. This has been considered when setting out the questions.
+
+
 
 Professionals and well meaning help makes us more dependent as our choices become seized by their choices for us. How can anyone who does not understand that feeling of desperation really help?
 
@@ -177,7 +235,7 @@ planners
 chatroom
 conferencing 
 audio and or video shares
-
+filter for more 
 email us
 
 ### Wireframes

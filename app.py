@@ -2,13 +2,25 @@ import os
 from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
+from os import path
+if path.exists("env.py"):
+  import env
 
 app = Flask(__name__)
+
 app.config["MONGO_DBNAME"] = 'MS3_project'
-app.config["MONGO_URI"] = 'mongodb+srv://rOOtUser:betteroption@myfirstcluster-97xkz.mongodb.net/MS3_project?retryWrites=true&w=majority'
-# os.getenv('MONGO_URI', 'mongodb://localhost')
+# MONGO_URI = os.environ.get('MONGO_URI')
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+
+# app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+# app.config["MONGO_DBNAME"] = 'MS3_project'
+# app.config["MONGO_DBNAME"] = 'changes'
+
 
 mongo = PyMongo(app)
+
+# MONGO_URI = os.environ.get('MONGO_URI')
+# MONGODB_URI = os.getenv("MONGO_URI")
 
 
 @app.route('/')
