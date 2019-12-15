@@ -135,6 +135,34 @@ when they submit the form it is added to the mongoDB and then displayed on the a
  provides the ingredients and this app presents the method to get to their tailored recovery recipe from the database. 
 but then the additional stries to be added by clicking
 
+##User stories
+There will be two types of user anticipated to benefit from use of the site
+1. People who are suffering from addiction, self destructive habits or problems with a substance.
+The definition of Addiction is 'a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm'.
+This type of user is attracted to the app feel part of a community. In accessing the app, they will gain understanding, insight, awareness.
+There is a a lot of shame attached to addiction so denial is one of the most common symptoms. 
+People may take years to come to terms with their addiction and be ready to stop. 
+This user will be offered solutions in practical, real stories that they can identify with. These stories will be short and eaily digested but can spark hope in to the lives of lonely, isolated addicts who are too afraid to 
+risk breaking their anonymity by visiting the doctors or attending public group therapy, recovery agencies, counsellors or risk their livelihood or families by having notes on the medical records.
+
+
+Insight will be gained by 
+2. The user who is also a contributor. 
+People are taught by many recovery programmes that 'you can only keep what you have by giving it away'. 
+This means that when getting addiction free you learn that helping others is the best way of remembering how bad it was, so preventing relapse, 
+feeling grateful by being reminded how far you have come. This means that the recovery community are motivated to be involved in anything that 
+may help suffering addicts to get well.
+
+Benefits- why recovered addicts will bother visiting the app and making the effort to fill in the forms.
+When this type of user contributes to the site and share their story they will feel part of a community, relief that their life has changed, useful, healthy and a sense of gratitude that is essential to maintain their current level of good mental health.
+I initially asked 3 addicts to complete the form and they became distracted towards the end of the open question section.
+This would be a problem risking aborted submisson and 
+
+Professionals and well meaning help makes us more dependent as our choices become seized by their choices for us. How can anyone who does not understand that feeling of desperation really help?
+
+
+
+
 ### Features
 - Nav bar
 - Grid of recovered user recipes (maybe with images/maybe not)
@@ -194,6 +222,7 @@ This project used markdown previewer to check the rendering of the readme.md fil
 8. JASMINE- framework for testing javascript code.
 
 testing of ceoncept -ask other users
+addicts, slack etc
 
 9. HEROKU
 python tests
