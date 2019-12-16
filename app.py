@@ -4,7 +4,7 @@ from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
 if path.exists("env.py"):
-  import env
+    import env
 
 app = Flask(__name__)
 
@@ -13,34 +13,25 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
+
 @app.route('/')
 @app.route('/index')
 def index():
-
-    changes=mongo.db.changes.find()
-    return render_template('index.html', categories=mongo.db.categories.find(), 
+    changes = mongo.db.changes.find()
+    return render_template('index.html', 
+    categories=mongo.db.categories.find(),
     changes=mongo.db.changes.find())
-
-
-
-# 
-
-
+    
 @app.route('/changes', methods=['GET', 'POST'])
 def changes():
-    
     if request.method == 'GET':
-        return render_template('changes.html', changes=mongo.db.changes.find())
-       
+        return render_template('changes.html', 
+        changes =mongo.db.changes.find())
     else:
-        
-        habit=(request.form.get("habit"))
+        habit = (request.form.get("habit"))
         print(habit)
-        #  Cool! We found the value!  Now lets search
-        changes = mongo.db.changes.find({"habit":habit})
-        # Did we get results?  Lets check by rendering them
+        changes = mongo.db.changes.find({"habit": habit})
         return render_template('changes.html', changes=changes)
-
 
 @app.route('/deleteButton')
 def deleteButton():
@@ -61,30 +52,28 @@ def insert_changes():
 def edit_changes(changes_id):
     the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edit_changes.html', changes=the_change, categories=all_categories)
+    return render_template('edit_changes.html', 
+    changes=the_change, categories=all_categories)
 
 @app.route('/update_changes/<changes_id>', methods=["POST"])
 def update_changes(changes_id):
     changes = mongo.db.changes
     changes.update({'_id': ObjectId(changes_id)},
     {
-        'alias':request.form.get('alias'),
-        'habit':request.form.get('habit'),
-        'start_date':request.form.get('start_date'),
-        'whyStop':request.form.get('whyStop'),
-        'whatStop':request.form.get('whatStop'),
-        'feelings':request.form.get('feelings'),
-        'recipe':request.form.get('recipe'),
-        'ingredients':request.form.get('ingredients'),
-        'day1':request.form.get('day1'),
-        'day2':request.form.get('day2'),
-        'day3':request.form.get('day3'),
-        'week1':request.form.get('week1'),
-        'week2':request.form.get('week2'),
-        'week3':request.form.get('week3'),
-        'year1':request.form.get('year1'),
-        'year2':request.form.get('year2'),
-        'year3':request.form.get('year3'),
+        'alias': request.form.get('alias'),
+        'habit': request.form.get('habit'),
+        'start_date': request.form.get('start_date'),
+        'whyStop': request.form.get('whyStop'),
+        'whatStop': request.form.get('whatStop'),
+        'feelings': request.form.get('feelings'),
+        'recipe': request.form.get('recipe'),
+        'ingredients': request.form.get('ingredients'),
+        'day1': request.form.get('day1'),
+        'day2': request.form.get('day2'),
+        'day3': request.form.get('day3'),
+        'week1': request.form.get('week1'),
+        'week2': request.form.get('year2'),
+        'year3': request.form.get('year3'),
     })
     return redirect(url_for('changes'))
 
@@ -94,11 +83,11 @@ def delete_changes(changes_id):
     return redirect(url_for('changes'))
 
 
-
 @app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
 def storyDetail(changes_id):
     changes = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
     return render_template('storyDetail.html', changes=changes)
+
 @app.route('/firstSteps')
 def firstSteps():
     return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
@@ -110,7 +99,8 @@ def imageTest():
 @app.route('/myProblem', methods=['GET', 'POST'])
 def myProblem():
     if request.method == 'GET':
-        return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
+        return render_template('myProblem.html', 
+        myProblem=mongo.db.myProblem.find())
     else:
         insert_myProblem = mongo.db.myProblem
         insert_myProblem.insert_one(request.form.to_dict())
@@ -119,7 +109,8 @@ def myProblem():
 @app.route('/pastProblem', methods=['GET', 'POST'])
 def pastProblem():
     if request.method == 'GET':
-        return render_template('pastProblem.html', pastProblem=mongo.db.pastProblem.find())
+        return render_template('pastProblem.html', 
+        pastProblem=mongo.db.pastProblem.find())
     else:
         insert_pastProblem = mongo.db.pastProblem
         insert_pastProblem.insert_one(request.form.to_dict())
