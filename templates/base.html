@@ -16,6 +16,12 @@
 </head>
 <body>
  <!-- nav bar -->
+ <ul class="sidenav" id="mobile-demo">
+    <li><a href="{{ url_for('myProblem') }}">Tell Your Story</a></li>
+    <li><a href="{{ url_for('changes') }}">Recovery Stories</a></li>
+    <li><a href="{{ url_for('add_changes') }}">Share Your Recovery</a></li>
+    <li><a href= "{{ url_for('pastProblem') }}">Soul Searching</a></li>
+</ul>
  <div class="navbar-fixed">
   <nav>
     <div class="nav-wrapper blue-grey darken-1">
@@ -32,12 +38,7 @@
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
-    <li><a href="{{ url_for('myProblem') }}">Tell Your Story</a></li>
-    <li><a href="{{ url_for('changes') }}">Recovery Stories</a></li>
-    <li><a href="{{ url_for('add_changes') }}">Share Your Recovery</a></li>
-    <li><a href= "{{ url_for('pastProblem') }}">Soul Searching</a></li>
-</ul>
+  
 </div>
    
 

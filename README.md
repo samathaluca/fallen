@@ -1,21 +1,50 @@
 # CHANGE IS GOOD
 
-## App to help connect addicts who want to recover. 
+## Aim 
+Create an App to help connect addicts (users) who want to recover with stories from addicts who have recovered (user/contributors).
 
-## Key.
-1. Users - people suffering from addiction and looking for solutions
-2. Contributors- people who are recovering from addiction and have some methods to suggest as a means to recover.
+The term addict is used to describe the user who has a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
+The different types of addiction included currently are:
+1. Alcohol
+2. Prescription drugs
+3. Illegal drugs
+4. Food
+5. Sex/Porn
+6. Gambling
+7. Exercise
+8. Obsession with health
+9. Attention
+10. Physical self harm
+11. Toxic relationships
+12. Violence
+13. Social Media
+14. Gaming
+15. Spending
+16. Horoscopes/Psychics
+17. Chatlines
+18. Fantasy
+19. Gossip/Drama
+20. Materialism/Image
+21. Other
 
+## Key value and who benefits from the development of this app- What is the point?
 
-The aim of this project was to create an app which presents the user with stories similar to their own from people who have found a solution.
+1. Help users looking for solutions to see stories of those who have recovered. Gain hope from human connection and a sense of community. 
+2.  Help User/contributors (people who have some methods to suggest as a means to recover) stay connected while remembering how bad it was to prevent relapse. In 12 step recovery it this an essential part of maintaining good mental health and sobriety.  A recent VR study proved that helping a crying child, even in a virtual environment, improves resistant depression.
+Helping others is very good for mental health. This app will provide a forum for  user/contributors helping others and for those on 12 step programs to do step 12.
+3. With social services, the police force, emergency services, criminal justice system and the NHS all suffering from critically low levels of funding, attempting to gather data that may be useful in an open source method may eventually help alleviate the strain. Addicts are a huge drain on all our resources but many of the treatments available currently do not work well. Any useful information
+collected by this app is destined to be included in a report that will be made available without any cost to any of the services who may be helped by it. 
+
+##WHY the idea?
+
 The idea came from the milestone3 project guideline which suggested we make an app which stores recipes. 
 The automatic thought is to develop an app which stores cooking recipes but the term recipe can apply to other structured methods.
 
-Having myself volunteered helping alcoholics, drug addicts and sex/love addicts for alomst 20 years, I know that the current treatments in place do not work for the majority of people.
-New approaches are necessary and the gathering of data is currently not independent. Many of the current recovery models have been set up to support men. In particular male offernders.
+Having myself volunteered helping alcoholics, drug addicts and sex/love addicts for almost 20 years, I know that the current treatments in place do not work for the majority of people.
+New approaches are necessary but the gathering of data is currently not independent. Many of the current recovery models have been set up to support men. In particular male offenders.
 The fear of social services being involved prevents many mothers from seeking the help they desperately need. This is believed to contribute to the 
-fact that momen may be more likely to go to A&E or die from overdose or other effects of certain substances.
-The difficulty women with children have attending 12 step meetings or other recovery programmes reliably means fresh methods need to be devloped to support these women.
+fact that women may be more likely to go to A&E or die from overdose or other effects of certain substances.
+The difficulty women with children have attending 12 step meetings or other recovery programmes reliably means fresh methods need to be developed to support these women.
 Not neglecting men, many of whom state that their social anxiety prevents them in engaging with currently favoured treatment programs which are geared towards group therapy and effectively revealing all your past and inner most thoughts to an audience.
 
 
@@ -28,40 +57,92 @@ If this is not tackled this pattern of thinking will end in escalating drug use 
 This project will 
 1. Offer an environment where isolated people suffering with addiction issues can reach out. 
 2. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction
-3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societital influences, family history and environment. Many other factors can easily be explored by presenting them  within the questionnaires to gather facts of statistical significance. 
+3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societal influences, family history and environment. Many other factors can easily be explored by presenting them within the questionnaires to gather facts of statistical significance. 
 
 
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers may cause suicide and death in another.
 As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence.
-Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11. 
+Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will lump these cases together. 
 
 This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
 Presenting the user with similarities and not differences amongst the success stories.
 
 
 ## UX
-### User stories and anticiapted preferences considered at each stage and contained within this section.
-#### Aim provide a service and connection to users who are trying to recover from addiction. Collect data to help develop new methods for tackling the addiction crisis. Addiction featured will include gaming, social media, porn and other modern day issues.
-**The strategy plan**The aim of this project was to create an app which presents the user with stories similar to their own from people who have found a solution.
 
-USER SECTION- Those still suffering from addiction
-The definition of addiction considered in developing this app is as follows:
-Addiction is a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
+### User stories and anticipated preferences considered at each stage and contained within this section. Separate user stories section added for clarity.
 
-On the home page the user will be asked 
 
-then invited to 'tell you story' 
-a series of direct questions with different predetermined options. The answers to these questions will be assigned an integer which will be stored in the database so that processing the data will be simplified. 
+**The strategy plan**
+#####Summary of strategy plan
+1. Development focus will be to provide a service and connection for users who are trying to recover from addiction.
+2. Second strategic aim is to be useful for user/contributors.
+3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
+4. Fourth part of the strategy will be to use the data collected in a report that will be published and given free of charge to the services that may benefit from it.
 
-CONTRIBUTOR SECTION= Those sharing their story having recovered from addiction
+#####Details of strategy plan
+
+1. Development focus will be to provide a service and connection for users who are trying to recover from addiction or thinking about how possible it may be in the future.
+
+Useful links, motivational quotes, images with a message will be presented throughout the app.
+
+On the home page the user will be asked to select their type of poison (addiction)
+to filter out stories that may be of no interest or help to them. 
+They will be invited to  'tell you story'. Journalling, sharing your experience and finding a voice has been proven to be beneficial in all areas of mental health including recovery from addiction.
+It needs to be kept short and simple for addicts who have difficulty focusing.
+A series of direct questions with different predetermined options in a collapsible select form is how this is tackled.
+The answers to these questions will be assigned an integer which will be stored in the database so that processing the data will be simplified. 
+
+2. Second strategic aim is to be useful for user/contributors.
+User/contributors will be deemed to be those sharing their story having recovered from addiction
 
 The contributors to the information provided to the users will be addicts in recovery who share their stories and demonstrate which methods they used to get sober/clean and free of the destructive patterns that have taken over their lives.
 The contributors will be asked more general questions because
-- With an open forum, it is anticipated that a lot more methods may be offered for consideration that haven't been thought of previosuly. Asking specific questions and tailoring the responses will limit the collection of data to what is previously know to cause and heal addiction. A fresh approach needs to be found.
-- The stories presented will appear more personal, true and relatable if they are in the contibutors own words.
-- The questions which provoke thought may be more engaging for the contibutor so making them more likely to complete and submit the form. 
+- With an open forum, it is anticipated that a lot more methods may be offered for consideration that haven't been thought of previously.
+- Asking specific questions and tailoring the responses will limit the collection of data to what is previously known to cause and heal addiction. A fresh approach needs to be found.
+- The stories presented will appear more personal, true and relateable if they are in the contributors own words.
+- The questions which provoke thought may be more engaging for the contributor so making them more likely to complete and submit the form. This is not an assumption. If we find that forms being submitted incomplete or there is a lack of interest, the content of the forms will be amended.
+It is part of the strategy to research validated form designs to see if they may be relevant or necessary. This may be adapted once the app goes live as a response to feedback.
+3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
+An example of this would be the fact that women are more likely to visit A&E or die from addiction than men. 
+A recent study showed that alcoholic women who enter in to the currently available treatment programmes and attempt to get in to recovery are more likely to die than those who have not had any treatment. 
+This is hypothesised to be due to the fact that all the research for the effectiveness of the currently available methods of treatment has been carried out in men. Specifically male offenders. 
 
-ADMIN SECTION- Editting and deleting stories which may to too graphic, false or inappropriate.
+https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women
+
+https://www.addictioncenter.com/addiction/differences-men-women/
+
+A strategy to focus the app on collecting data from women has been considered but not implemented so far based on the expectation that men may still use the app and the data would be distorted if we expect all the results to have been gathered from women.
+
+The strategy has been developed considering the following accepted facts the consideration of
+which may prove to be beneficial for mothers or men who have stressful lives with a lot of responsibility, including single fathers.
+
+Mothers/ single fathers or carers who are isolated and looking after young children who do not feel able to engage in the currently available treatments for reasons as follows:
+a) for fear of social services being involved
+b) limited time
+c) limited emotional and physical energy
+d) risk of losing their relationship and financial support . Couples often use drugs together so when one tries to get help the other feels threatens and prevents this.
+e) the carer can seek help when the children have gone to bed on their phone without the pressure of sticking to a rigorous regime.
+f) carers may be come motivated to reach out for the help earlier. Identification through reading  success stories may help them gain hope.
+g) in helping the carer or parent it may be possible to  lower the burden on social services and stop the damage to the family unit and the dependent children.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ADMIN SECTION- Editing and deleting stories which may to too graphic, false or inappropriate.
 
 A hard to find tab labelled admin will link to a form to edit the contributor story. The option to delete will be stored there too. 
 Currently the strategy offers total anonymity and no login is required. This is expected to remain the case for the user. 
@@ -76,6 +157,29 @@ The community interest goals of this website are
 - To help mothers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
 - many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. The is little funding available for prevention. 
 Early intervention may be proven to stop of the problem escalating so funding can be attracted to prevention rather than cure.. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 **The scope plan**
 Re-scoping followed feedack from tutors and my mentor, plus, when I asked recovered addicts to fill in the forms I had designed they lost interest half way through which would lead to aborted efforts too often.
 The inital scope was ambitious and had features added, for example a diary as jounralling is known to help recovering addicts.
@@ -234,6 +338,7 @@ recovery diaries
 planners
 chatroom
 conferencing 
+VR and videos and fell good music
 audio and or video shares
 filter for more 
 email us
@@ -286,8 +391,4 @@ addicts, slack etc
 python tests
 
 ## Version control
-
-
-
-
 
