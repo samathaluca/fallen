@@ -52,8 +52,14 @@ def insert_changes():
 def edit_changes(changes_id):
     the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edit_changes.html', 
-    changes=the_change, categories=all_categories)
+    return render_template('edit_changes.html', changes=the_change, categories=all_categories)
+
+# @app.route('/edit_changes/<changes_id>')
+# def edit_changes(changes_id):
+#     the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
+#     all_categories = mongo.db.categories.find()
+#     return render_template('edit_changes.html', 
+#     changes=the_change, categories=all_categories)
 
 @app.route('/update_changes/<changes_id>', methods=["POST"])
 def update_changes(changes_id):
@@ -72,7 +78,7 @@ def update_changes(changes_id):
         'day2': request.form.get('day2'),
         'day3': request.form.get('day3'),
         'week1': request.form.get('week1'),
-        'week2': request.form.get('year2'),
+        'week2': request.form.get('week2'),
         'year3': request.form.get('year3'),
     })
     return redirect(url_for('changes'))

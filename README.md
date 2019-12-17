@@ -1,10 +1,11 @@
 # CHANGE IS GOOD
 
 ## Aim 
-Create an App to help connect addicts (users) who want to recover with stories from addicts who have recovered (user/contributors).
+Create an App to help connect addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
+Both users and user/contributors will have the option to add their story. 
 
 The term addict is used to describe the user who has a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
-The different types of addiction included currently are:
+The different types of addiction options currently added are:
 1. Alcohol
 2. Prescription drugs
 3. Illegal drugs
@@ -114,10 +115,10 @@ https://www.addictioncenter.com/addiction/differences-men-women/
 
 A strategy to focus the app on collecting data from women has been considered but not implemented so far based on the expectation that men may still use the app and the data would be distorted if we expect all the results to have been gathered from women.
 
-The strategy has been developed considering the following accepted facts the consideration of
+The strategy has been developed considering the following accepted facts 
 which may prove to be beneficial for mothers or men who have stressful lives with a lot of responsibility, including single fathers.
 
-Mothers/ single fathers or carers who are isolated and looking after young children who do not feel able to engage in the currently available treatments for reasons as follows:
+Mothers/ single fathers or carers who are isolated and looking after young children, do not feel able to engage in the currently available treatments for reasons as follows:
 a) for fear of social services being involved
 b) limited time
 c) limited emotional and physical energy
@@ -146,17 +147,18 @@ ADMIN SECTION- Editing and deleting stories which may to too graphic, false or i
 
 A hard to find tab labelled admin will link to a form to edit the contributor story. The option to delete will be stored there too. 
 Currently the strategy offers total anonymity and no login is required. This is expected to remain the case for the user. 
-No login is deemed necessary for contributors at this point. We will be keen to gather as many recovery successs stories as possible so the ease of this process will be imperative. Any barriers may limit the available information and select for a specific type of contibutor which will influence the data collected.
-There is no login currently for admin as whole. There is no requirement for login to be included for the project but without having launched the app we can not predict whether this may need to be added for sure. The reasonning is that if an offensive recovery story is added it does not need to wait for me to find out and remove it.
-Anyone can remove it who is offended by it. There is an appreciation that this may lead to malicious emptying of the database but while the sale of the project is still small the threat is considered small.
+No login is deemed necessary for contributors at this point. We will be keen to gather as many recovery success stories as possible so the ease of this process will be imperative. Any barriers may limit the available information and select for a specific type of contibutor which will influence the data collected.
+There is no login currently for admin as whole. There is no requirement for login to be included for the project but without having launched the app we can not predict whether this may need to be added for sure. The reasoning is that if an offensive recovery story is added it does not need to wait for me to find out and remove it.
+Anyone can remove it who is offended by it. There is an appreciation that this may lead to malicious emptying of the database but while the scale of the project is still small the threat is considered small.
 
 The community interest goals of this website are
 <!--  because currently treatment is geared towards crisis and not prevention.  -->
 - To collect data useful to the NHS, drug treatment agencies and private recovery organisations.
 - To provide hope, comfort and a community for people trying to recover from addiction and isolation.
 - To help mothers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
-- many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. The is little funding available for prevention. 
-Early intervention may be proven to stop of the problem escalating so funding can be attracted to prevention rather than cure.. 
+- many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. Little funding
+is available for prevention. 
+Early intervention may be proven to stop addiction escalating,  so funding can be attracted to prevention rather than cure.
 
 
 
@@ -180,27 +182,83 @@ Early intervention may be proven to stop of the problem escalating so funding ca
 
 
 
-**The scope plan**
-Re-scoping followed feedack from tutors and my mentor, plus, when I asked recovered addicts to fill in the forms I had designed they lost interest half way through which would lead to aborted efforts too often.
-The inital scope was ambitious and had features added, for example a diary as jounralling is known to help recovering addicts.
+**The scope plane**
+Re-scoping followed feedback from tutors and my mentor, plus, when I asked recovered addicts to fill in the forms I had designed they lost interest half way through which would lead to aborted efforts too often. The forms were amended and it is accepted that amendment may be ongoing.
+The initial scope was ambitious and had features added, for example a diary as journalling is known to help recovering addicts.
 Originally the scope included a lot of recovery information within the app but this is now selected by a series of links within the home page and in the footer. 
-There were features planned that would attract people in recvery to the site to motivate them to provide their stories, for example, a gratitude list which is known to maintain good mental health in recovery.
+There were features planned that would attract people in recovery to the site to motivate them to provide their stories, for example, a gratitude list which is known to maintain good mental health in recovery.
 Following research the project was simplified with additional features planned for the future at a point they are deemed necessary.
 
 The final scope, based on information from the strategy plane and an understanding of how chaotic addicts are is a simplified information gathering process followed by the presentation of the information in the form of:
-- illustrated cards leading to individual story details. 
-- Alternatively the user can generate a bespoke list using a filter dropdown men realting to their selected criteria. This is currently limited to one criteria, namely their own addiction. As the number of stories grows, I will add more filters so that the user is not overfaced with too many stories to process. Currently if I add more than one filter the list generated will be empty.
-= I have also left a link in the nav bar so that users can generate a list of every story. It is often intersting to see the similarities between e.g. alcohol and sex addiciton. 
+- illustrated cards linking to individual story details. 
+- Alternatively the user can generate a bespoke list using a filter drop down menu relating to their selected criteria. This is currently limited to one criteria, namely their own addiction. As the number of stories grows, I will add more filters so that the user is not over faced with too many stories to process. Currently if I add more than one filter the list generated will be empty. This will be re-scoped as the number of stories entered in to the site increases.
 
-This project suited the MongoDB store because of it's fexibility and scalabilty. The agility allowing fields to vary from document to document means that is is suitable for evolving with the project. The scope of the project anticipates the need to change and react quickly, for example, the questions may need to change regularly to gather the most useful data and provide the best solutions to our users.
+
+This project suited the MongoDB store because of it's flexibility and scalability. The agility allowing fields to vary from document to document means that is is suitable for evolving with the project. The scope of the project anticipates the need to change and react quickly, for example, the questions may need to change regularly to gather the most useful data and provide the best solutions to our users.
 If the project is deemed to be useful for the recovery community it would need to scale quickly.
 
-The scope of the project has been designed so that it is not throttles by the need for admin and processing but it can grwo organically and is moderated by admin rather than stunted by it.
+The scope of the project has been designed so that it is not throttled
+ by the need for admin and processing but it can grow organically and is moderated by admin rather than stunted by it.
+
 
 **The Structure plane**:. Considering IA- Information Architecture, the structure has been kept as simple as possible on the welcome page, considering the attention span of the users. 
-User stories dictated the chosen structure.
-The expected nav bar backs up the buttons in the sections so that the user has a familiar method to access different sections of the site. 
-Accessing the same information from a different part of the site , and in a different way (lists rather than cards containing images) is believed to be a benefit , enabling the user to find what they need effortlessly and intuitively.
+
+The nav bar link options are https://fallen-but-not-broken.herokuapp.com/index
+1. Home- currently logo and text are being considered.
+2. Tell you story  https://fallen-but-not-broken.herokuapp.com/myProblem
+3 Recovery stories https://fallen-but-not-broken.herokuapp.com/changes
+4 Share you recovery https://fallen-but-not-broken.herokuapp.com/add_changes
+5 Soul searching https://fallen-but-not-broken.herokuapp.com/pastProblem
+
+A number of links are added on the home page
+
+https://www.healthline.com/health/addiction/recognizing-addiction#early-signs
+https://dontjudgeyourlife.com/2016/10/07/resentment-how-it-destroys-your-mind-and-body-and-how-to-fix-it/
+
+A Materialize select form with drop down menu gives the option to choose from 21 substances or behaviours then filter stories that are from user/contributors with the same type of addiction.
+
+There is a second link to the 'tell you story' to maximise chances of data capture.
+https://fallen-but-not-broken.herokuapp.com/myProblem
+
+
+A section on the home page presents all the stories stored in the data base as small cards with an image that has been pre-determinedly linked to the addiction type selection.  
+The cards also list the alias provided, the name of the type of addiction and a link to the full story.
+Each 'view story' link leads to an individual story. 
+
+e.g. https://fallen-but-not-broken.herokuapp.com/storyDetail/5df29908d52ba4caf15e657d
+
+Admin button link gives the option to add and delete contributor stories
+
+https://fallen-but-not-broken.herokuapp.com/deleteButton
+
+The delete button deletes the story from the app and the data base.
+
+The edit button links to a form to update the contributor story
+
+https://fallen-but-not-broken.herokuapp.com/edit_changes/5df29908d52ba4caf15e657d
+
+Each link in the nav bar presents a form 
+
+Tell Your Story- A Materialize select form with drop down menu. Share 
+button submits the form to the myProblem collection in the mongoDB.
+
+Recovery Stories- List of all the contributor stories. - may be removed
+These are retrieved from the changes collection in mongoDB. 
+
+Share your recovery experience, mistakes and all.  - A Materialize input
+form with one select 'CHOOSE YOUR HABIT' option set as required so that images are input
+and recovery recipe will be seen by the filter. 
+'Tell you truth' button submits the form to the changes collection in the mongoDB.
+
+Soul Searching -A Materialize select form with drop down menu. Currently there are 25 questions in this form. It is proposed that collection of 108 questions will be included to be of value.
+Share button submits the form to the past problem collection in the mongoDB.
+
+
+
+
+
+
+
 
 **The Skeleton plane**
 The skeleton is currently as follows:
@@ -216,24 +274,26 @@ Within the main page the story cards link to a details story . one story per pag
 5. The admin link in the footer linking to the form offering edit and delete functionality.
 
 **The Surface plane**
-Modern design conventions were balanced with the desire to keep the interest and focus of the user and the contributor, both of which are not conventional  by their natures.
+Modern design conventions were balanced with the desire to keep the interest and focus of the user and the contributor, both of which are not conventional by their natures.
 - A main page with a lot of imagery, quotes and contributor recovery stories. 
 Images have been chosen to appeal to the users while presenting a simple message.
 The decision was made to auto add an image chosen to reflect each type of the 21 addictions tackled on this app.
-This is thought to offer a pattern to the user that they will connect within
-- the forms to complete were kept very simple. Focus to be kept on the information. The font is easy to read and the colours are muted.
-As we are trying to gather as much information as possible it is the intial decidion to only add a character limit to the alias.
-The functionaility of the forms took precendence. 
-The presentation of the list of stories after filtering has been kept raw. The focus is then kept on the information. The users can be easily distracted assuming they are suffering from addiction of some type.
+This is thought to offer a pattern to the user that is appealing.
+The forms to complete were kept very simple. Focus to be kept on the information. The font is easy to read and the colours are muted.
+A character limit to the alias has been set so that it can not extend outside the card.
+The presentation of the list of stories after filtering has been kept raw. The focus is then kept on the information. 
 At the point of submission we believe the story detail page has been laid out to best display the most relevant solutions and information immediately and make it obvious to the user. 
-This will be adapted quickly as the questions may change and the way they are presented may not benefit the user and help the informatin to be absorbed.
-The idea of recovery being a recipe presented to the user in text and images only seems to click less than half the time. 
-In terms of this project I hope the idea make sense but it may not prove an effective message in the real world. The surface would then change and the hero image on the home page would be replaced.
+This will be adapted quickly as the questions may change and the way they are presented may not benefit the user and help the information to be absorbed.
+
+
+
+The idea of recovery being a recipe presented to the user in text and images only seems to click less than half the time. In terms of this project I hope the idea make sense but it may not prove an effective message in the real world. The surface would then change and the hero image on the home page would be replaced.
 
 
 ## How to use
-1. -  Users will be invited to  'TELL YOU STORY'. A link in the nav bar and a button within the home page direct the user to the 'tell your story' form. 
-- A simple form guides the user through a  series of questions using select options to make the process effortless.
+1. -  Users will be invited to  'TELL YOU STORY'. A link in the nav bar and a button within the home page direct the user to the 'tell your story' form.
+data stored in MongoDB
+- A simple form guides the user through a series of questions using select options to make the process effortless.
 
 2. - Users can use a dropdown to filter and find stories written by people with a similar problem habit or addiction to their own. 
 Depending on how the questions are answered the user is presented with a series of stories from the data base written by addicts who are (12 months being considered as time frame) free from dependence. 
@@ -341,6 +401,7 @@ conferencing
 VR and videos and fell good music
 audio and or video shares
 filter for more 
+more filters for thw 
 email us
 
 ### Wireframes
