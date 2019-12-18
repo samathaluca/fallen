@@ -1,4 +1,8 @@
 {% extends 'base.html' %} {% block content %}
+
+
+
+
 <h3>Edit Changes</h3>
 <div class="row">
     <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">

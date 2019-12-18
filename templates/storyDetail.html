@@ -7,11 +7,11 @@
             <h5><strong>{{changes.alias}}'s story</strong> <br> Battling with {{changes.habit}}</h5>
             <h6> A recipe for recovery  </h6> 
             <div>
-                <p class="">Why did you stop? {{changes.whyStop}}</p>
-                <p class="">Who did you stop for {{changes.whoStop}}</p>
-                <p class="">How did you cope with your feelings? {{changes.feelings}}</p>
-                <p class="">ROCK BOTTOM {{changes.rockBottom}}</p>
-                <p class="">RECOVERY RECIPE {{changes.recipe}}</p>
+                <p class=""><strong>Why did you stop?</strong> - {{changes.whyStop}}</p>
+                <p class=""><strong>Who did you stop for?</strong> - {{changes.whoStop}}</p>
+                <p class=""><strong>How did you cope with your feelings?</strong> - {{changes.feelings}}</p>
+                <p class=""><strong>ROCK BOTTOM</strong> - {{changes.rockBottom}}</p>
+                <p class=""><strong>RECOVERY RECIPE</strong> - {{changes.recipe}}</p>
             </div>
         </div>
         <div class="col m4 img-container section">
@@ -27,96 +27,98 @@
 <section>
     <div class="row">
         <div class="container">
-            <!-- <div class="divider"></div> -->
-            <div class="row section icon">
+            <div class="divider"></div>
+            <div class="row section icon" style="background-color:lightgrey;">
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">perm_contact_calendar</i>
+                        <i class="material-icons">perm_contact_calendar</i> Clean Since:
                     </div>
                     <p class="clear">{{changes.start_date}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">local_dining</i>
+                        <i class="material-icons">local_dining</i> Day 1:
                     </div>
                     <p class="clear">{{changes.day1}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Day 2:
                     </div>
                     <p class="clear">{{changes.day2}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Day 3:
                     </div>
                     <p class="clear">{{changes.day3}}</p>
                 </div>
-                <br>
+            </div>
+            <div class="row section icon">
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Week 1:
                     </div>
                     <p class="clear">{{changes.week1}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Week 2:
                     </div>
                     <p class="clear">{{changes.week2}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Week 3:
                     </div>
                     <p class="clear">{{changes.week3}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Month 1:
                     </div>
                     <p class="clear">{{changes.month1}}</p>
                 </div>
+            </div>
+            <div class="row section icon" style="background-color:lightgrey;">
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Month 2:
                     </div>
                     <p class="clear">{{changes.month2}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Month 3:
                     </div>
                     <p class="clear">{{changes.month3}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Year 1:
                     </div>
                     <p class="clear">{{changes.year1}}</p>
                 </div>
                 <div class="col s12 m6 l3 icons">
                     <div>
-                        <i class="material-icons">help</i>
+                        <i class="material-icons">help</i> Year 2:
                     </div>
                     <p class="clear">{{changes.year2}}</p>
                 </div>
             </div>
-        </div>
             <div class="divider"></div>
             <div class="section">
-                <h4 class="left-align ingredients-section">Ingredients</h4>
-                <p class="section recipe-ingredients" style="white-space: pre-wrap;">{{changes.ingredients}}</p>
+                <h4 class="col s12">Ingredients</h4>
+                <p class="col s12" style="white-space: pre-wrap;">{{changes.ingredients}}</p>
             </div>
             <div class="section row">
                 <div class="col s6">
-                    <h4>Healthy eating</h4>
-                    <p class="center-align labels">{{changes.dayToDay}}</p>
+                    <h5>Healthy eating</h5>
+                    <p>{{changes.dayToDay}}</p>
                 </div>
                 <div class="col s6">
-                    <h4>Exercise</h4>
-                    <p class="center-align labels"> {{changes.summary}} </p>
+                    <h5>Exercise</h5>
+                    <p>{{changes.summary}}</p>
                 </div>
             </div>
             <div class="section">
