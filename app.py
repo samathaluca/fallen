@@ -48,7 +48,7 @@ def insert_changes():
     changes.insert_one(request.form.to_dict())
     return redirect(url_for('changes'))
 
-@app.route('/edit_changes/<changes_id>')
+@app.route('/edit_changes/<changes_id>', methods=['GET', 'POST'])
 def edit_changes(changes_id):
     the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
     all_categories = mongo.db.categories.find()

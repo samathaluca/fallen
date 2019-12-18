@@ -27,7 +27,8 @@
     <div class="nav-wrapper blue-grey darken-1">
       <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text">Home</a> -->
       <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text"><img src="static/images/logo/miniPan.png" alt="Home Logo"></a> -->
-      <a href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
+      <a id="bigNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPan.png') }}" alt="Home Logo"></a>
+      <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a class="white-text" href="{{ url_for('myProblem') }}">Tell Your Story</a></li>

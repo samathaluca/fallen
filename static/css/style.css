@@ -50,10 +50,7 @@ p {
 {
 position: relative;  
 margin-top:20px;
-border: 1px solid #f00;
 z-index: 20;
-color: #fff;
-font-weight: bold;
 }
 
 /* .parallax-container {
@@ -96,6 +93,19 @@ font-weight: bold;
   }
 }
 
+@media only screen and (max-width: 992px) {
+  #bigNav {
+    border-radius: 8px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #smallNav {
+    border-radius: 8px;
+    display: none;
+  }
+}
 
 .icon-block {
   padding: 0 15px;
