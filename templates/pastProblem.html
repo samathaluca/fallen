@@ -14,13 +14,12 @@
     <form action="{{ url_for('pastProblem') }}" method="POST"  class="col s12">
                 <div class="input-field col s12">
             <select name="thisForm">
-                <option value="" disabled selected>YOUR THOUGHTS</option>
+                <option value="" disabled selected>REASON FOR SHARING YOUR EXPERIENCE</option>
                 <option value="1">To help others</option>
                 <option value="2">To help focus your thoughts</option>
                 <option value="3">You have been frustrated by treatment so far</option>
                 <option value="4">You have been frustrated by therapy so far</option>
-                
-                <option value="5">Your addiction has stopped working</option>
+                <option value="5">Your tolerance is too high (no relief)</option>
                 <option value="6">You get more pain than pleasure now</option>
                 <option value="7">The medication is not working for you</option>
                 <option value="8">You want to help the next generation</option>
@@ -31,12 +30,13 @@
                 <option value="13">You are tired of feeling alone</option>
                 <option value="14">You have ideas as to what may work better</option>
                 <option value="15">You have had friends die</option>
-                <option value="16">A partner of family member died</option>
+                <option value="16">A partner or family member died</option>
                 <option value="17">You have lost care of your children.</option>
                 <option value="18">You wanted to feel gratitude</option>
                 <option value="19">You wanted to feel relief</option>
                 <option value="20">You want healthy connections</option>
                 <option value="21">You want new friends</option>
+                <option value="22">Other</option>
             </select>
             <label>Reason for agreeing to provide study data</label>
         </div>
@@ -152,7 +152,6 @@
                 <option value="5">Asexual</option>
                 <option value="6">Other</option>
                 <option value="7">Prefer not to say</option>
-
             </select>
             <label>What is you sexuality?</label>
         </div>
@@ -176,42 +175,42 @@
         <div class="input-field col s12">
             <select name="abstinence">
                 <option value="" disabled selected>ABSTINENCE?</option>
-                <option value="1">YES I am abstinent?</option>
-                <option value="2">I am trying to control my using?</option>
-                <option value="3">I believe abstinence is impossible for me?</option>
-                <option value="4">I aim to be abstinent in the future?</option>
-                <option value="5">The thought it too scary to contemplate.</option>
+                <option value="1">Yes I am abstinent</option>
+                <option value="2">I am trying to control my using</option>
+                <option value="3">I believe abstinence is impossible for me</option>
+                <option value="4">I aim to be abstinent in the future</option>
+                <option value="5">The thought it too scary to contemplate</option>
             </select>
             <label>Opting for abstinence?</label>
         </div>
         <div class="input-field col s12">
             <select name="therapy">
                 <option value="" disabled selected>WHICH THERAPY WORKED BEST?</option>
-                <option value="1">Talking one to one?</option>
-                <option value="2">Group therapy/12 step groups?</option>
-                <option value="3">EMDR?</option>
-                <option value="4">CBT?</option>
-                <option value="5">Mindfulness-based therapies?</option>
-                <option value="6">EFT?</option>
-                <option value="7">Family therapy?</option>
-                <option value="8">A combination of therapies?</option>
-                <option value="9">Other?</option>
+                <option value="1">Talking one to one</option>
+                <option value="2">Group therapy/12 step groups</option>
+                <option value="3">EMDR</option>
+                <option value="4">CBT</option>
+                <option value="5">Mindfulness-based therapies</option>
+                <option value="6">EFT</option>
+                <option value="7">Family therapy</option>
+                <option value="8">A combination of therapies</option>
+                <option value="9">Other</option>
             </select>
             <label>Which type of therapy worked best?</label>
         </div>
         <div class="input-field col s12">
             <select name="therapyFailed">
                 <option value="" disabled selected>WHICH THERAPY WORKED LEAST?</option>
-                <option value="1">Talking one to one?</option>
-                <option value="2">Group therapy/12 step groups?</option>
-                <option value="3">EMDR?</option>
-                <option value="4">CBT?</option>
-                <option value="5">Mindfulness-based therapies?</option>
-                <option value="6">EFT?</option>
-                <option value="7">Family therapy?</option>
-                <option value="8">A combination of therapies?</option>
-                <option value="9">Self help?</option>
-                <option value="9">Other?</option>
+                <option value="1">Talking one to one</option>
+                <option value="2">Group therapy/12 step groups</option>
+                <option value="3">EMDR</option>
+                <option value="4">CBT</option>
+                <option value="5">Mindfulness-based therapies</option>
+                <option value="6">EFT</option>
+                <option value="7">Family therapy</option>
+                <option value="8">A combination of therapies</option>
+                <option value="9">Self help</option>
+                <option value="9">Other</option>
             </select>
             <label>Which type of therapy worked least?</label>
         </div>
@@ -317,7 +316,7 @@
                 <option value="14">No medical treatments sought</option>
                 <option value="15">Most or all of the above</option>
             </select>
-            <label>Times you partake</label>
+            <label>What medical assistance have you had?</label>
         </div>
         <div class="input-field col s12">
             <select name="when">
@@ -339,7 +338,7 @@
                 <option value="3">Smoked</option>
                 <option value="4">Injected</option>
                 <option value="5">Visual</option>
-                <option value="6">Bodily</option>
+                <option value="6">Other physical method</option>
                 <option value="7">Thinking/Imaginatively</option>
                 <option value="8">Indirectly/remotely</option>
                 <option value="9">Listening</option>
@@ -389,8 +388,8 @@
                 <option value="2">On Monday</option>
                 <option value="3">Next week</option>
                 <option value="4">Next month</option>
-                <option value="5">In the FUTURE</option>
-                <option value="6">When your problem has gone away?</option>
+                <option value="5">In the future</option>
+                <option value="6">When your problem has gone away</option>
             </select>
             <label>When do you want to stop?</label>
         </div>
@@ -465,7 +464,7 @@
                 <option value="8">I will hate my life and reality</option>
                 <option value="9">My feelings will overwhelm me</option>
                 <option value="10">My memories will re-traumatise me</option>
-                <option value="11">I am broken</option>
+                <option value="11">I will be/I am broken</option>
                 <option value="12">There is no going back to normal</option>
                 <option value="13">Most of the above</option>
             </select>
@@ -498,8 +497,8 @@
             SHARE <i class="material-icons right">playlist_add</i>
             </button>
         </div>
-    <H6>THANK YOU. By filling in and submission of  this form you agree for the independent and anonymous data to be used to find new , effective treatments and detox schemes to help others.</H6>
-    <H6>If you would like to receive more information or have any improvements to the questions please email samsiexpress@aol.com</H6>
+    <H6>THANK YOU. By filling in and submitting this form, you agree for the independent and anonymous data to be used to find new, effective treatments and detox schemes to help others.</H6>
+    <H6>If you would like to receive more information or have any  alt="Burning Fist"            jjjjjprovements to the questions please email samsiexpress@aol.com</H6>
     <!-- </div> -->
     </form>
 <!-- gratitude list and journal option  -->

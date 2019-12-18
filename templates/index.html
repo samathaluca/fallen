@@ -2,17 +2,43 @@
 {% extends 'base.html' %}
 {% block content %}
 <!-- Eye catching header -->
-<section>
-<div class="row">
-    <div class="col s12">
 
-        <div class="card hoverable">
+
+<section>
+<!-- Letting go image of burning hand and text Version for Desktop-->
+    <div class="row">
+        <div class="col s12 m12 blue-grey-text">
+            <h3 class="header">Recipes for Recovery</h3>
+            <div id="fist" class="card horizontal">
+                <div class="card-image">
+                    <img class="responsive-img" src="static/images/FryingPan.png" alt="Recovery Wok">
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <h4>Word of Mouth</h4>
+                        <h5>No one understands better than someone else who walked in your shoes.<br>Practical ideas from people who walked the walk, not just talked the talk.<br>Proven ingredients and methods that work.</h5>
+                    </div>
+                    <div class="card-action">
+                        <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Recognising if you have an Addiction Problem</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col s12 blue-grey-text">
+        <div id="fist2" class="card hoverable">
             <div class="card-image">
                 <img src="static/images/FryingPan.png" alt="Recovery Wok" style="width:100%;height:100%;">
-               
+                <!-- <span class="card-title"><h4>Word of Mouth</h4></span> -->
+            </div>
+            <div class="card-content">
+                <h4>Word of Mouth</h4>
+                <h5>No one understands better than someone else who walked in your shoes.<br>Practical ideas from people who walked the walk, not just talked the talk.<br>Proven ingredients and methods that work.</h5>
             </div>
             <div class="card-action">
-                <h3>Recipes for Recovery</h3>
+                <!-- <h3>Recipes for Recovery</h3> -->
                 <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Recognising if you have an Addiction Problem</a>
             </div>
         </div>
@@ -43,7 +69,7 @@
     </div>
     <!-- Letting go image of burning hand and text Version for mobiles-->
 <div class="row">
-    <div class="col s12 m12">
+    <div class="col s12 m12 blue-grey-text">
       <div id='fist2' class="card">
         <div class="card-image">
           <img src="static/images/resentment.jpg"  alt="Burning Fist">
@@ -64,7 +90,7 @@
 <!-- Filter stories section -->
 <main class="container">
 <div class="row" style="background-color:lightgrey;">
-    <div class="col s12 m3 hide-on-small-only">
+    <div class="col s12 m3">
         <ul class="collapsible">
             <li class="active">
                 <div class="collapsible-header">How have others stopped?<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
@@ -124,7 +150,7 @@
         <div class="col s6 m3">
             <div class="card hoverable" style="width:100% ;height:335px;">
                 <div class="card-image">
-                    <img src="static/images/{{ changes.habit }}.jpg">
+                    <img src="static/images/{{ changes.habit }}.jpg" alt="Habit Picture">
                     <div id="shadow" class="card-title">
                         <span>{{changes.alias}}</span>
                     </div>
@@ -170,8 +196,8 @@
                         <p>You get frustrated and the pig gets frustrated.</p>
                     </div>
                 <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                   <a href="http://smartrecoverybc.com/index.php/resources/addiction-articles-and-essays/rational-thinking/irrationalities-related-to-low-frustration-tolerance-lft.html" target="_blank">This is a link</a>
+                    <a href="https://lakehouserecoverycenter.com/blog/your-level-of-stress-tolerance-may-indicate-a-vulnerability-to-addiction/" target="_blank">This is a link</a>
                 </div>
             </div>
 
@@ -183,8 +209,8 @@
                         <p>Different Drugs rarely manage to problem</p>
                     </div>
                 <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                   <a href="https://americanaddictioncenters.org/polysubstance-abuse" target="_blank">This is a link</a>
+                    <a href="https://www.addictioncenter.com/community/addiction-replacement/" target="_blank">This is a link</a>
                 </div>
             </div>
 
@@ -196,8 +222,8 @@
                         <p>The belief that we are special and different, often leading to isolation and death.</p>
                     </div>
                 <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                   <a href="https://www.psychologytoday.com/gb/blog/communication-success/201608/8-common-narcissist-lies" target="_blank">This is a link</a>
+                    <a href="https://www.banyanpompano.com/2014/08/27/terminal-uniqueness/" target="_blank">This is a link</a>
                 </div>
             </div>
 
@@ -209,8 +235,8 @@
                         <p>Everything you say before the BUT is BS.</p>
                     </div>
                 <div class="card-action">
-                   <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                   <a href="https://cassioburycourt.com/2019/09/the-top-5-excuses-for-not-getting-your-addiction-treated/" target="_blank">This is a link</a>
+                    <a href="https://www.rehabs.com/blog/7-excuses-we-use-to-avoid-treatment/" target="_blank">This is a link</a>
                 </div>
             </div>
 
@@ -222,8 +248,8 @@
                         <p>Women are more likely to die from addiction than men.</p>
                     </div>
                 <div class="card-action">
-                   <a href="https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women">Women and addiction</a>
-                    <a href="https://www.addictioncenter.com/addiction/differences-men-women/">The sex differences</a>
+                    <a href="https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women" target="_blank">Women and addiction</a>
+                    <a href="https://www.addictioncenter.com/addiction/differences-men-women/" target="_blank">The sex differences</a>
                 </div>
             </div>
         <div class="row">
@@ -234,8 +260,8 @@
                         <p>After my 7th divorce, I realised I may be part of the problem.</p>
                     </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
-                    <a href="#">This is a link</a>
+                    <a href="https://www.vice.com/en_au/article/qvvqmv/the-destructive-allure-of-hooking-up-in-rehab" target="_blank">This is a link</a>
+                    <a href="https://www.slaauk.org/recovery/stories/" target="_blank">This is a link</a>
                 </div>
             </div>
         </div>
