@@ -88,16 +88,16 @@
 </section>
         
 <!-- Filter stories section -->
-<main class="container">
+<!-- <main class="container"> -->
 <div class="row" style="background-color:lightgrey;">
-    <div class="col s12 m3">
+    <div class="col s12 m4">
         <ul class="collapsible">
             <li class="active">
                 <div class="collapsible-header">How have others stopped?<i class="material-icons dropdown-icon">arrow_drop_down</i></div>
                 <div class="collapsible-body">
                     <form action="{{ url_for('changes') }}" method="POST"> 
                         <div class="input-field col s12">
-                            <select id="habit" name="habit">
+                            <select multiple id="habit" name="habit">
                         <option value="" disabled selected>Your poison</option>
                         {% for cat in categories %}
                             <option value="{{cat.habit}}">{{cat.habit}}</option>
@@ -118,7 +118,7 @@
 
     </div>
 <!-- tell your story banner and button linking to Tell you story (links to myProblem form and database) -->
-    <div class="col s12 m8 l9">
+    <div class="col s12 m8">
         <div class="section no-pad-bot" id="index-banner">
             <div class="container">
                 <h4 class="header center blue-grey-text">HABIT OR ADDICTION <br>Battered and bruised- Leave the fight. <br>Burnt- Get out of the fire</h4>
@@ -132,7 +132,7 @@
             </div>
         </div>
 </div>
-</main>
+<!-- </main> -->
 
 <!-- Lots of recovery stories stored in MongoDB presented in cards-->
 

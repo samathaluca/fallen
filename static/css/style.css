@@ -40,6 +40,22 @@ p {
   color: #26a69a;
 }
 
+
+/* img
+{
+  width:100%;
+} */
+
+#sheep
+{
+position: relative;  
+margin-top:20px;
+border: 1px solid #f00;
+z-index: 20;
+color: #fff;
+font-weight: bold;
+}
+
 /* .parallax-container {
   min-height: 380px;
   line-height: 0;
