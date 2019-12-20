@@ -502,14 +502,22 @@ email us
 pagination
 pop up saying thank you or a new page
 
-filter choses two or more types of addiciton, also further filters 
+required field pop up warning for add_changes
+
+# 404 error page
+# @app.errorhandler(404)
+# def page_not_found(e):
+#     return render_template('pages/404.html'), 404
+
+
+filter choses two or more types of addiction, also further filters 
 One of the key factors in getting through to addicts is for them to identify and recongnise that the person trying to help them has walked in their shoes.
 As the stories become more plentiful a second filter can be added e.g. sex or age or education or stress levels or social anxiety, the list is endless. 
 
 user /contribtuor stories I will have access to a gratitude list and journal which may help me 
 
-
-As a user I expect feedback from the website I am using when I interact with it, I expect loading spinners when pages are taking a while to load, I expect pop ups and modals to inform me when my forms have been completed and sent correctly.
+As a user I expect feedback from the website I am using when I interact with it, I expect loading spinners when pages are taking a while to load, I expect pop ups and modals to inform
+ me when my forms have been completed and sent correctly.
 
 I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
 
@@ -548,7 +556,7 @@ js materilaize
 1. Chrome Devtools
 2. HTML Validator
 3. CSS VALIDATOR
-4. HTML AND CSS Beautifier
+4. HTML AND CSS Beautifier use format selection in beautify code
 5. Javascript Validator
 6. Markdown live-preview -
 -Markdown live preview - https://markdownlivepreview.com/ -This project used markdown previewer to check the rendering of the readme.md file content.
@@ -560,6 +568,39 @@ This project used markdown previewer to check the rendering of the readme.md fil
 
 testing of ceoncept -ask other users
 addicts, slack etc
+
+
+problems listed in the terminal were at one point 89. now 9 problems with no warnings
+the problems includes indentation, trailing white space, line too long , unused variables, imported but unused files, the pep8 list of errors from pep8 online replicated the problems and warnings in the terminal.
+when trying to fix the line too long issue one problem created another when amended.
+VSC code extensions
+PEP8 online
+Check your code for PEP8 requirements
+Check results 
+Save 
+Share
+Code	Line	Column	Text
+E302	19	1	expected 2 blank lines, found 1
+E128	24	5	continuation line under-indented for visual indent
+E302	27	1	expected 2 blank lines, found 1
+W291	30	47	trailing whitespace
+E128	31	9	continuation line under-indented for visual indent
+E251	31	16	unexpected spaces around keyword / parameter equals
+E501	42	80	line too long (80 > 79 characters)
+E501	49	80	line too long (85 > 79 characters)
+E303	60	1	too many blank lines (3)
+E302	61	1	expected 2 blank lines, found 3
+E501	65	80	line too long (94 > 79 characters)
+E302	67	1	expected 2 blank lines, found 1
+E128	71	5	continuation line under-indented for visual indent
+E302	91	1	expected 2 blank lines, found 1
+E501	108	80	line too long (85 > 79 characters)
+E302	116	1	expected 2 blank lines, found 1
+E501	119	80	line too long (91 > 79 characters)
+
+ipad pro is not looking good 
+
+
 
 9. HEROKU
 python tests
