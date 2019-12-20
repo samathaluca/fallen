@@ -1,3 +1,257 @@
+# CHANGE IS GOOD- Recovery app. 
+
+## Aim 
+Create an App to help connect still suffering addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
+Both users and user/contributors will have the option to add their story. The data collected from these real life stories will be studied to determine patterns that lead to, fuel and arrest recovery. 
+
+The term addict is used to describe the user who has a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
+The different types of addiction options currently added are:
+1. Alcohol
+2. Prescription drugs
+3. Illegal drugs
+4. Food
+5. Sex/Porn
+6. Gambling
+7. Exercise
+8. Obsession with health
+9. Attention
+10. Physical self harm
+11. Toxic relationships
+12. Violence
+13. Social Media
+14. Gaming
+15. Spending
+16. Horoscopes/Psychics
+17. Chatlines
+18. Fantasy
+19. Gossip/Drama
+20. Materialism/Image
+21. Other
+
+## Key value and who benefits from the development of this app- What is the point?
+
+1. Help users looking for solutions to see stories of those who have recovered. Gain hope from human connection and a sense of community. 
+2.  Help User/contributors (people who have some methods to suggest as a means to recover) stay connected while remembering how bad it was to prevent relapse. In 12 step recovery it this an essential part of maintaining good mental health and sobriety.  A recent VR study proved that helping a crying child, even in a virtual environment, improves resistant depression.
+Helping others is very good for mental health. This app will provide a forum for  user/contributors helping others and for those on 12 step programs to do step 12.
+3. With social services, the police force, emergency services, criminal justice system and the NHS all suffering from critically low levels of funding, this app attempts to gather data that may be useful. This data may eventually help towards greater understanding and alleviation of the costs of the disease of addiction on society. Addicts are a huge drain on all our resources but many of the treatments available currently do not work well. Any useful information
+collected by this app is destined to be included in a report that will be made available without any cost to any of the services who may be helped by it. 
+#### In Summary
+Open source philosphy has proven to find solutions, this app will be an open source tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
+
+## WHY the idea?
+
+The idea came from the milestone3 project guideline which suggested we make an app which stores recipes. 
+The automatic thought is to develop an app which stores cooking recipes but the term recipe can apply to other structured methods.
+
+Having myself volunteered helping alcoholics, drug addicts and sex/love addicts for almost 20 years, I know that the current treatments in place do not work for the majority of people.
+New approaches are necessary but the gathering of data is currently not independent. Many of the current recovery models have been set up to support men. In particular male offenders.
+The fear of social services being involved prevents many mothers from seeking the help they desperately need. This is believed to contribute to the fact that women may be more likely to go to A&E or die from overdose or other effects of certain substances.
+The difficulty women with children have attending 12 step meetings or other recovery programmes reliably means fresh methods need to be developed to support these women.
+Not neglecting men, many of whom state that their social anxiety prevents them in engaging with currently favoured treatment programs which are geared towards group therapy and effectively revealing all your past and inner most thoughts to an audience.
+
+Latest studies reveal that addiction may be the direct result of lack of human connection. 
+Addiction is a desperate and lonely place.
+The belief that you are alone and the only one to have suffered the same experiences is the final song of many addicts who tragically die. Often leaving young children to the social care system. 
+Addiction presents with the symptom of a feeling uniqueness, a sense of being special and different. Both a sense of grandiosity  and the flip side of pitifully low self esteem are often present. 
+If this is not tackled this pattern of thinking will end in escalating substance use or uncontrollable behaviour. 
+Prison, hospitalisation, institutions or death by suicide, accident or violence are inevitabilities of untreated addiction.
+
+This project will 
+1. Offer an environment where isolated people suffering with addiction issues can reach out. 
+2. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction.
+3. Offer tools to help addicts in recovery maintain their vantage point. 
+3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societal influences, family history and environment. Many other factors can easily be explored by presenting them within the questionnaires to gather facts of statistical significance. 
+
+The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers yet may cause suicide and death in another.
+As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will lump these cases together. 
+
+This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
+Presenting the user with similarities and not differences amongst the success stories.
+
+
+## UX
+
+### User stories and anticipated preferences considered at each stage and contained within this section. 
+Separate user stories section added for clarity.
+
+
+**The strategy plan**
+##### Summary of strategy plan
+1. Development focus will be to provide a service and connection for users who are trying to recover from addiction.
+2. Second strategic aim is to be useful for user/contributors.
+3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
+4. Fourth part of the strategy will be to use the data collected in a report that will be published and given free of charge to the services that may benefit from it.
+
+##### Details of strategy plan
+
+1. Development focus will be to provide a service and connection for users who are trying to recover from addiction or thinking about how possible it may be in the future.
+
+Useful links, motivational quotes, images with a message will be presented throughout the app.
+
+On the home page the user will be asked to select their type of poison (addiction)
+to filter out stories that may be of no interest or help to them. 
+They will be invited to  'tell you story'. Journalling, sharing your experience and finding a voice has been proven to be beneficial in all areas of mental health including recovery from addiction.
+It needs to be kept short and simple for addicts who have difficulty focusing. The strategy of guided select questions was chosen to keep the addicted minds focused and engaged. 
+A series of direct questions with different predetermined options in a collapsible select form is how this is tackled.
+The answers to these questions will be assigned an integer which will be stored in the database so that processing the data will be simplified. 
+
+2. Second strategic aim is to be useful for user/contributors.
+User/contributors will be deemed to be those sharing their story having recovered from addiction
+
+The contributors to the information provided to the users will be addicts in recovery who share their stories and demonstrate which methods they used to get the stay sober/clean and free of the destructive patterns that have taken over their lives.
+The contributors will be asked more general questions because
+- With an open forum, it is anticipated that a lot more methods may be offered for consideration that haven't been thought of previously.
+- Asking specific questions and tailoring the responses will limit the collection of data to what is previously known to cause and heal addiction. A fresh approach needs to be found.
+- The stories presented will appear more personal, true and relateable if they are in the contributors own words.
+- The questions which provoke thought may be more engaging for the contributor so making them more likely to complete and submit the form. This is not an assumption. If we find that forms being submitted incomplete or there is a lack of interest, the content of the forms will be amended.
+It is part of the strategy to research validated form designs to see if they may be relevant or necessary. This may be adapted once the app goes live as a response to feedback.
+3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
+An example of this would be the fact that women are more likely to visit A&E or die from addiction than men. 
+A recent study showed that alcoholic women who enter in to the currently available treatment programmes and attempt to get in to recovery are more likely to die than those who have not had any treatment. 
+This is hypothesised to be due to the fact that all the research for the effectiveness of the currently available methods of treatment has been carried out in men. Specifically male offenders. 
+
+https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women
+
+https://www.addictioncenter.com/addiction/differences-men-women/
+
+A strategy to focus the app on collecting data from women has been considered but not implemented so far based on the expectation that men may still use the app and the data would be distorted if we expect all the results to have been gathered from women.
+
+The strategy has been developed considering the following accepted facts 
+which may prove to be beneficial for mothers or men who have stressful lives with a lot of responsibility, including single fathers.
+
+Mothers/ single fathers or carers who are isolated and looking after young children, do not feel able to engage in the currently available treatments for reasons as follows:
+-  for fear of social services being involved
+-  limited time
+-  limited emotional and physical energy
+-  risk of losing their relationship and financial support . Couples often use drugs together so when one tries to get help the other feels threatens and prevents this.
+
+
+Using this app
+-  the parent or carer can seek help when the children have gone to bed on their phone without the pressure of sticking to a rigorous regime.
+- parents and carers may be come motivated to reach out for the help earlier. Identification/connections through reading  success stories may help them gain hope.
+-  in helping the carer or parent it may be possible to  lower the burden on social services and stop the damage to the family unit and the dependent children.
+
+
+
+ADMIN SECTION- Editing and deleting stories which may to too graphic, false or inappropriate.
+
+A hard to find tab labelled admin will link to a form to edit the contributor story. The option to delete will be stored there too. 
+Currently the strategy offers total anonymity and no login is required. This is expected to remain the case for the user. 
+No login is deemed necessary for contributors at this point. We will be keen to gather as many recovery success stories as possible so the ease of this process will be imperative. Any barriers may limit the available information and select for a specific type of contibutor which will influence the data collected.
+There is no login currently for admin as whole. There is no requirement for login to be included for the project but without having launched the app we can not predict whether this may need to be added for sure. The reasoning is that if an offensive recovery story is added it does not need to wait for authorised admin to find out and remove it.
+Anyone can remove it who is offended by it. There is an appreciation that this may lead to malicious emptying of the database but while the scale of the project is still small the threat is considered small.
+
+The community interest goals of this website are
+<!--  because currently treatment is geared towards crisis and not prevention.  -->
+- To collect data useful to the NHS, drug treatment agencies and private recovery organisations.
+- To provide hope, comfort and a community for people trying to recover from addiction and isolation.
+- To help mothers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
+- many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. Little funding is available for prevention. 
+Part of the strategy it aimed at assessing where or not early intervention and stopping addiction escalating, ultimately benefits addicts, their famillies, their communites and the wider society thereby evidencing that funding should be focused on prevention rather than cure.
+
+**The scope plane**
+Re-scoping followed feedback from tutors and my mentor. Furthermore, when I asked recovered addicts to fill in the forms I had designed they lost interest half way through which would lead to aborted efforts too often. The forms were amended and it is accepted that amendments to the questions in the forms will be ongoing.
+The initial scope was ambitious and had features added, for example a diary as journalling is known to help recovering addicts.
+Originally the scope included a lot of recovery information within the app but this is now selected by a series of links within the home page and in the footer. 
+There were features planned that would attract people in recovery to the site to motivate them to provide their stories, for example, a gratitude list which is known to maintain good mental health in recovery.
+Following research the project was simplified with additional features planned for the future at a point they are deemed necessary.
+
+The final scope, based on information from the strategy plane and an understanding of how chaotic addicts are, is a simplified information gathering process followed by the presentation of the information in the form of:
+- illustrated cards linking to individual story details. 
+- Alternatively the user can generate a bespoke list using a filter drop down menu relating to their selected criteria. This is currently limited to one criteria, namely their own addiction. As the number of stories grows, I will add more filters so that the user is not over faced with too many stories to process. Currently if I add more than one filter the list generated will be empty. This will be re-scoped as the number of stories entered in to the site increases.
+
+
+This project suited the MongoDB store because of it's flexibility and scalability. The agility allowing fields to vary from document to document means that is is suitable for evolving with the project. The scope of the project anticipates the need to change and react quickly, for example, the questions may need to change regularly to gather the most useful data and provide the best solutions to our users.
+If the project is deemed to be useful for the recovery community it would need to scale quickly.
+
+The scope of the project has been designed so that it is not throttled by the need for admin and processing but it can grow organically and is moderated by admin rather than stunted by it.
+
+
+**The Structure plane**:. Considering what would be logical and intuitive IA- Information Architecture, the structure has been kept as simple as possible on the welcome page, considering the attention span of the users. 
+
+#### The base.html template offers :
+- Navigation bar. Link with options are 
+1 **Home**- Logo designed with HOME characters. [Home page link](https://fallen-but-not-broken.herokuapp.com/index)
+2 **Tell you story**  https://fallen-but-not-broken.herokuapp.com/myProblem
+3 **Recovery stories** https://fallen-but-not-broken.herokuapp.com/changes
+4 **Share you recovery** https://fallen-but-not-broken.herokuapp.com/add_changes
+5 **Soul searching** https://fallen-but-not-broken.herokuapp.com/pastProblem
+- Footer content with:
+1. Admin link gives the option to add and delete contributor stories.
+The edit button links to a form to update the contributor story
+Edit form is sited at https://fallen-but-not-broken.herokuapp.com/deleteButton
+The delete button deletes the story from the app and the data base.
+2. Series of external links to relevant information proof of claims in content of site. 
+
+#### The index.html home page structure
+
+###### Header
+Setting recovery recipe concept set in materialize card. 
+External link [do you have an addiction problem?](https://www.healthline.com/health/addiction/recognizing-addiction#early-signs)
+
+###### Section
+Anger/ resentment concept image and text within materialize card.
+External link [resentment is a problem](https://dontjudgeyourlife.com/2016/10/07/resentment-how-it-destroys-your-mind-and-body-and-how-to-fix-it/)
+
+###### Main section
+A Materialize select form with drop down menu gives the option to choose from 21 substances or behaviours. The choice selected then filters stories that are from user/contributors with the same type of addiction. Filtering out stories of no relevance or interest to the user.
+
+There is a second link to the 'Tell you story' form to maximise chances of data capture.
+https://fallen-but-not-broken.herokuapp.com/myProblem
+
+
+The main section on the home page presents all the stories stored in the data base as small cards with an image that has been pre-determinedly linked to the addiction type selection.  
+The cards also list the alias provided, the name of the type of addiction and a link to the full story.
+Each 'view story' link leads to an individual story. 
+Examples would be :
+- https://fallen-but-not-broken.herokuapp.com/storyDetail/5df29908d52ba4caf15e657d
+
+- https://fallen-but-not-broken.herokuapp.com/storyDetail/5dfa5cdd0b8669e8b26413b9
+
+- https://fallen-but-not-broken.herokuapp.com/storyDetail/5df11a41d7a56682a67a6337
+
+
+
+
+
+
+
+
+#### myProblem.html page
+**Tell Your Story**- https://fallen-but-not-broken.herokuapp.com/myProblem
+
+A Materialize select form with collapsible menu. 
+
+Share button submits the form to the myProblem collection in the mongoDB.
+
+
+#### changes.html 
+
+**Recovery stories** https://fallen-but-not-broken.herokuapp.com/changes
+
+List of all the contributor stories in collapsible form.
+Stories retrieved from the changes collection in mongoDB. 
+
+#### add_changes html
+
+**Share you recovery** https://fallen-but-not-broken.herokuapp.com/add_changes
+
+Share your recovery experience, mistakes and all.  - A Materialize input
+form with one select 'CHOOSE YOUR HABIT' option set as required so that images are input
+and recovery recipe will be seen by the filter. 
+'Tell you truth' button submits the form to the changes collection in the mongoDB.
+
+
+#### pastProblem.html
+
+5 **Soul searching** https://fallen-but-not-broken.herokuapp.com/pastProblem
+Soul Searching -A Materialize select form with drop down menu. Currently there are 25 questions in this form. It is proposed that collection of 108 questions will be included to be of value.
+Share button submits the form to the past problem collection in the mongoDB.
+
+
+
+
+
 # CHANGE IS GOOD
 
 ## Aim 
@@ -403,6 +657,8 @@ audio and or video shares
 filter for more 
 more filters for thw 
 email us
+pagination
+pop up saying thank you or a new page
 
 ### Wireframes
 
