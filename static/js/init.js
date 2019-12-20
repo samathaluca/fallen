@@ -1,3 +1,5 @@
+// This file includes the following necessary jquery to enable the Materialize javascript  included in the project to initialize.
+
 $(document).ready(function() {
 
     function initMaterialize() {

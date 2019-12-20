@@ -1,5 +1,12 @@
 
+@app.route('/firstSteps')
+def firstSteps():
+    return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
 
+@app.route('/imageTest')
+def imageTest():
+    return render_template('imageTest.html')
+    
 # @app.route('/tasks')
 # def tasks():
 #     return render_template("tasks.html", tasks=mongo.db.tasks.find())

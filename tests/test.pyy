@@ -29,5 +29,10 @@ if __name__ == '__main__':
 # print(changes_id)
 
 
+@app.route('/imageTest')
+def imageTest():
+    return render_template('imageTest.html')
+  
+
 
 

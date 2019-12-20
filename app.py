@@ -6,14 +6,16 @@ from os import path
 if path.exists("env.py"):
     import env
 
+# create instance of flask and assign it to "app"
 app = Flask(__name__)
 
+# MongoDB Assign db/URI 
 app.config["MONGO_DBNAME"] = 'MS3_project'
 app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
-
+# Home page (index.html)
 @app.route('/')
 @app.route('/index')
 def index():
@@ -21,7 +23,8 @@ def index():
     return render_template('index.html', 
     categories=mongo.db.categories.find(),
     changes=mongo.db.changes.find())
-    
+
+# Recovery stories page (changes.html)
 @app.route('/changes', methods=['GET', 'POST'])
 def changes():
     if request.method == 'GET':
@@ -33,10 +36,13 @@ def changes():
         changes = mongo.db.changes.find({"habit": habit})
         return render_template('changes.html', changes=changes)
 
+
+# Edit/Delete recovery stories, from mongoDB changes collection, page (deleteButton.html)
 @app.route('/deleteButton')
 def deleteButton():
     return render_template('deleteButton.html', changes=mongo.db.changes.find())
 
+# add recovery stories to mongoDB changes collection page (add_changes.html)
 @app.route('/add_changes')
 def add_changes():
     return render_template('add_changes.html', categories=mongo.db.categories.find())
@@ -48,6 +54,7 @@ def insert_changes():
     changes.insert_one(request.form.to_dict())
     return redirect(url_for('changes'))
 
+# Edit recovery stories in mongoDB changes collection page (edit_changes.html)
 @app.route('/edit_changes/<changes_id>', methods=['GET', 'POST'])
 def edit_changes(changes_id):
     the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
@@ -83,25 +90,22 @@ def update_changes(changes_id):
     })
     return redirect(url_for('changes'))
 
+# delete recovery stories from mongoDB changes collection
+
 @app.route('/delete_changes/<changes_id>')
 def delete_changes(changes_id):
     mongo.db.changes.remove({'_id': ObjectId(changes_id)})
     return redirect(url_for('changes'))
 
 
+# individual recovery story page loaded from View story links
 @app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
 def storyDetail(changes_id):
     changes = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
     return render_template('storyDetail.html', changes=changes)
 
-@app.route('/firstSteps')
-def firstSteps():
-    return render_template('firstSteps.html', firstSteps=mongo.db.firstSteps.find())
 
-@app.route('/imageTest')
-def imageTest():
-    return render_template('imageTest.html')
-
+# Tell your story page myProblem.html
 @app.route('/myProblem', methods=['GET', 'POST'])
 def myProblem():
     if request.method == 'GET':
@@ -111,6 +115,8 @@ def myProblem():
         insert_myProblem = mongo.db.myProblem
         insert_myProblem.insert_one(request.form.to_dict())
         return redirect(url_for('index'))
+
+
 
 @app.route('/pastProblem', methods=['GET', 'POST'])
 def pastProblem():
