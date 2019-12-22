@@ -22,12 +22,14 @@ def index():
     changes = mongo.db.changes.find()
     return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 
+
 @app.route('/gratitudeList')
 def gratitudeList():
     # changes = mongo.db.changes.find()
     return render_template('gratitudeList.html')
     # , categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 # Recovery stories page (changes.html)
+
 
 @app.route('/changes', methods=['GET', 'POST'])
 def changes():

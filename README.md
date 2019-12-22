@@ -38,7 +38,7 @@ collected by this app is destined to be included in a report that will be made a
 #### In Summary
 Open source philosphy has proven to find solutions, this app will be an open source tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
 
-## WHY the idea?
+## Why the idea?
 
 The idea came from the milestone3 project guideline which suggested we make an app which stores recipes. 
 The automatic thought is to develop an app which stores cooking recipes but the term recipe can apply to other structured methods.
@@ -56,14 +56,14 @@ Addiction presents with the symptom of a feeling uniqueness, a sense of being sp
 If this is not tackled this pattern of thinking will end in escalating substance use or uncontrollable behaviour. 
 Prison, hospitalisation, institutions or death by suicide, accident or violence are inevitabilities of untreated addiction.
 
-This project will 
+This project objectives are to 
 1. Offer an environment where isolated people suffering with addiction issues can reach out. 
 2. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction.
 3. Offer tools to help addicts in recovery maintain their vantage point. 
 3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societal influences, family history and environment. Many other factors can easily be explored by presenting them within the questionnaires to gather facts of statistical significance. 
 
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers yet may cause suicide and death in another.
-As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will lump these cases together. 
+As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will usually lump these cases together. 
 
 This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
 Presenting the user with similarities and not differences amongst the success stories.
@@ -82,7 +82,9 @@ Separate user stories section added for clarity.
 1. Development focus will be to provide a service and connection for users who are trying to recover from addiction.
 2. Second strategic aim is to be useful for user/contributors.
 3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
-4. Fourth part of the strategy will be to use the data collected in a report that will be published and given free of charge to the services that may benefit from it.
+4. Fourth part of the strategy considered minimising the dependency on extensive admin whilst maximimising the reproduceability and authenticity of the data by validating the questions used to collect the data. 
+
+A future goal of the project would be to analyse the data collected in a report that will be published and given free of charge to the services that may benefit from it.
 
 ##### Details of strategy plan
 
@@ -109,17 +111,18 @@ The contributors will be asked more general questions because
 It is part of the strategy to research validated form designs to see if they may be relevant or necessary. This may be adapted once the app goes live as a response to feedback.
 3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
 An example of this would be the fact that women are more likely to visit A&E or die from addiction than men. 
-A recent study showed that alcoholic women who enter in to the currently available treatment programmes and attempt to get in to recovery are more likely to die than those who have not had any treatment. 
-This is hypothesised to be due to the fact that all the research for the effectiveness of the currently available methods of treatment has been carried out in men. Specifically male offenders. 
 
 https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women
 
 https://www.addictioncenter.com/addiction/differences-men-women/
+A recent study showed that alcoholic women who enter in to the currently available treatment programmes and attempt to get in to recovery are more likely to die than those who have not had any treatment. 
+This is hypothesised to be due to the fact that all the research for the effectiveness of the currently available methods of treatment has been carried out in men. Specifically male offenders. 
+
+A lot of help is available for crisis. A low cost strategy to tackle prevention and early intervention is needed in the hope that  helping the carer or parent it may be possible to  lower the burden on social services and stop the damage to the family unit and the dependent children. 
 
 A strategy to focus the app on collecting data from women has been considered but not implemented so far based on the expectation that men may still use the app and the data would be distorted if we expect all the results to have been gathered from women.
 
-The strategy has been developed considering the following accepted facts 
-which may prove to be beneficial for mothers or men who have stressful lives with a lot of responsibility, including single fathers.
+The strategy has been developed considering the following accepted facts which may prove to be beneficial for mothers or men who have stressful lives with a lot of responsibility, including single fathers.
 
 Mothers/ single fathers or carers who are isolated and looking after young children, do not feel able to engage in the currently available treatments for reasons as follows:
 -  for fear of social services being involved
@@ -127,29 +130,30 @@ Mothers/ single fathers or carers who are isolated and looking after young child
 -  limited emotional and physical energy
 -  risk of losing their relationship and financial support . Couples often use drugs together so when one tries to get help the other feels threatens and prevents this.
 
-
-Using this app
+The simplicity plus 24/7 availability of the app was developed believing that 
 -  the parent or carer can seek help when the children have gone to bed on their phone without the pressure of sticking to a rigorous regime.
 - parents and carers may be come motivated to reach out for the help earlier. Identification/connections through reading  success stories may help them gain hope.
--  in helping the carer or parent it may be possible to  lower the burden on social services and stop the damage to the family unit and the dependent children.
+-Addiction is often accompanies by antisocial sleep patterns which further isolate the user and make access to help more difficult.
 
 
+Part of the strategy it aimed at assessing and collecting evidence of how intervention and stopping addiction escalating, ultimately benefits addicts, their famillies, their communites and the wider society thereby evidencing that funding should shift focus towards prevention rather than cure.
 
-ADMIN SECTION- Editing and deleting stories which may to too graphic, false or inappropriate.
+Knowledge that many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. Little funding is available for prevention.
 
-A hard to find tab labelled admin will link to a form to edit the contributor story. The option to delete will be stored there too. 
+Strategic immediate Goals:
+- To provide hope, comfort and a community for people trying to recover from addiction and isolation.
+- To help mothers/carers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
+- Help recovered addict's well being.
+- To collect data useful to the NHS, drug treatment agencies and private recovery organisations. The community interest goals of this website are aimed at prevention, early intervention and cure.
+
+4. Fourth part of the strategy considered minimising the dependency on extensive admin whilst maximimising the reproduceability and authenticity of the data by validating the questions used to collect the data. 
+Admin strategy - Editing and deleting stories which may to too graphic, false or inappropriate would be an ongoing concern. For the purpose of this project edit and delete functionality is accessed by clicking on `admin` text link positioned in the footer. Although it is considered that all data will be useful, it is not expected that all stories will be appropriate and 
+genuine. It is possible that the stories may need to be authorised before being posted.  
 Currently the strategy offers total anonymity and no login is required. This is expected to remain the case for the user. 
 No login is deemed necessary for contributors at this point. We will be keen to gather as many recovery success stories as possible so the ease of this process will be imperative. Any barriers may limit the available information and select for a specific type of contibutor which will influence the data collected.
 There is no login currently for admin as whole. There is no requirement for login to be included for the project but without having launched the app we can not predict whether this may need to be added for sure. The reasoning is that if an offensive recovery story is added it does not need to wait for authorised admin to find out and remove it.
 Anyone can remove it who is offended by it. There is an appreciation that this may lead to malicious emptying of the database but while the scale of the project is still small the threat is considered small.
-
-The community interest goals of this website are
-<!--  because currently treatment is geared towards crisis and not prevention.  -->
-- To collect data useful to the NHS, drug treatment agencies and private recovery organisations.
-- To provide hope, comfort and a community for people trying to recover from addiction and isolation.
-- To help mothers who are too afraid to get the help they need because of the threat that their children may be removed by social services.
-- many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. Little funding is available for prevention. 
-Part of the strategy it aimed at assessing where or not early intervention and stopping addiction escalating, ultimately benefits addicts, their famillies, their communites and the wider society thereby evidencing that funding should be focused on prevention rather than cure.
+The strategy considers the fact that the app may prove very popular and suddenly attract a lot of stories added within a short time. Fresh data can be continuosly uploaded while keeping a balance of what is available to view on the app by adding new collections to the MongoDb and changing the python to redirect the completed forms to a new collection within the database project. We can then change between old or fresh stories viewable and keeping the data store in tact. 
 
 **The scope plane**
 Re-scoping followed feedback from tutors and my mentor. Furthermore, when I asked recovered addicts to fill in the forms I had designed they lost interest half way through which would lead to aborted efforts too often. The forms were amended and it is accepted that amendments to the questions in the forms will be ongoing.
@@ -501,7 +505,7 @@ more filters for thw
 email us
 pagination
 pop up saying thank you or a new page
-
+women section
 required field pop up warning for add_changes
 
 # 404 error page
