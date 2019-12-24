@@ -93,6 +93,21 @@ z-index: 20;
   }
 }
 
+@media only screen and (max-width: 800px) {
+  #wok {
+    border-radius: 8px;
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  #wok2 {
+    border-radius: 8px;
+    display: none;
+  }
+}
+
+
 @media only screen and (max-width: 992px) {
   #bigNav {
     border-radius: 8px;

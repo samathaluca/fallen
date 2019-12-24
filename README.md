@@ -36,7 +36,7 @@ Helping others is very good for mental health. This app will provide a forum for
 3. With social services, the police force, emergency services, criminal justice system and the NHS all suffering from critically low levels of funding, this app attempts to gather data that may be useful. This data may eventually help towards greater understanding and alleviation of the costs of the disease of addiction on society. Addicts are a huge drain on all our resources but many of the treatments available currently do not work well. Any useful information
 collected by this app is destined to be included in a report that will be made available without any cost to any of the services who may be helped by it. 
 #### In Summary
-Open source philosphy has proven to find solutions, this app will be an open source tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
+Open communication has proven to find solutions. This app will be an open communication tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
 
 ## Why the idea?
 
@@ -63,7 +63,7 @@ This project objectives are to
 3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societal influences, family history and environment. Many other factors can easily be explored by presenting them within the questionnaires to gather facts of statistical significance. 
 
 The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers yet may cause suicide and death in another.
-As the data base expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will usually lump these cases together. 
+As the database expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will usually lump these cases together. 
 
 This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
 Presenting the user with similarities and not differences amongst the success stories.
@@ -507,6 +507,10 @@ pagination
 pop up saying thank you or a new page
 women section
 required field pop up warning for add_changes
+
+
+
+defensive planning
 
 # 404 error page
 # @app.errorhandler(404)
