@@ -38,14 +38,14 @@ The different types of addiction options currently added are:
 
 ## Quick guide
 
-- <em>Tell your story</em> invites users to do just that. 
+- **Tell your story** invites users to do just that. 
 - <em>Recovery Stories</em> links to step by step solution/identification guide presented as a list of collapsible questions and answers.
-= <em>Share you recovery</em> links to a form for contributors to create a recovery story. 
+- <strong>Share you recovery</strong> links to a form for contributors to create a recovery story. 
 - Once shared each recovery story is presented in three formats
     1. Within the list of recovery stories
     2. On home page as a small card with image, alias amd addiction type.
     3. A single story is presented on a single page following the view story link in each card on the home page.
-- <em>Soul searching</em> links to an extensive survey questionnaire to gather data. 
+- <em><strong>Soul searching</strong></em> links to an extensive survey questionnaire to gather data. 
 - From the <em>admin only</em> link in the footer recovery stories can be edited or deleted.
 - <em>A gratitude list</em> is offered as a tool for contributors. 
 
@@ -175,9 +175,6 @@ Academics have been asked whether this could be useful and how development shoul
 
 Professionals have been asked about the potential benefits to them and asked what their thoughts were . All this has been included in user stories. 
 
-
-
-
 ### Development planes 
 
 #### **The strategy plan**
@@ -192,7 +189,6 @@ Professionals have been asked about the potential benefits to them and asked wha
 A future goal of the project would be to analyse the data collected in a report that will be published and given free of charge to the services that may benefit from it.
 
 Open communication has proven to find solutions. This app will be an open communication tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
-
 
 Users may take years to come to terms with their addiction and be ready to stop. 
 This user will be offered solutions in practical, real stories that they can identify with. These stories will be short and eaily digested but can spark hope in to the lives of lonely, isolated addicts who are afraid of living life stripped of their crutch
@@ -225,8 +221,11 @@ It is part of the strategy to research validated form designs to see if they may
 3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
 An example of this would be the fact that women are more likely to visit A&E or die from addiction than men. 
 Evidence should be provided for all claims made:
+
 [Sex and gender differences in substance use](https://www.drugabuse.gov/publications/drugfacts/substance-use-in-women)
+
 [What Are the Differences in Addiction Between Men and Women?](https://www.addictioncenter.com/addiction/differences-men-women/)
+
 A recent study showed that alcoholic women who enter in to the currently available treatment programmes and attempt to get in to recovery are more likely to die than those who have not had any treatment. 
 This is hypothesised to be due to the fact that all the research for the effectiveness of the currently available methods of treatment has been carried out in men. Specifically male offenders. 
 
@@ -290,98 +289,114 @@ The scope of the project has been designed so that it is not throttled by the ne
 #### **The Structure plane**
 
 Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome page, with awarenes of the short attention span of the users. 
+Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
+To achieve this, user centered design methods, such as usability tests, persona research and creation, and user flow diagrams. 
+Information architecture is just a small part of the whole big thing called User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 ___________________________________________________________________________________________________________________
-#####  The base.html template offers :
+#####  Base.html template: 
+The base.html navbar is loaded at the top of each page. The base.html footer appears in each page. 
 
-- Navigation bar. Link options are :
-1 **Home**- Logo designed with HOME characters. [Home page](https://fallen-but-not-broken.herokuapp.com/index)
-2 **Tell you story**  [Tell you story](https://fallen-but-not-broken.herokuapp.com/myProblem)
-3 **Recovery stories** [Recovery stories](https://fallen-but-not-broken.herokuapp.com/changes)
-4 **Share you recovery** [Ahre your recovery ](https://fallen-but-not-broken.herokuapp.com/add_changes)
-5 **Soul searching** [Soul searching](https://fallen-but-not-broken.herokuapp.com/pastProblem)
+- Navigation bar links:
 
+1. **Home**- Logo designed with HOME characters. [Home page](https://fallen-but-not-broken.herokuapp.com/index)
+2. **Tell your story**  [Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
+3. **Recovery stories** [Recovery stories](https://fallen-but-not-broken.herokuapp.com/changes)
+4. **Share you recovery** [Share your recovery ](https://fallen-but-not-broken.herokuapp.com/add_changes)
+5. **Soul searching** [Soul searching](https://fallen-but-not-broken.herokuapp.com/pastProblem)
 
-- Footer content with:
-1. Series of external links to relevant information proof of claims in content of site. 
-2. **admin only** link gives the option to add and delete contributor stories.
-Edit and delete form is sited at [Edit and delete form](https://fallen-but-not-broken.herokuapp.com/deleteButton)
-##### deleteButton.html
+- Footer content:
+1. Series of external links to relevant information/proof of claims in content of site. 
+2. **admin only** link gives the option to edit and delete contributor stories.
+[Edit and delete buttons](https://fallen-but-not-broken.herokuapp.com/deleteButton)
+
 The delete button deletes the story from the app and the data base.
-##### Edit_changes.html page 
+
+The edit button links a form to to a form to update each individual contributor story. [Edit stories](https://fallen-but-not-broken.herokuapp.com/edit_changes/5defc98797a1fd74efe492f4)
+##### Edit_changes.html page / individual user story mongoDB ID. 
     - linked from **admin only** in base.html footer . 
-    - The edit button links to a form to update the contributor story [Edit stories](https://fallen-but-not-broken.herokuapp.com/edit_changes/5def8b522d1f7e0431a1a584)
-    - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be editted and saved to the database, overwriting and storing the new information when the edit button is clicked.
+    - The edit button on the deleteButton.html page links to recovery story selected by user.
+    - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the edit button is clicked.
 
+___________________________________________________________________________________________________________________
 
-_______________________________________________________________________________________________________
 ##### The index.html home page structure
 
 ###### Header
 Setting recovery recipe concept set in materialize card. 
-External link [do you have an addiction problem?](https://www.healthline.com/health/addiction/recognizing-addiction#early-signs)
+
+External link [Do you have an addiction problem?](https://www.healthline.com/health/addiction/recognizing-addiction#early-signs)
 
 ###### Section
 Anger/ resentment concept image and text within materialize card.
-External link [resentment is a problem](https://dontjudgeyourlife.com/2016/10/07/resentment-how-it-destroys-your-mind-and-body-and-how-to-fix-it/)
+
+External link [Resentment is a problem](https://dontjudgeyourlife.com/2016/10/07/resentment-how-it-destroys-your-mind-and-body-and-how-to-fix-it/)
 
 ###### Main section
 A Materialize select form with drop down menu gives the option to choose from 21 substances or behaviours. The choice selected then filters stories that are from user/contributors with the same type of addiction. Filtering out stories of no relevance or interest to the user.
+The filter retrieves stories from the mongoDB specific to user choice from dropdown menu. 
 
-There is a second link to the 'Tell you story' form to maximise chances of data capture.
-https://fallen-but-not-broken.herokuapp.com/myProblem
+(https://fallen-but-not-broken.herokuapp.com/changes)
 
+There is a second button link to the 'Tell you story' form to maximise chances of data capture.
+[Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
 
 The main section on the home page presents all the stories stored in the data base as small cards with an image that has been pre-determinedly linked to the addiction type selection.  
 The cards also list the alias provided, the name of the type of addiction and a link to the full story.
 Each 'view story' link leads to the storyDetail.html page.
-_______________________________________________________________________________________________________
+
+___________________________________________________________________________________________________________________
 
 ##### storyDetail.html page.
 The page contains an individual story dependant on which link with an individual materialize card is chosen. 
 Each materialize card links to a separate recovery story. The page styles the questions asked in to headings and the answers stored in changes collection in MongoDB are loaded from the database.
 Examples would be :
-- https://fallen-but-not-broken.herokuapp.com/storyDetail/5df29908d52ba4caf15e657d
 
-- https://fallen-but-not-broken.herokuapp.com/storyDetail/5dfa5cdd0b8669e8b26413b9
+[The Big One](https://fallen-but-not-broken.herokuapp.com/edit_changes/5dfa5cdd0b8669e8b26413b9)
 
-- https://fallen-but-not-broken.herokuapp.com/storyDetail/5df11a41d7a56682a67a6337
+[Haunted Blond](https://fallen-but-not-broken.herokuapp.com/edit_changes/5df29908d52ba4caf15e657d)
 
-_______________________________________________________________________________________________________
 
-##### myProblem.html page**Tell Your Story**- https://fallen-but-not-broken.herokuapp.com/myProblem
+___________________________________________________________________________________________________________________
 
-A Materialize select form with collapsible menu. 
+##### myProblem.html page
+
+[Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
+
+A Materialize select form with collapsible menu. User inputs their addiction story.
 
 Share button submits the form to the myProblem collection in the mongoDB.
-_______________________________________________________________________________________________________
+
+___________________________________________________________________________________________________________________
 
 
 ##### changes.html page
 
-**Recovery stories** https://fallen-but-not-broken.herokuapp.com/changes
+[Recovery stories](https://fallen-but-not-broken.herokuapp.com/changes) 
 
 List of all the contributor stories in collapsible form.
-Stories retrieved from the changes collection in mongoDB. 
-_______________________________________________________________________________________________________
+Stories retrieved from the **changes** collection in mongoDB. 
+
+___________________________________________________________________________________________________________________
 
 ##### add_changes html page
 
-**Share you recovery** https://fallen-but-not-broken.herokuapp.com/add_changes
+[Share you recovery](https://fallen-but-not-broken.herokuapp.com/add_changes) 
 
-Share your recovery experience, mistakes and all.  - A Materialize input
+Share your recovery experience invites user/contributor to input answers within a 
 form with one select 'CHOOSE YOUR HABIT' option set as required so that images are input
 and recovery recipe will be seen by the filter. 
-'Tell you truth' button submits the form to the changes collection in the mongoDB.
-_______________________________________________________________________________________________________
+'Share your truth' button submits the form to the changes collection in the mongoDB.
+
+___________________________________________________________________________________________________________________
 
 
 ##### pastProblem.html page 
 
-**Soul searching** https://fallen-but-not-broken.herokuapp.com/pastProblem
-Soul Searching -A Materialize select form with drop down menu. Currently there are 25 questions in this form. It is proposed that collection of 108 questions will be included to be of value.
+[Soul searching](https://fallen-but-not-broken.herokuapp.com/pastProblem)
+Soul Searching is a  Materialize select form with drop down menu. Currently there are 21 input questions in this form. It is proposed that collection of 108 questions will be included to be of value.
 Share button submits the form to the pastProblem collection in the mongoDB.
 
-_______________________________________________________________________________________________________
+___________________________________________________________________________________________________________________
 
 **The Skeleton plane**
 The skeleton plane is currently set out as follows:
@@ -422,6 +437,9 @@ The idea of recovery being a recipe presented to the user in text and images add
 The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback.
 
 
+
+
+The alias is set to 10 character limit to ensure  on home page stays intact. 
 DATA STORE 
 
 
