@@ -10,14 +10,14 @@
   <ul class="collapsible" data-collapsible="expandable">
     {% for changes in changes %}
     <li>
-        <div class="collapsible-header" style="background-color:Floralwhite;">
+        <div id="floral" class="collapsible-header">
             <div class="task_header col s9">
                 <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
             </div>
         </div>
         <div class="collapsible-body">
             <span>
-                <strong style="color:Tomato;">The date I stopped was</strong> - {{changes.start_date}}
+                <strong class= "Tomato-text">The date I stopped was</strong> - {{changes.start_date}}
             </span>
         <div>
             <span>
@@ -31,22 +31,22 @@
         </div>
         <div>
             <span>
-                <strong style="color:Tomato;">In the beginning I felt</strong> - {{changes.feelings}}
+                <strong class= "Tomato-text">In the beginning I felt</strong> - {{changes.feelings}}
             </span>
         </div>
         <div>
             <span>
-                <strong style="color:Tomato;">My rock bottom?</strong> - {{changes.rockBottom}}
+                <strong class= "Tomato-text">My rock bottom?</strong> - {{changes.rockBottom}}
             </span>
         </div>
                 <div>
             <span>
-                <strong style="color:Tomato;">My recovery recipe</strong> - {{changes.recipe}}
+                <strong class= "Tomato-text">My recovery recipe</strong> - {{changes.recipe}}
             </span>
         </div>
                 <div>
             <span>
-                <strong style="color:Tomato;">My ingredients for recovery were?</strong> - {{changes.ingredients}}
+                <strong class= "Tomato-text">My ingredients for recovery were?</strong> - {{changes.ingredients}}
             </span>
         </div>
                 <div>

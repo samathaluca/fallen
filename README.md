@@ -293,7 +293,7 @@ This will be adapted quickly as the questions may change and the way they are pr
 The idea of recovery being a recipe presented to the user in text and images adds interest when it clicks. 
 The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback.
 
-
+![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
 ## User stories
 
 #### All visitors to the site will expect/want/need:
