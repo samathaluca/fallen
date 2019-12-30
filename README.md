@@ -1,4 +1,12 @@
-# CHANGE IS GOOD- Recovery app. 
+# Recipes for Recovery (r4r)- Rehabilitation app. 
+
+[Link to Milestone Project 3](https://fallen-but-not-broken.herokuapp.com/)
+
+## A new recovery app 
+
+- The **Recipes for Recovery (r4r)** app connects people with an addiction problem with others who have the solution.
+
+![Recovery recipe image](static/images/FryingPan.png)
 
 ## Aim 
 Create an App to help connect still suffering addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
@@ -28,55 +36,150 @@ The different types of addiction options currently added are:
 20. Materialism/Image
 21. Other
 
-## Key value and who benefits from the development of this app- What is the point?
+## Quick guide
 
-1. Help users looking for solutions to see stories of those who have recovered. Gain hope from human connection and a sense of community. 
-2.  Help User/contributors (people who have some methods to suggest as a means to recover) stay connected while remembering how bad it was to prevent relapse. In 12 step recovery it this an essential part of maintaining good mental health and sobriety.  A recent VR study proved that helping a crying child, even in a virtual environment, improves resistant depression.
-Helping others is very good for mental health. This app will provide a forum for  user/contributors helping others and for those on 12 step programs to do step 12.
-3. With social services, the police force, emergency services, criminal justice system and the NHS all suffering from critically low levels of funding, this app attempts to gather data that may be useful. This data may eventually help towards greater understanding and alleviation of the costs of the disease of addiction on society. Addicts are a huge drain on all our resources but many of the treatments available currently do not work well. Any useful information
-collected by this app is destined to be included in a report that will be made available without any cost to any of the services who may be helped by it. 
-#### In Summary
-Open communication has proven to find solutions. This app will be an open communication tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
+- <em>Tell your story</em> invites users to do just that. 
+- <em>Recovery Stories</em> links to step by step solution/identification guide presented as a list of collapsible questions and answers.
+= <em>Share you recovery</em> links to a form for contributors to create a recovery story. 
+- Once shared each recovery story is presented in three formats
+    1. Within the list of recovery stories
+    2. On home page as a small card with image, alias amd addiction type.
+    3. A single story is presented on a single page following the view story link in each card on the home page.
+- <em>Soul searching</em> links to an extensive survey questionnaire to gather data. 
+- From the <em>admin only</em> link in the footer recovery stories can be edited or deleted.
+- <em>A gratitude list</em> is offered as a tool for contributors. 
 
-## Why the idea?
+### Project purpose
 
-The idea came from the milestone3 project guideline which suggested we make an app which stores recipes. 
-The automatic thought is to develop an app which stores cooking recipes but the term recipe can apply to other structured methods.
-
-Having myself volunteered helping alcoholics, drug addicts and sex/love addicts for almost 20 years, I know that the current treatments in place do not work for the majority of people.
-New approaches are necessary but the gathering of data is currently not independent. Many of the current recovery models have been set up to support men. In particular male offenders.
-The fear of social services being involved prevents many mothers from seeking the help they desperately need. This is believed to contribute to the fact that women may be more likely to go to A&E or die from overdose or other effects of certain substances.
-The difficulty women with children have attending 12 step meetings or other recovery programmes reliably means fresh methods need to be developed to support these women.
-Not neglecting men, many of whom state that their social anxiety prevents them in engaging with currently favoured treatment programs which are geared towards group therapy and effectively revealing all your past and inner most thoughts to an audience.
-
-Latest studies reveal that addiction may be the direct result of lack of human connection. 
-Addiction is a desperate and lonely place.
-The belief that you are alone and the only one to have suffered the same experiences is the final song of many addicts who tragically die. Often leaving young children to the social care system. 
-Addiction presents with the symptom of a feeling uniqueness, a sense of being special and different. Both a sense of grandiosity  and the flip side of pitifully low self esteem are often present. 
-If this is not tackled this pattern of thinking will end in escalating substance use or uncontrollable behaviour. 
-Prison, hospitalisation, institutions or death by suicide, accident or violence are inevitabilities of untreated addiction.
-
-This project objectives are to 
-1. Offer an environment where isolated people suffering with addiction issues can reach out. 
-2. Offer a catalogue of solutions in the form of stories written by people who have beaten their addiction.
-3. Offer tools to help addicts in recovery maintain their vantage point. 
-3. Gather data as to what works relative to the individual circumstances, upbringing, support structure, parental/societal influences, family history and environment. Many other factors can easily be explored by presenting them within the questionnaires to gather facts of statistical significance. 
-
-The data collected by the app can then be used to highlight patterns that lead to recovery in some sufferers yet may cause suicide and death in another.
-As the database expands facts can be shown to support how, for example, 36 year old mother of 2 with an alcohol problem and a history of compulsive over achieving, chronic stress, neglect and starvation as a child recovered from an alcohol and prescription drug dependence. Her recovery may need the opposite methods to that of a 22 year old man, sexually abused as a child who is addicted to heroin since being 11.  Currently available treatments will usually lump these cases together. 
-
-This app will filter out backgrounds and differences that are of no interest or relevance to the user. Focusing on bespoke methods that could work for them being both proven so realistic and achievable. 
-Presenting the user with similarities and not differences amongst the success stories.
-
+- Help addicts (user) recover
+- Help addicts (user/contributors) who have recovered to feel gratitude. Gratitude and helping others promotes good mental health and less likelihood of relapse.
+- Collect data that may be useful towards improving recovery rates. 
 
 ## UX
 
-### User stories and anticipated preferences considered at each stage and contained within this section. 
-Separate user stories section added for clarity.
+### User stories
+
+#### All visitors to the site will expect/want/need:
+
+- The images and text content to be interesting and bring about a positive emotional response or interesting experience. 
+- To feel more informed, postive, connected and engaged after visiting the site.
+- To easily find what I am looking for. I want the layout of the site to make sense so I am not confused, frustrated or bored using it.
+- The information I am presented with to be laid out in a way that is easy for me to navigate, so that I find what I need quickly and efficiently then return to the home page immediately. 
+- External links to information that will be helpful and support the claims cited in the content of the section I am in to alleviate doubts. 
+- I do not want to leave the site when I follow the links then lose the tab for the relevant original page.
+- As a user accessing this site from a mobile phone or tablet, I want the site to have been designed responsively so that it is still easy to navigate and use on my smaller devices. 
+- I do not want the format to change too much when I revisit it on a friends device if I am recommending it. 
+
+#### Users suffering from addiction will expect/want/need:
+- I am often agitated so do not want to spend too long filling in forms or struggle to submit them. 
+- I am lonely and want to feel part of a community. 
+- I need to gain understanding, insight, awareness in to my addiction.
+- With the current problems accessing detox and rehab I am willing to try other methods when I am desperate. 
+- When I want information and ideas of how to get clean and sober I want them instantly. I do not want to make appointments in two weeks time.  
+- I need recognition that I am an individual and that I have a voice and something to offer. I can achieve this by completing my personal story. 
+- I want to feel understood, connected and hope.
+- I want to believe that there is an awareness that addiction takes many forms. 
+- I may want to be able to filter out all the stories that have no relevance or interest to me easily. OR
+- I may be interested to learn that of the 21 addictions featured the method of recovery, feelings and distress are similar.
+- Privacy while I become ready to admit and accept that I have a problem.
+- Anonymity so that there is no risk of upsetting parents, partners, employers, collegues or friends. 
+- If I have social anxiety, the current recovery options that are widely avaiable will be a struggle for me, for example group therapy or 12 step meetings.
+- I have tried recovery agencies, meidcal professionals or counsellors but their way does not work for me. 
+- I do not feel I can attend public group therapy or recovery agencies as I may bump in to an abuser or person from my past who will pose risk to me and my family. 
+- Confidentiality so that I do not risk my prospects or future opportunities by seeking help through professionals and having details on my medical records. 
+- As a young person I believe that I have different needs, I may be more likely to accept that I am addicted to social media, gaming, self harm  and porn addiction. 
+- I am not ready to stop yet but seeing recovery stories makes me believe it will be possible one day.
+- As a parent or carer I may be isolated and looking after young children or vulnerable adults so I do not feel able to engage in the currently available treatments 
+1. for fear of social services being involved
+2. limited time
+3. limited emotional and physical energy
+4. risk of losing my relationship and financial support. My partner prefers me as I am and I don't want to rock the boat. 
+- As a parent or carer I need to be able to:
+1. Get help when my dependants are in bed or gone to school/day care.
+2. I need to seek help anonymously and privately without the pressure of sticking to a rigorous treatment regime.
+3. I need to find the motivation and confidence to reach out for the help earlier. 
+4. I want to feel that I am not isolated and alone. Reading success stories will help me gain hope.
+5. I will feel very alone and seeking connection could be helpful.
+- If I am introverted and shy I may veer away from the current treatments which demand face to face attendance and engagement in front of an audience.
+- I feel that available therapies favour the extroverted so I will present at the GP surgery with depression or anxiety without ever revealing the real problem.
+- I want to try to find ways of solving my problem independently. Information and identification with recovered addicts may help.
+- Because of the stigma and criminality of addiction I will not reveal to professionals the extent of my using. This has resulted in me bring misdiagnosed and treated of the wrong issue. 
+- If I am Physically ill or disabled I can not leave the home easily will benefit from the ease of use of an app to support me.
+- If I live in a rural or isolated part of the world I many only access intervention when I am in crisis. 
+- Me and my friends have tried to get in to recovery countless times I have given up on the available treatments that have not worked. 
+- I want to see how others have done it because I do not know anyone who has got clean. All my friends use too.
+- I feel so ashamed. I could never admit to myself that it is a real problem for me I need to see similarities in stories to bust my denial.
+- I have recognised my problem from the outset and am to the app from the earliest stages of seeking help for an addiction problem. 
+- My aim is to stop the problem escalating. 
+- I may initially read the stories and believe I am not that bad yet the seed is sewn.  In the meantime I may try to moderate my using or reach out and try to get support in the earlier stages of the progressive illness.
+- I may still be in denial and may be put off by the term addiction so the app offers habit or problem or poison as alternative term to maximise the chance of engagement.
+- I am starting the process of recovery in my mind. Coming to believe that I have not got myself down a blind ally and recovery is possible. 
+- In summary, I want it but I want it on my terms and now. I want to hear this from someone who has walked in my shoes.
+
+#### The user who is also a contributor. User/contributors
+- I have been taught by many recovery programmes that 'you can only keep what you have by giving it away'. 
+This means that when getting addiction free, I learnt that helping others is the best way of remembering how bad it was, so preventing relapse. 
+- When I write about how bad it was I feel gratitude and relief. 
+- I feel grateful by being reminded how far I have come, 
+- When I remember how far I have come I will be happier, more serene and less likely tp relapse. 
+- As a recovered addict and recovery community I am motivated to be involved in anything that may help suffering addicts to get well.
+- I need to feel part of a community.
+- I need to feel relief that my life has changed.
+- I need to feel useful, healthy and a sense of gratitude that is essential to maintain my current level of good mental health.
+- I want to help other addicts to recover by sharing my experience, strength and hope. 
+- I beneift from access to information and links that are interesting and add to my knowledge of my addiction. 
+- I will be reminded that I am taming the beast with added tools shared by other addicts. 
+- I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
+- I would want to know that anyone may visit the site and complete the forms to get the benefits of gratitude and usefulness.
+- I do not want to spend too long filling in forms or struggle to submit them. 
+- I have previously found professionals and well meaning help made me more dependent as their choices become more important than my own. 
+- I have seen the faiings of currently available treatments and would like to support data collection to help develop new strategies.
+- I felt seized by the choices made by professionals for me. How can anyone who does not understand that feeling of desperation really help?
+
+#### Professionals/Business Users 
+
+- I expect to be able to see that the app is set out to provide and gather an abundance of useful information to help treat addiction. 
+- I want to know that the information is current, independent, unbiased and not influenced in any way that could effect the reliability or feasibility.
+- I want to be able to see the questions, the consistency of answers in the stories section and how encompassing and simple to understand the questions are in the forms.  
+- As a providers of currently available treatment for addictions I know that, the current solutions  for this global epidemic are costly (treatment costs for e.g. The Priory hospital are £18,000 per month). Depsite this high cost, I see that most of the time the treatments and therapies for addiction are ineffective. I want information from recovered addicts to be able to offer different solution strategies.
+- I want to understand why/what will treat one person yet kill another. What are people who recover doing differently? is thier background relevant to which strategy to use to treat them?
+- Frightening studies have revealed that women who receive the currently available treatment for alcohol addiction are more likely to die than women who do not get any treatment.
+David Nutt (the government advisor sacked for claiming that horse riding is more deadly than ecstasy) states that when , for example, Amy whitehouse got clean and sober, her tolerance went. I need data to understand why this is happening?
+- I see most addicts struggling for many years in and out of detox, rehab and daytime treatment programs. The last analysis concluded that addicts need an average of 8 residential 28 stays to stop permanently. I want to see which combination of treatments or actions/change of habits prevents relapse. 
+- I want to understand which addicts may attempt suicide to help me manage the risks.
+- I want to understand why an addict's mental health may initially deteriorate when they get clean.
+- As a professional involved in treating addiction, I would benefit from being a recipients of the data collected. 
+- As an academic I would want to know that the collection of data has not been limited by sex, sexual orientation, creed, religion, lack or religion. 
+- Anything that diminished the potential accuracy and usefulness of the collected data was eradicated. i want to see that this has been considered when setting out the questions.
+- Because of the stigma and criminality of addiction I am aware that addicts will lie to me. Rarely revealing the extent of their using until they are in crisis. This has resulted in me misdiagnosing and treating the wrong issue. 
+For example, a patient who is smoking large amounts of undeclared crack cocaine but presents at the doctors with insomnia theefore be mistakenly treated with sleeping tablets. If the real problems is not tackled recovery is impossible. 
+- Currently most treatments available for drug addicts involve more drugs. This has been likened to offering a drowing man a drink of water. 
+- The more information from people who recovered the better the chances will be of finding a recipe tailored to the specific needs and circumstances of a patient.  
+- The data collected will reveal whether or not there is a more effective method of treating addiciton without the need for prohibitely expensive studies which the NHS can not afford and the drug companies or treatment centres will avoid in case the findings are unfavourable to them.
+- Addicts will explain it is easy to get clean but staying clean is the battle. We need more informatin to give to addicts to help stop them relapsing. 
+- With the dwindling availabilty of funding to treat addiction and mental health, validated evidence, gathered and made readily available could be a real help.
+- The current treatment programmes demand commitment that is unachievebale and unaffordable for normal life so are reserved for people in crisis rather than tackling the problem early. I want to be able to offer prevention and healing before crisis.
+- Early intervention can help stop issues escalating and prevent huge costs to the addict and the people around them including families, work places, social service, the NHS, the emergency services, hospitals and the criminal justice system.
+- Addiction is a progressive illness, left untreated most likely outcome will be prisons, institutions and  death by direct consequences, accident or suicide. I want data to be able to Offer realistic, achievable strategies to patients.
+- I work in A&E at anyone time we have numerous addicts waiting to be treated. Ambulance and medical resources would benefit from anything that may help. 
+
+### Feedback and  comments from user groups.
+
+People who are suffering from addiction, self destructive habits or problems with a substance or activity, have been asked whether or not this app could help. 
+The response of 100% people asked, who have current addictions to exercise, gaming, social media, alcohol, prescription and illegal drugs without exception fed back that this app will be useful. 
+Feeback comments included exciting, amazing, impressive, interesting and realistic.
+
+Users and User/contributors  have been asked for their opinion during development. Specifically focussing on the questions in the forms. Questions have been amended to maximise engagement and submisson of the forms. 
+
+Academics have been asked whether this could be useful and how development should be shaped. Their guidance was considered throughout.
+
+Professionals have been asked about the potential benefits to them and asked what their thoughts were . All this has been included in user stories. 
+
+
 
 
 ### Development planes 
-
+the image names must match the mongoDB name 
 **The strategy plan**
 ##### Summary of strategy plan
 1. Development focus will be to provide a service and connection for users who are trying to recover from addiction.
@@ -85,6 +188,14 @@ Separate user stories section added for clarity.
 4. Fourth part of the strategy considered minimising the dependency on extensive admin whilst maximimising the reproduceability and authenticity of the data by validating the questions used to collect the data. 
 
 A future goal of the project would be to analyse the data collected in a report that will be published and given free of charge to the services that may benefit from it.
+
+Open communication has proven to find solutions. This app will be an open communication tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
+
+
+Users may take years to come to terms with their addiction and be ready to stop. 
+This user will be offered solutions in practical, real stories that they can identify with. These stories will be short and eaily digested but can spark hope in to the lives of lonely, isolated addicts who are afraid of living life stripped of their crutch
+
+A simple form guides the user through a series of questions using select options to make the process effortless.
 
 ##### Details of strategy plan
 
@@ -293,192 +404,19 @@ This will be adapted quickly as the questions may change and the way they are pr
 The idea of recovery being a recipe presented to the user in text and images adds interest when it clicks. 
 The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback.
 
-![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
-## User stories
 
-#### All visitors to the site will expect/want/need:
-
-The images and text content to be interesting and bring about a positive emotional response or comforting experience. I would like to feel more informed, hopeful, connected and engaged after visiting the site which would encourage me to revisit.  
-
-To easily find what I am looking for. I want the layout of the site to make sense so I am not confused, frustrated or bored using it.
-
-The information I am presented with to be laid out in a way that is easy for me to navigate, so that I find what I need quickly and efficiently then return to the home page immediately. 
-
-External links to information that will be helpful and support the claims cited in the content of the section I am in. I do not want to leave the site when I follow the links then lose the tab for the relevant original page.
-
-As a user accessing this site from a mobile phone or tablet, I want the site to have been designed responsively so that it is still easy to navigate and use on my smaller devices. I do not want the format to change too much when I revisit it on a friends device if I am recommending it. 
-
-#### Users suffering from addiction. 
-Users may take years to come to terms with their addiction and be ready to stop. 
-This user will be offered solutions in practical, real stories that they can identify with. These stories will be short and eaily digested but can spark hope in to the lives of lonely, isolated addicts who are too afraid to 
-
-I want/need: 
-
-Recognition that I am an individual and that I have a voice and something to offer. I can achieve this by completing my personal story. 
-
-I want to feel understood.
-
-I want to believe that there is an awareness that addiction takes many forms. 
-Of the 21 different choices of addiction considered on the site, the choice of viewing all the stories and seeing similarities could be of interest. 
-Alternatively I may want to be able to filter out all the stories that have no relevance or interest to me easily. 
-
-Privacy while I become ready to admit and accept that I have a problem.
-
-Anonymity so that there is no risk of upsetting parents, partners, employers, collegues or friends. 
-
-I do not feel it is for me attending public group therapy, recovery agencies or counsellors as I have social anxiety. 
-
-I do not feel I can attend public group therapy or recovery agencies as I may bump in to an abuser or person from my past who will pose risk to me and my family. 
-
-Confidentiality so that I do not risk my prospects or future opportunities by seeking help through professionals and having details on my medical records. 
-
-As a young person I believe that I have different needs, I may be more likely to accept that I am addicted to social media, gaming, self harm  and porn addiction. Possibly using alcohol and drugs to excess but not addicted YET. Maybe abusing food too.
-These users can gain knowledge about their condition and hopefully prevent addictions escalating.
-
-As a mothers I may be isolated and looking after young children who do not feel able to engage in the currently available treatments 
-a) for fear of social services being involved
-b) limited time
-c) limited emotional and physical energy
-d) risk of losing my relationship and financial support. Couples often use drugs together so when one tries to get help the other feels threatens and prevents this.
-Therefore I want to be able to can seek help when the children have gone to bed on my phone, anonymously and privately without the pressure of sticking to a rigorous treatment regime.
-
-As a mother I need to find the motivation and confidence to reach out for the help earlier. I want to feel that I am not isolated and alone. Reading success stories will help me gain hope.
-
-As a single fathers or carers I will have the same issues as a mother, feeling isolated. Seeking connection could be helpful.
-
-If I am introverted and shy I may veer away from the current treatments which demand face to face attendance and engagement in front of an audience.
-It is possible that the available therapies favour the extroverted so I will present at the GP surgery with depression or anxiety without ever revealing the real problem.
-
-I want to try to find ways of solving my problem independently. Information and identification with recovered addicts may help.
-
-Because of the stigma and criminality of addiction I will not reveal to professionals the extent of my using. This has resulted in me bring misdiagnosed and treated of the wrong issue. 
-
-Physically ill or disable people who can not leave the home easily will benefit from the ease of use of an app to support them.
-
-Men and women who have tried the currently available treatments that have not worked. I want to see that people who have tried similar treatments, have not given up and found something that works.
-
-Men and women who are keeping their secret and feel too ashamed to tell anyone or who are not quite ready to stop yet but are getting ready so reaearching what my help.
-There is a a lot of shame attached to addiction so denial is one of the most common symptoms.
-
-I have recognised my problem from the outset and am to the app from the earliest stages of seeking help for an addiction problem. My aim to stop the problem escalating. 
-
-I may initially read the stories and believe I am not that bad yet but the seed is sewn.  In the meantime I may try to moderate my using or reach out and try to get support in the earlier stages of the progressive illness.
-
-I may still be in denial and may be put off by the term addiction so the app offers habit or problem or poison as alternative term to maximise the chance of engagement.
- 
-I am starting the process of recovery in my mind. Coming to believe that I have not got myself down a blind ally and recovery is possible. 
-
-I am lonely and want to feel part of a community. 
-
-I will gain understanding, insight, awareness.
-
-With the current problems accessing detox and rehab I am willing to try other methods when I am desperate. 
-
-When I want information and ideas of how to get clean and sober I want them instantly. I do not want to make appointments in two weeks time. There is a small window of opportunity for me to find recovery when I am desperate. When the feeling of desperation passes me and my dependents will be sentenced to months or years of addiction before I am ready to try again. 
-
-I do not want to spend too long filling in forms or struggle to submit them. 
- 
-#### The user who is also a contributor. User/contributors
-
-I have been taught by many recovery programmes that 'you can only keep what you have by giving it away'. 
-This means that when getting addiction free, I learnt that helping others is the best way of remembering how bad it was, so preventing relapse. 
-When I am feeling grateful by being reminded how far I have come, I will be happier, more serene and less likely tp relapse. This means that the recovery community are motivated to be involved in anything that may help suffering addicts to get well.
-
-I will feel part of a community.
-
-I will feel relief that my life has changed.
-
-I will feel useful, healthy and a sense of gratitude that is essential to maintain my current level of good mental health.
-
-One of the key factors in getting through to addicts is for them to identify and recognise that the person trying to help them has walked in their shoes. I know this from personal experience and I want to help other addicts to recover by sharing my experience, strength and hope. 
-
-I will have access to information and links that are interesting and add to my knowledge of my addiction. 
-
-I will be reminded that I am taming the beast with added tools shared by other addicts. 
-
-I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
-
-I would want to know that anyone may visit the site and complete the forms to get the benefits of gratitude and usefulness.
-
-I do not want to spend too long filling in forms or struggle to submit them. 
-
-I have previously found professionals and well meaning help made me more dependent as their choices become more important than my own. I felt seized by their choices for me. How can anyone who does not understand that feeling of desperation really help?
-
-#### Professionals/Business Users 
-
-I want clarity. I expect to be able to see that app is set out to gather an abundance of useful information to help treat addiction. 
-
-I want to know that the information is independent, unbiased and not influenced in any way that could effect the reliability or feasibility.
-
-I want to be able to see the questions, the consistency of answers in the stories section and how encompassing and simple to understand the questions are in the forms.  
-
-As both providers and recipients of currently available treatment for addictions we know that, the current solutions  for this global epidemic are costly (treatment costs for e.g. The Priory hospital are £18,000 per month). Sadly most of the time the treatments and therapies for addiction are ineffective as most people struggle for year getting free from it's grip for years, spending many years in and out of detox, rehab and daytime treatment programs. The last analysis concluded that addicts need an average of 8 residential 28 stays to stop permanently. I want to see which combination of treatments or actions/change of habits prevents relapse. I can see this myself in the stories without having to wait for the report.
-
-I want to understand why what may treat one person may kill another. Frightening studies have revealed that women who receive the currently available treatment for alcohol addiction are more likely to die than women who do not get any treatment.
-David Nutt (the government advisor sacked for claiming that horse riding is more deadly than ecstasy) states that when , for example, Amy whitehouse got clean and sober, her tolerance went. As the body returns to normal in a period of abstinance the risk of relapse causing overdose increases greatly.
-
-I want to understand which addicts may attempt suicide. 
-
-I want to understand why an addict's mental health may initially deteriorate when they get clean.
-
-As a professional involved in treating addiction, I would benefit from being a recipients of the data and or the final report. 
-
-As an academic I would want to know that the collection of data has not been limited by sex, sexual orientation, creed, religion, lack or religion. 
-Anything that diminished the potential accuracy and usefulness of the collected data was eradicated. This has been considered when setting out the questions.
-
-
-Because of the stigma and criminality of addiction I am aware that addicts will lie to me. Rarely revealing the extent of their using until they are in crisis. This has resulted in me misdiagnosing and treating the wrong issue. 
-For example, a patient who is smoking large amounts of undeclared crack cocaine but presents at the doctors with insomnia and associated anxiety will be mistakenly treated with sleeping tablets. If the real problems is not tackled recovery is impossible. 
-
-Currently most treatments available for drug addicts involve more drugs. This has been likened to offering a drowing man a drink of water. 
-
-The more information from people who recovered the better the chances will be of finding a recipe tailored to the specific needs and circumstances of a patient.  
-
-The data collected will reveal whether or not there is a more effective method of treating addiciton without the need for prohibitely expensive studies which the NHS can not afford and the drug companies or treatment centres will avoid in case the findings risk disproving their effectiveness.
-
-Addicts will explain it is easy to get clean but staying clean is the battle. We need more informatin to give to addicts to help stop them relapsing. 
-
-With the dwindling availabilty of funding to treat addiction and mental health, open source validated evidence, gathered and made readily available could be a real help.
-
-The current treatment programmes demand commitment that is unachievebale and unaffordable for normal life so are reserved for people in crisis rather than tackling the problem early. I want to be able to offer prevention and healing before crisis.
-
-Early intervention can help stop issues escalating and prevent huge costs to the addict and the people around them including families, work places, social service, the NHS, the emergency services, hospitals and the criminal justice system.
-
-Addiction is a progressive illness, left untreated most likely outcome will be prisons, institutions and  death by direct consequences, accident or suicide. Offering realistic, achievable strategies to people will be a valuable asset.
-
-I work in A&E at anyone time we have numerous addicts waiting to be treated. Ambulance and medical resources would benefit from anything that may help. 
-
-### Conclusion from third party comments.
-
-People who are suffering from addiction, self destructive habits or problems with a substance or activity, have been asked whether or not this app could help. 
-The response of 100% people asked, who have current addictions to exercise, gaming, social media, alcohol, prescription and illegal drugs without exception fed back that this app will be useful. Feeback comments included exciting, amazing, impressive, interesting and realistic.
-
-Users and User/contributors  have been asked for their opinion during development. Specifically focussing on the questions in the forms. Questions have been amended to maximise engagement and submisson of the forms. 
-
-Academics have been asked whether this could be useful and how development should be shaped. Their guidance was considered throughout.
-
-Professionals have been asked about the potential benefits to them and asked what their thoughts were . all this has been included in user stories. 
-
-
-
+DATA STORE 
 
 
 reassuring 
 
-## How to use QUICK GUIDE 
--  Users will be invited to  'TELL YOU STORY'. A link in the nav bar and a button within the home page direct the user to the 'tell your story' form.
-Data is stored in MongoDB
-A simple form guides the user through a series of questions using select options to make the process effortless.
 
-2. - Users can use a dropdown to filter and find stories written by people with a similar problem habit or addiction to their own. 
-Depending on how the questions are answered the user is presented with a series of stories from the data base written by addicts who are (12 months being considered as time frame) free from dependence. 
- 3. The whole collection of user stories, that have been gathered and inputted during development of the app initally will be presented.
- If the user clicks on the view story link in the card they will be presented with a recovery recipe of all the information held for that user story.  
-4. A contributor fills in their story using the link 'share you recovery in the nav bar. 
-when they submit the form it is added to the mongoDB and then displayed on the app as cards on the home page and within a list found by clicking on recovery stories in the nav bar
 
- provides the ingredients and this app presents the method to get to their tailored recovery recipe from the database. 
-but then the additional stries to be added by clicking
+
+
+
+
+![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
 
 
 
