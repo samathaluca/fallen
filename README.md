@@ -441,6 +441,7 @@ The surface of the app may change in the future and the hero image on the home p
 
 The alias is set to 10 character limit to ensure  on home page stays intact. 
 DATA STORE 
+DB schema
 
 
 reassuring 
@@ -451,11 +452,11 @@ the image names must match the mongoDB name
 
 
 
-![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
 
 
 
-### Features
+
+## Features
 - Nav bar
 - Grid of recovered user recipes (maybe with images/maybe not)
 - side bar with the questions user is presented to answer. 
@@ -506,57 +507,60 @@ It may be that the focus of this app becomes the collection of data for women be
 
 The information will be complied in to report that will be freely available. Not sold for money or prestige. 
 
-### Wireframes
+## Wireframes
+
+![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
+
+## Tech Used
+1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
+2. [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) -This was used to style the elements of the HTML code.
+3. [MATERIALIZE](https://materializecss.com/about.html) -HTML forms, cards, templates with nav bar, buttons etc.
+js materiliaze
+4. [PYTHON3](https://www.python.org/download/releases/3.0/)
+5. [FLASK](https://flask.palletsprojects.com/en/1.0.x/) Framework to construct and render pages.
+6. [MONGODB_ATLAS](https://www.mongodb.com/cloud/atlas) for nonsql database
+7. [GITPOD](https://www.gitpod.io) IDE 
+8. [HEROKU](https://heroku.com/) - deployment
+9. [GITHUB](https://github.com) - used for version control
+10. [VSC](https://code.visualstudio.com/) used to help format and beautify the code using extensions. Also as a back up IDE when internet access was limited.
+11. [GIMP](https://www.gimp.org) -This was used for resizing, cropping, fading and changing images to fit the site.
+12. [PHOTOSHOP]
+13. [FAVICON]
+14. [MARKDOWN](https://daringfireball.net/projects/markdown/syntax#img) -Language for Readme.md file
+15. [Pymongo](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
+16. [PIP and Pypi libraries]
+17. [Jquery](https://code.jquery.com/jquery-3.3.1.slim.min.js) -This added functionality to the site e.g. navigation toggle.
+18. [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
+19. [Beautifier](https://www.freeformatter.com/css-beautifier.html) -  to check code and improve code readability.
+20. [Balsamiq](https://balsamiq.com/wireframes/) - wireframe design
+21. [Hex codes](https://www.w3schools.com/colors/colors_picker.asp) - different colours experimentation.
 
 
-
-### tech intend using
-1. HTML- This was used to create the markupl
-2. CSS -This was used to style the elements of the HTML code
-3. MATERIALIZE -HTML forms and nav bar, buttons etc.
-4. PYTHON 3, PIP and Pypi libraries
-5. FLASK FRAMEWORK.
-6. MONGO DB ATLAS for database
-7. GITPOD IDE 
-8. HEROKU deployment
-9. GITHUB - used for version control
-10. VSC used to help format and beautify the code using extensions. Also as a back up IDE when internet access was limited.
-11. GIMP -This was used for resizing, cropping, fading and changing images to fit the site.
-12. PHOTOSHOP -->
-13. FAVICON
-
-Jquery
--https://code.jquery.com/jquery-3.3.1.slim.min.js"> -This added functionality to the site e.g. naivation toggle.
-js materilaize
-
--Hover
-- https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css - This was used to have the hover styles run smoothly
-
-
-### Testing
-1. Chrome Devtools
-2. HTML Validator
-3. CSS VALIDATOR
-4. HTML AND CSS Beautifier use format selection in beautify code
-5. Javascript Validator
-6. Markdown live-preview -
--Markdown live preview - https://markdownlivepreview.com/ -This project used markdown previewer to check the rendering of the readme.md file content.
-This project used markdown previewer to check the rendering of the readme.md file content.
-7. AutoPrefixer -This project used AutoPrefixer to make sure the css code is valid for all browsers.
--AutoPrefixer - https://autoprefixer.github.io/ -This project used AutoPrefixer to make sure the css code is valid for all browsers.
+JAVASCRIPTPrimary function of the site for all user interaction.
+## Testing
+1. [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
+2. [HTML Validator](https://validator.w3.org/)
+3. [CSS VALIDATOR](https://jigsaw.w3.org/css-validator/)
+4. [HTML AND CSS Beautifier](https://www.freeformatter.com/html-formatter.html) use format selection in beautify code
+5. [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
+6. [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
+7. [PEP8 online](http://pep8online.com)- Not secure but ok for testing console errors.
+8. [Gitpod]
+9. VSC code extensions
+10. IDLE
 
 8. JASMINE- framework for testing javascript code.
+5. [Javascript Validator
 
-testing of ceoncept -ask other users
+testing of concept -ask other users
 addicts, slack etc
 
 
 problems listed in the terminal were at one point 89. now 9 problems with no warnings
 the problems includes indentation, trailing white space, line too long , unused variables, imported but unused files, the pep8 list of errors from pep8 online replicated the problems and warnings in the terminal.
 when trying to fix the line too long issue one problem created another when amended.
-VSC code extensions
-PEP8 online
-Check your code for PEP8 requirements
+
+
 Check results 
 Save 
 Share
@@ -581,12 +585,86 @@ E501	119	80	line too long (91 > 79 characters)
 
 ipad pro is not looking good 
 
+Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
+
+My app has been testing by various student from the Slack community and by friends and family members where needed notes were made and identified bugs were fixed.
+
+From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
+
+## Compatibility
+To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
+
+1. Chrome
+
+2. Edge
+
+3. Firefox
+
+4. Safari
+
+5. Opera
 
 
-9. HEROKU
-python tests
+####Devices tested
+
+Mobile phones
+- Samsung S9,
+- Iphone 6/7/7S plus,
+- Sony XA42
+
+Tablets tested
+- Ipad
+= LNBEI 10 inch Android tablet
+
+Laptop tested
+- MacBook pro,
+- Sony Vaio
+
+Desktop
+(unbranded Windows 7 OS) with different monitors 21 and 27inch.
+
 
 ## Version control
+
+Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply.
+
+
+
+## Heroku Deployment
+
+began using the CLI in gitpod but after some experimentation worked out that once linked all gitpod saves to github automatically updates heroku once depolyed. 
+To deploy Recipes for Recovery to heroku, the following steps were taken:
+
+1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
+
+2. Create a Procfile with the terminal command echo web: python app.py > Procfile.
+
+3. Stage changes in gitpod. Write a commit message, click on the tick icon then push to Github.
+
+4. Create a new app on the Heroku website by clicking the "New" button in your dashboard. Give it a name and set the region to Europe.
+
+5. From the heroku dashboard of your newly created application, click on "Deploy" > "Deployment method" and select GitHub.
+
+6. Confirm the linking of the heroku app to the correct GitHub repository.
+
+7. In the heroku dashboard for the application, click on "Settings" > "Reveal Config Vars".
+
+Set the following config vars:
+
+Key	Value
+
+IP	0.0.0.0
+MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+PORT	5000
+DEBUG	FALSE
+
+
+In the heroku dashboard, click "Deploy".
+
+In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
+
+The site is now successfully deployed.
+
 
 
 
