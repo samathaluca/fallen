@@ -121,7 +121,8 @@ def myProblem():
     else:
         insert_myProblem = mongo.db.myProblem
         insert_myProblem.insert_one(request.form.to_dict())
-        return redirect(url_for('index'))
+        # return redirect(url_for('index'))
+        return render_template('gratitudeList.html')
 
 # soul searching form page (pastProblem.html)
 

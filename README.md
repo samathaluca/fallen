@@ -441,6 +441,11 @@ The idea of recovery being a recipe presented to the user in text and images add
 The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback. 
 To date the bespoke woke image feedback has been good and met with smiles when people understand the reference. 
 
+The images have been chosen to convey a message and have been adapted to be less graphic. For example the self harm image in black and white is very subtle compared to the coloured image.
+As images are so subjective I have asked addicts what they think? The misture of responses were baffling. For example, a guy with gaming addiction thought the toxic relationship image was awful but the illegal drug one was the best yet a woman with an alcohol addiction hated the illegal drug image and really loved the toic relationship image.
+
+The font was been adjusted a number of times during the design phase. It has been chosen for readability. 
+
 ### Defensive design planning.
 
 The most significant defensive design decisions were
@@ -451,18 +456,9 @@ an auto added image chosen for each addiction. This would ensure that the home p
 4. move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
 
 
+## MongoDB atlas
 
-
- 
-DATA STORE 
-DB schema
-
-
-reassuring 
-
-
-the image names must match the mongoDB name 
-
+MongoDB atlas was recommended by Code Institute. 
 
 
 
@@ -551,7 +547,7 @@ js materiliaze
 19. [Beautifier](https://www.freeformatter.com/css-beautifier.html) -  to check code and improve code readability.
 20. [Balsamiq](https://balsamiq.com/wireframes/) - wireframe design
 21. [Hex codes](https://www.w3schools.com/colors/colors_picker.asp) - different colours experimentation.
-
+22, [Google Fonts](https://fonts.google.com/)
 
 JAVASCRIPTPrimary function of the site for all user interaction.
 ## Testing
