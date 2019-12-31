@@ -1,3 +1,42 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 import unittest 
   
 class TestStringMethods(unittest.TestCase): 
@@ -59,3 +98,4 @@ if __name__ == '__main__':
 # test_split
 # This test is used to check the split function of the string which splits the string through the argument passed in the function and returns the result as list. The assertEqual() statement returns true in this case if the result matches the given output.
 # unittest.main() provides a command-line interface to the test script.On running the above script from the command line, following output is produced :
+

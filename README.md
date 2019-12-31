@@ -401,22 +401,25 @@ ________________________________________________________________________________
 **The Skeleton plane**
 The skeleton plane is currently set out as follows:
 
-#### index.html Home page.
+#### Home page (index.html).
 - A main page with links to external resources, a nav bar linking to  different forms (listed below).
 Within the main page, dropdown menu offers the user the ability to filter the stories to list those most relevant to them. 
 They are then presented with a list of stories they can read. 
 Within the main page the story cards link to a detailed story . 
-#### storyDetail.html Individual Recovery Stories. 
+#### Individual Recovery Stories (storyDetail.html). 
 One recovery story per page. The main content of the page is the data stored in MongoDB which is pulled in to the grid layout.
-#### changes.html  Recovery stories page
+#### Recovery stories page (changes.html).
 Containing a list of contributor's recoverys stories
-#### add_changes.html Share your recovery page 
+#### Share your recovery page (add_changes.html). 
 A page containing a simple collapsible form for the user to complete their story with prompted questions and a selction of answers. Enable the user/contributor to add contributor recovery stories.
-#### pastProblem.html Soul searching form for data collection.
+#### Soul searching form for data collection (pastProblem.html).
 A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
-#### edit_changes.html Edit recovery story page.
+#### Edit recovery story page (edit_changes.html).
 Recovery stories are edited in the data base by the input field entries on this form.
-#### deleteButton.html List of recovery stories with option to edit or delete.
+#### List of recovery stories with option to edit or delete (deleteButton.html).
+This form is reach via the hidden 'admin only' link in the footer of each page.
+#### Gratitude list (gratitudeList.html). 
+A list of suggested ideas for gratitude lists.
 
 
 **The Surface plane**
@@ -427,19 +430,30 @@ A unique large logo/home has been chosen for desktop following feedback to add i
 A home page with a lot of imagery, quotes and contributor recovery stories was designed for added interest and user prolonged engagement. 
 Images have been chosen to appeal to the users while presenting a simple message.
 The decision was made to auto add an image chosen to reflect each type of the 21 addictions tackled on this app.
-This is believed to offer a pattern to the user that is appealing and indentifiable.
+This is believed to offer a pattern to the user that is appealing and identifiable.
 The forms to complete were kept very simple. Focus to be kept on the information. The font is easy to read and the colours are muted.
 A character limit to the alias has been set so that it can not extend outside the card.
 The presentation of the list of stories after filtering has been kept raw. The focus is then kept on the information. 
 At the point of submission we believe the story detail page has been laid out to best display the most relevant solutions and information immediately and make it obvious to the user. 
 This will be adapted quickly as the questions may change and the way they are presented may not benefit the user and help the information to be absorbed.
+
 The idea of recovery being a recipe presented to the user in text and images adds interest when it clicks. 
-The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback.
+The surface of the app may change in the future and the hero image on the home page would be replaced if the feedback after launch suggested the recovery recipe theme idea adapted from the MS3 project idea in CI LMS proved too tenuous following future feedback. 
+To date the bespoke woke image feedback has been good and met with smiles when people understand the reference. 
+
+### Defensive design planning.
+
+The most significant defensive design decisions were
+1. To make alias a limited character number.
+2. 21 images were added to match the 21 addictions. when i tested other students projects the image often did not load so I opted for
+an auto added image chosen for each addiction. This would ensure that the home page did not lose visual appeal and form. 
+3. to make the choice of habit linked to a photo a required filed other wise lots of empty fileds.
+4. move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
 
 
 
 
-The alias is set to 10 character limit to ensure  on home page stays intact. 
+ 
 DATA STORE 
 DB schema
 
@@ -466,12 +480,15 @@ the image names must match the mongoDB name
 journalling link stuff proven to help addiction 
 telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
 
-Future feaytres
+Future features
 Gratitude list
 recovery diaries
 planners
-chatroom
-conferencing 
+
+
+information for shy sharers
+conferencing
+free phone number to helplines
 VR and videos and fell good music
 audio and or video shares
 filter for more 
@@ -481,10 +498,10 @@ pagination
 pop up saying thank you or a new page
 women section
 required field pop up warning for add_changes
+login
 
 
 
-defensive planning
 
 # 404 error page
 # @app.errorhandler(404)
