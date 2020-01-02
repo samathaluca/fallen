@@ -41,7 +41,7 @@ def myProblem():
         insert_myProblem = mongo.db.myProblem
         insert_myProblem.insert_one(request.form.to_dict())
         # return redirect(url_for('index'))
-        return render_template('gratitudeList.html')
+        return render_template('about_us.html')
 
 # Recovery stories page = changes.html
 @app.route('/changes', methods=['GET', 'POST'])
@@ -182,6 +182,13 @@ def gratitudeList():
     Renders gratitudeList.html page.
     '''
     return render_template('gratitudeList.html')
+
+@app.route('/about_us')
+def about_us():
+    '''
+    Renders about_us.html page.
+    '''
+    return render_template('about_us.html')
 
 
 if __name__ == '__main__':
