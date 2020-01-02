@@ -9,13 +9,14 @@
     <form action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select id="category" name="habit" required>
+            <!-- <select multiple id="category" name="habit" required> -->
+            <select multiple id="category" name="habit" required>
         <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
         {% for cat in categories %}
             <option value="{{cat.habit}}">{{cat.habit}}</option>
         {% endfor %}
             </select>
-                <label>Choose your habit</label>
+                <label class="Tomato-text">Choose your habit - Required to submit</label>
         </div>
             <div class="input-field col s12">
                 <i class="material-icons prefix">face</i>
@@ -125,7 +126,7 @@
         </div>
 
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit">Share your truths
+            <button class="btn waves-effect waves-light" type="submit">Add your story
                 <i class="material-icons right">playlist_add</i>
             </button>
         </div>

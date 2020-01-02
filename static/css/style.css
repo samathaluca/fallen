@@ -19,6 +19,12 @@ html {
   /* font-weight: bold; */
 }
 
+#editButton {
+    margin-right: 50px;
+    
+
+  } 
+
 
 /* #background {
 
@@ -35,6 +41,10 @@ html {
 .Tomato-text {
     color:Tomato;
 }
+
+/* * {
+    color:navy;
+} */
 
 #floral {
     background-color:Floralwhite;

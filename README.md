@@ -177,9 +177,9 @@ Professionals have been asked about the potential benefits to them and asked wha
 
 ### Development planes 
 
-#### **The strategy plan**
+#### **The strategy plane**
 
-##### Summary of strategy plan
+##### Summary of strategy plane
 1. Development focus will be to provide a service and connection for users who are trying to recover from addiction.
 2. Second strategic aim is to be useful for user/contributors.
 3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
@@ -195,7 +195,7 @@ This user will be offered solutions in practical, real stories that they can ide
 
 A simple form guides the user through a series of questions using select options to make the process effortless.
 
-##### Details of strategy plan
+##### Details of strategy plane
 
 1. Development focus will be to provide a service and connection for users who are trying to recover from addiction or thinking about how possible it may be in the future.
 
@@ -461,20 +461,47 @@ an auto added image chosen for each addiction. This would ensure that the home p
 MongoDB atlas was recommended by Code Institute. 
 
 
-
-
-
-
-
 ## Features
-- Nav bar
-- Grid of recovered user recipes (maybe with images/maybe not)
-- side bar with the questions user is presented to answer. 
-- search bar to add key words linking to user recipes for recovery
-- both side bar and search bar load stories relevant to user input. 
+
+###base.html features
+- Logo linking to home page.
+- Nav bar or side navbar 0-1000px width.
+- Footer with link and 'admin only' limk to deleteButton.html page.
+
+###index.html page features
+- Recovery recipe image with link in materialize card. 
+- Managing emotions materialize card.
+- Filter stories feature which allows the user to render a page of stories from the data base specific to their filter choice.
+- Grid of recovered user/contributor stories. Each story card links to a page detailing all the informtaion for the selected user/contributor story. 
+Each individual story selected is rendered within storyDetail.html page following selection by the user.
+- Materialise cards presenting quotes and links
+
+<!-- - side nav bar with the questions user is presented to answer.  -->
+
+###myProblem.html page features
+- Logo linking to home page.
+- Nav bar or side navbar 0-1000px width.
+
+
+
 
 journalling link stuff proven to help addiction 
 telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
+
+features deemed necessary for function but not for project would begratitude list
+soul searching
+
+    Each document represents one completed 'Tell your story' form. 
+    Selected options from myProblem.html pages is 
+
+
+    '''
+    Reads changes collection in the MS3-project mongoDB to
+    render in changes.html.
+    All documents from changes collection are rendered as a list.
+    filtered function renders small list 
+    '''
+
 
 Future features
 Gratitude list
