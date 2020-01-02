@@ -461,38 +461,6 @@ an auto added image chosen for each addiction. This would ensure that the home p
 MongoDB atlas was recommended by Code Institute. 
 
 
-## Features
-
-###base.html features rendered in each page
-- Logo linking to home page. Extra large distinctive logo on device min-width 1000px. 
-- Nav bar or side navbar 0-1000px width.
-- Footer with link and 'admin only' limk to deleteButton.html page.- Footer with link and 'admin only' limk to deleteButton.html page.singlessssssshhhhjjjjjjj jjjjlll
-
-###index.html page features
-- Recovery recipe image with link in materialize card. 
-- Managing emotions materialize card.
-- Filter stories feature which allows the user to render a page of stories from the data base specific to their filter choice.
-- Grid of recovered user/contributor stories. Each story card links to a page detailing all the informtaion for the selected user/contributor story. 
-Each individual story selected is rendered within storyDetail.html page following selection by the user.
-- Materialise cards presenting quotes and links
-
-<!-- - side nav bar with the questions user is presented to answer.  -->
-
-###myProblem.html page features
-
-
-
-
-journalling link stuff proven to help addiction 
-telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
-
-features deemed necessary for function but not for project would begratitude list
-soul searching
-
-    Each document represents one completed 'Tell your story' form. 
-    Selected options from myProblem.html pages is 
-
-
     '''
     Reads changes collection in the MS3-project mongoDB to
     render in changes.html.
@@ -500,12 +468,75 @@ soul searching
     filtered function renders small list 
     '''
 
+mongo db stored as strings not integers
+
+
+
+
+
+## Features
+
+### base.html features rendered in each page
+- Logo linking to home page. Extra large distinctive logo on device min-width 1000px. 
+- Nav bar or side navbar 0-1000px width.
+- Footer with links to information and 'admin only' link to deleteButton.html page.
+
+### index.html page features
+- Recovery recipe image with link in materialize card. 
+- Managing emotions materialize card.
+- Filter stories feature which allows the user to render a page of stories from the data base specific to their filter choice.
+- Grid of recovered user/contributor stories. Each story card links to a page detailing all the informtaion for the selected user/contributor story. 
+Each individual story selected is rendered within storyDetail.html page following selection by the user.
+- Materialise cards presenting quotes and links
+
+### myProblem.html page features
+= Materialize select form allows user input through specific preset options.
+- Share button submits collected form option data to myProblem collection in mongoDB.
+
+### changes.html page features
+- Materialize collapsible list of user/contributor stories from changes collection in MongoDB.
+
+### add_changes.html page features
+- Materialize form combining:
+    1. Single select field allows user/contributor input through specific preset options.
+    2. Twenty one text input fields to collect text stories for display on index.html and as a list on change.html pages.
+    3. Add you story button submits data from form input to change collection in MongoDB.
+
+### pastProblem.html page features
+= Materialize select form allows user input through specific preset options.
+- Share button submits collected form option data to pastProblem collection in mongoDB.
+
+### deleteButon page features
+- Materialize collapsible list of user/contributor stories from changes collection in MongoDB.
+- Edit button loads chosen story and reveals the edit_changes form specific to the chosen story. 
+- Delete button deletes the chosen story from changes collection in mongoDB. It will thereby delete the 
+story from index.html stories grid dispaly and the changes.html page list.
+
+### edit_changes page features
+- The same Materialize form as on the add_changes.html page combining:
+    1. Single select field allows user/contributor input through specific preset options.
+    2. Twenty one text input fields to collect text stories for display on index.html and as a list on change.html pages.
+The text input fields show the stories as stored in the changes collection in mongoDB.
+    3. Edit button submits updates from form input to change collection in MongoDB.
+
+### gratitudeList.html page features
+Text gratitude list suggestions.
+
+### storyDetails.html page features 
+- Template loading each invidual story selected by the user. 
+All information is loaded from the changes collection according to id of the story selected on index.html. 
+Each document in the changes collection is dispalyed in one stroyDetails.html page. 
+Buttons link to motivational articles. 
+
 
 Future features
-Gratitude list
+journalling link stuff proven to help addiction 
+telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
+
 recovery diaries
 planners
 
+clean time countdown
 
 information for shy sharers
 conferencing
@@ -521,15 +552,6 @@ women section
 required field pop up warning for add_changes
 login
 
-
-
-
-# 404 error page
-# @app.errorhandler(404)
-# def page_not_found(e):
-#     return render_template('pages/404.html'), 404
-
-
 filter choses two or more types of addiction, also further filters 
 One of the key factors in getting through to addicts is for them to identify and recongnise that the person trying to help them has walked in their shoes.
 As the stories become more plentiful a second filter can be added e.g. sex or age or education or stress levels or social anxiety, the list is endless. 
@@ -537,7 +559,7 @@ As the stories become more plentiful a second filter can be added e.g. sex or ag
 user /contribtuor stories I will have access to a gratitude list and journal which may help me 
 
 As a user I expect feedback from the website I am using when I interact with it, I expect loading spinners when pages are taking a while to load, I expect pop ups and modals to inform
- me when my forms have been completed and sent correctly.
+me when my forms have been completed and sent correctly.
 
 I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
 
@@ -547,7 +569,7 @@ The information will be complied in to report that will be freely available. Not
 
 ## Wireframes
 
-![Alt text](static/images/balsamiq/Re-ScopeBalsamiq.png)
+![Alt text](assets/balsamiq/Re-ScopeBalsamiq.png)
 
 ## Tech Used
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
@@ -592,6 +614,11 @@ JAVASCRIPTPrimary function of the site for all user interaction.
 
 testing of concept -ask other users
 addicts, slack etc
+
+
+![Alt text](assets/balsamiq/Re-ScopeBalsamiq.png)
+
+
 
 
 problems listed in the terminal were at one point 89. now 9 problems with no warnings
@@ -702,7 +729,4 @@ In the heroku dashboard, click "Deploy".
 In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
 The site is now successfully deployed.
-
-
-
 

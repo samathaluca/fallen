@@ -3,15 +3,15 @@ from flask import Flask, render_template, redirect, request, url_for
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 from os import path
-if path.exists('env.py'):
+if path.exists("env.py"):
     import env
 
-# Create instance of Flask and assign it to 'app'
+# Create instance of Flask and assign it to "app"
 app = Flask(__name__)
 
 # MongoDB assign db/ URI
-app.config['MONGO_DBNAME'] = 'MS3_project'
-app.config['MONGO_URI'] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_DBNAME"] = 'MS3_project'
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
@@ -32,8 +32,7 @@ def index():
 def myProblem():
     '''
     Creates documents in the myProblem collection in the MS3-project mongoDB.
-    Each document represents one completed 'Tell your story' created by this
-    function.
+    Each document represents one completed 'Tell your story' created by this function.
     '''
     if request.method == 'GET':
         return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
@@ -54,8 +53,8 @@ def changes():
     if request.method == 'GET':
         return render_template('changes.html', changes=mongo.db.changes.find())
     else:
-        habit = (request.form.get('habit'))
-        changes = mongo.db.changes.find({'habit': habit})
+        habit = (request.form.get("habit"))
+        changes = mongo.db.changes.find({"habit": habit})
         return render_template('changes.html', changes=changes)
 
 
@@ -88,12 +87,12 @@ def edit_changes(changes_id):
     Pulls categories and changes collections in to edit_changes.html form.
     Renders edit_changes_html page.
     '''
-    the_change = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
+    the_change = mongo.db.changes.find_one({"_id": ObjectId(changes_id)})
     all_categories = mongo.db.categories.find()
     return render_template('edit_changes.html', changes=the_change, categories=all_categories)
 
 
-@app.route('/update_changes/<changes_id>', methods=['POST'])
+@app.route('/update_changes/<changes_id>', methods=["POST"])
 def update_changes(changes_id):
     '''
     Updates documents in the changes collection in the MS3-project mongoDB.

@@ -2,11 +2,15 @@
 {% block content %}
 
 <!-- collapsible list of all the recovery stories loaded from the database with edit and delete buttons.  -->
+
+
 <h4 class="center-align">Edit and Delete</h4>
 
 
   <ul class="collapsible" data-collapsible="expandable">
     {% for changes in changes %}
+<main class="container">
+<div class="row">
     <li>
         <div class="collapsible-header row">
             <div class="task_header col s9">
@@ -122,6 +126,8 @@
             </span>
         </div>
     </li>
+</div>
+</main>
     {% endfor %}
   </ul>
 
