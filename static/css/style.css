@@ -20,13 +20,19 @@ html {
 }
 
 #editButton {
+    margin-right: 150px;
+    
+
+  } 
+
+#deleteButton {
     margin-right: 50px;
     
 
   } 
 
 #editButton2 {
-    margin-left: 250px;
+    margin-left: 50px;
     
 
   } 
