@@ -7,6 +7,7 @@ $(document).ready(function() {
         $('select').formSelect();
         $('.sidenav').sidenav();
         $('#alias').characterCounter();
+        $('.carousel').carousel();
         // $(document).ready(function() {
         // M.updateTextFields();});
         // $('#textarea1').val('New Text');
