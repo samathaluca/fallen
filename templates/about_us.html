@@ -1,10 +1,32 @@
 {% extends 'base.html' %}
 {% block content %}
 
+<div>
+<h2>You did it- thank you</h2>
 
-<h1>You did it thank you</h1>
+<h3>Your data</h3>
 
-<img class="materialboxed" width="650" src="images/Sheep.jpg">
+
+  <!-- Modal Structure -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>ok ok</p>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+  </div>
+
+  <!-- Modal Trigger -->
+  <button data-target="modal1" class="btn modal-trigger">Modal</button>
+
+<p 
+
+
+
+<a class="white-text" href= "{{ url_for('pastProblem') }}">Soul Searching</a>
+  </div>
 
 <!-- <img id="sheep" src="{{ url_for('static', filename='images/Sheep.jpg') }}" alt="Sheep in a Pickle" style="max-width:100%"> -->
   <div class="carousel">
