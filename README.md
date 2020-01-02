@@ -463,10 +463,10 @@ MongoDB atlas was recommended by Code Institute.
 
 ## Features
 
-###base.html features
-- Logo linking to home page.
+###base.html features rendered in each page
+- Logo linking to home page. Extra large distinctive logo on device min-width 1000px. 
 - Nav bar or side navbar 0-1000px width.
-- Footer with link and 'admin only' limk to deleteButton.html page.
+- Footer with link and 'admin only' limk to deleteButton.html page.- Footer with link and 'admin only' limk to deleteButton.html page.singlessssssshhhhjjjjjjj jjjjlll
 
 ###index.html page features
 - Recovery recipe image with link in materialize card. 
@@ -479,8 +479,6 @@ Each individual story selected is rendered within storyDetail.html page followin
 <!-- - side nav bar with the questions user is presented to answer.  -->
 
 ###myProblem.html page features
-- Logo linking to home page.
-- Nav bar or side navbar 0-1000px width.
 
 
 

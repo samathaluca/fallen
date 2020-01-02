@@ -9,8 +9,7 @@
     <form action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <!-- <select multiple id="category" name="habit" required> -->
-            <select multiple id="category" name="habit" required>
+            <select mutiple id="category" name="habit" required>
         <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
         {% for cat in categories %}
             <option value="{{cat.habit}}">{{cat.habit}}</option>
