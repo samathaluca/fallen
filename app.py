@@ -24,7 +24,7 @@ def index():
     pulls changes and categories collections from the MS3-project mongoDB to
     render in index.html.
     '''
-    changes = mongo.db.changes.find()
+    #                                                           changes = mongo.db.changes.find()
     return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 
 
@@ -77,7 +77,7 @@ def insert_changes():
     Each document represents one completed 'Share your recovery' created by
     this function.
     '''
-    # changes = mongo.db.changes
+    #                                       changes = mongo.db.changes
     mongo.db.changes.insert_one(request.form.to_dict())
     return redirect(url_for('changes'))
 
