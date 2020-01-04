@@ -28,19 +28,19 @@ def index():
     return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 
 
-# Tell your story page = myProblem.html
-@app.route('/myProblem', methods=['GET', 'POST'])
-def myProblem():
+# Tell your story page = my_problem.html
+@app.route('/my_problem', methods=['GET', 'POST'])
+def my_problem():
     '''
-    Creates documents in the myProblem collection in the MS3-project mongoDB.
+    Creates documents in the my_problem collection in the MS3-project mongoDB.
     Each document represents one completed 'Tell your story' created by this
     function.
     '''
     if request.method == 'GET':
-        return render_template('myProblem.html', myProblem=mongo.db.myProblem.find())
+        return render_template('my_problem.html', my_problem=mongo.db.my_problem.find())
     else:
-        insert_myProblem = mongo.db.myProblem
-        insert_myProblem.insert_one(request.form.to_dict())
+        insert_my_problem = mongo.db.my_problem
+        insert_my_problem.insert_one(request.form.to_dict())
         # return redirect(url_for('index'))
         return render_template('about_us.html')
 
@@ -128,13 +128,13 @@ def update_changes(changes_id):
 
 
 # Edit/Delete recovery stories, from mongoDB changes collection.
-@app.route('/deleteButton')
-def deleteButton():
+@app.route('/delete_edit_buttons')
+def delete_edit_buttons():
     '''
-    Renders deleteButton.html page with list of all change documents fro
+    Renders delete_edit_buttons.html page with list of all change documents fro
     mongoDB.
     '''
-    return render_template('deleteButton.html', changes=mongo.db.changes.find())
+    return render_template('delete_edit_buttons.html', changes=mongo.db.changes.find())
 
 
 # delete recovery stories from mongoDB changes collection
@@ -177,12 +177,12 @@ def past_problem():
         return redirect(url_for('index'))
 
 
-@app.route('/gratitudeList')
-def gratitudeList():
+@app.route('/gratitude_list')
+def gratitude_list():
     '''
-    Renders gratitudeList.html page.
+    Renders gratitude_list.html page.
     '''
-    return render_template('gratitudeList.html')
+    return render_template('gratitude_list.html')
 
 
 @app.route('/about_us')

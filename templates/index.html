@@ -112,16 +112,16 @@
                 </li>
             </ul>
         </div>
-<!-- tell your story banner and button linking to Tell you story (links to myProblem form and database) -->
+<!-- tell your story banner and button linking to Tell you story (links to my_problem form and database) -->
         <div class="col s12 m8">
-            <div class="section no-pad-bot" id="index-banner">
+            <div class="section no-pad-bot"x-banner">
                 <div class="container">
                     <h4 class="header center blue-grey-text">HABIT OR ADDICTION <br>Battered and bruised- Leave the fight. <br>Burnt- Get out of the fire</h4>
                     <div class="row center">
                         <h5 class="header col s12 light">To be human is to grow and accept change or wither and die</h5>
                     </div>
                     <div class="row center">
-                        <a href="{{ url_for('myProblem') }}" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
+                        <a href="{{ url_for('my_problem') }}" id="download-button" class="btn-large waves-effect waves-light orange">Tell your story</a>
                     </div>
                 </div>
             </div>
@@ -151,7 +151,7 @@
                         </div>
                         <div class="card-action">
                             <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text"><img src="static/images/logo/miniPan.png"></a> -->
-                            <a href="{{url_for('storyDetail', changes_id=changes._id)}}">View Story</a>
+                            <a href="{{url_for('story_detail', changes_id=changes._id)}}">View Story</a>
                         </div>
                     </div>
                 </div>
