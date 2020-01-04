@@ -528,6 +528,7 @@ All information is loaded from the changes collection according to id of the sto
 Each document in the changes collection is dispalyed in one stroyDetails.html page. 
 Buttons link to motivational articles. 
 
+scope creep 
 
 Future features
 journalling link stuff proven to help addiction 
