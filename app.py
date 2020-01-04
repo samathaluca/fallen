@@ -79,7 +79,7 @@ def insert_changes():
     '''
     # changes = mongo.db.changes
     mongo.db.changes.insert_one(request.form.to_dict())
-    return redirect(url_for('pastProblem'))
+    return redirect(url_for('changes'))
 
 
 # Edit recovery stories in mongoDB changes collection page (edit_changes.html)

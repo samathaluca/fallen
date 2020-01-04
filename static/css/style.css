@@ -25,7 +25,7 @@ html {
 	/* font-weight: bold; */
 }
 
-#editButton {
+#editButton #aboutButton{
 	margin-right: 150px;
 }
 
@@ -37,6 +37,12 @@ html {
 	margin-left: 50px;
 }
 
+#standOut {
+    font-family: "Lato", cursive;
+	font-weight: bold;
+    font-size: 24px
+
+}
 
 /* #background {
 
@@ -69,13 +75,17 @@ body {
 	position: static;
 	/* /* float: right; */
 	/* margin-right: 0px; */
-	*/
+	
 }
 
 
 /* #rock-button {
     position: right;;
 } */
+
+#check {
+	background-color:turquoise;
+}
 
 .btn_small {
 	height: 24px;
