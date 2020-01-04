@@ -165,16 +165,17 @@ def past_problem():
     Reads past_problem collection in the MS3-project mongoDB to
     render in past_problem.html.
     Creates documents in the past_problem collection in the MS3-project mongoDB.
-    Each document represents one completed 'Sould searching' form completion
+    Each document represents one completed 'Soul searching' form completion
     created by this function.
     '''
     if request.method == 'GET':
-        return render_template(
-            'past_problem.html', past_problem=mongo.db.past_problem.find())
+        return render_template('past_problem.html', past_problem=mongo.db.past_problem.find())
     else:
         insert_past_problem = mongo.db.past_problem
         insert_past_problem.insert_one(request.form.to_dict())
-        return redirect(url_for('index'))
+        # return redirect(url_for('index'))
+        return render_template('about_us.html')
+
 
 
 @app.route('/gratitude_list')
