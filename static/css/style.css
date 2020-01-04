@@ -43,6 +43,12 @@ html {
     font-size: 24px
 
 }
+#gratitudeButton {
+	margin-right: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+}
 
 /* #viewStory {
     font-family: "Lato", cursive;
