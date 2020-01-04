@@ -6,6 +6,7 @@ from os import path
 if path.exists('env.py'):
     import env
 
+
 # Create instance of Flask and assign it to 'app'
 app = Flask(__name__)
 
@@ -76,9 +77,9 @@ def insert_changes():
     Each document represents one completed 'Share your recovery' created by
     this function.
     '''
-    changes = mongo.db.changes
+    # changes = mongo.db.changes
     mongo.db.changes.insert_one(request.form.to_dict())
-    return redirect(url_for('changes'))
+    return redirect(url_for('pastProblem'))
 
 
 # Edit recovery stories in mongoDB changes collection page (edit_changes.html)
@@ -182,6 +183,7 @@ def gratitudeList():
     Renders gratitudeList.html page.
     '''
     return render_template('gratitudeList.html')
+
 
 @app.route('/about_us')
 def about_us():

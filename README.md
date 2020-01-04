@@ -39,15 +39,15 @@ The different types of addiction options currently added are:
 ## Quick guide
 
 - **Tell your story** invites users to do just that. 
-- <em>Recovery Stories</em> links to step by step solution/identification guide presented as a list of collapsible questions and answers.
-- <strong>Share you recovery</strong> links to a form for contributors to create a recovery story. 
+- **Recovery Stories** links to step by step solution/identification guide presented as a list of collapsible questions and answers.
+- **Share you recovery** links to a form for contributors to create a recovery story. 
 - Once shared each recovery story is presented in three formats
     1. Within the list of recovery stories
     2. On home page as a small card with image, alias amd addiction type.
     3. A single story is presented on a single page following the view story link in each card on the home page.
-- <em><strong>Soul searching</strong></em> links to an extensive survey questionnaire to gather data. 
-- From the <em>admin only</em> link in the footer recovery stories can be edited or deleted.
-- <em>A gratitude list</em> is offered as a tool for contributors. 
+- **Soul searching** links to an extensive survey questionnaire to gather data. 
+- From the **admin only** link in the footer recovery stories can be edited or deleted.
+- **A gratitude list** is offered as a tool for contributors. 
 
 ### Project purpose
 
