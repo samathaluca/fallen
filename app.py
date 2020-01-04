@@ -148,32 +148,32 @@ def delete_changes(changes_id):
 
 
 # individual recovery story page loaded from View story links
-@app.route('/storyDetail/<changes_id>', methods=['GET', 'POST'])
-def storyDetail(changes_id):
+@app.route('/story_detail/<changes_id>', methods=['GET', 'POST'])
+def story_detail(changes_id):
     '''
     A single document from changes collection,selected by id, is rendered as a
-    single storyDetail.html page.
+    single story_detail.html page.
     '''
     changes = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
-    return render_template('storyDetail.html', changes=changes)
+    return render_template('story_detail.html', changes=changes)
 
 
-# soul searching form page (pastProblem.html)
-@app.route('/pastProblem', methods=['GET', 'POST'])
-def pastProblem():
+# soul searching form page (past_problem.html)
+@app.route('/past_problem', methods=['GET', 'POST'])
+def past_problem():
     '''
-    Reads pastProblem collection in the MS3-project mongoDB to
-    render in pastProblem.html.
-    Creates documents in the pastProblem collection in the MS3-project mongoDB.
+    Reads past_problem collection in the MS3-project mongoDB to
+    render in past_problem.html.
+    Creates documents in the past_problem collection in the MS3-project mongoDB.
     Each document represents one completed 'Sould searching' form completion
     created by this function.
     '''
     if request.method == 'GET':
         return render_template(
-            'pastProblem.html', pastProblem=mongo.db.pastProblem.find())
+            'past_problem.html', past_problem=mongo.db.past_problem.find())
     else:
-        insert_pastProblem = mongo.db.pastProblem
-        insert_pastProblem.insert_one(request.form.to_dict())
+        insert_past_problem = mongo.db.past_problem
+        insert_past_problem.insert_one(request.form.to_dict())
         return redirect(url_for('index'))
 
 
