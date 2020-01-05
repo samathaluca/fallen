@@ -290,32 +290,37 @@ The scope of the project has been designed so that it is not throttled by the ne
 
 Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome page, with awarenes of the short attention span of the users. 
 Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
-To achieve this, user centered design methods, such as usability tests, persona research and creation, and user flow diagrams. 
-Information architecture is just a small part of the whole big thing called User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
+To achieve this, user centered design methods, such as usability tests, user/contributor research and profile creation, and user flow diagrams. 
+Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 ___________________________________________________________________________________________________________________
+
 #####  Base.html template: 
-The base.html navbar is loaded at the top of each page. The base.html footer appears in each page. 
+The base.html navbar is loaded at the top of each page. The base.html footer appears at the bottom of each page. 
 
 - Navigation bar links:
 
-1. **Home**- Logo designed with HOME characters. [Home page](https://fallen-but-not-broken.herokuapp.com/index)
-2. **Tell your story**  [Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
+1. **Home**- Logo designed with HOME text characters to help guide users. [Home page](http://fallen-but-not-broken.herokuapp.com/)
+2. **Tell your story**  [Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
 3. **Recovery stories** [Recovery stories](https://fallen-but-not-broken.herokuapp.com/changes)
 4. **Share you recovery** [Share your recovery ](https://fallen-but-not-broken.herokuapp.com/add_changes)
-5. **Soul searching** [Soul searching](https://fallen-but-not-broken.herokuapp.com/pastProblem)
+5. **Gratitude List** [Gratitude List](https://fallen-but-not-broken.herokuapp.com/gratitude_list)
+6. **About Us** [About Us](http://fallen-but-not-broken.herokuapp.com/about_us)
 
 - Footer content:
+
 1. Series of external links to relevant information/proof of claims in content of site. 
 2. **admin only** link gives the option to edit and delete contributor stories.
-[Edit and delete buttons](https://fallen-but-not-broken.herokuapp.com/deleteButton)
+[Edit and delete buttons](https://fallen-but-not-broken.herokuapp.com/delete_edit_buttons)
 
 The delete button deletes the story from the app and the data base.
 
-The edit button links a form to to a form to update each individual contributor story. [Edit stories](https://fallen-but-not-broken.herokuapp.com/edit_changes/5defc98797a1fd74efe492f4)
+The edit button links to a form to update each individual contributor story. [Edit stories](https://fallen-but-not-broken.herokuapp.com/edit_changes/5defc98797a1fd74efe492f4)
+___________________________________________________________________________________________________________________
+
 ##### Edit_changes.html page / individual user story mongoDB ID. 
     - linked from **admin only** in base.html footer . 
-    - The edit button on the deleteButton.html page links to recovery story selected by user.
-    - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the edit button is clicked.
+    - The edit button on the delete_edit_buttons.html page links to recovery story selected by user.
+    - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the second edit button is clicked.
 
 ___________________________________________________________________________________________________________________
 
@@ -338,17 +343,17 @@ The filter retrieves stories from the mongoDB specific to user choice from dropd
 (https://fallen-but-not-broken.herokuapp.com/changes)
 
 There is a second button link to the 'Tell you story' form to maximise chances of data capture.
-[Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
+[Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
 
 The main section on the home page presents all the stories stored in the data base as small cards with an image that has been pre-determinedly linked to the addiction type selection.  
 The cards also list the alias provided, the name of the type of addiction and a link to the full story.
-Each 'view story' link leads to the storyDetail.html page.
+Each 'view story' link leads to the story_detail.html page.
 
 ___________________________________________________________________________________________________________________
 
-##### storyDetail.html page.
-The page contains an individual story dependant on which link with an individual materialize card is chosen. 
-Each materialize card links to a separate recovery story. The page styles the questions asked in to headings and the answers stored in changes collection in MongoDB are loaded from the database.
+##### story_detail.html page.
+The page contains an individual story dependant on which 'view story' link within an individual materialize card is chosen. 
+Each materialize card links to a separate recovery story. The page styles the questions previously answered by a user/contributor in to headings and the answers stored in changes collection in MongoDB are loaded from the database.
 Examples would be :
 
 [The Big One](https://fallen-but-not-broken.herokuapp.com/edit_changes/5dfa5cdd0b8669e8b26413b9)
@@ -358,13 +363,13 @@ Examples would be :
 
 ___________________________________________________________________________________________________________________
 
-##### myProblem.html page
+##### my_problem.html page
 
-[Tell your story](https://fallen-but-not-broken.herokuapp.com/myProblem)
+[Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
 
 A Materialize select form with collapsible menu. User inputs their addiction story.
 
-Share button submits the form to the myProblem collection in the mongoDB.
+Share button submits the form to the my_problem collection in the mongoDB.
 
 ___________________________________________________________________________________________________________________
 
@@ -390,37 +395,61 @@ and recovery recipe will be seen by the filter.
 ___________________________________________________________________________________________________________________
 
 
-##### pastProblem.html page 
+##### about_us.html page 
 
-[Soul searching](https://fallen-but-not-broken.herokuapp.com/pastProblem)
-Soul Searching is a  Materialize select form with drop down menu. Currently there are 21 input questions in this form. It is proposed that collection of 108 questions will be included to be of value.
-Share button submits the form to the pastProblem collection in the mongoDB.
+About us page was added following user/contributors feedback. With the rise in concern about what personal data is used for, users said they would like to know why the data is being collected, by whom and what it will be used for.
+
+[Dig Deeper](https://fallen-but-not-broken.herokuapp.com/past_problem)
 
 ___________________________________________________________________________________________________________________
+
+
+
+##### past_problem.html page 
+
+This page link was moved from the nav bar to a link within about_us.html following mentor comments. My mentor said that this page did not add anything to the project and the examiner may wonder why it is present.
+This page and additional pages of questions to be added later are very important for the strategy. Gathering as much information as possible from visitors to the site is important to understand recovery from addiction. 
+
+[Dig Deeper](https://fallen-but-not-broken.herokuapp.com/past_problem)
+Dig Deeper is a Materialize select form with drop down menu. The form currently has a smaller selection of questions than it is anticipated may be needed to gather significant data. 
+Share button submits the form to the past_problem collection in the mongoDB.
+
+
+
+
 
 **The Skeleton plane**
 The skeleton plane is currently set out as follows:
 
 #### Home page (index.html).
-- A main page with links to external resources, a nav bar linking to  different forms (listed below).
-Within the main page, dropdown menu offers the user the ability to filter the stories to list those most relevant to them. 
-They are then presented with a list of stories they can read. 
-Within the main page the story cards link to a detailed story . 
-#### Individual Recovery Stories (storyDetail.html). 
-One recovery story per page. The main content of the page is the data stored in MongoDB which is pulled in to the grid layout.
+A main page with links to external resources and links throughout.
+
+A *nav* bar links to  different forms (listed below) and information pages.
+
+#### Tell Your Story page (my_problem.html)
+A form to gather stories from user seeking recovery. 
 #### Recovery stories page (changes.html).
-Containing a list of contributor's recoverys stories
+Containing a list of contributor's recovery stories
 #### Share your recovery page (add_changes.html). 
 A page containing a simple collapsible form for the user to complete their story with prompted questions and a selction of answers. Enable the user/contributor to add contributor recovery stories.
-#### Soul searching form for data collection (pastProblem.html).
-A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
-#### Edit recovery story page (edit_changes.html).
-Recovery stories are edited in the data base by the input field entries on this form.
-#### List of recovery stories with option to edit or delete (deleteButton.html).
-This form is reach via the hidden 'admin only' link in the footer of each page.
-#### Gratitude list (gratitudeList.html). 
+#### Gratitude list (gratitude_list.html). 
 A list of suggested ideas for gratitude lists.
 
+Within the *body* of the home page, dropdown menu offers the user the ability to filter the stories to list those most relevant to them. 
+They are then presented as a basic list of stories that can be easily read (changes.html). 
+Within the main page the story cards link to a detailed story (story_detail.html). 
+#### Individual Recovery Stories (story_detail.html). 
+One recovery story per page. The main content of the page is the data stored in MongoDB which is pulled in to the grid layout.
+
+From the *footer*.
+#### List of recovery stories with option to edit or delete (delete_edit_buttons.html).
+This form is reach via the hidden 'admin only' link in the footer of each page.
+#### Edit recovery story page (edit_changes.html).
+Recovery stories are edited in the data base by the input field entries on this form.
+
+Additional link found on About Us page. 
+#### Soul searching form for data collection (past_problem.html).
+A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
 
 **The Surface plane**
 Modern design conventions were balanced with the desire to keep the interest and focus of the user and the user/contributor, both of which are not conventional by their natures.
@@ -443,6 +472,9 @@ To date the bespoke woke image feedback has been good and met with smiles when p
 
 The images have been chosen to convey a message and have been adapted to be less graphic. For example the self harm image in black and white is very subtle compared to the coloured image.
 As images are so subjective I have asked addicts what they think? The misture of responses were baffling. For example, a guy with gaming addiction thought the toxic relationship image was awful but the illegal drug one was the best yet a woman with an alcohol addiction hated the illegal drug image and really loved the toic relationship image.
+
+It is anticipated that 40 stories on the home page will be optimal. This has been assumed noting the engagement of addicts when presented with a large number of story cards and noting which story they chose to view in which position. 
+This may seem a large number but I believe that a huge dose of visuals will generate the impact needed to keep the interest of an active addict with a pathologically short attention span.
 
 The font was been adjusted a number of times during the design phase. It has been chosen for readability. 
 
@@ -489,9 +521,9 @@ mongo db stored as strings not integers
 Each individual story selected is rendered within storyDetail.html page following selection by the user.
 - Materialise cards presenting quotes and links
 
-### myProblem.html page features
+### my_problem.html page features
 = Materialize select form allows user input through specific preset options.
-- Share button submits collected form option data to myProblem collection in mongoDB.
+- Share button submits collected form option data to my_problem collection in mongoDB.
 
 ### changes.html page features
 - Materialize collapsible list of user/contributor stories from changes collection in MongoDB.
@@ -499,14 +531,14 @@ Each individual story selected is rendered within storyDetail.html page followin
 ### add_changes.html page features
 - Materialize form combining:
     1. Single select field allows user/contributor input through specific preset options.
-    2. Twenty one text input fields to collect text stories for display on index.html and as a list on change.html pages.
-    3. Add you story button submits data from form input to change collection in MongoDB.
+    2. Twenty one text input fields to collect text stories for display on index.html and as a list on changes.html pages.
+    3. Add you story button submits data from form input to changes collection in MongoDB.
 
-### pastProblem.html page features
+### past_problem.html page features
 = Materialize select form allows user input through specific preset options.
-- Share button submits collected form option data to pastProblem collection in mongoDB.
+- Share button submits collected form option data to past_problem collection in mongoDB.
 
-### deleteButon page features
+### delete_edit_button page features
 - Materialize collapsible list of user/contributor stories from changes collection in MongoDB.
 - Edit button loads chosen story and reveals the edit_changes form specific to the chosen story. 
 - Delete button deletes the chosen story from changes collection in mongoDB. It will thereby delete the 
@@ -515,22 +547,42 @@ story from index.html stories grid dispaly and the changes.html page list.
 ### edit_changes page features
 - The same Materialize form as on the add_changes.html page combining:
     1. Single select field allows user/contributor input through specific preset options.
-    2. Twenty one text input fields to collect text stories for display on index.html and as a list on change.html pages.
+    2. Twenty one text input fields to collect text stories for display on index.html and as a list on changes.html pages.
 The text input fields show the stories as stored in the changes collection in mongoDB.
-    3. Edit button submits updates from form input to change collection in MongoDB.
+    3. Edit button submits updates from form input to changes collection in MongoDB.
 
-### gratitudeList.html page features
+### gratitude_list.html page features
 Text gratitude list suggestions.
 
-### storyDetails.html page features 
+### story_details.html page features 
 - Template loading each invidual story selected by the user. 
 All information is loaded from the changes collection according to id of the story selected on index.html. 
-Each document in the changes collection is dispalyed in one stroyDetails.html page. 
+Each document in the changes collection is displayed in one story_details.html page. 
 Buttons link to motivational articles. 
 
-scope creep 
+### about_us.html
+Information and links
 
-Future features
+## Future features
+I became aware of the phenomenon of scope creep during project development. 
+I then stopped adding features that may not add usefulness to the app if they were not essential for the project.
+I wanted to be able to develop the idea in it's most simple form to trial and add future features demanded by users and user/contributors as necessary.
+
+Possible addictional features that could be useful to attract users would be:
+
+- More filters. Currently adding more filters would be of no benefit because there are so few documents in the data base.
+As the number of stories increases, filters will be added so that the user has more control over which stories they are presented with.
+For example, a user may want to find success stories from alcohol dependent women with children and suffering domestic violence.
+Or as user may only want to read stories from user/contributors more than a year in recovery. 
+- Pagination. As stories are added to the database pagination will be necessary. 
+It is anticipated that 40 stories on the home page will be optimal. This has been assumed noting the engagement of addicts when presented with a large number of story cards and noting which story they chose to view in which position. 
+This may seem a large number but I believe that a huge dose of visuals will generate the impact needed to keep the interest of an active addict.
+- Free phone numbers to helplines using 
+
+
+Possible addictional features that could be useful to attract user/contributors would be:
+
+
 journalling link stuff proven to help addiction 
 telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
 

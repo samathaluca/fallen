@@ -44,9 +44,9 @@ html {
 
 }
 #gratitudeButton {
-	margin-right: 50px;
-    margin-top: 30px;
-    margin-bottom: 30px;
+	margin: 50px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
 
 }
 
