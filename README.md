@@ -480,14 +480,32 @@ The font was been adjusted a number of times during the design phase. It has bee
 
 ### Defensive design planning.
 
+
+Defensive design
+Defensive design is the practice of planning for contingencies in the design stage of a project or undertaking. 
+Essentially, in the project, it would be the practice of anticipating all possible ways that an end-user could misuse the app, then designing the app so as to make such misuse impossible, or to minimize 
+the negative consequences. For example, each opportunity for user input was developed expecting users to abuse it deliberatley or accidentally. Defences were put in place to minimise the opportunity for this happening. 
+For example, character number limits and required input fields.
+
+Defensive design/ defensive programming considered Murphy's law.
+Murphy's law is an adage or epigram that is typically stated as: "Anything that can go wrong will go wrong".
+
+Defensive design considerations:
+- Input sanitisation/validation
+- Planning for contingencies
+- Anticipating misuse
+- Authentication (considered but not included)
+
 The most significant defensive design decisions were
 1. To make alias a limited character number.
 
 ![Alias name too long ](assets/defensive_design/alias.jpg)
 
-
 2. 21 images were added to match the 21 addictions. when i tested other students projects the image often did not load so I opted for
 an auto added image chosen for each addiction. This would ensure that the home page did not lose visual appeal and form. 
+
+![Missing story Image ](assets/defensive_design/missing_image.jpg)
+
 3. to make the choice of habit linked to a photo a required filed other wise lots of empty fileds.
 4. move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
 
@@ -526,7 +544,7 @@ Each individual story selected is rendered within storyDetail.html page followin
 - Materialise cards presenting quotes and links
 
 ### my_problem.html page features
-= Materialize select form allows user input through specific preset options.
+- Materialize select form allows user input through specific preset options.
 - Share button submits collected form option data to my_problem collection in mongoDB.
 
 ### changes.html page features
@@ -539,7 +557,7 @@ Each individual story selected is rendered within storyDetail.html page followin
     3. Add you story button submits data from form input to changes collection in MongoDB.
 
 ### past_problem.html page features
-= Materialize select form allows user input through specific preset options.
+- Materialize select form allows user input through specific preset options.
 - Share button submits collected form option data to past_problem collection in mongoDB.
 
 ### delete_edit_button page features
@@ -756,10 +774,11 @@ when trying to fix the line too long issue one problem created another when amen
 
 Problems listed in the terminal were at one point 89. now 9 problems with no warnings
 
->  Check results 
->  Save 
->  Share
-Code	Line	Column	Text
+>  
+-  Check results 
+- Save 
+- Share
+- Code	Line	Column	Text
 E302	19	1	expected 2 blank lines, found 1
 E128	24	5	continuation line under-indented for visual indent
 E302	27	1	expected 2 blank lines, found 1
@@ -788,10 +807,7 @@ If flask could return the test data then the problem must be with mongoDB not th
 The result of this test was that flask returned test data fine so I knew the problem was with mongo and 
 I later noticed a spelling mistake in the names of the field/ attribute within  mongo documents.
 
-'''
-
-
-
+```
 {% extends 'base.html' %}
   <h1>alias id: {{ alias.id }}!</h1>
     <h1>Helloapp {{ alias.username }}!</h1>
@@ -828,11 +844,13 @@ Ran test then found request.form.get('firat') should be request.form.get('first'
 
 ```
 
-
+```
 
 @app.route('/imageTest')
 def imageTest():
     return render_template('imageTest.html')
+
+```
 
 ipad pro is not looking good 
 
