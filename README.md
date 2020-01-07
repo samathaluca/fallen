@@ -318,9 +318,9 @@ The edit button links to a form to update each individual contributor story. [Ed
 ___________________________________________________________________________________________________________________
 
 ##### Edit_changes.html page / individual user story mongoDB ID. 
-    - linked from **admin only** in base.html footer . 
-    - The edit button on the delete_edit_buttons.html page links to recovery story selected by user.
-    - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the second edit button is clicked.
+- linked from **admin only** in base.html footer . 
+- The edit button on the delete_edit_buttons.html page links to recovery story selected by user.
+- The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the second edit button is clicked.
 
 ___________________________________________________________________________________________________________________
 
@@ -482,6 +482,10 @@ The font was been adjusted a number of times during the design phase. It has bee
 
 The most significant defensive design decisions were
 1. To make alias a limited character number.
+
+![Alias name too long ](assets/defensive_design/alias.jpg)
+
+
 2. 21 images were added to match the 21 addictions. when i tested other students projects the image often did not load so I opted for
 an auto added image chosen for each addiction. This would ensure that the home page did not lose visual appeal and form. 
 3. to make the choice of habit linked to a photo a required filed other wise lots of empty fileds.
@@ -649,7 +653,7 @@ js materiliaze
 21. [Hex codes](https://www.w3schools.com/colors/colors_picker.asp) - different colours experimentation.
 22, [Google Fonts](https://fonts.google.com/)
 
-JAVASCRIPTPrimary function of the site for all user interaction.
+
 ## Testing
 1. [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 2. [HTML Validator](https://validator.w3.org/)
@@ -659,29 +663,102 @@ JAVASCRIPTPrimary function of the site for all user interaction.
 6. [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 7. [PEP8 online](http://pep8online.com)- Not secure but ok for testing console errors.
 8. [Gitpod]
-9. VSC code extensions
-10. IDLE
+9. [VSC code extensions]()
+10. [IDLE]
 
-8. JASMINE- framework for testing javascript code.
-5. [Javascript Validator
+### Early development testing.
 
-testing of concept -ask other users
-addicts, slack etc
+1. Code Institute was keen to swap us to Gitpod IDE but the lack of extensions available meant that I would still used both IDLE and VSC to check python syntax and test if the code would run. 
+
+For example, in the earliest phase of development I did not understand how crucial tabs versus spaces were in python. It was not always clear in gitpod IDE. Copying the code in to Idle or VSC helped test and resolve issues.
+I later grasped that Gitpod listed all the indentation, whitespace and other problems as a feature for each file. 
+
+2. HTML Validator was important when testing problems, especially during the development of the forms. 
+
+For example, 
+I could not get html form data to submit to the MongoDB database. Using HTML Validator it revealed that a misplaced closing </div> tag meant that the submit button was outside the form.
+
+3. Chrome Devtool was used from the outset to judge the responsiveness of the site and help test the layout and css styling. 
+
+For example, 
+When choosing the Materialize components to add in early development I added each one then used Chrome Devtools to check the responsiveness before I used them in the design of the site.
+
+4. TDD was attempted at the earliest development phase before I wrote any code to check that Flask had been correctly installed and was running in Gitpod IDE.
+
+For example, 
+https://docs.pytest.org/en/latest/getting-started.html
+
+pip install -U pytest
+```
+def func(x):
+    return x + 1
 
 
-![Alt text](assets/balsamiq/Re-ScopeBalsamiq.png)
+def test_answer():
+    assert func(3) == 5
+```
+
+I also used the TDD examples in the CI lessons to check that Flask was running and that deployment of the app would be successful using Heroku. These lessons have since been remmoved and I understand that TDD is not essential for this project but I have included my attempts to understand and use TDD in this write up as evidence that I do grasp the importance of TDD and did try to implement it.
+
+5. Debug=True within app.py file in Gitpod IDE  listed errors and helped me test development at every small stage. 
+
+6. The app was deployed to heroku early on because sometimes I did not understand why the code would not run from the debug and errors shown within Gitpod coomand line terminal. Manual testing of whether or not the app would run in heroku gave me more detailed explanatons of the error.  Heroku Debug was relied upon for testing.
+
+7. Manual app.py test example.
+```
+import os
+from flask import Flask, render_template, redirect, request, url_for
+from flask_pymongo import PyMongo
+
+app = Flask(__name__)
+
+app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
+app.config["MONGO_DBNAME"] = 'MS3_project'
+
+mongo = PyMongo(app)
+
+@app.route('/')
+def hello():
+    return "ALL GOOD"
+```
+
+### Mid development Testing
+
+1. All the above tests continued to be used throughout. 
+VSC, IDLE, GITPOD, DEVTOOLS, HTML VALIDATOR, DEBUG and HEROKU. 
+
+2. TDD/Manual attempts to test additional python files running were
+```
+def index():
+    changes=mongo.db.changes.find()
+    return changes
+
+def test_index():
+    assert index() != None
+mongo = PyMongo(app)
+
+if __name__ == "__main__":
+    test_index()
+    print("Everything passed")
 
 
+    if __name__ == '__main__':
+    app.run(host=os.environ.get('IP'),
+            port=(os.environ.get('PORT')),
+            debug=True)
 
+```
 
-problems listed in the terminal were at one point 89. now 9 problems with no warnings
-the problems includes indentation, trailing white space, line too long , unused variables, imported but unused files, the pep8 list of errors from pep8 online replicated the problems and warnings in the terminal.
+I understand that this is not strictly TDD because I am not testing my own functions so may be considered a manual test. 
+
+3. The problems includes indentation, trailing white space, line too long , unused variables, imported but unused files, the pep8 list of errors from pep8 online replicated the problems and warnings in the terminal.
 when trying to fix the line too long issue one problem created another when amended.
 
+Problems listed in the terminal were at one point 89. now 9 problems with no warnings
 
-Check results 
-Save 
-Share
+>  Check results 
+>  Save 
+>  Share
 Code	Line	Column	Text
 E302	19	1	expected 2 blank lines, found 1
 E128	24	5	continuation line under-indented for visual indent
@@ -699,7 +776,63 @@ E128	71	5	continuation line under-indented for visual indent
 E302	91	1	expected 2 blank lines, found 1
 E501	108	80	line too long (85 > 79 characters)
 E302	116	1	expected 2 blank lines, found 1
-E501	119	80	line too long (91 > 79 characters)
+> E501	119	80	line too long (91 > 79 characters)
+
+
+4. MongoDb CRUD function testing. 
+
+This was done manually, consistently throughout development. 
+When struggling coding the Update CRUD function, I broke the problem down as follows to test if Flask could return anything in isolation.
+I substituted the results of the Mongo query with a python class containing test data, to see if the problem with flask or mongo. 
+If flask could return the test data then the problem must be with mongoDB not the python code.
+The result of this test was that flask returned test data fine so I knew the problem was with mongo and 
+I later noticed a spelling mistake in the names of the field/ attribute within  mongo documents.
+
+'''
+
+
+
+{% extends 'base.html' %}
+  <h1>alias id: {{ alias.id }}!</h1>
+    <h1>Helloapp {{ alias.username }}!</h1>
+    <h1>password: {{ alias.password }}!</h1>
+    <form action="{{ url_for('alias')}}" method="POST"  class="col s12">
+  {% endfor %}
+
+
+class aliasx:
+    username = 'hhh'
+    password = 'uuu'
+
+@app.route('/alias')
+def alias():
+    # return render_template('alias.html', alias=mongo.db.user.find())
+    return render_template('alias.html', alias=mongo.db.user.find_one())
+    # return render_template('alias.html', alias=aliasx())
+
+
+
+
+Ran test then found request.form.get('firat') should be request.form.get('first')
+
+# @app.route('/update_editSteps/<editSteps_id>', methods=['GET', 'POST'])
+# def update_editSteps(editSteps_id):
+#     editSteps = mongo.db.editSteps
+#     editSteps.update({'editSteps_id': ObjectId(editSteps_id)},
+#                      {'first': request.form.get('firat'),
+#                       'second': request.form.get('second'),
+#                       'third': request.form.get('third'),
+#                       'fourth': request.form.get('fourth'),
+#                       'fifth': request.form.get('fifth')})
+#     return redirect(url_for('index'))
+
+```
+
+
+
+@app.route('/imageTest')
+def imageTest():
+    return render_template('imageTest.html')
 
 ipad pro is not looking good 
 
@@ -708,6 +841,8 @@ Responsiveness - My app is fully responsive; through the entire development and 
 My app has been testing by various student from the Slack community and by friends and family members where needed notes were made and identified bugs were fixed.
 
 From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
+
+5. [Javascript Validator
 
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.

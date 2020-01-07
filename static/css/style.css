@@ -50,6 +50,9 @@ html {
 
 }
 
+#shadow {
+	text-shadow: 1px 1px 2px #000000;
+}
 /* #viewStory {
     font-family: "Lato", cursive;
 	font-weight: bold;
@@ -204,6 +207,3 @@ footer.page-footer {
   margin: 0;
 } */
 
-#shadow {
-	text-shadow: 1px 1px 2px #000000;
-}
