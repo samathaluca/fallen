@@ -128,7 +128,7 @@ body {
 } */
 
 #check {
-	text-color:darkred;
+	font:darkred;
 }
 
 .btn_small {
