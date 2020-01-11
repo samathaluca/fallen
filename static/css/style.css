@@ -13,13 +13,13 @@
 
 #view {
 	text-shadow: 1px 1px 2px #000000;
-    background-color: blueviolet;
-    height: 70px;
+    background-color: grey;
+    height: 100%;
 }
 
 #habit {
 	text-shadow: 1px 1px 2px #000000;
-    background-color: greenyellow;
+    background-color: floralwhite;
     height: 75px;
 }
 
