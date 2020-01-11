@@ -116,7 +116,7 @@
         </div>
 <!-- tell your story banner and button linking to Tell you story (links to my_problem form and database) -->
         <div class="col s12 m8">
-            <div class="section no-pad-bot"x-banner">
+            <div class="section no-pad-bot">
                 <div class="container">
                     <h4 class="header center blue-grey-text">HABIT OR ADDICTION <br>Battered and bruised- Leave the fight. <br>Burnt- Get out of the fire</h4>
                     <div class="row center">
@@ -149,11 +149,10 @@
                                 <span>{{changes.alias}}</span>
                             </div>
                         </div>
-                        <div id="habit" class="card-content">
+                        <div id="habit-name" class="card-content">
                             <p>{{changes.habit}}</p>
                         </div>
                         <div id="view" class="card-action">
-                            <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text"><img src="static/images/logo/miniPan.png"></a> -->
                             <a href="{{url_for('story_detail', changes_id=changes._id)}}">View Story</a>
                         </div>
                     </div>

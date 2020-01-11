@@ -472,6 +472,8 @@ To date the bespoke woke image feedback has been good and met with smiles when p
 
 The images have been chosen to convey a message and have been adapted to be less graphic. For example the self harm image in black and white is very subtle compared to the coloured image.
 As images are so subjective I have asked addicts what they think? The misture of responses were baffling. For example, a guy with gaming addiction thought the toxic relationship image was awful but the illegal drug one was the best yet a woman with an alcohol addiction hated the illegal drug image and really loved the toic relationship image.
+Modern design conventions are predicting a shift to digitally designed images. Digitally designed images and adapted photo images have been used to convey messages but original considering the users may not have the same emotional reaction to them when compared to a real life photo a mix has been used. 
+Business users suggested one type of image would be best in the long term but more research among user groups would need to completed beforehand to conclude whether or not the investment would be worthwhile.
 
 It is anticipated that 40 stories on the home page will be optimal. This has been assumed noting the engagement of addicts when presented with a large number of story cards and noting which story they chose to view in which position. 
 This may seem a large number but I believe that a huge dose of visuals will generate the impact needed to keep the interest of an active addict with a pathologically short attention span.
@@ -858,7 +860,32 @@ def imageTest():
 
 
 
-### 
+### Final Testing to demonstrate thorough testing carried out throughout development.
+
+#### All Final tests will now be carried out on the deployed version. 
+
+Gitpod IDE tests will no longer be relied upon for testing as previous inconsistencies have been noticed between gitpod (even in incognito mode) and heroku deployed app. 
+
+- Index.html file. (Home page)
+    1. Styling and CSS colour match attempts revealed that the colours e.g. blue-grey that were used in Materialize components and templates were not recognised within the static style.css file. 
+    The colours also appeared differently between browsers. 
+    A final review of 2020 modern design conventions reiterate that bold texts are still current. Business users had suggested that this is because of fast paced information gathering. 
+    Informative and educational sites still show muted colours and Duotones which was set by the original Materialize template originally chosen and adapted for this project.
+    Additional digital imagery is still being considered before submission.
+    2. Materiliaze Card component responsiveness illustrating the recovery stories has rendered unpredictably between browsers. Responsiveness has varied too much. Final tests using different set heights within the cards 
+    showed that a set height in the card mid section improved the responsiveness in each browser, device and device orientation. 
+    The amendment to the recovery story cards in the main section of index.html was viewed in opera, google chrome and firefox. Chrome devtools were used to check the responsiveness expected on all the devices listed, plus the responsive option to test all widths between 250-1750px. Below 320px the alias name on the card stories begins to overlap the edge of the cards. Over 1500 the card stories begin to misalign. This will be explored further before submission. The alias can be omitted easily using media queries if deemed necessary. The misaligned stories begins at 1455px according to Chrome Devtools but this does not replciate on real screens tested.
+    It was noticed during development that zoom of 0-50% detrimentally effects the card story responsivity. I will do some work increasing the spacing and padding between cards to see if this helps. 
+    3. Devtool warning was as follows:
+    A cookie associated with a cross-site resource at http://materializecss.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.
+    As Materialize is a google product we anticipate that future releases of chrome would support apps developed in previous versions of Materialize. The warning is however noted.
+    4. The HTML validator revealed that id="habit" had been duplicated. This was corrected. A quote mark was missing which was corrected. 
+
+
+
+
+
+
 
 
 
