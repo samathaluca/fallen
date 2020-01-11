@@ -292,6 +292,8 @@ Considering what would be logical and intuitive IA (Information Architecture), t
 Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
 To achieve this, user centered design methods, such as usability tests, user/contributor research and profile creation, and user flow diagrams. 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
+
+![IA](assets/balsamiq/IA_skeleton.png)
 ___________________________________________________________________________________________________________________
 
 #####  Base.html template: 
@@ -649,7 +651,9 @@ The information will be complied in to report that will be freely available. Not
 
 ## Wireframes
 
-![Alt text](assets/balsamiq/Re-ScopeBalsamiq.png)
+![Alt text](assets/balsamiq/desktop_homepage_wireframe.png)
+![Alt text](assets/balsamiq/tablet_homepage_wireframe.png)
+![Alt text](assets/balsamiq/mobile_homepage_wireframe.png)
 
 ## Tech Used
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
@@ -882,6 +886,8 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
     4. The HTML validator revealed that id="habit" had been duplicated. This was corrected. A quote mark was missing which was corrected. 
     5. Each link was tested. Each external link opened a new tab so our app's tab remained open. 
     6. Side navbar was tested on mobile and tablet devices.
+    7. Each habit document from the MongoDB categories collection is important for the filter and view story features. If the MongoDB categories habit does not match the image names in the static file then the view story cards will not load correctly. Each habit category was tested to check the image loaded and habit name was displayed correctly. Each of the 21 selectable options loaded.
+    8. Huge delay on style.css changes being reflected even after using F5 and incognito mode. Some style.css amendments made during testing need to be reversed. 
 
 - my_problem.html file (Tell your story page)
     1. HTML validator revealed stray </div> end tag revealing a missing opening <div> tag. Other small end tag errors rectified.
@@ -891,6 +897,7 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
     5. All external links and Navbar/Navbar work for each size device.
     6. Page displays reliably within each browser tested in sequence. 
     7. Chrome Dev tools as with index.html.
+    8. Comments checked and all old comments were removed.
 
 - changes.html file (recovery stories page)
     1. HTML validator revealed stray </span> end tag. Tag was removed.
@@ -900,6 +907,63 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
     5. All external links and Navbar/Navbar work for each size device.
     6. Page displays reliably within each browser tested in sequence. 
     7. Chrome Dev tools as with index.html.
+    8. Comments checked and all old comments were removed.
+
+- add_changes.html file (Share your recovery page)
+    1. HTML validator revealed stray </div> end tag. Tag was removed.
+    2. HTML beautifier format then ran through validator again. 
+    3. Full responsive design tests carried out between 200-3320. 
+    4. Data was submitted to mongoDB using the 'ADD YOUR STORY' button. Various points between 150-3320px width submission was tested.
+    5. All external links and Navbar/Navbar work for each size device.
+    6. Page displays reliably within each browser tested in sequence. 
+    7. Chrome Dev tools as with index.html.
+    8. Comments checked and all old comments were removed.
+    9. style.css file is not rendering correctly. Style.CSS tests will be done at the end after all html, template, image and python tests are completed. 
+
+- gratitude_list.html file (gratitude list page)
+    1. HTML validator revealed a lot of spare text outside the viewable page. This was deleted. 
+    2. Code was all formatted and replaced.
+    3. Full responsive design tests carried out between 200-3320. 
+    4. All external links and Navbar/Navbar work for each size device.
+    5. No warnings showed in Devtools. No console errors.
+    6. Comments checked and all old comments were removed.
+
+- about_us.html (about us page)
+
+
+
+- delete_edit_buttons.html (Edit and delete page)
+
+
+
+
+
+
+
+- edit_changes.html (Edit a recovery share page)
+    1. HTML validator revealed stray </div> end tag. Tag was removed.
+    2. HTML beautifier format then ran through validator again. 
+    3. Full responsive design tests carried out between 200-3320. 
+    4. Data was submitted to mongoDB using the 'Edit' button. Various points between 150-3320px width submission was tested.
+    5. All external links and Navbar/Navbar work for each size device.
+    6. Page displays reliably within each browser tested in sequence. 
+    7. Chrome Dev tools as with index.html.
+    8. Comments checked and all old comments were removed.
+    9. The content of the chosen story is pulled in to the page from the mongoDB changes collection. As the screen becamse smalled the story became harder to edit bit it was still possible. 
+    10. The edit button submitted the updates to the mongoDB chnages collection reliably on each device in each browser.
+
+- story_details.html 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
