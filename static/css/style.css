@@ -11,6 +11,18 @@
 
 /*scroll-behaviour not recognised by all browsers*/
 
+#view {
+	text-shadow: 1px 1px 2px #000000;
+    background-color: blueviolet;
+    height: 70px;
+}
+
+#habit {
+	text-shadow: 1px 1px 2px #000000;
+    background-color: greenyellow;
+    height: 700px;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -118,6 +130,15 @@ body {
 	margin: 5px 5px;
 	padding: 0 0.5em;
 	float: right;
+}
+
+.btn_small2 {
+	height: 24px;
+	width: 60px;
+	line-height: 24px;
+	margin: 5px 5px;
+	padding: 0 0.5em;
+	float: left;
 }
 
 

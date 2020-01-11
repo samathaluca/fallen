@@ -499,15 +499,17 @@ Defensive design considerations:
 The most significant defensive design decisions were
 1. To make alias a limited character number.
 
-![Alias name too long ](assets/defensive_design/alias.jpg)
+![Alias name too long](assets/defensive_design/alias.jpg)
 
 2. 21 images were added to match the 21 addictions. when i tested other students projects the image often did not load so I opted for
 an auto added image chosen for each addiction. This would ensure that the home page did not lose visual appeal and form. 
 
-![Missing story Image ](assets/defensive_design/missing_image.jpg)
+![Missing story Image](assets/defensive_design/missing_image.jpg)
 
 3. to make the choice of habit linked to a photo a required filed other wise lots of empty fileds.
-4. move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
+4. Move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
+
+![button layout](assets/defensive_design/capture.jpg)
 
 
 ## MongoDB atlas
@@ -524,6 +526,7 @@ MongoDB atlas was recommended by Code Institute.
 
 mongo db stored as strings not integers
 
+important that the name of habit matches the name of the card
 
 
 
@@ -852,6 +855,16 @@ def imageTest():
 
 ```
 
+
+
+
+### 
+
+
+
+
+
+
 ipad pro is not looking good 
 
 Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
@@ -860,7 +873,6 @@ My app has been testing by various student from the Slack community and by frien
 
 From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
 
-5. [Javascript Validator
 
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
@@ -935,4 +947,9 @@ In the heroku dashboard, click "Deploy".
 In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
 The site is now successfully deployed.
+
+
+
+
+IA is a blueprint of the design structure which can be generated into wireframes and sitemaps of the project. UX designers use them as the basic materials so that they could plan navigation system.
 

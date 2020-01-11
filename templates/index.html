@@ -146,10 +146,10 @@
                                 <span>{{changes.alias}}</span>
                             </div>
                         </div>
-                        <div class="card-content">
+                        <div id="habit" class="card-content">
                             <p>{{changes.habit}}</p>
                         </div>
-                        <div class="card-action">
+                        <div id="view" class="card-action">
                             <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text"><img src="static/images/logo/miniPan.png"></a> -->
                             <a href="{{url_for('story_detail', changes_id=changes._id)}}">View Story</a>
                         </div>
