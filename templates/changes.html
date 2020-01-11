@@ -1,123 +1,121 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <!-- Collapsible list of recovery stories. loaded from changes collection in the Mongo database -->
 <section class="container">
-<h4>Recovery Stories</h4>
-<h5>This is how others did it.</h5>
-<h6>Shared, real experience, good and bad</h6>
-
-  <ul class="collapsible" data-collapsible="expandable">
-    {% for changes in changes %}
-    <li>
-        <div id="floral" class="collapsible-header">
+   <h4>Recovery Stories</h4>
+   <h5>This is how others did it.</h5>
+   <h6>Shared, real experience, good and bad</h6>
+   <ul class="collapsible" data-collapsible="expandable">
+      {% for changes in changes %}
+      <li>
+         <div id="floral" class="collapsible-header">
             <div class="task_header col s9">
-                <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
+               <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
             </div>
-        </div>
-        <div class="collapsible-body">
+         </div>
+         <div class="collapsible-body">
             <span>
-                <strong class= "Tomato-text">The date I stopped was</strong> - {{changes.start_date}}
+            <strong class= "Tomato-text">The date I stopped was</strong> - {{changes.start_date}}
             </span>
-        <div>
-            <span>
-                <strong class= "Tomato-text">I stopped because</strong> - {{changes.whyStop}}
+            <div>
+               <span>
+               <strong class= "Tomato-text">I stopped because</strong> - {{changes.whyStop}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">I stopped for</strong> - {{changes.whoStop}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">In the beginning I felt</strong> - {{changes.feelings}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My rock bottom was</strong> - {{changes.rockBottom}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My recovery recipe</strong> - {{changes.recipe}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My ingredients for recovery were</strong> - {{changes.ingredients}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My day to day life routine changes</strong> - {{changes.dayToDay}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My day 1</strong> - {{changes.day1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">My second day</strong> - {{changes.day2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class= "Tomato-text">Things that helped the withdrawal were</strong> - {{changes.day3}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Cravings</strong> - {{changes.week1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Tools that helped were</strong> - {{changes.week2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Better or Worse week 3?</strong> - {{changes.week3}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">After one month I felt safe when I was</strong> - {{changes.month1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Month 2 changes</strong> - {{changes.month2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Feeling the benefits- month3</strong> - {{changes.month3}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Year 1 summary</strong> - {{changes.year1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Freedom and changes year 2 were</strong> - {{changes.year2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong class="Tomato-text">Overall summary</strong> - {{changes.summary}}
+               </span>
+            </div>
             </span>
-        </div>
-                <div>
-            <span>
-                <strong class= "Tomato-text">I stopped for</strong> - {{changes.whoStop}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class= "Tomato-text">In the beginning I felt</strong> - {{changes.feelings}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class= "Tomato-text">My rock bottom was</strong> - {{changes.rockBottom}}
-            </span>
-        </div>
-                <div>
-            <span>
-                <strong class= "Tomato-text">My recovery recipe</strong> - {{changes.recipe}}
-            </span>
-        </div>
-                <div>
-            <span>
-                <strong class= "Tomato-text">My ingredients for recovery were</strong> - {{changes.ingredients}}
-            </span>
-        </div>
-                <div>
-            <span>
-                <strong class= "Tomato-text">My day to day life routine changes</strong> - {{changes.dayToDay}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class= "Tomato-text">My day 1</strong> - {{changes.day1}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class= "Tomato-text">My second day</strong> - {{changes.day2}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class= "Tomato-text">Things that helped the withdrawal were</strong> - {{changes.day3}}
-            </span>
-        </div>
-        <div>
-            <span>
-                <strong class="Tomato-text">Cravings</strong> - {{changes.week1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Tools that helped were</strong> - {{changes.week2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Better or Worse week 3?</strong> - {{changes.week3}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">After one month I felt safe when I was</strong> - {{changes.month1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Month 2 changes</strong> - {{changes.month2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Feeling the benefits- month3</strong> - {{changes.month3}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Year 1 summary</strong> - {{changes.year1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Freedom and changes year 2 were</strong> - {{changes.year2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong class="Tomato-text">Overall summary</strong> - {{changes.summary}}
-                    </span>
-                </div>
-            </span>
-        </div>
-    </li>
-    {% endfor %}
-  </ul>
+         </div>
+      </li>
+      {% endfor %}
+   </ul>
 </section>
 {% endblock %}
