@@ -1,142 +1,140 @@
 {% extends 'base.html' %} {% block content %}
-
 <!-- Form to add recovery stories to database. Materialize form with text Input fields with one select field -->
-
 <section class="container">
-<div class="row">
-<h4>Share your recovery experience, mistakes and all.</h4>
-<h6>How did you get where you are today?</h6>
-    <form action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
-        <div class="input-field col s12">
+   <div class="row">
+      <h4>Share your recovery experience, mistakes and all.</h4>
+      <h6>How did you get where you are today?</h6>
+      <form action="{{ url_for('insert_changes') }}" method="POST" class="col s12">
+         <div class="input-field col s12">
             <i class="material-icons prefix">expand_more</i>
-            <select mutiple id="category" name="habit" required>
-        <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
-        {% for cat in categories %}
-            <option value="{{cat.habit}}">{{cat.habit}}</option>
-        {% endfor %}
+            <select id="category" name="habit" required>
+               <option value="" disabled selected>CHOOSE YOUR HABIT - Click here</option>
+               {% for cat in categories %}
+               <option value="{{cat.habit}}">{{cat.habit}}</option>
+               {% endfor %}
             </select>
-                <label class="Tomato-text">Choose your habit - Required to submit</label>
-        </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="alias" name="alias" type="text" class="validate" maxlength="12">
-                <label for="alias">Alias - No need for real names.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                <input id="start_date" name="start_date" type="text" class="datepicker">
-                <label for="start_date">Start Date - When did you stop?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mood</i>
-                <input id="whyStop" name="whyStop" type="text" class="validate"></input> 
-                <label for="whyStop">What motivated you to stop?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">favorite</i>
-                <input id="whoStop" name="whoStop" type="text" class="validate"></input> 
-                <label for="whoStop">Who did you stop for?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">insert_emoticon</i>
-                <input id="feelings" name="feelings" type="text" class="validate"></input> 
-                <label for="feelings">Describe how you felt?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="rockBottom" name="rockBottom" type="text" class="validate"> 
-                <label for="rockBottom">Describe your rock bottom.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="recipe" name="recipe" type="text" class="validate">
-                <label for="recipe">Recipe. How you did it.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="ingredients" name="ingredients" type="text" class="validate"></input> 
-                <label for="ingredients">Ingredients. Diet/hobbies.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">nature_people</i>
-                <input id="dayToDay" name="dayToDay" type="text" class="validate">
-                <label for="dayToDay">Day to day routine changes?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="day1" name="day1" type="text" class="validate">
-                <label for="day1">Describe Day 1.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="day2" name="day2" type="text" class="validate">
-                <label for="day2">What did you do Day 2?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mood</i>
-                <input id="day3" name="day3" type="text" class="validate">
-                <label for="day3">Day 3? What helped withdrawal?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_1</i>
-                <input id="week1" name="week1" type="text" class="validate">
-                <label for="week1">Week 1? How were the cravings</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_2</i>
-                <input id="week2" name="week2" type="text" class="validate">
-                <label for="week2">Week 2. What tools did you use?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_3</i>
-                <input id="week3" name="week3" type="text" class="validate">
-                <label for="week3">Week 3. Feeling better or worse?</label>
-            </div>
-                <div class="input-field col s12">
-                <i class="material-icons prefix">filter_1</i>
-                <input id="month1" name="month1" type="text" class="validate">
-                <label for="month1">Month 1 where were you safest?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_2</i>
-                <input id="month2" name="month2" type="text" class="validate">
-                <label for="month2">Month 2 what had changed?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_3</i>
-                <input id="month3" name="month3" type="text" class="validate">
-                <label for="month3">Month 3. Describe the benefits?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_one</i>
-                <input id="year1" name="year1" type="text" class="validate">
-                <label for="year1">Year 1 summary.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_two</i>
-                <input id="year2" name="year2" type="text" class="validate">
-                <label for="year2">Year 2 summary.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_3</i>
-                <input id="summary" name="summary" type="text" class="validate">
-                <label for="summary">Overall summary.</label>
-            </div>
-        </div>
-        <h5 id="check">Did you select a habit/addiction?</h5>
-        <div class="row">
+            <label class="Tomato-text">Choose your habit - Required to submit</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">face</i>
+            <input id="alias" name="alias" type="text" class="validate" maxlength="12">
+            <label for="alias">Alias - No need for real names.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">today</i>
+            <input id="start_date" name="start_date" type="text" class="datepicker">
+            <label for="start_date">Start Date - When did you stop?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">mood</i>
+            <input id="whyStop" name="whyStop" type="text" class="validate">
+            <label for="whyStop">What motivated you to stop?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">favorite</i>
+            <input id="whoStop" name="whoStop" type="text" class="validate">
+            <label for="whoStop">Who did you stop for?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">insert_emoticon</i>
+            <input id="feelings" name="feelings" type="text" class="validate">
+            <label for="feelings">Describe how you felt?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">star</i>
+            <input id="rockBottom" name="rockBottom" type="text" class="validate"> 
+            <label for="rockBottom">Describe your rock bottom.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">star</i>
+            <input id="recipe" name="recipe" type="text" class="validate">
+            <label for="recipe">Recipe. How you did it.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">star</i>
+            <input id="ingredients" name="ingredients" type="text" class="validate">
+            <label for="ingredients">Ingredients. Diet/hobbies.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">nature_people</i>
+            <input id="dayToDay" name="dayToDay" type="text" class="validate">
+            <label for="dayToDay">Day to day routine changes?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">face</i>
+            <input id="day1" name="day1" type="text" class="validate">
+            <label for="day1">Describe Day 1.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">face</i>
+            <input id="day2" name="day2" type="text" class="validate">
+            <label for="day2">What did you do Day 2?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">mood</i>
+            <input id="day3" name="day3" type="text" class="validate">
+            <label for="day3">Day 3? What helped withdrawal?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_1</i>
+            <input id="week1" name="week1" type="text" class="validate">
+            <label for="week1">Week 1? How were the cravings</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_2</i>
+            <input id="week2" name="week2" type="text" class="validate">
+            <label for="week2">Week 2. What tools did you use?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_3</i>
+            <input id="week3" name="week3" type="text" class="validate">
+            <label for="week3">Week 3. Feeling better or worse?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_1</i>
+            <input id="month1" name="month1" type="text" class="validate">
+            <label for="month1">Month 1 where were you safest?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_2</i>
+            <input id="month2" name="month2" type="text" class="validate">
+            <label for="month2">Month 2 what had changed?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">filter_3</i>
+            <input id="month3" name="month3" type="text" class="validate">
+            <label for="month3">Month 3. Describe the benefits?</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">looks_one</i>
+            <input id="year1" name="year1" type="text" class="validate">
+            <label for="year1">Year 1 summary.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">looks_two</i>
+            <input id="year2" name="year2" type="text" class="validate">
+            <label for="year2">Year 2 summary.</label>
+         </div>
+         <div class="input-field col s12">
+            <i class="material-icons prefix">looks_3</i>
+            <input id="summary" name="summary" type="text" class="validate">
+            <label for="summary">Overall summary.</label>
+         </div>
+         <!-- </div> -->
+         <h5 id="check">Did you select a habit/addiction?</h5>
+         <div class="row">
             <button class="btn waves-effect waves-light" type="submit">Add your story
-                <i class="material-icons right">playlist_add</i>
+            <i class="material-icons right">playlist_add</i>
             </button>
-        </div>
-        <div>
-        <h5>'Choose your habit' must be selected from menu to add your story.</h5>
-        <p>Once you click you should see your story added at the bottom of the list of stories and on the home page. <br> If you are not redirected to the list of stories please check you have chosen from the list of habit/addictions e.g. alcohol/drugs/food etc. at the top, then try again. PLEASE DON'T GIVE UP. Your story is important to us.</p>
-        </div>
-        <p>THANK YOU. By filling in and submitting this form, you agree for the independent and anonymous data to be used to find new, effective treatments and detox schemes to help others.
-If you would like to receive more information or can suggest any improvements to the questions please email samfix108@gmail.com</p>
-    </form>
-    
-</div>
+         </div>
+         <div>
+            <h5>'Choose your habit' must be selected from menu to add your story.</h5>
+            <p>Once you click you should see your story added at the bottom of the list of stories and on the home page. <br> If you are not redirected to the list of stories please check you have chosen from the list of habit/addictions e.g. alcohol/drugs/food etc. at the top, then try again. PLEASE DON'T GIVE UP. Your story is important to us.</p>
+         </div>
+         <p>THANK YOU. By filling in and submitting this form, you agree for the independent and anonymous data to be used to find new, effective treatments and detox schemes to help others.
+            If you would like to receive more information or can suggest any improvements to the questions please email samfix108@gmail.com
+         </p>
+      </form>
+   </div>
 </section>
 {% endblock %}

@@ -880,6 +880,32 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
     A cookie associated with a cross-site resource at http://materializecss.com/ was set without the `SameSite` attribute. A future release of Chrome will only deliver cookies with cross-site requests if they are set with `SameSite=None` and `Secure`. You can review cookies in developer tools under Application>Storage>Cookies and see more details at https://www.chromestatus.com/feature/5088147346030592 and https://www.chromestatus.com/feature/5633521622188032.
     As Materialize is a google product we anticipate that future releases of chrome would support apps developed in previous versions of Materialize. The warning is however noted.
     4. The HTML validator revealed that id="habit" had been duplicated. This was corrected. A quote mark was missing which was corrected. 
+    5. Each link was tested. Each external link opened a new tab so our app's tab remained open. 
+    6. Side navbar was tested on mobile and tablet devices.
+
+- my_problem.html file (Tell your story page)
+    1. HTML validator revealed stray </div> end tag revealing a missing opening <div> tag. Other small end tag errors rectified.
+    2. HTML beautifier made missing tag more obvious. I am surprised to see errors in tags at this late stage but there have been so many changes to the style human error has occured during development, proving that even the most basic tests need to be used at the end too.
+    3. Full responsive design tests carried out between 200-3320. 
+    4. Data was submitted to mongoDB between 150-3320px width when share button was clicked. MongoDB my_problem collection contained added documents for each device size.
+    5. All external links and Navbar/Navbar work for each size device.
+    6. Page displays reliably within each browser tested in sequence. 
+    7. Chrome Dev tools as with index.html.
+
+- changes.html file (recovery stories page)
+    1. HTML validator revealed stray </span> end tag. Tag was removed.
+    2. HTML beautifier format then ran through validator again. 
+    3. Full responsive design tests carried out between 200-3320. 
+    4. Data was received from mongoDB between 150-3320px width and story details were revealed when clicked.
+    5. All external links and Navbar/Navbar work for each size device.
+    6. Page displays reliably within each browser tested in sequence. 
+    7. Chrome Dev tools as with index.html.
+
+
+
+
+
+    MongoDB tests
 
 
 
