@@ -12,22 +12,23 @@
 /*scroll-behaviour not recognised by all browsers*/
 
 .info-cards {
-    background-color:grey;
-    margin-top: 33px;
-    margin-left: 6px;
-    margin-right: 6px;
-    font-weight: bold;
+    /* background-color:lightgrey;
+    margin-top: 10px; */
+    margin-left: 2px;
+    margin-right: 2px;
+    /* font-weight: bold; */
 }
 
+#section-top {
+    padding-top: 50px;
+}
 #view {
-	text-shadow: 1px 1px 2px #000000;
-    background-color: lightgrey;
+    /* background-color: lightgrey; */
     /* height: 100%; */
 } 
 
 #habit-name {
-	text-shadow: 1px 1px 2px #000000;
-    background-color: floralwhite;
+    /* background-color: lightgrey; */
     height: 75px;
 }
 
