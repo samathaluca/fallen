@@ -651,9 +651,24 @@ The information will be complied in to report that will be freely available. Not
 
 ## Wireframes
 
-![Alt text](assets/balsamiq/desktop_homepage_wireframe.png)
-![Alt text](assets/balsamiq/tablet_homepage_wireframe.png)
-![Alt text](assets/balsamiq/mobile_homepage_wireframe.png)
+### Desktop Home page Wireframe
+![Desktop Homepage Wireframe](assets/balsamiq/desktop_homepage_wireframe.png)
+
+### Tablet Home page Wireframe
+
+![Tablet Homepage Wireframe](assets/balsamiq/tablet_homepage_wireframe.png)
+
+### Mobile Home page Wireframe
+
+![Mobile Homepage Wireframe](assets/balsamiq/mobile_homepage_wireframe.png)
+
+### Form page example Wireframe
+
+
+
+![Form page Wireframe](assets/balsamiq/form_pages_example(my_problem.html).png)
+
+
 
 ## Tech Used
 1. [HTML5](https://en.wikipedia.org/wiki/HTML5) Semantic markup language as the shell of the site.
