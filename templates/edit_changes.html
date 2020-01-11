@@ -1,139 +1,132 @@
 {% extends 'base.html' %} {% block content %}
-
 <!-- replicated add_changes form with data loaded from changes MongoDb collection. The form allows edits to be inputed then saved in the database when the edit button is clicked. -->
-
-
 <h3 class="center-align">Edit a recovery share</h3>
 <div class="row">
-    <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
-        <div class="input-field col s12">
-            <i class="material-icons prefix">expand_more</i>
-            <select id="habit" name="habit" required>
-                
+   <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
+      <div class="input-field col s12">
+         <i class="material-icons prefix">expand_more</i>
+         <select id="habit" name="habit" required>
             <option value="" disabled selected>Click here</option>
             {% for cat in categories %}
-                {% if cat.habit == changes.habit%}
+            {% if cat.habit == changes.habit%}
             <option value= "{{cat.habit}}" selected>{{cat.habit}}</option>
-                {% else%}
-                <option value="{{cat.habit}}">{{cat.habit}}</option>
-                {% endif %}
+            {% else%}
+            <option value="{{cat.habit}}">{{cat.habit}}</option>
+            {% endif %}
             {% endfor %}
-            </select>
-                <label>Choose your habit</label>
-        </div>
-<div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="alias" name="alias" type="text" class="validate" maxlength="12" value="{{changes.alias}}">
-                <label for="alias">Alias - No need for real names.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">today</i>
-                <input id="start_date" name="start_date" type="text" class="datepicker" value="{{changes.start_date}}">
-                <label for="start_date">Start Date - When did you stop?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mood</i>
-                <input id="whyStop" name="whyStop" type="text" class="validate" value="{{changes.whyStop}}"> 
-                <label for="whyStop">What motivated you to stop?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">favorite</i>
-                <input id="whoStop" name="whoStop" type="text" class="validate" value="{{changes.whoStop}}">
-                <label for="whoStop">Who did you stop for?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">insert_emoticon</i>
-                <input id="feelings" name="feelings" type="text" class="validate" value="{{changes.feelings}}">
-                <label for="feelings">Describe how you felt?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="rockBottom" name="rockBottom" type="text" class="validate" value="{{changes.rockBottom}}">
-                <label for="rockBottom">Describe your rock bottom.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="recipe" name="recipe" type="text" class="validate" value="{{changes.recipe}}">
-                <label for="recipe">Recipe. How you did it.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">star</i>
-                <input id="ingredients" name="ingredients" type="text" class="validate" value="{{changes.ingredients}}">
-                <label for="ingredients">Ingredients?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">nature_people</i>
-                <input id="dayToDay" name="dayToDay" type="text" class="validate" value="{{changes.dayToDay}}">
-                <label for="dayToDay">Day to day routine changes?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="day1" name="day1" type="text" class="validate" value="{{changes.day1}}">
-                <label for="day1">Describe Day 1.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">face</i>
-                <input id="day2" name="day2" type="text" class="validate" value="{{changes.day2}}">
-                <label for="day2">What did you do Day 2?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">mood</i>
-                <input id="day3" name="day3" type="text" class="validate" value="{{changes.day3}}">
-                <label for="day3">Day 3? How was the withdrawal?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_1</i>
-                <input id="week1" name="week1" type="text" class="validate" value="{{changes.week1}}">
-                <label for="week1">Week 1? How were the cravings</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_2</i>
-                <input id="week2" name="week2" type="text" class="validate" value="{{changes.week2}}">
-                <label for="week2">Week 2. What tools did you use?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_3</i>
-                <input id="week3" name="week3" type="text" class="validate" value="{{changes.week3}}">
-                <label for="week3">Week 3. Feeling better or worse?</label>
-            </div>
-                <div class="input-field col s12">
-                <i class="material-icons prefix">filter_1</i>
-                <input id="month1" name="month1" type="text" class="validate" value="{{changes.month1}}">
-                <label for="month1">Month 1 where were you safest?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_2</i>
-                <input id="month2" name="month2" type="text" class="validate" value="{{changes.month2}}">
-                <label for="month2">Month 2 what had changed?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">filter_3</i>
-                <input id="month3" name="month3" type="text" class="validate" value="{{changes.month3}}">
-                <label for="month3">Month 3. Describe the benefits?</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_one</i>
-                <input id="year1" name="year1" type="text" class="validate" value="{{changes.year1}}">
-                <label for="year1">Year 1 summary.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_two</i>
-                <input id="year2" name="year2" type="text" class="validate" value="{{changes.year2}}">
-                <label for="year2">Year 2 summary.</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="material-icons prefix">looks_3</i>
-                <input id="summary" name="summary" type="text" class="validate" value="{{changes.summary}}">
-                <label for="summary">Overall summary.</label>
-            </div>
-        </div>
-
-        <div id ="editButton2" class="row">
-            <button class="btn waves-effect waves-light" type="submit">Edit
-                <i class="material-icons right">playlist_add</i>
-            </button>
-        </div>
-    </form>
+         </select>
+         <label>Choose your habit</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">face</i>
+         <input id="alias" name="alias" type="text" class="validate" maxlength="12" value="{{changes.alias}}">
+         <label for="alias">Alias - No need for real names.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">today</i>
+         <input id="start_date" name="start_date" type="text" class="datepicker" value="{{changes.start_date}}">
+         <label for="start_date">Start Date - When did you stop?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">mood</i>
+         <input id="whyStop" name="whyStop" type="text" class="validate" value="{{changes.whyStop}}"> 
+         <label for="whyStop">What motivated you to stop?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">favorite</i>
+         <input id="whoStop" name="whoStop" type="text" class="validate" value="{{changes.whoStop}}">
+         <label for="whoStop">Who did you stop for?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">insert_emoticon</i>
+         <input id="feelings" name="feelings" type="text" class="validate" value="{{changes.feelings}}">
+         <label for="feelings">Describe how you felt?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">star</i>
+         <input id="rockBottom" name="rockBottom" type="text" class="validate" value="{{changes.rockBottom}}">
+         <label for="rockBottom">Describe your rock bottom.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">star</i>
+         <input id="recipe" name="recipe" type="text" class="validate" value="{{changes.recipe}}">
+         <label for="recipe">Recipe. How you did it.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">star</i>
+         <input id="ingredients" name="ingredients" type="text" class="validate" value="{{changes.ingredients}}">
+         <label for="ingredients">Ingredients?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">nature_people</i>
+         <input id="dayToDay" name="dayToDay" type="text" class="validate" value="{{changes.dayToDay}}">
+         <label for="dayToDay">Day to day routine changes?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">face</i>
+         <input id="day1" name="day1" type="text" class="validate" value="{{changes.day1}}">
+         <label for="day1">Describe Day 1.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">face</i>
+         <input id="day2" name="day2" type="text" class="validate" value="{{changes.day2}}">
+         <label for="day2">What did you do Day 2?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">mood</i>
+         <input id="day3" name="day3" type="text" class="validate" value="{{changes.day3}}">
+         <label for="day3">Day 3? How was the withdrawal?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_1</i>
+         <input id="week1" name="week1" type="text" class="validate" value="{{changes.week1}}">
+         <label for="week1">Week 1? How were the cravings</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_2</i>
+         <input id="week2" name="week2" type="text" class="validate" value="{{changes.week2}}">
+         <label for="week2">Week 2. What tools did you use?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_3</i>
+         <input id="week3" name="week3" type="text" class="validate" value="{{changes.week3}}">
+         <label for="week3">Week 3. Feeling better or worse?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_1</i>
+         <input id="month1" name="month1" type="text" class="validate" value="{{changes.month1}}">
+         <label for="month1">Month 1 where were you safest?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_2</i>
+         <input id="month2" name="month2" type="text" class="validate" value="{{changes.month2}}">
+         <label for="month2">Month 2 what had changed?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">filter_3</i>
+         <input id="month3" name="month3" type="text" class="validate" value="{{changes.month3}}">
+         <label for="month3">Month 3. Describe the benefits?</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">looks_one</i>
+         <input id="year1" name="year1" type="text" class="validate" value="{{changes.year1}}">
+         <label for="year1">Year 1 summary.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">looks_two</i>
+         <input id="year2" name="year2" type="text" class="validate" value="{{changes.year2}}">
+         <label for="year2">Year 2 summary.</label>
+      </div>
+      <div class="input-field col s12">
+         <i class="material-icons prefix">looks_3</i>
+         <input id="summary" name="summary" type="text" class="validate" value="{{changes.summary}}">
+         <label for="summary">Overall summary.</label>
+      </div>
+      <div id ="editButton2" class="row">
+         <button class="btn waves-effect waves-light" type="submit">Edit
+         <i class="material-icons right">playlist_add</i>
+         </button>
+      </div>
+   </form>
 </div>
-
 {% endblock %}
