@@ -11,9 +11,17 @@
 
 /*scroll-behaviour not recognised by all browsers*/
 
+.info-cards {
+    background-color:lightgrey;
+    margin-top: 33px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-emphasis: 5px;
+}
+
 #view {
 	text-shadow: 1px 1px 2px #000000;
-    /* background-color: grey; */
+    background-color: lightgrey;
     /* height: 100%; */
 } 
 
@@ -120,7 +128,7 @@ body {
 } */
 
 #check {
-	background-color:turquoise;
+	text-color:darkred;
 }
 
 .btn_small {
