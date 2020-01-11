@@ -12,11 +12,11 @@
 /*scroll-behaviour not recognised by all browsers*/
 
 .info-cards {
-    background-color:lightgrey;
+    background-color:grey;
     margin-top: 33px;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-emphasis: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
+    font-weight: bold;
 }
 
 #view {
