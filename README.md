@@ -1041,14 +1041,68 @@ Desktop
 
 ## Version control
 
-Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply.
+Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply using the SOURCE CONTROL:Git branch icon in the workspace.
+
+Initially 
+git add .
+git commit -m "my version message"
+git remote add (my git reposisitory)
+git push -u origin master
+
+
+
 
 
 
 ## Heroku Deployment
 
-began using the CLI in gitpod but after some experimentation worked out that once linked all gitpod saves to github automatically updates heroku once depolyed. 
+Using gitpod two methods of deployment were attempted. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
+
 To deploy Recipes for Recovery to heroku, the following steps were taken:
+
+### Method one
+
+I began deployment using the CLI in gitpod workspace terminal using the following commands 
+
+
+
+
+npm install -g heroku
+
+heroku login -i
+
+
+heroku apps
+
+(heroku apps:rename hobbit-scub --app scub-hobbit)
+
+git status
+git add .
+git commit -m ""
+git remote add heroku https://git.heroku.com/hobbit-scub.git
+git push -u heroku master
+
+git remote -v
+
+pip3 freeze --local > requirements.txt
+
+echo web: python app.py > Procfile
+
+change repos
+
+
+How to push to both repos:::::
+git add .
+git commit -m ""
+git remote add (my git reposi)
+git push -u origin master
+
+
+
+
+ but after some experimentation worked out that once linked all gitpod saves to github automatically updates heroku once depolyed. 
+
+### Method two
 
 1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
 
