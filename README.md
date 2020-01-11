@@ -953,3 +953,4 @@ The site is now successfully deployed.
 
 IA is a blueprint of the design structure which can be generated into wireframes and sitemaps of the project. UX designers use them as the basic materials so that they could plan navigation system.
 
+materilaise colours not match well with some css so inline styling left as is 

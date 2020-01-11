@@ -141,7 +141,8 @@
                 <h5 class="center">Open your mind as wide as it will go</h5>
                 {% for changes in changes %}
                 <div class="col s6 m3">
-                    <div class="card hoverable" style="width:100%; height:335px;">
+                    <div class="card hoverable">
+                     <!-- <div class="card hoverable" style="width:100%; height:335px;"> -->
                         <div class="card-image">
                             <img src="static/images/{{ changes.habit }}.jpg" alt="Habit Picture">
                             <div id="shadow" class="card-title">
@@ -151,7 +152,7 @@
                         <div id="habit" class="card-content">
                             <p>{{changes.habit}}</p>
                         </div>
-                        <div id="view" class="card-action">
+                        <div id="view" class="card-action blue-grey darken-1">
                             <!-- <a href="{{ url_for('index') }}" class="brand-logo pink-text"><img src="static/images/logo/miniPan.png"></a> -->
                             <a href="{{url_for('story_detail', changes_id=changes._id)}}">View Story</a>
                         </div>
