@@ -535,9 +535,44 @@ Research shows that educational and information site templates on trend recommen
 Materiliaze templates and components generally have colours of background and texts specified within the code. If these colours were moved in to the style.css file from the html file they appeared different. It was discovered that Materiliaze colour choices were better uninterrupted. 
 
 
+## Wireframes
+
+### Desktop Home page Wireframe
+![Desktop Homepage Wireframe](assets/balsamiq/desktop_homepage_wireframe.png)
+
+### Tablet Home page Wireframe
+
+![Tablet Homepage Wireframe](assets/balsamiq/tablet_homepage_wireframe.png)
+
+### Mobile Home page Wireframe
+
+![Mobile Homepage Wireframe](assets/balsamiq/mobile_homepage_wireframe.png)
+
+### Form page example Wireframe
+
+The form page layout is the same rendered on desktop/tablet and mobile excepting the navbar which converts to side navbar on tablets and mobile devices.
+Form pages include tell your story/share your story/ edit story/ edit and delete story and soul searching.
+
+[Form page Wireframe](assets/balsamiq/form_pages_example(my_problem.html).png)
+
+### Recovery stories Wireframe
+
+[Recovery stories Wireframe](recovery_stories.png)
+
+### Story Detail page desktop
+
+[Story Detail page desktop](assets/balsamiq/story_detail_desktop.png)
+
+### Story Detail page tablet
+
+[Story Detail page tablet](assets/balsamiq/story_detail_tablet.png)
+
+### Story Detail page mobile
+
+[Story Detail page tablet](assets/balsamiq/story_detail_mobile.png)
+
 
 ### Defensive design planning.
-
 
 Defensive design
 Defensive design is the practice of planning for contingencies in the design stage of a project or undertaking. 
@@ -576,7 +611,6 @@ Considering defensive design we anticipate that this will result in a number of 
 The easier the form is to submit the more information we will be able to collect. 
 
 7. A single modal has been added to try to influence submitting a form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
-
 
 ## MongoDB atlas
 
@@ -710,25 +744,6 @@ I want to know that my information will not be sold and that it is open source f
 It may be that the focus of this app becomes the collection of data for women because all the available currently therapies have been researched soley in men.
 
 The information will be complied in to report that will be freely available. Not sold for money or prestige. 
-
-## Wireframes
-
-### Desktop Home page Wireframe
-![Desktop Homepage Wireframe](assets/balsamiq/desktop_homepage_wireframe.png)
-
-### Tablet Home page Wireframe
-
-![Tablet Homepage Wireframe](assets/balsamiq/tablet_homepage_wireframe.png)
-
-### Mobile Home page Wireframe
-
-![Mobile Homepage Wireframe](assets/balsamiq/mobile_homepage_wireframe.png)
-
-### Form page example Wireframe
-
-
-
-![Form page Wireframe](assets/balsamiq/form_pages_example(my_problem.html).png)
 
 
 
