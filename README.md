@@ -557,7 +557,7 @@ Form pages include tell your story/share your story/ edit story/ edit and delete
 
 ### Recovery stories Wireframe
 
-[Recovery stories Wireframe](recovery_stories.png)
+[Recovery stories Wireframe](assets/balsamiq/recovery_stories.png)
 
 ### Story Detail page desktop
 
