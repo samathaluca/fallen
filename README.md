@@ -1,10 +1,10 @@
-# Recipes for Recovery (r4r)- Rehabilitation app. 
+# Recipes for Recovery (R4R)- Rehabilitation app. 
 
 [Link to Milestone Project 3](https://fallen-but-not-broken.herokuapp.com/)
 
 ## A new recovery app 
 
-- The **Recipes for Recovery (r4r)** app connects people with an addiction problem with others who have the solution.
+- The **Recipes for Recovery (R4R)** app connects people with an addiction problem with others who have the solution.
 
 ![Recovery recipe image](static/images/FryingPan.png)
 

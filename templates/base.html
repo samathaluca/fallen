@@ -1,100 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- CSS  -->
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
-<title>HABIT BREAKER</title>
-<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900|Audiowide|Ubuntu&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href="https://materializecss.com/dist/css/materialize.min.css" type="text/css" rel="stylesheet">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet">
-<link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
-<link rel="shortcut icon" type="image/ico" href="/static/images/logo/miniPanOld.png">
-
-
-</head>
-<body>
- <!-- nav bar to show up in each page-->
- <ul class="sidenav" id="mobile-demo">
-    <li><a href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
-    <li><a href="{{ url_for('changes') }}">Recovery Stories</a></li>
-    <li><a href="{{ url_for('add_changes') }}">Share Your Recovery</a></li>
-    <li><a href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
-    <li><a href="{{ url_for('about_us') }}">About Us</a></li>
-</ul>
- <div class="navbar-fixed">
-  <nav>
-    <div class="nav-wrapper blue-grey darken-1">
-      <a id="bigNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPan.png') }}" alt="Home Logo"></a>
-      <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
-      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul class="right hide-on-med-and-down">
-        <li><a class="white-text" href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
-        <li><a class="white-text" href="{{ url_for('changes') }}">Recovery Stories</a></li>
-        <li><a class="white-text" href= "{{ url_for('add_changes') }}">Share Your Recovery</a></li>
-        <li><a class="white-text" href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
-        <li><a class="white-text" href= "{{ url_for('about_us') }}">About Us</a></li>
-     </ul>
-    </div>
-  </nav>
-
-  
-</div>
-   
-
-{% block content %} {% endblock %}
-
- <!-- footer to show up in each page-->
-  
-  <footer id="white" class="page-footer blue-grey darken-1">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">BELIEF</h5>
-          <p class="grey-text text-lighten-4">Professionals and well meaning help makes us more dependent as our choices become seized by their choices for us. How can anyone who does not understand that feeling of desperation really help?
-            </p>
-
-
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">SEARCH FOR CONNECTION</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.verywellmind.com/substance-use-4014640" target="_blank">Substance problem</a></li>
-            <li><a class="white-text" href="https://www.everydayhealth.com/addiction-pictures/the-8-most-surprising-addictions.aspx" target="_blank">Behavioural problem</a></li>
-            <li><a class="white-text" href="https://www.bustle.com/articles/163349-12-ways-to-get-over-your-addiction-to-your-thoughts" target="_blank">Thinking problem</a></li>
-            <li><a class="white-text" href="https://www.cpft.nhs.uk/GTRT/Bad-habits-and-addictions.htm" target="_blank">Bad habits not addiction</a></li>
-          </ul>
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">CONNECT</h5>
-          <ul>
-            <li><a class="white-text" href="https://www.verywellmind.com/personal-alcohol-and-drug-recovery-stories-63500" target="_blank">Recovered alcohol/drug user stories</a></li>
-            <li><a class="white-text" href="https://www.oagb.org.uk/what-to-expect-at-a-oa-meeting/members-stories/" target="_blank">Recovered overeaters stories</a></li>
-            <li><a class="white-text" href="https://www.gamtalk.org/stories-of-hope/" target="_blank">Gambling messages of hope</a></li>
-            <li><a class="white-text" href="https://gamequitters.com/video-game-addiction/" target="_blank">Gaming Addiction</a></li>
-          </ul>
-        </div>
+   <head>
+      <!-- CSS  -->
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=no">
+      <title>HABIT BREAKER</title>
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i,900|Audiowide|Ubuntu&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://materializecss.com/dist/css/materialize.min.css" type="text/css" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet">
+      <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
+      <link rel="shortcut icon" type="image/ico" href="/static/images/logo/miniPanOld.png">
+   </head>
+   <body>
+      <!-- nav bar to show up in each page-->
+      <ul class="sidenav" id="mobile-demo">
+         <li><a href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
+         <li><a href="{{ url_for('changes') }}">Recovery Stories</a></li>
+         <li><a href="{{ url_for('add_changes') }}">Share Your Recovery</a></li>
+         <li><a href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
+         <li><a href="{{ url_for('about_us') }}">About Us</a></li>
+      </ul>
+      <div class="navbar-fixed">
+         <nav>
+            <div class="nav-wrapper blue-grey darken-1">
+               <a id="bigNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPan.png') }}" alt="Home Logo"></a>
+               <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
+               <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+               <ul class="right hide-on-med-and-down">
+                  <li><a class="white-text" href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
+                  <li><a class="white-text" href="{{ url_for('changes') }}">Recovery Stories</a></li>
+                  <li><a class="white-text" href= "{{ url_for('add_changes') }}">Share Your Recovery</a></li>
+                  <li><a class="white-text" href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
+                  <li><a class="white-text" href= "{{ url_for('about_us') }}">About Us</a></li>
+               </ul>
+            </div>
+         </nav>
       </div>
-    </div>
-    <div class="footer-copyright">
-    
-      <div class="container">
-      <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
+      {% block content %} {% endblock %}
+      <!-- footer to show up in each page-->
+      <footer id="white" class="page-footer blue-grey darken-1">
+         <div class="container">
+            <div class="row">
+               <div class="col l6 s12">
+                  <h5 class="white-text">BELIEF</h5>
+                  <p class="grey-text text-lighten-4">Professionals and well meaning help makes us more dependent as our choices become seized by their choices for us. How can anyone who does not understand that feeling of desperation really help?
+                  </p>
+               </div>
+               <div class="col l3 s12">
+                  <h5 class="white-text">SEARCH FOR CONNECTION</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://www.verywellmind.com/substance-use-4014640" target="_blank">Substance problem</a></li>
+                     <li><a class="white-text" href="https://www.everydayhealth.com/addiction-pictures/the-8-most-surprising-addictions.aspx" target="_blank">Behavioural problem</a></li>
+                     <li><a class="white-text" href="https://www.bustle.com/articles/163349-12-ways-to-get-over-your-addiction-to-your-thoughts" target="_blank">Thinking problem</a></li>
+                     <li><a class="white-text" href="https://www.cpft.nhs.uk/GTRT/Bad-habits-and-addictions.htm" target="_blank">Bad habits not addiction</a></li>
+                  </ul>
+               </div>
+               <div class="col l3 s12">
+                  <h5 class="white-text">CONNECT</h5>
+                  <ul>
+                     <li><a class="white-text" href="https://www.verywellmind.com/personal-alcohol-and-drug-recovery-stories-63500" target="_blank">Recovered alcohol/drug user stories</a></li>
+                     <li><a class="white-text" href="https://www.oagb.org.uk/what-to-expect-at-a-oa-meeting/members-stories/" target="_blank">Recovered overeaters stories</a></li>
+                     <li><a class="white-text" href="https://www.gamtalk.org/stories-of-hope/" target="_blank">Gambling messages of hope</a></li>
+                     <li><a class="white-text" href="https://gamequitters.com/video-game-addiction/" target="_blank">Gaming Addiction</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+         <div class="footer-copyright">
+            <div class="container">
+               <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
+            </div>
+         </div>
+      </footer>
       </div>
-    </div>
-  </footer>
-
-</div>
-    <!--  Scripts-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    <script src="https://materializecss.com/bin/materialize.js"></script>
-    <script src="{{ url_for('static', filename='js/init.js') }}"></script>
-
-    </body>
+      <!--  Scripts-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+      <script src="https://materializecss.com/bin/materialize.js"></script>
+      <script src="{{ url_for('static', filename='js/init.js') }}"></script>
+   </body>
 </html>
-
-
 

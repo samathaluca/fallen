@@ -1,15 +1,23 @@
-/* Custom Stylesheet */
-
-
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
+/* Custom Stylesheet to override Materialize files*/
 
 /*scroll-behaviour not recognised by all browsers*/
+
+html {
+	scroll-behavior: smooth;
+}
+
+
+body {
+	background-color: rgb(241, 245, 250)
+}
+
+
+.about-font {
+	font-family: "Lato", sans-serif;
+	color: indigo;
+}
+
+
 
 .info-cards {
     /* background-color:lightgrey;
@@ -32,14 +40,8 @@
     height: 75px;
 }
 
-html {
-	scroll-behavior: smooth;
-}
 
-.body-font {
-	font-family: "Lato", sans-serif;
-	color: #000000;
-}
+
 
 .white-text {
 	font-family: "Lato", cursive;
@@ -99,9 +101,6 @@ html {
   font-family: "Audiowide", cursive;
 } */
 
-body {
-	background-color: rgb(241, 245, 250)
-}
 
 .Tomato-text {
 	color: Tomato;
@@ -129,7 +128,8 @@ body {
 } */
 
 #check {
-	font:darkred;
+	color:darkred;
+    font-family: "Audiowide";
 }
 
 .btn_small {
