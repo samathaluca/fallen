@@ -153,7 +153,7 @@ This means that when getting addiction free, I learnt that helping others is the
 - I want to know that the information is current, independent, unbiased and not influenced in any way that could effect the reliability or feasibility.
 - I want to be able to see the questions, the consistency of answers in the stories section and how encompassing and simple to understand the questions are in the forms.  
 - As a providers of currently available treatment for addictions I know that, the current solutions  for this global epidemic are costly (treatment costs for e.g. The Priory hospital are £18,000 per month). Depsite this high cost, I see that most of the time the treatments and therapies for addiction are ineffective. I want information from recovered addicts to be able to offer different solution strategies.
-- I want to understand why/what will treat one person yet kill another. What are people who recover doing differently? is thier background relevant to which strategy to use to treat them?
+- I want to understand why/what will treat one person yet kill another. What are people who recover doing differently? is their background relevant to which strategy to use to treat them?
 - Frightening studies have revealed that women who receive the currently available treatment for alcohol addiction are more likely to die than women who do not get any treatment.
 David Nutt (the government advisor sacked for claiming that horse riding is more deadly than ecstasy) states that when , for example, Amy whitehouse got clean and sober, her tolerance went. I need data to understand why this is happening?
 - I see most addicts struggling for many years in and out of detox, rehab and daytime treatment programs. The last analysis concluded that addicts need an average of 8 residential 28 stays to stop permanently. I want to see which combination of treatments or actions/change of habits prevents relapse. 
@@ -415,6 +415,8 @@ ________________________________________________________________________________
 
 ##### about_us.html page 
 
+[About Us](https://fallen-but-not-broken.herokuapp.com/about_us)
+
 About us page was added following user/contributors feedback. With the rise in concern about what personal data is used for, users said they would like to know why the data is being collected, by whom and what it will be used for.
 
 [Dig Deeper](https://fallen-but-not-broken.herokuapp.com/past_problem)
@@ -431,6 +433,26 @@ This page and additional pages of questions to be added later are very important
 [Dig Deeper](https://fallen-but-not-broken.herokuapp.com/past_problem)
 Dig Deeper is a Materialize select form with drop down menu. The form currently has a smaller selection of questions than it is anticipated may be needed to gather significant data. 
 Share button submits the form to the past_problem collection in the mongoDB.
+
+___________________________________________________________________________________________________________________
+
+
+##### delete_edit_buttons.html page 
+
+[Edit and Delete](https://fallen-but-not-broken.herokuapp.com/delete_edit_buttons)
+
+Edit and Delete buttons specific to each story. 
+
+___________________________________________________________________________________________________________________
+
+
+##### gratitude_list.html page 
+
+[Gratitude List](https://fallen-but-not-broken.herokuapp.com/gratitude_list)
+
+A simple gratitude list for good mental health and strong recovery. 
+
+___________________________________________________________________________________________________________________
 
 
 
