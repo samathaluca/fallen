@@ -455,43 +455,51 @@ A simple gratitude list for good mental health and strong recovery.
 ___________________________________________________________________________________________________________________
 
 
-
-
-
 **The Skeleton plane**
 The skeleton plane is currently set out as follows:
 
-#### Home page (index.html).
-A main page with links to external resources and links throughout.
+##### Base html file 
+Nav bar and footer rendered within each and every page are in the base.html template file. 
 
 A *nav* bar links to  different forms (listed below) and information pages.
 
-#### Tell Your Story page (my_problem.html)
+##### Tell Your Story page (my_problem.html)
 A form to gather stories from user seeking recovery. 
-#### Recovery stories page (changes.html).
+##### Recovery stories page (changes.html).
 Containing a list of contributor's recovery stories
-#### Share your recovery page (add_changes.html). 
+##### Share your recovery page (add_changes.html). 
 A page containing a simple collapsible form for the user to complete their story with prompted questions and a selction of answers. Enable the user/contributor to add contributor recovery stories.
-#### Gratitude list (gratitude_list.html). 
+##### Gratitude list (gratitude_list.html). 
 A list of suggested ideas for gratitude lists.
+##### About Us (about_us.html). 
+A list of suggested ideas for gratitude lists.
+
+From the *footer*.
+
+##### List of recovery stories with option to edit or delete (delete_edit_buttons.html).
+This form is reach via the hidden 'admin only' link in the footer of each page.
+
+
+##### Home page (index.html).
+A main page with links to external resources and links throughout.
 
 Within the *body* of the home page, dropdown menu offers the user the ability to filter the stories to list those most relevant to them. 
 They are then presented as a basic list of stories that can be easily read (changes.html). 
 Within the main page the story cards link to a detailed story (story_detail.html). 
-#### Individual Recovery Stories (story_detail.html). 
+##### Individual Recovery Stories (story_detail.html). 
 One recovery story per page. The main content of the page is the data stored in MongoDB which is pulled in to the grid layout.
 
-From the *footer*.
-#### List of recovery stories with option to edit or delete (delete_edit_buttons.html).
-This form is reach via the hidden 'admin only' link in the footer of each page.
-#### Edit recovery story page (edit_changes.html).
-Recovery stories are edited in the data base by the input field entries on this form.
+##### Edit recovery story page (edit_changes.html).
+Link is from the Edit button in the delete_edit_buttons.html page. Recovery stories are edited in the data base by the input field entries on this form.
 
 Additional link found on About Us page. 
-#### Soul searching form for data collection (past_problem.html).
-A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
+##### Soul searching form for data collection (past_problem.html).
+Link is from the Dig Deeper button. A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
 
-**The Surface plane**
+####**The Surface plane**
+
+##### Appearance, images, colour choices and fonts. 
+
 Modern design conventions were balanced with the desire to keep the interest and focus of the user and the user/contributor, both of which are not conventional by their natures.
 
 A unique large logo/home has been chosen for desktop following feedback to add interest to the form pages. This obscured too much of the information and did not fit the mobile design which was left with the original logo/home design.
@@ -511,14 +519,22 @@ The surface of the app may change in the future and the hero image on the home p
 To date the bespoke woke image feedback has been good and met with smiles when people understand the reference. 
 
 The images have been chosen to convey a message and have been adapted to be less graphic. For example the self harm image in black and white is very subtle compared to the coloured image.
-As images are so subjective I have asked addicts what they think? The misture of responses were baffling. For example, a guy with gaming addiction thought the toxic relationship image was awful but the illegal drug one was the best yet a woman with an alcohol addiction hated the illegal drug image and really loved the toic relationship image.
-Modern design conventions are predicting a shift to digitally designed images. Digitally designed images and adapted photo images have been used to convey messages but original considering the users may not have the same emotional reaction to them when compared to a real life photo a mix has been used. 
-Business users suggested one type of image would be best in the long term but more research among user groups would need to completed beforehand to conclude whether or not the investment would be worthwhile.
+As images are so subjective I have asked addicts what they think? The mixture of responses were conflicting. For example, a guy with gaming addiction thought the toxic-bonds image was not relateble but the illegal drug one was the best yet a woman with an alcohol addiction disliked the illegal drug image and really loved the toxic-bonds image.
+Modern design conventions are predicting a shift to digitally designed images. Digitally designed images and adapted photo images have been used in this app to convey messages. Digital images were originally added then appropriate real life photos could not be found. A mix of digital and real life images has been used. 
+Business users suggested the app would benefit from a theme of digital images throughout but more research among user groups would need to completed beforehand to conclude whether or not the investment would be worthwhile.
 
 It is anticipated that 40 stories on the home page will be optimal. This has been assumed noting the engagement of addicts when presented with a large number of story cards and noting which story they chose to view in which position. 
 This may seem a large number but I believe that a huge dose of visuals will generate the impact needed to keep the interest of an active addict with a pathologically short attention span.
 
-The font was been adjusted a number of times during the design phase. It has been chosen for readability. 
+The font was been adjusted a number of times during the design phase. The recommended Materialize template and component font always appeared optimal. Materialize uses Roboto 2.0 as a standard font. 
+Audiowide was used sparingly due to being an intrusive looking font. It was used to command attention e.g. to check that required fields in form were completed to avoid aborted submission attempts.
+Lato and Ubuntu were chosen to add distinctive design to sections when needed with san serif back up. They were used to add a little contrast for interest.  
+
+Extensive colour work has been tested during development. Each time users were asked the simple shaded greys and white option was prefered. Previous github versions may display colours as far ranging as purple and lime green. These were abandoned after user feedback.
+Research shows that educational and information site templates on trend recommend duotones and the colour scheme adopted. 
+Materiliaze templates and components generally have colours of background and texts specified within the code. If these colours were moved in to the style.css file from the html file they appeared different. It was discovered that Materiliaze colour choices were better uninterrupted. 
+
+
 
 ### Defensive design planning.
 
@@ -527,7 +543,7 @@ Defensive design
 Defensive design is the practice of planning for contingencies in the design stage of a project or undertaking. 
 Essentially, in the project, it would be the practice of anticipating all possible ways that an end-user could misuse the app, then designing the app so as to make such misuse impossible, or to minimize 
 the negative consequences. For example, each opportunity for user input was developed expecting users to abuse it deliberatley or accidentally. Defences were put in place to minimise the opportunity for this happening. 
-For example, character number limits and required input fields.
+For example, character number limits and required input fields in the forms.
 
 Defensive design/ defensive programming considered Murphy's law.
 Murphy's law is an adage or epigram that is typically stated as: "Anything that can go wrong will go wrong".
@@ -536,7 +552,7 @@ Defensive design considerations:
 - Input sanitisation/validation
 - Planning for contingencies
 - Anticipating misuse
-- Authentication (considered but not included)
+- Authentication (considered but not included yet)
 
 The most significant defensive design decisions were
 1. To make alias a limited character number.
@@ -548,12 +564,18 @@ an auto added image chosen for each addiction. This would ensure that the home p
 
 ![Missing story Image](assets/defensive_design/missing_image.jpg)
 
-3. to make the choice of habit linked to a photo a required filed other wise lots of empty fileds.
+3. to make the choice of habit linked to a photo a required field other wise lots of empty fields.
 4. Move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
 
 ![button layout](assets/defensive_design/capture.jpg)
 
-5. form design - simple without thinking too much, effortless
+5. Form design - simple without thinking too much, effortless
+
+6. Form submission simplified. - The number of fields completed is not obligatory. To date there is only one required field for habit name needed for submission. 
+Considering defensive design we anticipate that this will result in a number of half completed forms being sent to the database but this in itself will help us gather information as to which questions the user and user/contributors believe to be relevant and engaging.
+The easier the form is to submit the more information we will be able to collect. 
+
+7. A single modal has been added to try to influence submitting a form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
 
 
 ## MongoDB atlas
