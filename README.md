@@ -8,52 +8,60 @@
 
 ![Recovery recipe image](static/images/FryingPan.png)
 
-## Aim 
-Create an App to help connect still suffering addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
+## Project purpose
+
+To help suffering addicts with the knowledge gained by people who have walked a mile in their shoes, by presenting stories written by those who have broken free from the grip of addiction.
+
+Knowing that the therapeutic of one addict helping another is without question, this project was developed to create an App to help connect still suffering addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
 Both users and user/contributors will have the option to add their story. The data collected from these real life stories will be studied to determine patterns that lead to, fuel and arrest recovery. 
 
 The term addict is used to describe the user who has a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
 The different types of addiction options currently added are:
 1. Alcohol
-2. Prescription drugs
+2. Legal Drugs
 3. Illegal drugs
 4. Food
 5. Sex/Porn
 6. Gambling
 7. Exercise
-8. Obsession with health
+8. Illness
 9. Attention
-10. Physical self harm
-11. Toxic relationships
+10. Self-harm
+11. Toxic-bonds
 12. Violence
-13. Social Media
+13. Social-Media
 14. Gaming
 15. Spending
-16. Horoscopes/Psychics
+16. Psychics
 17. Chatlines
 18. Fantasy
 19. Gossip/Drama
-20. Materialism/Image
+20. Image
 21. Other
 
-## Quick guide
+### Project purpose summary
 
+- Help addicts (user) recover
+- Help addicts (user/contributors) who have recovered to feel gratitude. Gratitude and helping others promotes good mental health and less likelihood of relapse.
+- Collect data that may be useful towards improving recovery rates. 
+
+## Quick guide
+#### Home Page
 - **Tell your story** invites users to do just that. 
 - **Recovery Stories** links to step by step solution/identification guide presented as a list of collapsible questions and answers.
 - **Share you recovery** links to a form for contributors to create a recovery story. 
 - Once shared each recovery story is presented in three formats
     1. Within the list of recovery stories
-    2. On home page as a small card with image, alias amd addiction type.
-    3. A single story is presented on a single page following the view story link in each card on the home page.
-- **Soul searching** links to an extensive survey questionnaire to gather data. 
-- From the **admin only** link in the footer recovery stories can be edited or deleted.
-- **A gratitude list** is offered as a tool for contributors. 
+    2. On home page as a small card with image, alias and habit.
+    3. A single story is presented on a single story details page reached by following the view story link in each card on the home page.
+- **Gratitude list** is offered as a tool for contributors.
+- **About Us** Explains who is collecting the data, what it will be used for and why it is being collected.
+- From the **Admin only** link in the footer, recovery stories can be edited or deleted on the **Edit and Delete** page.
+- The **View Story** link in the story cards on the home page the **story** page
 
-### Project purpose
-
-- Help addicts (user) recover
-- Help addicts (user/contributors) who have recovered to feel gratitude. Gratitude and helping others promotes good mental health and less likelihood of relapse.
-- Collect data that may be useful towards improving recovery rates. 
+#### Further pages
+- The 'Dig Deeper' button on the **About Us** links to a **Soul Searching** page to an extensive survey questionnaire to gather extra, useful data. 
+- The Edit button on the **Edit and Delete** page links to the **Edit a recovery share** page. 
 
 ## UX
 
@@ -61,7 +69,7 @@ The different types of addiction options currently added are:
 
 #### All visitors to the site will expect/want/need:
 
-- The images and text content to be interesting and bring about a positive emotional response or interesting experience. 
+- The images and text content to be helpful and bring about a positive emotional response or interesting experience. 
 - To feel more informed, postive, connected and engaged after visiting the site.
 - To easily find what I am looking for. I want the layout of the site to make sense so I am not confused, frustrated or bored using it.
 - The information I am presented with to be laid out in a way that is easy for me to navigate, so that I find what I need quickly and efficiently then return to the home page immediately. 
@@ -71,10 +79,12 @@ The different types of addiction options currently added are:
 - I do not want the format to change too much when I revisit it on a friends device if I am recommending it. 
 
 #### Users suffering from addiction will expect/want/need:
+
 - I am often agitated so do not want to spend too long filling in forms or struggle to submit them. 
 - I am lonely and want to feel part of a community. 
 - I need to gain understanding, insight, awareness in to my addiction.
 - With the current problems accessing detox and rehab I am willing to try other methods when I am desperate. 
+- My sleep pattern is erratic and I want access to information 24/7 not during office hours.
 - When I want information and ideas of how to get clean and sober I want them instantly. I do not want to make appointments in two weeks time.  
 - I need recognition that I am an individual and that I have a voice and something to offer. I can achieve this by completing my personal story. 
 - I want to feel understood, connected and hope.
@@ -90,16 +100,16 @@ The different types of addiction options currently added are:
 - As a young person I believe that I have different needs, I may be more likely to accept that I am addicted to social media, gaming, self harm  and porn addiction. 
 - I am not ready to stop yet but seeing recovery stories makes me believe it will be possible one day.
 - As a parent or carer I may be isolated and looking after young children or vulnerable adults so I do not feel able to engage in the currently available treatments 
-1. for fear of social services being involved
-2. limited time
-3. limited emotional and physical energy
-4. risk of losing my relationship and financial support. My partner prefers me as I am and I don't want to rock the boat. 
+    1. for fear of social services being involved
+    2. limited time
+    3. limited emotional and physical energy
+    4. risk of losing my relationship and financial support. My partner prefers me as I am and I don't want to rock the boat. 
 - As a parent or carer I need to be able to:
-1. Get help when my dependants are in bed or gone to school/day care.
-2. I need to seek help anonymously and privately without the pressure of sticking to a rigorous treatment regime.
-3. I need to find the motivation and confidence to reach out for the help earlier. 
-4. I want to feel that I am not isolated and alone. Reading success stories will help me gain hope.
-5. I will feel very alone and seeking connection could be helpful.
+    1. Get help when my dependants are in bed or gone to school/day care.
+    2. I need to seek help anonymously and privately without the pressure of sticking to a rigorous treatment regime.
+    3. I need to find the motivation and confidence to reach out for the help earlier. 
+    4. I want to feel that I am not isolated and alone. Reading success stories will help me gain hope.
+    5. I will feel very alone and seeking connection could be helpful.
 - If I am introverted and shy I may veer away from the current treatments which demand face to face attendance and engagement in front of an audience.
 - I feel that available therapies favour the extroverted so I will present at the GP surgery with depression or anxiety without ever revealing the real problem.
 - I want to try to find ways of solving my problem independently. Information and identification with recovered addicts may help.
@@ -117,6 +127,7 @@ The different types of addiction options currently added are:
 - In summary, I want it but I want it on my terms and now. I want to hear this from someone who has walked in my shoes.
 
 #### The user who is also a contributor. User/contributors
+
 - I have been taught by many recovery programmes that 'you can only keep what you have by giving it away'. 
 This means that when getting addiction free, I learnt that helping others is the best way of remembering how bad it was, so preventing relapse. 
 - When I write about how bad it was I feel gratitude and relief. 
@@ -163,13 +174,14 @@ For example, a patient who is smoking large amounts of undeclared crack cocaine 
 - Addiction is a progressive illness, left untreated most likely outcome will be prisons, institutions and  death by direct consequences, accident or suicide. I want data to be able to Offer realistic, achievable strategies to patients.
 - I work in A&E at anyone time we have numerous addicts waiting to be treated. Ambulance and medical resources would benefit from anything that may help. 
 
-### Feedback and  comments from user groups.
+### Feedback and comments from user groups.
 
 People who are suffering from addiction, self destructive habits or problems with a substance or activity, have been asked whether or not this app could help. 
 The response of 100% people asked, who have current addictions to exercise, gaming, social media, alcohol, prescription and illegal drugs without exception fed back that this app will be useful. 
 Feeback comments included exciting, amazing, impressive, interesting and realistic.
 
-Users and User/contributors  have been asked for their opinion during development. Specifically focussing on the questions in the forms. Questions have been amended to maximise engagement and submisson of the forms. 
+Users and User/contributors  have been asked for their opinion during development. Specifically focusing on the questions in the forms. Questions have been amended to maximise engagement and submisson of the forms. 
+The main questions were who is collecting the data and why so I added the About Us page. 
 
 Academics have been asked whether this could be useful and how development should be shaped. Their guidance was considered throughout.
 
@@ -184,9 +196,7 @@ Professionals have been asked about the potential benefits to them and asked wha
 2. Second strategic aim is to be useful for user/contributors.
 3. Third strategy will be the collection of data to help develop new methods for tackling the addiction crisis.
 4. Fourth part of the strategy considered minimising the dependency on extensive admin whilst maximimising the reproduceability and authenticity of the data by validating the questions used to collect the data. 
-5. Future Strategies.
-
-A future goal of the project would be to analyse the data collected in a report that will be published and given free of charge to the services that may benefit from it.
+5. Future Strategy of the project would be to analyse the data collected in a report that will be published and given free of charge to the services that may benefit from it.
 
 Open communication has proven to find solutions. This app will be an open communication tool to channel information from recovered addicts to suffering addicts and organisations that provide treatment for addicts. 
 
@@ -201,7 +211,7 @@ A simple form guides the user through a series of questions using select options
 
 Useful links, motivational quotes, images with a message will be presented throughout the app.
 
-On the home page the user will be asked to select their type of poison (addiction)
+On the home page the user will be asked to select their problem (addiction)
 to filter out stories that may be of no interest or help to them. 
 They will be invited to  'tell you story'. Journalling, sharing your experience and finding a voice has been proven to be beneficial in all areas of mental health including recovery from addiction.
 It needs to be kept short and simple for addicts who have difficulty focusing. The strategy of guided select questions was chosen to keep the addicted minds focused and engaged. 
@@ -235,7 +245,7 @@ The simplicity plus 24/7 availability of the app was developed believing that
 - parents and carers may be come motivated to reach out for the help earlier. Identification/connections through reading  success stories may help them gain hope.
 -Addiction is often accompanies by antisocial sleep patterns which further isolate the user and make access to help more difficult.
 
-Part of the strategy it aimed at assessing and collecting evidence of how intervention and stopping addiction escalating, ultimately benefits addicts, their famillies, their communites and the wider society thereby evidencing that funding should shift focus towards prevention rather than cure.
+Part of the strategy is aimed at assessing and collecting evidence of how intervention and stopping addiction escalating, ultimately benefits addicts, their famillies, their communites and the wider society thereby evidencing that funding should shift focus towards prevention rather than cure.
 
 Knowledge that many currently treatments available are for the later stages of addiction when the addict has become a threat to themselves or others. Little funding is available for prevention.
 
@@ -248,7 +258,7 @@ A lot of help is available for crisis. A low cost strategy to tackle prevention 
 
 4. Fourth part of the strategy considered minimising the dependency on extensive admin whilst maximimising the reproduceability and authenticity of the data by validating the questions used to collect the data. 
 
-Admin strategy - Editing and deleting stories which may to too graphic, false or inappropriate would be an ongoing concern. For the purpose of this project edit and delete functionality is accessed by clicking on `admin` text link positioned in the footer. Although it is considered that all data will be useful, it is not expected that all stories will be appropriate and 
+Admin strategy - Editing and deleting stories which may to too graphic, false or inappropriate would be an ongoing concern. For the purpose of this project edit and delete functionality is accessed by clicking on `Admin only` text link positioned in the footer. Although it is considered that all data will be useful, it is not expected that all stories will be appropriate and 
 genuine. It is possible that the stories may need to be authorised before being posted.  
 Currently the strategy offers total anonymity and no login is required. This is expected to remain the case for the user. 
 No login is deemed necessary for contributors at this point. We will be keen to gather as many recovery success stories as possible so the ease of this process will be imperative. Any barriers may limit the available information and select for a specific type of contibutor which will influence the data collected.
@@ -263,7 +273,7 @@ If the app proves to be useful, the strategy would be similar to trip advisor wh
 - Analysis of the data collected.
 - Making the data collected freely available.
 - To gather information that has the potential to decrease the burden of the cost of addiction on families, communities and society.
-= To gather information in different countries to help worldwide.
+- To gather information in different countries to help worldwide.
 - To help save lives. 
 
 
@@ -290,7 +300,7 @@ The scope of the project has been designed so that it is not throttled by the ne
 
 Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome page, with awarenes of the short attention span of the users. 
 Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
-To achieve this, user centered design methods, such as usability tests, user/contributor research and profile creation, and user flow diagrams. 
+To achieve this, user centered design methods, such as usability tests, user/contributor research and user flow diagrams. 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 
 ![IA](assets/balsamiq/IA_skeleton.png)
@@ -323,6 +333,12 @@ ________________________________________________________________________________
 - linked from **admin only** in base.html footer . 
 - The edit button on the delete_edit_buttons.html page links to recovery story selected by user.
 - The page contains the change collection MongoDB data loaded and visible within a form. The data in MongoDB can be edited and saved to the database, overwriting and storing the new information when the second edit button is clicked.
+
+Examples
+
+[The Big One](https://fallen-but-not-broken.herokuapp.com/edit_changes/5dfa5cdd0b8669e8b26413b9)
+
+[Haunted Blond](https://fallen-but-not-broken.herokuapp.com/edit_changes/5df29908d52ba4caf15e657d)
 
 ___________________________________________________________________________________________________________________
 
@@ -358,9 +374,9 @@ The page contains an individual story dependant on which 'view story' link withi
 Each materialize card links to a separate recovery story. The page styles the questions previously answered by a user/contributor in to headings and the answers stored in changes collection in MongoDB are loaded from the database.
 Examples would be :
 
-[The Big One](https://fallen-but-not-broken.herokuapp.com/edit_changes/5dfa5cdd0b8669e8b26413b9)
+[The Big One](https://fallen-but-not-broken.herokuapp.com/story_detail/5dfa5cdd0b8669e8b26413b9)
 
-[Haunted Blond](https://fallen-but-not-broken.herokuapp.com/edit_changes/5df29908d52ba4caf15e657d)
+[Haunted Blond](https://fallen-but-not-broken.herokuapp.com/story_detail/5df29908d52ba4caf15e657d)
 
 
 ___________________________________________________________________________________________________________________
@@ -514,6 +530,8 @@ an auto added image chosen for each addiction. This would ensure that the home p
 4. Move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
 
 ![button layout](assets/defensive_design/capture.jpg)
+
+5. form design - simple without thinking too much, effortless
 
 
 ## MongoDB atlas
