@@ -1129,13 +1129,16 @@ Removed all comments and tested
 When I started the project the datepicker needed updating to function correctly and I used the following as instructed.
 
 
-    // initMaterialize();
+    // function initMaterialize();
     
     // // document.getElementById("matfix").addEventListener("click", function(e) {
     // //     e.stopPropagation();
     // // });
 
 As the project developed I checked to see if Materialize had corrected the problem. It appears the datepicker now runs correctly without the added function. 
+
+![Javascript test](assets/testing/javascript_tests.jpg)
+
 
 
 MongoDB tests
@@ -1193,74 +1196,67 @@ Desktop
 (unbranded Windows 7 OS) with different monitors 21 and 27inch.
 
 
-## Version control
-
-Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply using the SOURCE CONTROL:Git branch icon in the workspace.
-
-Initially 
-git add .
-git commit -m "my version message"
-git remote add (my git reposisitory)
-git push -u origin master
-
-
-
-
-
-
-## Heroku Deployment
+## Version control and Heroku Deployment
 
 Using gitpod two methods of deployment were attempted. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
 
 To deploy Recipes for Recovery to heroku, the following steps were taken:
 
-### Method one
+### Method one . For each version I initially pushed separately to github and and heroku. 
 
-I began deployment using the CLI in gitpod workspace terminal using the following commands 
+I began deployment via the CLI in gitpod workspace terminal using the following commands in sequence:
+
+- npm install -g heroku
+
+- heroku login -i
+
+- git status
+
+- git add 
+
+- git commit -m "initial commit"
+
+- git remote add heroku https://git.heroku.com/hobbit-scub.git
+
+- git push -u heroku master
+
+- git remote -v
+
+- pip3 freeze --local > requirements.txt
+
+- echo web: python app.py > Procfile
 
 
 
+Initially I separately added to the github repository amd to heroku.
 
-npm install -g heroku
-
-heroku login -i
-
-
-heroku apps
-
-(heroku apps:rename hobbit-scub --app scub-hobbit)
-
-git status
-git add .
+git add 
 git commit -m ""
-git remote add heroku https://git.heroku.com/hobbit-scub.git
-git push -u heroku master
-
-git remote -v
-
-pip3 freeze --local > requirements.txt
-
-echo web: python app.py > Procfile
-
-change repos
-
-
-How to push to both repos:::::
-git add .
-git commit -m ""
-git remote add (my git reposi)
+git remote add (my git repository)
 git push -u origin master
 
+### Method two 
+
+When I tried to work out how to combine git push and heroku deploy I worked out a simpler method possible in the gitpod workspace. 
+
+This was achieved by connecting heroku to github and selecting automatic deploys. 
+
+From that point on gitpod push to github automatically deployed to heroku and so github version control nad heroku build log mirrored each other. 
+
+![Github and heroku link](assets/testing/heroku_and_gitpod_connect.jpg)
+
+![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
 
 
 
- but after some experimentation worked out that once linked all gitpod saves to github automatically updates heroku once depolyed. 
+Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply using the SOURCE CONTROL:Git branch icon in the workspace.
 
-### Method two
 
-1. Create a requirements.txt file using the terminal command pip freeze > requirements.txt.
 
-2. Create a Procfile with the terminal command echo web: python app.py > Procfile.
+
+1. Checked requirements.txt file using the terminal command pip freeze > requirements.txt.
+
+2. Checked Procfile with the terminal command echo web: python app.py > Procfile.
 
 3. Stage changes in gitpod. Write a commit message, click on the tick icon then push to Github.
 
@@ -1279,7 +1275,7 @@ Key	Value
 IP	0.0.0.0
 MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
 PORT	5000
-DEBUG	FALSE
+DEBUG	FALSE (added in the last stages of development when errors were not a common occurance)
 
 
 In the heroku dashboard, click "Deploy".
