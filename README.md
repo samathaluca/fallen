@@ -1120,24 +1120,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 - story_details.html 
 
 
-
-- init.js
-Removed all comments and tested 
-
-[Javacript tests](http://beautifytools.com/javascript-validator.php).
-
-When I started the project the datepicker needed updating to function correctly and I used the following as instructed.
-
-
-    // function initMaterialize();
-    
-    // // document.getElementById("matfix").addEventListener("click", function(e) {
-    // //     e.stopPropagation();
-    // // });
-
-As the project developed I checked to see if Materialize had corrected the problem. It appears the datepicker now runs correctly without the added function. 
-
-![Javascript test](assets/testing/javascript_tests.jpg)
+![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
 
 
 
