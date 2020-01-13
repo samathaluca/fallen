@@ -10,10 +10,15 @@
 
 ## Project purpose
 
-To help suffering addicts with the knowledge gained by people who have walked a mile in their shoes, by presenting stories written by those who have broken free from the grip of addiction.
+To help suffering addicts access the knowledge gained by people who have walked a mile in their shoes, by presenting stories written by those who have broken free from the grip of addiction.
 
 Knowing that the therapeutic of one addict helping another is without question, this project was developed to create an App to help connect still suffering addicts (users), who are searching for real life experience and advice about how to stop, with methods (recovery recipes), in the form of stories from addicts who have recovered (user/contributors). 
-Both users and user/contributors will have the option to add their story. The data collected from these real life stories will be studied to determine patterns that lead to, fuel and arrest recovery. 
+Both users and user/contributors will have the option to add their story. 
+
+The project has been designed with the additional purpose of attracting user/contributors to share their experience in line with current recovery guidelines, that is, helping others will help you stay mentally fit and well. 
+
+Ultimately the data collected from these real life stories will be studied to determine patterns that lead to, fuel and arrest recovery. This will help addicts, people in recovery and professionals/academics/social services involved in treating the epidemic of addiction. 
+
 
 The term addict is used to describe the user who has a psychological and physical inability to stop consuming a chemical, drug, activity, or substance, even though it is causing psychological and physical harm.
 The different types of addiction options currently added are:
@@ -610,25 +615,55 @@ an auto added image chosen for each addiction. This would ensure that the home p
 Considering defensive design we anticipate that this will result in a number of half completed forms being sent to the database but this in itself will help us gather information as to which questions the user and user/contributors believe to be relevant and engaging.
 The easier the form is to submit the more information we will be able to collect. 
 
-7. A single modal has been added to try to influence submitting a form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
+7. A single modal has been added to try to encourage submission of the 'soul searching' form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
+
+8. Using MongoDB with the flexible data collection should minimise the chance of CRUD problems in the future if the App proved popular. 
 
 ## MongoDB atlas
 
 MongoDB atlas was recommended by Code Institute. 
 
+MongoDb was the perfect choice for this project.
 
-    '''
-    Reads changes collection in the MS3-project mongoDB to
-    render in changes.html.
-    All documents from changes collection are rendered as a list.
-    filtered function renders small list 
-    '''
+The Mongo DB documentation and university tutorials were very helpful.  
 
-mongo db stored as strings not integers
+The ease of set up of documents within the collections was good but the flexibility is the key advantage for this project. 
+As this project evolves in the real world it is unlikely that the documents will remain the same. Within each collection even when the create and update functions changed fields dramatically, the old versions of the documents within the same collections still rendered well and read as they had done previously. 
+This means that the collected data will still be useful even if they types of questions asked will be different.
+There was no need to commit to a data type which is useful for the longterm plan. If a field changes from e.g. a date to a string, the risk of null fields or bounced submission is avoided.
 
-important that the name of habit matches the name of the card
+There are now 4 data collections stored in MongoDB for this project. We began with 10 collections but the project has been streamlined for both project and UX. 
+1. categories. Read only collection.
+2. changes. Create, read, update and delete functions are coded in app.py file to create, read, update and delete selected documents in the changes collection.
+    1. Created from form on Share Your recovery page. (https://fallen-but-not-broken.herokuapp.com/add_changes)
+    2. Read on home page in View story card in main section. (https://fallen-but-not-broken.herokuapp.com/)
+    3. Read on recovery stories page (https://fallen-but-not-broken.herokuapp.com/changes)
+    4. Read on Story details page. One story/document/objectID per page. (https://fallen-but-not-broken.herokuapp.com/story_detail/5defc98797a1fd74efe492f4)
+    5. Update and Read on Edit Story page (https://fallen-but-not-broken.herokuapp.com/edit_changes/5defc98797a1fd74efe492f4)
+    6. Read and Delete from Edit and Delete page (https://fallen-but-not-broken.herokuapp.com/delete_edit_buttons)
+3. my_problem. Documents are created from form on the Tell you story page. (https://fallen-but-not-broken.herokuapp.com/my_problem)
+4. past_problem. Documents are created from form on the Soul searching page. (https://fallen-but-not-broken.herokuapp.com/past_problem)
+
+3 and 4 have same functionality but create and collect different types of data so are important for the project purpose. 
+
+The purpose of my_problem collection is to allow the user to feel heard and connected plus provide us data from using addicts and people seeking recovery.
+
+The purpose of past_problem collection is to gather as much information as possible from the recovered user/contributors to help improve the treatments available for addiction. 
+
+MongoDb will be very useful in the future because of the additional Compass features.
+
+it offers immediate insight in to server status and query performance 
+
+Schema visualisation will be very useful for our users. Once we have gathered enough stories to be statitsically significant we can display them within the app easily to show what could help most.
 
 
+###File tree and File names. Limitation dictated by MongoDB. 
+The only limitation suffered was that we had to have the image file name matching the habit name in categories collection exactly. This meant that there had to be spaces in the file names. 
+
+All efforts were made to change the file names from those easiest to understand by the developer to file naming adhering to good software development practice. 
+All template files were renamed once most of the development work had been done to be better understood better by people other than the developer. 
+
+As I gain more experience as I understand that deciding strong file names is important at the outset because changing file names, particularly collection names in the database is time consuming and carries some risk.
 
 
 ## Features
@@ -693,16 +728,39 @@ I became aware of the phenomenon of scope creep during project development.
 I then stopped adding features that may not add usefulness to the app if they were not essential for the project.
 I wanted to be able to develop the idea in it's most simple form to trial and add future features demanded by users and user/contributors as necessary.
 
-Possible addictional features that could be useful to attract users would be:
+Possible additional features that could be useful to attract users would be:
 
-- More filters. Currently adding more filters would be of no benefit because there are so few documents in the data base.
+- More filters. 
+One of the key factors in getting through to addicts is for them to identify and recognise that the person trying to help them has walked in their shoes.
+As the stories become more plentiful a second filter can be added e.g. sex or age or education or stress levels or social anxiety, the list is endless. 
+
+Currently adding more filters would be of no benefit because there are so few documents in the data base.
 As the number of stories increases, filters will be added so that the user has more control over which stories they are presented with.
-For example, a user may want to find success stories from alcohol dependent women with children and suffering domestic violence.
-Or as user may only want to read stories from user/contributors more than a year in recovery. 
+
+It is projected that each time 100 stories have been added, an extra filter will be added. 
+
+This means that when there are 500 stories the additional filters will be 
+1. Recovery time in days (converted from start date using Python method)
+2. Sex
+3. Age range
+4. How many times did you try before success (showing how chronic the user)
+5. History of trauma.
+
+
 - Pagination. As stories are added to the database pagination will be necessary. 
 It is anticipated that 40 stories on the home page will be optimal. This has been assumed noting the engagement of addicts when presented with a large number of story cards and noting which story they chose to view in which position. 
 This may seem a large number but I believe that a huge dose of visuals will generate the impact needed to keep the interest of an active addict.
-- Free phone numbers to helplines using 
+
+- Phone numbers to helplines using free calls. 
+e.g.
+![Samaritans free phone number](assets/future_features/samaritans.jpg)
+
+![AA local phone number](assets/future_features/aa.jpg)
+
+- Audio and or video shares . Links or embedded.
+
+![XA speakers audio shares](assets/future_features/xa.jpg)
+
 
 
 Possible addictional features that could be useful to attract user/contributors would be:
@@ -730,9 +788,6 @@ women section
 required field pop up warning for add_changes
 login
 
-filter choses two or more types of addiction, also further filters 
-One of the key factors in getting through to addicts is for them to identify and recongnise that the person trying to help them has walked in their shoes.
-As the stories become more plentiful a second filter can be added e.g. sex or age or education or stress levels or social anxiety, the list is endless. 
 
 user /contribtuor stories I will have access to a gratitude list and journal which may help me 
 
