@@ -815,6 +815,7 @@ js materiliaze
 8. [Gitpod]
 9. [VSC code extensions]()
 10. [IDLE]
+11. [Javacript tests](http://beautifytools.com/javascript-validator.php)- Tested to check Materialize initialization. 
 
 ### Early development testing.
 
@@ -1084,14 +1085,22 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     5. No warnings showed in Devtools. No console errors.
     6. Comments checked and all old comments were removed.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 - about_us.html (about us page)
 
-
-
 - delete_edit_buttons.html (Edit and delete page)
-
-
-
 
 
 
@@ -1110,6 +1119,23 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 
 - story_details.html 
 
+
+
+- init.js
+Removed all comments and tested 
+
+[Javacript tests](http://beautifytools.com/javascript-validator.php).
+
+When I started the project the datepicker needed updating to function correctly and I used the following as instructed.
+
+
+    // initMaterialize();
+    
+    // // document.getElementById("matfix").addEventListener("click", function(e) {
+    // //     e.stopPropagation();
+    // // });
+
+As the project developed I checked to see if Materialize had corrected the problem. It appears the datepicker now runs correctly without the added function. 
 
 
 MongoDB tests
