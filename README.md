@@ -755,51 +755,27 @@ This may seem a large number but I believe that a huge dose of visuals will gene
 e.g.
 ![Samaritans free phone number](assets/future_features/samaritans.jpg)
 
-![AA local phone number](assets/future_features/aa.jpg)
+<!-- ![AA local phone number](assets/future_features/aa.jpg) -->
 
-- Audio and or video shares . Links or embedded.
+- Audio and or video shares . Either as links or embedded.
 
 ![XA speakers audio shares](assets/future_features/xa.jpg)
 
 
+Possible additional features that could be useful to attract user and user/contributors would be:
 
-Possible addictional features that could be useful to attract user/contributors would be:
-
-
-journalling link stuff proven to help addiction 
-telephone, meditation, ditching anger, blane and resentment, forgiveness or understadning opp perspective
-
-recovery diaries
-planners
-
-clean time countdown
-
-information for shy sharers
-conferencing
-free phone number to helplines
-VR and videos and fell good music
-audio and or video shares
-filter for more 
-more filters for thw 
-email us
-pagination
-pop up saying thank you or a new page
-women section
-required field pop up warning for add_changes
-login
-
-
-user /contribtuor stories I will have access to a gratitude list and journal which may help me 
-
-As a user I expect feedback from the website I am using when I interact with it, I expect loading spinners when pages are taking a while to load, I expect pop ups and modals to inform
-me when my forms have been completed and sent correctly.
-
-I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
-
-It may be that the focus of this app becomes the collection of data for women because all the available currently therapies have been researched soley in men.
-
-The information will be complied in to report that will be freely available. Not sold for money or prestige. 
-
+- Recovery diaries and journalling therapies.
+- Mood and feeling diaries.
+- Planners and recovery strategies.
+- Clean time countdown - feature that counts how many days you have clean and sober.
+- Reading list.
+- Recovery film list.
+- Music to change your mood.
+- Women section's 
+- Specialist section e.g. for social anxiety sufferer. (special and different section)
+- More modal and popups to communicate with the users me when forms have been completed and sent correctly. App currently provided information in page templates. Research suggested modals irritated agitated users. 
+- Login
+- Loading spinners when pages are taking a while to load. Heroku is quites slow to load. 
 
 
 ## Tech Used
@@ -844,8 +820,8 @@ js materiliaze
 
 1. Code Institute was keen to swap us to Gitpod IDE but the lack of extensions available meant that I would still used both IDLE and VSC to check python syntax and test if the code would run. 
 
-For example, in the earliest phase of development I did not understand how crucial tabs versus spaces were in python. It was not always clear in gitpod IDE. Copying the code in to Idle or VSC helped test and resolve issues.
-I later grasped that Gitpod listed all the indentation, whitespace and other problems as a feature for each file. 
+For example, in the earliest phase of development I did not understand how crucial tabs and extra spaces were in Python. It was not always clear in gitpod IDE. Copying the code in to Idle or VSC helped test and resolve issues.
+I later grasped that Gitpod listed all the indentation, whitespace and other problems within each workspace. 
 
 2. HTML Validator was important when testing problems, especially during the development of the forms. 
 
@@ -876,7 +852,7 @@ I also used the TDD examples in the CI lessons to check that Flask was running a
 
 5. Debug=True within app.py file in Gitpod IDE  listed errors and helped me test development at every small stage. 
 
-6. The app was deployed to heroku early on because sometimes I did not understand why the code would not run from the debug and errors shown within Gitpod coomand line terminal. Manual testing of whether or not the app would run in heroku gave me more detailed explanatons of the error.  Heroku Debug was relied upon for testing.
+6. The app was deployed to heroku early on because sometimes I did not understand why the code would not run from the debug and errors shown within Gitpod coomand line terminal. Manual testing of whether or not the app would run in heroku gave me more detailed explanatons of the error.  Heroku Debug was relied upon for early testing.
 
 7. Manual app.py test example.
 ```
@@ -928,12 +904,10 @@ I understand that this is not strictly TDD because I am not testing my own funct
 3. The problems includes indentation, trailing white space, line too long , unused variables, imported but unused files, the pep8 list of errors from pep8 online replicated the problems and warnings in the terminal.
 when trying to fix the line too long issue one problem created another when amended.
 
-Problems listed in the terminal were at one point 89. now 9 problems with no warnings
+Problems listed in the terminal were at one point 89. now 9 problems with no warnings.
 
->  
--  Check results 
-- Save 
-- Share
+PEP8 test example
+```
 - Code	Line	Column	Text
 E302	19	1	expected 2 blank lines, found 1
 E128	24	5	continuation line under-indented for visual indent
@@ -952,6 +926,7 @@ E302	91	1	expected 2 blank lines, found 1
 E501	108	80	line too long (85 > 79 characters)
 E302	116	1	expected 2 blank lines, found 1
 > E501	119	80	line too long (91 > 79 characters)
+```
 
 
 4. MongoDb CRUD function testing. 
@@ -982,10 +957,12 @@ def alias():
     return render_template('alias.html', alias=mongo.db.user.find_one())
     # return render_template('alias.html', alias=aliasx())
 
-
+```
 
 
 Ran test then found request.form.get('firat') should be request.form.get('first')
+
+```
 
 # @app.route('/update_editSteps/<editSteps_id>', methods=['GET', 'POST'])
 # def update_editSteps(editSteps_id):
@@ -1000,14 +977,41 @@ Ran test then found request.form.get('firat') should be request.form.get('first'
 
 ```
 
-```
+5. Form tests.
 
-@app.route('/imageTest')
-def imageTest():
-    return render_template('imageTest.html')
+To check that all form fields were working and correctly stored in MongoDB we would :
+    1. create new documents completing a form
+        - my_problem.html then check my_problem collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 20
+        - past_problem.html then check past_problem collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 9
+        [Document added to MongoDB collection test](assets/testing/past_problem_mongo.jpg)
+        - add_changes.html then check changes collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 25
 
-```
+Example using integers for fast testing. 
+Add change (share recovery story)  
+![Changes form test](assets/testing/add_changes_test.jpg)
 
+Check added to MongoDB changes collection
+![Check Mongo](assets/testing/changes_form_test.jpg)
+
+Check added to story detail page
+![Check Story details](assets/testing/story_detail_test.jpg)
+
+Check added to recovery stories (changes.html) page
+![Check recovery stories page](assets/testing/recovery_stories_test.jpg)
+
+Failed tests.
+
+Null fields or failed submissons of forms were tracked down using the heroku error.
+[Failed insert](assets/testing/testing_heroku.jpg)
+
+We often found mismatch between fields in insert or update function had not been amended when the questions and mongoDB fields had been altered. 
+If the function did not match the MongoDb collection fields then the insert or update would fail and error would occur. 
+
+[App.py function error](assets/testing/testing_issues.jpg)
+
+6. Checking responsive design.
+The grid of stories on home page was not looking good on the Ipad pro. I changed <div class="col s6 m4 l3"> to <div class="col s6 m3">
+The images in the hero image card and the second card were too large on small screens. Media queries were used as we did find that materialize card components were not fully responsive without them. 
 
 
 
@@ -1016,6 +1020,9 @@ def imageTest():
 #### All Final tests will now be carried out on the deployed version. 
 
 Gitpod IDE tests will no longer be relied upon for testing as previous inconsistencies have been noticed between gitpod (even in incognito mode) and heroku deployed app. 
+
+An error in config in heroku had been overlooked for weeks as tests were completed in gitpod. It was traced to be a space after the mongoDB config value but had gone unnoticed because it was only creating problems of 2 pages. 
+
 
 - Index.html file. (Home page)
     1. Styling and CSS colour match attempts revealed that the colours e.g. blue-grey that were used in Materialize components and templates were not recognised within the static style.css file. 
@@ -1035,6 +1042,8 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
     6. Side navbar was tested on mobile and tablet devices.
     7. Each habit document from the MongoDB categories collection is important for the filter and view story features. If the MongoDB categories habit does not match the image names in the static file then the view story cards will not load correctly. Each habit category was tested to check the image loaded and habit name was displayed correctly. Each of the 21 selectable options loaded.
     8. Huge delay on style.css changes being reflected even after using F5 and incognito mode. Some style.css amendments made during testing need to be reversed. 
+    9. Errors in the layout of the materialize story cards were noticed in small bands e.g. 1450-1750. This was found to be due to long habit names in the cards. This will be resolved at the end before submission either by changing the font size or renaming the habits using less letters to fit.
+    The social media, toxic relationship and attention cards each stopped the grid being fully responsive. 
 
 - my_problem.html file (Tell your story page)
     1. HTML validator revealed stray </div> end tag revealing a missing opening <div> tag. Other small end tag errors rectified.
@@ -1103,6 +1112,7 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
 
 
 
+MongoDB tests
 
 
 
@@ -1112,24 +1122,10 @@ Gitpod IDE tests will no longer be relied upon for testing as previous inconsist
 
 
 
+check the veiw story grid issue when adding last stories
 
 
 
-
-    MongoDB tests
-
-
-
-
-
-
-
-
-
-
-
-
-ipad pro is not looking good 
 
 Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
 
