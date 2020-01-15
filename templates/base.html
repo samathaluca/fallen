@@ -10,7 +10,7 @@
       <link href="https://materializecss.com/dist/css/materialize.min.css" type="text/css" rel="stylesheet">
       <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" type="text/css" rel="stylesheet">
       <link href="{{ url_for('static', filename='css/style.css') }}" type="text/css" rel="stylesheet">
-      <link rel="shortcut icon" type="image/ico" href="/static/images/logo/miniPanOld.png">
+      <link rel="shortcut icon" type="image/ico" href="/static/images/logo/miniPanTab.png">
    </head>
    <body>
       <!-- nav bar to show up in each page-->
@@ -25,7 +25,7 @@
          <nav>
             <div class="nav-wrapper blue-grey darken-1">
                <a id="bigNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPan.png') }}" alt="Home Logo"></a>
-               <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile3.png') }}" alt="Home Logo"></a>
+               <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                <ul class="right hide-on-med-and-down">
                   <li><a class="white-text" href="{{ url_for('my_problem') }}">Tell Your Story</a></li>

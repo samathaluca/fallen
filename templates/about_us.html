@@ -1,73 +1,48 @@
 {% extends 'base.html' %}
 {% block content %}
 
-
 <div class="container">
-<div class="row">
-<div class="col s12">
-<h3>Project Purpose</h3>
-
-<h4>To connect still suffering addicts with the people who have walked a mile in their shoes</h4>
-<h5>The therapeutic of one addict helping another is without question</h5>
-
-
-<h4>Your data</h4>
-<h5>What happens to the details of your personal story now?</h5>
-
-
-<ul>
-<li>Your story once submitted remain completely anonymous.</li>
-<p>
-The information will be complied in to report that will be freely available. Not sold for money or prestige. 
-</p>
-
-<br>
-<li>The question were set by addicts not academics or professionals</li>
-<li>Your anonymous stories are kept on a database.</li>
-<li>The details in your stories will help discover what can better help treat the addiction epidemic</li>
-<li>Nobody yet knows why the current treatment for addictions help the minority</li>
-<li>Your story will help unravel the reason why what may help one addict could kill another.
-<li>This collected data is independent and unbiased. It does not rely on funding.</li>
-<li>Because the collection of this data is not for profit the outcome will not be biased in any way.</li>
-<li>Costly trials to find a low cost solution are currently not being funded.</li>
-<li>Your data will be collated amidst hundreds of your peers to start helping the professionals to better help us.</li>
-<li>Have your voice to help find the truth</li>
-<li>Data will be analysed for independent study and free resource to help suffering addicts.</li>
-<li>No justification needed because stats gathered are not affiliated to any institution or treatment method</li>
-</ul>
-      <!-- <div class="container">
-      <a id="standOut" class="orange-text text-lighten-3" href="{{ url_for('past_problem') }}">DIG DEEPER</a>
-      </div> -->
-
-
-  <!-- Modal Structure -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Recovery experts are the people who have recovered</h4>
-      <p>The more information shared by the recovery experts, the more likely improvements will be made in the treaments available.</p>
-
-    </div>
-    <div class="modal-footer">
-      <a href="{{ url_for('past_problem') }}" class="modal-close waves-effect waves-green btn-flat">Agree</a>
-    </div>
-  </div>
-
-  <!-- Modal Trigger -->
- 
- <button data-target="modal1" id="aboutButton" class="btn modal-trigger">DIG DEEPER</button>
-
-
-<h4 class="about-font">Email us samfix108@gmail.com</h4>
-<!-- <div>
-    <a href= "{{ url_for('past_problem') }}">Soul Searching</a>
-  </div> -->
-
+   <div class="row">
+      <div class="col s12 about-font center">
+         <h4>Firstly THANK YOU.</h4>
+         <h5>Your interest and your time is important to us</h5>
+         <h4>Our aim</h4>
+         <h5>To connect still suffering addicts with the people who have walked a mile in their shoes</h5>
+         <h6>The therapeutic of one addict helping another is without question</h6>
+         <h4>Your data</h4>
+         <h5>What happens to the details of your personal story now?</h5>
+         <h6>The information will be complied in to report that will be freely available. Not sold for money or prestige. </h6>
+         <ul>
+            <li>Your story once submitted remain completely anonymous.</li>
+            <li>The question were set by addicts not academics or professionals</li>
+            <li>Your anonymous stories are kept on a database.</li>
+            <li>The details in your stories will help discover what can better help treat the addiction epidemic</li>
+            <li>Nobody yet knows why the current treatment for addictions help the minority</li>
+            <li>Your story will help unravel the reason why what may help one addict could kill another.
+            <li>This collected data is independent and unbiased. It does not rely on funding.</li>
+            <li>Because the collection of this data is not for profit the outcome will not be biased in any way.</li>
+            <li>Costly trials to find a low cost solution are currently not being funded.</li>
+            <li>Your data will be collated amidst hundreds of your peers to start helping the professionals to better help us.</li>
+            <li>Have your voice to help find the truth</li>
+            <li>Data will be analysed for independent study and free resource to help suffering addicts.</li>
+            <li>No justification needed because stats gathered are not affiliated to any institution or treatment method</li>
+         </ul>
+         <!-- Modal Structure -->
+         <div id="modal1" class="modal">
+            <div class="modal-content">
+               <h4>Recovery experts are the people who have recovered</h4>
+               <p>The more information shared by the recovery experts, the more likely improvements will be made in the treaments available.</p>
+            </div>
+            <div class="modal-footer">
+               <a href="{{ url_for('past_problem') }}" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+            </div>
+         </div>
+         <!-- Modal Trigger -->
+         <button data-target="modal1" id="aboutButton" class="btn modal-trigger">DIG DEEPER</button>
+         <h4 class="about-font">Email us samfix108@gmail.com</h4>
+      </div>
+   </div>
 </div>
-</div>
-</div>
-<h4>Email us samfix108@gmail.com</h4>
-</div>
-
 
 {% endblock %}
 
