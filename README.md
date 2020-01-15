@@ -149,7 +149,7 @@ This means that when getting addiction free, I learnt that helping others is the
 - I would want to know that anyone may visit the site and complete the forms to get the benefits of gratitude and usefulness.
 - I do not want to spend too long filling in forms or struggle to submit them. 
 - I have previously found professionals and well meaning help made me more dependent as their choices become more important than my own. 
-- I have seen the faiings of currently available treatments and would like to support data collection to help develop new strategies.
+- I have seen the failings of currently available treatments and would like to support data collection to help develop new strategies.
 - I felt seized by the choices made by professionals for me. How can anyone who does not understand that feeling of desperation really help?
 
 #### Professionals/Business Users 
@@ -1011,8 +1011,11 @@ If the function did not match the MongoDb collection fields then the insert or u
 [App.py function error](assets/testing/testing_issues.jpg)
 
 6. Checking responsive design.
-The grid of stories on home page was not looking good on the Ipad pro. I changed <div class="col s6 m4 l3"> to <div class="col s6 m3">
-The images in the hero image card and the second card were too large on small screens. Media queries were used as we did find that materialize card components were not fully responsive without them. 
+The grid of stories on home page was not looking good on the Ipad pro. 
+I changed class="col s6 m4 l3" to class="col s6 m3" to improve the responsiveness of the view story cards in the grid in main section. 
+The images in the hero image card and the second card were too large on small screens. 
+Media queries were used as we did find that materialize card components were not fully responsive without them. 
+Long alias names did not look good. 
 
 
 
@@ -1150,6 +1153,10 @@ app.py tests
 10 problems shown in gitpod workspace. 
 Line too long, trailing white space, extra line. All corrected. 
 
+
+style.css tests 
+
+static file images checks 
 
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
