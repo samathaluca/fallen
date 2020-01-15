@@ -24,8 +24,9 @@ def index():
     pulls changes and categories collections from the MS3-project mongoDB to
     render in index.html.
     '''
-    #                                                           changes = mongo.db.changes.find()
-    return render_template('index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
+    #                                 changes = mongo.db.changes.find()
+    return render_template(
+        'index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
 
 
 # Tell your story page = my_problem.html
@@ -37,7 +38,8 @@ def my_problem():
     function.
     '''
     if request.method == 'GET':
-        return render_template('my_problem.html', my_problem=mongo.db.my_problem.find())
+        return render_template(
+            'my_problem.html', my_problem=mongo.db.my_problem.find())
     else:
         insert_my_problem = mongo.db.my_problem
         insert_my_problem.insert_one(request.form.to_dict())
@@ -67,7 +69,8 @@ def add_changes():
     Pulls categories collection in to add_changes.html form.
     Renders add_changes_html page.
     '''
-    return render_template('add_changes.html', categories=mongo.db.categories.find())
+    return render_template(
+        'add_changes.html', categories=mongo.db.categories.find())
 
 
 @app.route('/insert_changes', methods=['POST'])
@@ -91,7 +94,8 @@ def edit_changes(changes_id):
     '''
     the_change = mongo.db.changes.find_one({'_id': ObjectId(changes_id)})
     all_categories = mongo.db.categories.find()
-    return render_template('edit_changes.html', changes=the_change, categories=all_categories)
+    return render_template(
+        'edit_changes.html', changes=the_change, categories=all_categories)
 
 
 @app.route('/update_changes/<changes_id>', methods=['POST'])
@@ -134,7 +138,8 @@ def delete_edit_buttons():
     Renders delete_edit_buttons.html page with list of all change documents fro
     mongoDB.
     '''
-    return render_template('delete_edit_buttons.html', changes=mongo.db.changes.find())
+    return render_template(
+        'delete_edit_buttons.html', changes=mongo.db.changes.find())
 
 
 # delete recovery stories from mongoDB changes collection
@@ -164,18 +169,19 @@ def past_problem():
     '''
     Reads past_problem collection in the MS3-project mongoDB to
     render in past_problem.html.
-    Creates documents in the past_problem collection in the MS3-project mongoDB.
+    Creates documents in the past_problem collection in the MS3-project
+    mongoDB.
     Each document represents one completed 'Soul searching' form completion
     created by this function.
     '''
     if request.method == 'GET':
-        return render_template('past_problem.html', past_problem=mongo.db.past_problem.find())
+        return render_template(
+            'past_problem.html', past_problem=mongo.db.past_problem.find())
     else:
         insert_past_problem = mongo.db.past_problem
         insert_past_problem.insert_one(request.form.to_dict())
         # return redirect(url_for('index'))
         return render_template('about_us.html')
-
 
 
 @app.route('/gratitude_list')
@@ -198,8 +204,3 @@ if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),
             debug=False)
-
-# if __name__ == '__main__':
-#     app.run(host='0.0.0.0',
-#             port=int(os.environ.get('PORT')),
-#             debug=True)

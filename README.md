@@ -1146,6 +1146,11 @@ My app has been testing by various student from the Slack community and by frien
 From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
 
 
+app.py tests
+10 problems shown in gitpod workspace. 
+Line too long, trailing white space, extra line. All corrected. 
+
+
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
 
@@ -1180,6 +1185,9 @@ Desktop
 
 
 ## Version control and Heroku Deployment
+
+
+used old version a lot this time when errors were made and app crashed
 
 Using gitpod two methods of deployment were attempted. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
 
