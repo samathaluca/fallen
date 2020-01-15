@@ -9,15 +9,15 @@
     {% for changes in changes %}
     <li>
         <div class="collapsible-header row">
-            <div class="task_header col s6 m6 l9">
+            <div class="task_header col s3 m6 l6">
                 <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
 
             </div>
-            <div class="col s3">
+            <div class="col s4">
                     <!-- <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a> -->
                     <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small green">Edit</a>
             </div>
-            <div class="col s3">
+            <div class="col s4">
                     <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a>
                     <!-- <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small blue">Edit</a> -->
             </div>
