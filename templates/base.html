@@ -15,7 +15,7 @@
    <body>
       <!-- nav bar to show up in each page-->
       <ul class="sidenav" id="mobile-demo">
-         <li><a href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
+         <li><a href="{{ url_for('my_problem') }}">Early Days</a></li>
          <li><a href="{{ url_for('changes') }}">Recovery Stories</a></li>
          <li><a href="{{ url_for('add_changes') }}">Share Your Recovery</a></li>
          <li><a href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
@@ -28,7 +28,7 @@
                <a id="smallNav" href="{{ url_for('index') }}" class="brand-logo"><img src="{{ url_for('static', filename='images/logo/miniPanMobile.png') }}" alt="Home Logo"></a>
                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                <ul class="right hide-on-med-and-down">
-                  <li><a class="white-text" href="{{ url_for('my_problem') }}">Tell Your Story</a></li>
+                  <li><a class="white-text" href="{{ url_for('my_problem') }}">Early Days</a></li>
                   <li><a class="white-text" href="{{ url_for('changes') }}">Recovery Stories</a></li>
                   <li><a class="white-text" href= "{{ url_for('add_changes') }}">Share Your Recovery</a></li>
                   <li><a class="white-text" href= "{{ url_for('gratitude_list') }}">Gratitude List</a></li>
@@ -67,6 +67,27 @@
                </div>
             </div>
          </div>
+<div>
+<div id="modal1" class="modal">
+            <div class="modal-content">
+               <h4>Recovery experts are the people who have recovered</h4>
+               <p>The more information shared by the recovery experts, the more likely improvements will be made in the treaments available.</p>
+            </div>
+            <div class="modal-footer">
+            <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
+               <!-- <a href="{{ url_for('past_problem') }}" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+            </div>
+         </div>
+         <!-- Modal Trigger -->
+         <button data-target="modal1" id="aboutButton" class="btn modal-trigger">DIG DEEPER</button>
+         
+         
+</div>
+
+
+
+
+
          <div class="footer-copyright">
             <div class="container">
                <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
