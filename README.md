@@ -1260,7 +1260,9 @@ This was achieved by connecting heroku to github and selecting automatic deploys
 
 From that point on gitpod push to github automatically deployed to heroku and so github version control nad heroku build log mirrored each other. 
 
-![Github and heroku link](assets/testing/heroku_and_gitpod_connect.jpg)
+![Github and heroku link](version_save.png)
+
+![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
 
 ![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
 
