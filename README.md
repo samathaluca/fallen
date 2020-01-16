@@ -501,7 +501,7 @@ Additional link found on About Us page.
 ##### Soul searching form for data collection (past_problem.html).
 Link is from the Dig Deeper button. A page to collect in depth information about historic, recent past and current issues that may influence how, when and which treatment facilitate recovery. Individual factors are considered and the effect this may have on whether a treatment works.
 
-####**The Surface plane**
+#### **The Surface plane**
 
 ##### Appearance, images, colour choices and fonts. 
 
@@ -1089,6 +1089,10 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     6. Comments checked and all old comments were removed.
 
 
+- delete_edit_buttons.html (Edit and delete page)
+    1. HTML beautifier format ran first.
+    2. HTML validator brought up an error concerned with the combination of two different styles of Materialize forms. Span tag highlighted was replaced with semantic form tag.
+    
 
 
 
@@ -1102,8 +1106,9 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 
 
 - about_us.html (about us page)
+    1. HTML beautifier format ran first.
+    2. HTML validator brought up an error concerned with the use of main as a child element of section.  Main tag replaced.
 
-- delete_edit_buttons.html (Edit and delete page)
 
 
 
@@ -1121,6 +1126,9 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     10. The edit button submitted the updates to the mongoDB chnages collection reliably on each device in each browser.
 
 - story_details.html 
+
+    1. HTML beautifier format ran first.
+    2. HTML validator brought up an error concerned with the use of main as a child element of section.  Main tag replaced.
 
 
 ![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
@@ -1186,6 +1194,7 @@ Tablets tested
 Laptop tested
 - MacBook pro,
 - Sony Vaio
+- HP 
 
 Desktop
 (unbranded Windows 7 OS) with different monitors 21 and 27inch.

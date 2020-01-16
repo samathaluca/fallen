@@ -1,132 +1,124 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <!-- collapsible list of all the recovery stories loaded from the database with edit and delete buttons.  -->
 <h4 class="center-align">Edit and Delete</h4>
-
-
-  <ul class="collapsible" data-collapsible="expandable">
-    {% for changes in changes %}
-    <li>
-        <div class="collapsible-header row">
-            <div class="task_header col s3 m6 l6">
-                <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
-
+<ul class="collapsible" data-collapsible="expandable">
+   {% for changes in changes %}
+   <li>
+      <div class="collapsible-header row">
+         <div class="task_header col s3 m6 l6">
+            <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
+         </div>
+         <div class="col s4">
+            <!-- <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a> -->
+            <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small green">Edit</a>
+         </div>
+         <div class="col s4">
+            <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a>
+            <!-- <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small blue">Edit</a> -->
+         </div>
+      </div>
+      <div class="collapsible-body">
+         <span>
+            <strong>When did you stop?</strong>-{{changes.start_date}}
+            <div>
+               <span>
+               <strong>Why did you stop?</strong>-{{changes.whyStop}}
+               </span>
             </div>
-            <div class="col s4">
-                    <!-- <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a> -->
-                    <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small green">Edit</a>
+            <div>
+               <span>
+               <strong>Who did you stop for??</strong>{{changes.whoStop}}
+               </span>
             </div>
-            <div class="col s4">
-                    <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a>
-                    <!-- <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small blue">Edit</a> -->
+            <div>
+               <span>
+               <strong>How did you feel in the beginning?</strong> - {{changes.feelings}}
+               </span>
             </div>
-        </div>
-
-        <div class="collapsible-body">
-            <span>
-                <strong>When did you stop?</strong>-{{changes.start_date}}
-                <div>
-                    <span>
-                        <strong>Why did you stop?</strong>-{{changes.whyStop}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>Who did you stop for??</strong>{{changes.whoStop}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How did you feel in the beginning?</strong> - {{changes.feelings}}
-                    </span>
-                
-                </div>
-                <div>
-                    <span>
-                        <strong>What was your rock bottom?</strong>{{changes.rockBottom}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>What would your recipe for recovery be?</strong>{{changes.recipe}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>What ingredients di you reply on? What helped?</strong>{{changes.ingredients}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How did you get through dayToDay? What helped?</strong>{{changes.dayToDay}}
-                    </span>
-                </div>
-                
-                <div>
-                    <span>
-                        <strong>How did you get through the first day? What helped?</strong>{{changes.day1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How did you get through the second day? What helped?</strong>{{changes.day2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How did you get through the third day? What helped?</strong>{{changes.day3}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How did you manage the cravings in the first week?</strong>{{changes.week1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>What ingredients and tools helped you get through the second week?</strong>{{changes.week2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>Did you feel better or worse by the third week?</strong>{{changes.summary}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>After one month which thoughts, actions and places felt you cope?</strong>{{changes.month1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>At the end of the second month did you change your job, friendships, place of work/home?</strong>{{changes.month2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>At the end of the third month did you start to feel any benefits?</strong>{{changes.month3}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>How was your first year's journey after breaking free?</strong>{{changes.year1}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>Did you feel free and had you life changed end of year 2?</strong>{{changes.year2}}
-                    </span>
-                </div>
-                <div>
-                    <span>
-                        <strong>Was life beyond your wildest dream by the end of year three or harder?</strong>{{changes.summary}}
-                    </span>
-                </div>
-            </span>
-        </div>
-    </li>
-    {% endfor %}
-  </ul>
-
+            <div>
+               <span>
+               <strong>What was your rock bottom?</strong>{{changes.rockBottom}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>What would your recipe for recovery be?</strong>{{changes.recipe}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>What ingredients di you reply on? What helped?</strong>{{changes.ingredients}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How did you get through dayToDay? What helped?</strong>{{changes.dayToDay}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How did you get through the first day? What helped?</strong>{{changes.day1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How did you get through the second day? What helped?</strong>{{changes.day2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How did you get through the third day? What helped?</strong>{{changes.day3}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How did you manage the cravings in the first week?</strong>{{changes.week1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>What ingredients and tools helped you get through the second week?</strong>{{changes.week2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>Did you feel better or worse by the third week?</strong>{{changes.summary}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>After one month which thoughts, actions and places felt you cope?</strong>{{changes.month1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>At the end of the second month did you change your job, friendships, place of work/home?</strong>{{changes.month2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>At the end of the third month did you start to feel any benefits?</strong>{{changes.month3}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>How was your first year's journey after breaking free?</strong>{{changes.year1}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>Did you feel free and had you life changed end of year 2?</strong>{{changes.year2}}
+               </span>
+            </div>
+            <div>
+               <span>
+               <strong>Was life beyond your wildest dream by the end of year three or harder?</strong>{{changes.summary}}
+               </span>
+            </div>
+         </span>
+      </div>
+   </li>
+   {% endfor %}
+</ul>
 {% endblock %}

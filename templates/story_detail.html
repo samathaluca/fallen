@@ -1,141 +1,126 @@
 {% extends 'base.html' %}
 {% block content %}
-
 <!-- Each recovery story is loaded individually from the database in to this template after the user clicks 'view story' on home page-->
-<section>
-<main class="container">
-    <div class="row">
-        <div class="col m8">
-            <h5><strong>{{changes.alias}}'s story</strong> <br> Battling with {{changes.habit}}</h5>
-            <h6> A recipe for recovery  </h6> 
-            <div>
-                <p><strong>When did you stop?</strong> - {{changes.start_date}}</p>
-                <p><strong>Why did you stop?</strong> - {{changes.whyStop}}</p>
-                <p><strong>Who did you stop for?</strong> - {{changes.whoStop}}</p>
-                <p><strong>How did you feel?</strong> - {{changes.feelings}}</p>
-                <p><strong>What was your rock bottom</strong> - {{changes.rockBottom}}</p>
-                <p><strong>RECOVERY RECIPE</strong> - {{changes.recipe}}</p>
-                <p><strong>RECOVERY INGREDIENTS</strong> - {{changes.ingredients}}</p>
-                <p><strong>Day to day changes</strong> - {{changes.dayToDay}}</p>
-                
-            </div>
-        </div>
-        <div class="col m4 img-container section">
-            <img id="sheep" src="{{ url_for('static', filename='images/Sheep.jpg') }}" alt="Sheep in a Pickle" style="max-width:100%">
-            <!-- <img src="{{ url_for('static', filename='images/{{ changes.habit }}.jpg') }}" alt="Home Logo"> -->
-            <h6 class="center-align labels">Extreme Rock and a hard place</h6>
-            <div class="btn-right center-align">
-                <a id="rock-button" href="https://psychcentral.com/blog/6-ways-to-recover-your-mental-health/" target="_blank" class="waves-effect waves-light btn btn-style"><i class="material-icons left i-made-it-icon">favorite</i>I CAN DO THIS</a>
-            </div>
-        </div>
-    </div>
-</main>
-<section>
-    <div class="row">
-        <div class="container">
-            <div class="divider"></div>
-            <div class="row section icon" style="background-color:lightgrey;">
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">perm_contact_calendar</i> Clean Since:
-                    </div>
-                    <p class="clear">{{changes.start_date}}</p>
-                    <p></p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i>Describe Day 1:
-                    </div>
-                    <p class="clear">{{changes.day1}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i>What did you do on Day 2:
-                    </div>
-                    <p class="clear">{{changes.day2}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i>What helped withdrawal? Day 3:
-                    </div>
-                    <p class="clear">{{changes.day3}}</p>
-                </div>
-            </div>
-            <div class="row section icon">
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> How were cravings? Week 1:
-                    </div>
-                    <p class="clear">{{changes.week1}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> What tools did you use? Week 2:
-                    </div>
-                    <p class="clear">{{changes.week2}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> Feeling better or worse? Week 3:
-                    </div>
-                    <p class="clear">{{changes.week3}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i>Where were you safest? Month 1:
-                    </div>
-                    <p class="clear">{{changes.month1}}</p>
-                </div>
-            </div>
-            <div class="row section icon" style="background-color:lightgrey;">
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i>What has changed? Month 2:
-                    </div>
-                    <p class="clear">{{changes.month2}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> Describe the benefits Month 3:
-                    </div>
-                    <p class="clear">{{changes.month3}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> Year 1 summary:
-                    </div>
-                    <p class="clear">{{changes.year1}}</p>
-                </div>
-                <div class="col s12 m6 l3 icons">
-                    <div>
-                        <i class="material-icons">help</i> Year 2 summary:
-                    </div>
-                    <p class="clear">{{changes.year2}}</p>
-                </div>
-            </div>
-            <div class="divider"></div>
-            <div class="section">
-                <h4 class="col s12">Overall Summary</h4>
-                <p class="col s12" style="white-space: pre-wrap;">{{changes.summary}}</p>
-            </div>
-            <div class="section">
-                <p class="centre-align source-btn">
-                <a href="https://www.positivityblog.com/happiness-quotes/" target="_blank" class="waves-effect waves-light btn btn-style">Happy quotes</a></p>
-            </div>
-            
-                 
-
-            <!-- end of col-md7 -->
-        </div>
-        <!-- <div class="col m5 img-container section">
-            <img src="https://assets.atlasobscura.com/media/W1siZiIsInVwbG9hZHMvcGxhY2VfaW1hZ2VzLzQyNDE4NTkxMl9mMjI4YTMxZDA2X29fMS5qcGciXSxbInAiLCJ0aHVtYiIsIngzOTA-Il0sWyJwIiwiY29udmVydCIsIi1xdWFsaXR5IDgxIC1hdXRvLW9yaWVudCJdXQ/424185912_f228a31d06_o_1.jpg" alt="Sheep in a pickle">
-
-            <p class="center-align labels">Extreme Rock and hard place</p>
-            <div class="btn-centre"><a id="i-made-it" href="https://tinybuddha.com/blog/60-things-to-be-grateful-for-in-life/" target="_blank" class="waves-effect waves-light btn btn-style"><i class="material-icons left i-made-it-icon">favorite</i>I CAN DO THIS</a></div>
-        </div> -->
-    </div>
-
-    <!-- end of page section -->
+<section class="container">
+   <div class="row">
+      <div class="col m8">
+         <h5><strong>{{changes.alias}}'s story</strong> <br> Battling with {{changes.habit}}</h5>
+         <h6> A recipe for recovery  </h6>
+         <div>
+            <p><strong>When did you stop?</strong> - {{changes.start_date}}</p>
+            <p><strong>Why did you stop?</strong> - {{changes.whyStop}}</p>
+            <p><strong>Who did you stop for?</strong> - {{changes.whoStop}}</p>
+            <p><strong>How did you feel?</strong> - {{changes.feelings}}</p>
+            <p><strong>What was your rock bottom</strong> - {{changes.rockBottom}}</p>
+            <p><strong>RECOVERY RECIPE</strong> - {{changes.recipe}}</p>
+            <p><strong>RECOVERY INGREDIENTS</strong> - {{changes.ingredients}}</p>
+            <p><strong>Day to day changes</strong> - {{changes.dayToDay}}</p>
+         </div>
+      </div>
+      <div class="col m4 img-container section">
+         <img id="sheep" src="{{ url_for('static', filename='images/Sheep.jpg') }}" alt="Sheep in a Pickle" style="max-width:100%">
+         <!-- <img src="{{ url_for('static', filename='images/{{ changes.habit }}.jpg') }}" alt="Home Logo"> -->
+         <h6 class="center-align labels">Extreme Rock and a hard place</h6>
+         <div class="btn-right center-align">
+            <a id="rock-button" href="https://psychcentral.com/blog/6-ways-to-recover-your-mental-health/" target="_blank" class="waves-effect waves-light btn btn-style"><i class="material-icons left i-made-it-icon">favorite</i>I CAN DO THIS</a>
+         </div>
+      </div>
+   </div>
 </section>
-
+<section>
+   <div class="row">
+      <div class="container">
+         <div class="divider"></div>
+         <div class="row section icon" style="background-color:lightgrey;">
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">perm_contact_calendar</i> Clean Since:
+               </div>
+               <p class="clear">{{changes.start_date}}</p>
+               <p></p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i>Describe Day 1:
+               </div>
+               <p class="clear">{{changes.day1}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i>What did you do on Day 2:
+               </div>
+               <p class="clear">{{changes.day2}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i>What helped withdrawal? Day 3:
+               </div>
+               <p class="clear">{{changes.day3}}</p>
+            </div>
+         </div>
+         <div class="row section icon">
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> How were cravings? Week 1:
+               </div>
+               <p class="clear">{{changes.week1}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> What tools did you use? Week 2:
+               </div>
+               <p class="clear">{{changes.week2}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> Feeling better or worse? Week 3:
+               </div>
+               <p class="clear">{{changes.week3}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i>Where were you safest? Month 1:
+               </div>
+               <p class="clear">{{changes.month1}}</p>
+            </div>
+         </div>
+         <div class="row section icon" style="background-color:lightgrey;">
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i>What has changed? Month 2:
+               </div>
+               <p class="clear">{{changes.month2}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> Describe the benefits Month 3:
+               </div>
+               <p class="clear">{{changes.month3}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> Year 1 summary:
+               </div>
+               <p class="clear">{{changes.year1}}</p>
+            </div>
+            <div class="col s12 m6 l3 icons">
+               <div>
+                  <i class="material-icons">help</i> Year 2 summary:
+               </div>
+               <p class="clear">{{changes.year2}}</p>
+            </div>
+         </div>
+         <div class="divider"></div>
+         <div class="section">
+            <h4 class="col s12">Overall Summary</h4>
+            <p class="col s12" style="white-space: pre-wrap;">{{changes.summary}}</p>
+         </div>
+         <div class="section">
+            <p class="centre-align source-btn">
+               <a href="https://www.positivityblog.com/happiness-quotes/" target="_blank" class="waves-effect waves-light btn btn-style">Happy quotes</a>
+            </p>
+         </div>
+      </div>
+   </div>
+</section>
 {% endblock %}
