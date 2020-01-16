@@ -20,14 +20,14 @@ body {
 
 @media only screen and (max-width: 992px) {
 	#bigNav {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 993px) {
 	#smallNav {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
@@ -54,28 +54,28 @@ body {
 
 @media only screen and (max-width: 800px) {
 	#fist {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 801px) {
 	#fist2 {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
 
 @media only screen and (max-width: 800px) {
 	#wok {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 801px) {
 	#wok2 {
-		border-radius: 8px;
+		/* border-radius: 8px; */
 		display: none;
 	}
 }
@@ -141,6 +141,11 @@ body {
 	padding: 0 0.5em;
 }
 
+@media only screen and (max-width: 350px) {
+	#deleteButton {
+		display: none;
+	}
+}
 
 /* about_us.html styling */
 
@@ -159,43 +164,6 @@ body {
 	color: indigo;
 }
 
-
-
-
-/* #viewStory {
-    font-family: "Lato", cursive;
-	font-weight: bold;
-    font-size: 16px
-
-} */
-/* 
-
-
-.light {
-	text-align: justify;
-	margin: 10px;
-}
-
-
-/* .white-text {
-  font-family: "Audiowide", cursive;
-} */
-/* .btn_small2 {
-	height: 24px;
-	width: 60px;
-	line-height: 24px;
-	margin: 5px 5px;
-	padding: 0 0.5em;
-	float: left;
-}
- */
-
-
- 
-#view {
-    /* background-color: lightgrey; */
-    /* height: 100%; */
-} 
 
 
 
