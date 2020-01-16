@@ -605,11 +605,15 @@ an auto added image chosen for each addiction. This would ensure that the home p
 ![Missing story Image](assets/defensive_design/missing_image.jpg)
 
 3. to make the choice of habit linked to a photo a required field other wise lots of empty fields.
-4. Move the edit and delete button apart in the desktop version so a user could not delete a story by mistake. 
+4. Move the edit and delete button far apart so a user could not delete a story by mistake. 
 
-![button layout](assets/defensive_design/capture.jpg)
+![button layout](assets/defensive_design/capture.jpg)- too close;
 
-5. Form design - simple without thinking too much, effortless
+In the real world it is possible that only authorised admin access will be able to delete stories in the future. 
+we will be so keen to prevent any barriers to collection of data that login may add the extra effort which will bias the results towards more functional and computer savvy users who are not the user group who will benefit most.
+The anticipated solution is likely to be hiding the delete function. For the purpose of this student project, I have removed the delete button from smaller screens so that accidental deletion is avoided. The iphone 5 device rendered the edit and delete button side by side so accidental omission was too likely. In the interest of defensive design screens smaller than 350px will not show the delete button on the delete_edit_button.html page.
+
+5. Form design - simple without thinking too much, effortless. the selection questions prompt users and keep interest rather than being baffling or confusing. 
 
 6. Form submission simplified. - The number of fields completed is not obligatory. To date there is only one required field for habit name needed for submission. 
 Considering defensive design we anticipate that this will result in a number of half completed forms being sent to the database but this in itself will help us gather information as to which questions the user and user/contributors believe to be relevant and engaging.
@@ -1157,12 +1161,18 @@ My app has been testing by various student from the Slack community and by frien
 From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
 
 
+testing extensively final time.
+Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
+
+
 app.py tests
 10 problems shown in gitpod workspace. 
 Line too long, trailing white space, extra line. All corrected. 
 
 
-style.css tests 
+style.css tests.
+most of styling was contained within components 
+template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
 
 static file images checks 
 
