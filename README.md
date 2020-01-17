@@ -819,7 +819,7 @@ js materiliaze
 8. [Gitpod]
 9. [VSC code extensions]()
 10. [IDLE]
-11. [Javacript tests](http://beautifytools.com/javascript-validator.php)- Tested to check Materialize initialization. 
+11. [Javascript](http://beautifytools.com/javascript-validator.php)- Tested to check Materialize initialization. 
 
 ### Early development testing.
 
@@ -1096,26 +1096,19 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 - delete_edit_buttons.html (Edit and delete page)
     1. HTML beautifier format ran first.
     2. HTML validator brought up an error concerned with the combination of two different styles of Materialize forms. Span tag highlighted was replaced with semantic form tag.
-    
-
-
-
-
-
-
-
-
-
-
+    3. Full responsive design tests carried out between 200-3320. 
+    4. All external links and Navbar/Navbar work for each size device.
+    5. No warnings showed in Devtools. No console errors.
+    6. Comments checked and all old comments were removed.
 
 
 - about_us.html (about us page)
     1. HTML beautifier format ran first.
     2. HTML validator brought up an error concerned with the use of main as a child element of section.  Main tag replaced.
-
-
-
-
+    3. Full responsive design tests carried out between 200-3320. 
+    4. All external links and Navbar/Navbar work for each size device.
+    5. No warnings showed in Devtools. No console errors.
+    6. Comments checked and all old comments were removed.
 
 - edit_changes.html (Edit a recovery share page)
     1. HTML validator revealed stray </div> end tag. Tag was removed.
@@ -1133,13 +1126,63 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 
     1. HTML beautifier format ran first.
     2. HTML validator brought up an error concerned with the use of main as a child element of section.  Main tag replaced.
+    3. Full responsive design tests carried out between 200-3320. 
+    4. All external links and Navbar/Navbar work for each size device.
+    5. No warnings showed in Devtools. No console errors.
+    6. Comments checked and all old comments were removed.
 
 
-![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
+- MongoDB tests
+1. categories collection emptied. all test documents deleted. Habit name checks . Habit name must match image name to load correctly in the view story cards. 
+2. changes collection checks. No null fields. Test documents removed.
+3. my_problem collection test documents deleted. 2 authentic user stories added
+4. past_problem all test documents deleted. One authentic user/contributor story added. Complete emptying of the collection did not prevent new documents being created. 
+
+All CRUD functionality is working correctly. 
+
+- app.py tests
+10 problems shown in gitpod workspace. 
+Line too long, trailing white space, extra line. Corrected. 
+
+- init.js
+(http://beautifytools.com/javascript-validator.php)- No syntax errors.
+All unused and experimental code was removed. 
+All old comments were removed.
+
+- style.css and materialize component/template final tests.
+
+
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 
 
-MongoDB tests
+- Heroku and app.py debug=true changed to debug = false. 
+
+app.py
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0',
+            port=(os.environ.get('PORT')),
+            debug=False)
+
+
+
+Heroku config vars checks 
+
+Key	Value
+
+IP	0.0.0.0
+MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+PORT	5000
+DEBUG FALSE (added in the last stages of development when errors were not a common occurance)
+
+
+
+
+
+template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
+
+static file images checks 
 
 
 
@@ -1165,16 +1208,9 @@ testing extensively final time.
 Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
 
 
-app.py tests
-10 problems shown in gitpod workspace. 
-Line too long, trailing white space, extra line. All corrected. 
 
 
-style.css tests.
-most of styling was contained within components 
-template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
-
-static file images checks 
+![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
 
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
@@ -1190,11 +1226,13 @@ To ensure a broad range of users can successfully use this site, I tested it acr
 5. Opera
 
 
-####Devices tested
+#### Devices tested
 
 Mobile phones
 - Samsung S9,
-- Iphone 6/7/7S plus,
+- Iphone 6
+- Iphone7
+- Iphone 7S plus,
 - Sony XA42
 
 Tablets tested
@@ -1212,12 +1250,18 @@ Desktop
 
 ## Version control and Heroku Deployment
 
+Github initial commit to repository and first heroku build were created on the same day. 
+Version control and Heroku deployment were initially done separately in the command line (Method one below) then as better understanding of gitpod and heroku was grasped, all significant version changes were pushed to github and automatically deployed to heroku once the app was connected to the github repository (Method two below).
 
-used old version a lot this time when errors were made and app crashed
+Version control was relied upon throughout the development process. A number of times changes were aborted and an old version was reverted to. For example github commit 50 reverted to app.py in commit 44.
 
-Using gitpod two methods of deployment were attempted. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
+Many times previous version code was reused. This was particularly useful when gitpod refresh was not working as expected which created unexpected issues. For example, styling did not appear until 90 minutes after the change had been made or was only noticeable in the deployed app. 
 
-To deploy Recipes for Recovery to heroku, the following steps were taken:
+
+
+In summary, two methods of deployment were used. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
+
+To deploy Recipes for Recovery app to heroku, the following steps were taken:
 
 ### Method one . For each version I initially pushed separately to github and and heroku. 
 
@@ -1233,7 +1277,7 @@ I began deployment via the CLI in gitpod workspace terminal using the following 
 
 - git commit -m "initial commit"
 
-- git remote add heroku https://git.heroku.com/hobbit-scub.git
+- git remote add heroku https://git.heroku.com/fallen-but-not-broken
 
 - git push -u heroku master
 
@@ -1244,34 +1288,35 @@ I began deployment via the CLI in gitpod workspace terminal using the following 
 - echo web: python app.py > Procfile
 
 
-
-Initially I separately added to the github repository amd to heroku.
+Initially I separately added to the github repository.
 
 git add 
 git commit -m ""
-git remote add (my git repository)
+git remote add (my repository named fallen)
 git push -u origin master
 
 ### Method two 
 
-When I tried to work out how to combine git push and heroku deploy I worked out a simpler method possible in the gitpod workspace. 
+When I tried to work out how to combine git push and heroku deploy I worked out a simpler method possible using the SOURCE CONTROL:Git branch icon in the gitpod workspace.
 
 This was achieved by connecting heroku to github and selecting automatic deploys. 
 
+![Github and heroku connected](assets/testing/heroku_and_github_connect.jpg)
+
 From that point on gitpod push to github automatically deployed to heroku and so github version control nad heroku build log mirrored each other. 
 
-![Github and heroku link](version_save.png)
+![Gitpod and github/heroku commit/deploy](assets/testing/version_save.png)
 
-![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
+1. click on branch icon 
+2. Hover on changes and click + (plus) to stage changes
+3. Type commit message 
+4. Hover on tick reveals commit tooltip. Click to commit.
+5. Hover on more actions '...' click reveals dropdown with push option. Click on push.
 
-![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
+Check that Build has succeeded in heroku dashboard. It may take a couple of minutes.
+Open app to check changes. Do not forget to refresh. Often F5 is needed to see the recent changes in the deployed app. 
 
-
-
-Git hub began using the CLI in gitpod but learned that gitpod can commit directly to Github very simply using the SOURCE CONTROL:Git branch icon in the workspace.
-
-
-
+Step by Step deployment from fresh gitpod terminal workspace would be. 
 
 1. Checked requirements.txt file using the terminal command pip freeze > requirements.txt.
 
@@ -1294,14 +1339,22 @@ Key	Value
 IP	0.0.0.0
 MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
 PORT	5000
-DEBUG	FALSE (added in the last stages of development when errors were not a common occurance)
-
 
 In the heroku dashboard, click "Deploy".
 
 In the "Manual Deployment" section of this page, made sure the master branch is selected and then click "Deploy Branch".
 
 The site is now successfully deployed.
+
+
+
+
+
+
+
+
+
+
 
 
 
