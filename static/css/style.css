@@ -131,8 +131,9 @@ body {
 
 
 #adminButton {
-	margin-right: 150px;
-    background-color: darkred;
+	/* margin-left: 150px; */
+    background-color: darkslategrey;
+    color: orange;
 }
 
 
