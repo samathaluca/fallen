@@ -129,6 +129,14 @@ body {
 	margin-right: 150px;
 }
 
+
+#adminButton {
+	margin-right: 150px;
+    background-color: darkred;
+}
+
+
+
 #deleteButton {
 	margin-right: 0px;
 }
