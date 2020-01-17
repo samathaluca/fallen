@@ -1,7 +1,7 @@
 {% extends 'base.html' %} {% block content %}
 <!-- replicated add_changes form with data loaded from changes MongoDb collection. The form allows edits to be inputed then saved in the database when the edit button is clicked. -->
 <h3 class="center-align">Edit a recovery share</h3>
-<h4>Please only edit stories you know to untrue or threatening</h4>
+<h5 class="center-align">Please only edit stories you know to untrue or threatening</h5>
 <div class="row">
    <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
       <div class="input-field col s12">
