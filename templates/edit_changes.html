@@ -1,6 +1,8 @@
 {% extends 'base.html' %} {% block content %}
 <!-- replicated add_changes form with data loaded from changes MongoDb collection. The form allows edits to be inputed then saved in the database when the edit button is clicked. -->
 <h3 class="center-align">Edit a recovery share</h3>
+<h4>Please only edit or delete stories you know to untrue or threatening</h4>
+<p>No login has been added to this site so you may join in anonymously. If the stories are corrupted falsely or maliciously, barriers will need to be put in place that may limit useful data being collected to help others. Please email us (samfix108@gmail.com)to raise concerns rather before amending or deleting anything other than your own story.</p>
 <div class="row">
    <form action="{{ url_for('update_changes', changes_id=changes._id) }}" method="POST" class="col s12">
       <div class="input-field col s12">
