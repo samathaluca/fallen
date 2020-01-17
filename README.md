@@ -52,7 +52,7 @@ The different types of addiction options currently added are:
 
 ## Quick guide
 #### Home Page
-- **Tell your story** invites users to do just that. 
+- **Early days** invites users to do tell their story anonymously. 
 - **Recovery Stories** links to step by step solution/identification guide presented as a list of collapsible questions and answers.
 - **Share you recovery** links to a form for contributors to create a recovery story. 
 - Once shared each recovery story is presented in three formats
@@ -99,7 +99,7 @@ The different types of addiction options currently added are:
 - Privacy while I become ready to admit and accept that I have a problem.
 - Anonymity so that there is no risk of upsetting parents, partners, employers, collegues or friends. 
 - If I have social anxiety, the current recovery options that are widely avaiable will be a struggle for me, for example group therapy or 12 step meetings.
-- I have tried recovery agencies, meidcal professionals or counsellors but their way does not work for me. 
+- I have tried recovery agencies, medical professionals or counsellors but their way does not work for me. 
 - I do not feel I can attend public group therapy or recovery agencies as I may bump in to an abuser or person from my past who will pose risk to me and my family. 
 - Confidentiality so that I do not risk my prospects or future opportunities by seeking help through professionals and having details on my medical records. 
 - As a young person I believe that I have different needs, I may be more likely to accept that I am addicted to social media, gaming, self harm  and porn addiction. 
@@ -317,7 +317,7 @@ The base.html navbar is loaded at the top of each page. The base.html footer app
 - Navigation bar links:
 
 1. **Home**- Logo designed with HOME text characters to help guide users. [Home page](http://fallen-but-not-broken.herokuapp.com/)
-2. **Tell your story**  [Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
+2. **Early Days**  [Early days/Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
 3. **Recovery stories** [Recovery stories](https://fallen-but-not-broken.herokuapp.com/changes)
 4. **Share you recovery** [Share your recovery ](https://fallen-but-not-broken.herokuapp.com/add_changes)
 5. **Gratitude List** [Gratitude List](https://fallen-but-not-broken.herokuapp.com/gratitude_list)
@@ -388,7 +388,7 @@ ________________________________________________________________________________
 
 ##### my_problem.html page
 
-[Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
+[Early Days/Tell your story](https://fallen-but-not-broken.herokuapp.com/my_problem)
 
 A Materialize select form with collapsible menu. User inputs their addiction story.
 
@@ -468,7 +468,7 @@ Nav bar and footer rendered within each and every page are in the base.html temp
 
 A *nav* bar links to  different forms (listed below) and information pages.
 
-##### Tell Your Story page (my_problem.html)
+##### Early days/tell your story page (my_problem.html)
 A form to gather stories from user seeking recovery. 
 ##### Recovery stories page (changes.html).
 Containing a list of contributor's recovery stories
@@ -556,7 +556,7 @@ Materiliaze templates and components generally have colours of background and te
 ### Form page example Wireframe
 
 The form page layout is the same rendered on desktop/tablet and mobile excepting the navbar which converts to side navbar on tablets and mobile devices.
-Form pages include tell your story/share your story/ edit story/ edit and delete story and soul searching.
+Form pages include early days story/share your story/ edit story/ edit and delete story and soul searching.
 
 [Form page Wireframe](assets/balsamiq/form_pages_example(my_problem.html).png)
 
@@ -577,9 +577,8 @@ Form pages include tell your story/share your story/ edit story/ edit and delete
 [Story Detail page tablet](assets/balsamiq/story_detail_mobile.png)
 
 
-### Defensive design planning.
+## Defensive design planning.
 
-Defensive design
 Defensive design is the practice of planning for contingencies in the design stage of a project or undertaking. 
 Essentially, in the project, it would be the practice of anticipating all possible ways that an end-user could misuse the app, then designing the app so as to make such misuse impossible, or to minimize 
 the negative consequences. For example, each opportunity for user input was developed expecting users to abuse it deliberatley or accidentally. Defences were put in place to minimise the opportunity for this happening. 
@@ -592,7 +591,7 @@ Defensive design considerations:
 - Input sanitisation/validation
 - Planning for contingencies
 - Anticipating misuse
-- Authentication (considered but not included yet)
+- Authentication (considered but not included considering the user zealous privacy/anonymity worries)
 
 The most significant defensive design decisions were
 1. To make alias a limited character number.
@@ -610,8 +609,16 @@ an auto added image chosen for each addiction. This would ensure that the home p
 ![button layout](assets/defensive_design/capture.jpg)- too close;
 
 In the real world it is possible that only authorised admin access will be able to delete stories in the future. 
-we will be so keen to prevent any barriers to collection of data that login may add the extra effort which will bias the results towards more functional and computer savvy users who are not the user group who will benefit most.
-The anticipated solution is likely to be hiding the delete function. For the purpose of this student project, I have removed the delete button from smaller screens so that accidental deletion is avoided. The iphone 5 device rendered the edit and delete button side by side so accidental omission was too likely. In the interest of defensive design screens smaller than 350px will not show the delete button on the delete_edit_button.html page.
+I am keen to prevent any barriers to collection of data. Login adds extra effort plus some online trust both of which bias the results towards more functional and computer savvy users who are not the user group who will benefit most.
+The anticipated solution was to hide delete function. For the purpose of this student project, I have removed the delete button from smaller screens so that accidental deletion is avoided. The iphone 5 device rendered the edit and delete button side by side so accidental omission was too likely. In the interest of defensive design screens smaller than 350px will not show the delete button on the delete_edit_button.html page.
+Posting my project for peer review in slack promoted a significant debate on whether or not no login effects defensive design. 
+One fellow student posted the reminder:
+
+Important Notes No authentication is expected for this project. The focus is on the data, rather than any business logic.
+
+I will comment on this in testing in more detail but 'login' in search bar reveals the thread and debates from different students. Yoni_CI clarified the issue for me and I decided that 
+login will be a barrier to collecting data that is defined in the project purpose. 
+
 
 5. Form design - simple without thinking too much, effortless. the selection questions prompt users and keep interest rather than being baffling or confusing. 
 
@@ -759,7 +766,6 @@ This may seem a large number but I believe that a huge dose of visuals will gene
 e.g.
 ![Samaritans free phone number](assets/future_features/samaritans.jpg)
 
-<!-- ![AA local phone number](assets/future_features/aa.jpg) -->
 
 - Audio and or video shares . Either as links or embedded.
 
@@ -798,14 +804,14 @@ js materiliaze
 12. [PHOTOSHOP]
 13. [FAVICON]
 14. [MARKDOWN](https://daringfireball.net/projects/markdown/syntax#img) -Language for Readme.md file
-15. [Pymongo](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
+15. [PYMONGO](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
 16. [PIP and Pypi libraries]
-17. [Jquery](https://code.jquery.com/jquery-3.3.1.slim.min.js) -This added functionality to the site e.g. navigation toggle.
-18. [Jinja](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
-19. [Beautifier](https://www.freeformatter.com/css-beautifier.html) -  to check code and improve code readability.
-20. [Balsamiq](https://balsamiq.com/wireframes/) - wireframe design
-21. [Hex codes](https://www.w3schools.com/colors/colors_picker.asp) - different colours experimentation.
-22, [Google Fonts](https://fonts.google.com/)
+17. [JQUERY](https://code.jquery.com/jquery-3.3.1.slim.min.js) -This added functionality to the site e.g. navigation toggle.
+18. [JINJA](https://jinja.palletsprojects.com/en/2.10.x/) - to simplify displaying data from the backend of this project smoothly and effectively in html.
+19. [BEAUTIFIER](https://www.freeformatter.com/css-beautifier.html) -  to check code and improve code readability.
+20. [BALSAMIQ](https://balsamiq.com/wireframes/) - wireframe design
+21. [HEX CODES](https://www.w3schools.com/colors/colors_picker.asp) - different colours experimentation.
+22, [GOOGLE FONTS](https://fonts.google.com/)
 
 
 ## Testing
@@ -816,9 +822,9 @@ js materiliaze
 5. [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
 6. [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 7. [PEP8 online](http://pep8online.com)- Not secure but ok for testing console errors.
-8. [Gitpod]
-9. [VSC code extensions]()
-10. [IDLE]
+8. [Gitpod](https://www.gitpod.io/)- IDE used throughout the project. 
+9. [VSC code extensions](https://code.visualstudio.com/)- To est code when gitpod was not working well. 
+10. [IDLE](https://www.python.org)
 11. [Javascript](http://beautifytools.com/javascript-validator.php)- Tested to check Materialize initialization. 
 
 ### Early development testing.
