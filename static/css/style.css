@@ -121,7 +121,11 @@ body {
 
 /* delete_edit_button.html */
 
-#editButton #aboutButton {
+/* #editButton, #aboutButton {
+	margin-right: 150px;
+} */
+
+#editButton {
 	margin-right: 150px;
 }
 
@@ -166,3 +170,7 @@ body {
 	font-family: "Lato", sans-serif;
 	color: black;
 }
+
+.clear {
+  margin: 0;
+  padding: 0; }

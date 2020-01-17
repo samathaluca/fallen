@@ -1,7 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 <!-- collapsible list of all the recovery stories loaded from the database with edit and delete buttons.  -->
-
 <h4 class="center-align">Edit and Delete</h4>
 <h5 class="center-align">Please only edit or delete stories you know to untrue or threatening</h5>
 <ul class="collapsible" data-collapsible="expandable">
@@ -12,12 +11,10 @@
             <i class="material-icons">expand_more</i> <strong>{{changes.alias}}</strong> - {{changes.habit}}
          </div>
          <div class="col s4">
-            <!-- <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a> -->
             <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small green">Edit</a>
          </div>
          <div class="col s4">
             <a href="{{url_for('delete_changes', changes_id=changes._id)}}" id="deleteButton" class="waves-effect waves-light btn btn_small red">Delete</a>
-            <!-- <a href="{{url_for('edit_changes', changes_id=changes._id)}}" id ="editButton2" class="waves-effect waves-light btn btn_small blue">Edit</a> -->
          </div>
       </div>
       <div class="collapsible-body">

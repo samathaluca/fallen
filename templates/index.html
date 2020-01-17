@@ -1,9 +1,5 @@
-
 {% extends 'base.html' %}
 {% block content %}
-
-
-
 <header>
 <!-- Concept of recovery recipe image with text and external link. Version for Desktop-->
     <div class="row">
@@ -33,21 +29,18 @@
             <div id="wok2" class="card hoverable">
                 <div class="card-image">
                     <img src="static/images/FryingPan.png" alt="Recovery Wok" style="width:100%;height:100%;">
-                <!-- <span class="card-title"><h4>Word of Mouth</h4></span> -->
                 </div>
                 <div class="card-content">
                     <h4>Word of Mouth</h4>
                     <h5>No one understands better than someone else who walked in your shoes.<br>Practical ideas from people who walked the walk, not just talked the talk.<br>Proven ingredients and methods that work.</h5>
                 </div>
                 <div class="card-action">
-                <!-- <h3>Recipes for Recovery</h3> -->
                     <a href="https://www.healthline.com/health/addiction/recognizing-addiction#early-signs" target="_blank">Recognising if you have an Addiction Problem</a>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 <section>
 <!--Section with image of burning hand and text. Version for Desktop-->
     <div class="row">
@@ -69,7 +62,6 @@
             </div>
         </div>
     </div>
-    
     <!--Section with image of burning hand and text. Version for Mobiles-->
     <div class="row">
         <div class="col s12 m12 blue-grey-text">
@@ -88,8 +80,7 @@
         </div>
     </div>
 </section>
-        
-<!-- main section with recovery stories. Filter dropdown option to select relevant stories . Tell you story button invite. -->
+<!-- main section with recovery stories. Filter dropdown option to select relevant stories. Tell you story button invite. -->
 <main class="container">
     <section class="row" style="background-color:lightgrey;">
         <div class="col s12 m4">
@@ -131,7 +122,6 @@
     </section>
 </main>
 <!-- Lots of recovery stories stored in MongoDB presented in cards-->
-
 <div class="container">
     <div class="row">
         <div class="col s12">
@@ -142,7 +132,6 @@
                 {% for changes in changes %}
                 <div class="col s6 m3">
                     <div class="card hoverable">
-                     <!-- <div class="card hoverable" style="width:100%; height:335px;"> -->
                         <div class="card-image">
                             <img src="static/images/{{ changes.habit }}.jpg" alt="Habit Picture">
                             <div id="shadow" class="card-title">
@@ -162,7 +151,6 @@
         </div>
     </div>
 </div>
-
 <!-- Basic Materialize grey card section with links and informative quotes -->
 <section class="info-cards">
     <div id="section-top" class="container">
@@ -233,9 +221,6 @@
             </div>
         </div>
     </div>
-
-    
-
     <!--   Icon Section   -->
     <div class="container">
         <div class="row">

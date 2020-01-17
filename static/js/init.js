@@ -1,4 +1,4 @@
-// This file includes the following necessary jquery to enable the Materialize javascript  included in the project to initialize.
+// This file includes the necessary JQuery to enable the Materialize javascript components in the project to initialize.
 
 $(document).ready(function() {
 				$('.collapsible').collapsible();

@@ -801,8 +801,8 @@ js materiliaze
 9. [GITHUB](https://github.com) - used for version control
 10. [VSC](https://code.visualstudio.com/) used to help format and beautify the code using extensions. Also as a back up IDE when internet access was limited.
 11. [GIMP](https://www.gimp.org) -This was used for resizing, cropping, fading and changing images to fit the site.
-12. [PHOTOSHOP]
-13. [FAVICON]
+12. [PHOTOSHOP](https://www.adobe.com/uk/products/photoshop.html) - For digital image production.
+13. [FAVICON](http://favicon.io/)- used to develop tab icons which were replaced by photoshop 64px by 64px image. 
 14. [MARKDOWN](https://daringfireball.net/projects/markdown/syntax#img) -Language for Readme.md file
 15. [PYMONGO](https://api.mongodb.com/python/current/) - to make communication between Python and MongoDB possible
 16. [PIP and Pypi libraries]
@@ -1213,11 +1213,6 @@ From doing this I have been able to confidently say that my app is fully respons
 testing extensively final time.
 Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
 
-
-
-
-![Github and heroku link](assets/testing/heroku_and_github_connect.jpg)
-
 ## Compatibility
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
 
@@ -1255,6 +1250,10 @@ Desktop
 
 
 ## Version control and Heroku Deployment
+
+[Github repository](https://github.com/samathaluca/fallen)
+[Herokuapp.com](https://fallen-but-not-broken.herokuapp.com/)
+
 
 Github initial commit to repository and first heroku build were created on the same day. 
 Version control and Heroku deployment were initially done separately in the command line (Method one below) then as better understanding of gitpod and heroku was grasped, all significant version changes were pushed to github and automatically deployed to heroku once the app was connected to the github repository (Method two below).
@@ -1352,7 +1351,28 @@ In the "Manual Deployment" section of this page, made sure the master branch is 
 
 The site is now successfully deployed.
 
+### Environment variables, dependencies and any other differences between the dev and live versions.
+The only difference is that the MongoDb key values are stored in env.py for dev version (.gitignore file ensures MongoDB password is not revealed on github). For the live version MongoDB key values are stored and accessed in the config vars. 
 
+## Credits
+### Content
+The recovery recipes (recovery stories) were written anonymously by people in recovery. All other content is original. 
+### Media
+The photograph images used in this site were mostly obtained from pixabay.com. 
+All the wok/fire digital images and logos were created to bespoke spec, using photoshop, by Paris Lyons. 
+The photograph/digital mix images were created using the image manipulation program GIMP (gimp.org) from google and pixabay images origins. 
+
+### Inspiration
+I received inspiration for this project after years personally witnessing the struggle people have to find recovery from addiction, in all of the many forms. The prognosis for recovery is very poor and data collection to find out why could make a difference. 
+A few days before submitting my final project, my neighbour set his house on fire cooking while drunk. He has been trying to stop drinking for many years. After hearing his smoke alarms through the walls, we looked over the fence and saw his house filled with smoke. My neighbour had collapsed unconscious.
+I called 999 and watched 3 fire engines, 2 ambulances and 2 police cars arrive. The fire officer came round and told me that my neighbour had put his last drink on the calender the day he nearly burnt both our houses down. 
+My neighbour called me the next day and could not remember anything other than getting a taxi back from the hospital and going to buy a morning bottle of vodka.
+
+### Acknowledgements
+Paris Lyons for the digital images, My mentor Brian Macharia for his thorough checks and clear direction.
+Thank you for the invaluable new screen share sessions offered by Code institute. Helpful when I hit a brick wall in my understanding a) when I was new to gitpod with Michael and Luca b) getting my update function working with Tim. 
+The tutor team support has been excellent. Knowing I can access Michael very early and Anna in the evenings has meant no problem has gone unsolved for long. 
+Slack has been an asset and the final decision making help at the end the final push. 
 
 
 
