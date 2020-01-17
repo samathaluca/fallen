@@ -23,8 +23,9 @@ def index():
     pulls changes and categories collections from the MS3-project mongoDB to
     render in index.html.
     '''
-    return render_template(
-        'index.html', categories=mongo.db.categories.find(), changes=mongo.db.changes.find())
+    return render_template('index.html',
+                           categories=mongo.db.categories.find(),
+                           changes=mongo.db.changes.find())
 
 
 # Tell your story page = my_problem.html
