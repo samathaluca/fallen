@@ -7,7 +7,8 @@ $(document).ready(function() {
 				$('.collapsible').collapsible();
 				$('select').formSelect();
 				$('.sidenav').sidenav();
-				$('.modal').modal();
+                $('.modal').modal();
+                $('.tap-target').tapTarget();
 				$('#alias').characterCounter();
 				$(".datepicker").datepicker({
 					yearRange: 15,

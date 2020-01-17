@@ -67,32 +67,30 @@
                </div>
             </div>
          </div>
-<div>
-<div id="modal1" class="modal1">
+
+<div id="modal1" class="modal">
             <div class="modal-content">
-               <h4>No Unauthorised access beyond this point. For authorisation or concerns please email samfix108@gmail.com</h4>
-               <p>Only untrue or abusive stories should be removed. Please only edit stories you have contributed to.</p>
+<h5>Strictly Admin only</h5>
+      <p>No unauthorised access beyond this point. Please note only untrue or abusive stories should be amended or deleted. Recovery stories can be gritty and heart wrenching but the acceptance of truth is key</p>
+    
             </div>
             <div class="modal-footer">
-            <a href="{{ url_for('delete_edit_buttons') }}">AGREE</a>
+            <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
                <!-- <a href="{{ url_for('past_problem') }}" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
             </div>
          </div>
          <!-- Modal Trigger -->
-         <button data-target="modal1" id="adminButton" class="btn modal-trigger">ADMIN ONLY</button>
+         <button data-target="modal1" id="aboutButton" class="btn modal-trigger">DIG DEEPER</button>
          
          
 </div>
 
 
-
-
-
-         <div class="footer-copyright">
+         <!-- <div class="footer-copyright">
             <div class="container">
                <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
             </div>
-         </div>
+         </div> -->
       </footer>
       </div>
       <!--  Scripts-->
@@ -103,3 +101,12 @@
    </body>
 </html>
 
+ <a id="menu" class="waves-effect waves-light btn btn-floating" ><i class="material-icons">menu</i></a>
+
+  <!-- Tap Target Structure -->
+  <div class="tap-target" data-target="menu">
+    <div class="tap-target-content">
+      <h5>Admin only</h5>
+      <p>Authorised access only beyond this point. Please note only untrue or abusive stories should be amended or deleted. Recovery stories can be gritty and heart wrenching but the truth is an</p>
+    </div>
+  </div>
