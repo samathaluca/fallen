@@ -57,7 +57,9 @@ The different types of addiction options currently added are:
 - **Share you recovery** links to a form for contributors to create a recovery story. 
 - Once shared each recovery story is presented in four formats
     1. Within the complete list of recovery stories (changes.html) ![complete List](assets/quick_guide/every_story.jpg)
-    2. Within the filtered list of recovery stories (change.html) if the type of addiction/habit is selected (filtered changes.html). ![filtered stories](assets/quick_guide/filter_story.jpg) ![filtered stories](assets/quick_guide/view_story.jpg)
+    2. Within the filtered list of recovery stories (change.html) if the type of addiction/habit is selected (filtered changes.html). 
+    ![filtered stories](assets/quick_guide/filter_story.jpg) 
+    ![filtered stories](assets/quick_guide/booze_only.jpg)
     3. On home page as a small card with image, alias and habit. ![filtered stories](assets/quick_guide/view_story.jpg)
     4. A single story is presented on a single story details page reached by following the view story link in each card on the home page. ![filtered stories](assets/quick_guide/story_details.jpg)
 - **Gratitude list** is offered as a tool for contributors.
@@ -76,30 +78,30 @@ The different types of addiction options currently added are:
 #### All visitors to the site will expect/want/need:
 
 - The images and text content to be helpful and bring about a positive emotional response or interesting experience. 
-- To feel more informed, postive, connected and engaged after visiting the site.
+- To feel more informed, positive, connected and engaged after visiting the site.
 - To easily find what I am looking for. I want the layout of the site to make sense so I am not confused, frustrated or bored using it.
 - The information I am presented with to be laid out in a way that is easy for me to navigate, so that I find what I need quickly and efficiently then return to the home page immediately. 
 - External links to information that will be helpful and support the claims cited in the content of the section I am in to alleviate doubts. 
 - I do not want to leave the site when I follow the links then lose the tab for the relevant original page.
 - As a user accessing this site from a mobile phone or tablet, I want the site to have been designed responsively so that it is still easy to navigate and use on my smaller devices. 
-- I do not want the format to change too much when I revisit it on a friends device if I am recommending it. 
+- I do not want the format to change too much when I revisit it on a friend or collegue's device if I am recommending it. 
 
 #### Users suffering from addiction will expect/want/need:
 
 - I am often agitated so do not want to spend too long filling in forms or struggle to submit them. 
-- I am lonely and want to feel part of a community. 
+- I am lonely and want to feel part of a community. I want to find my voice and to feel heard.
 - I need to gain understanding, insight, awareness in to my addiction.
 - With the current problems accessing detox and rehab I am willing to try other methods when I am desperate. 
 - My sleep pattern is erratic and I want access to information 24/7 not during office hours.
 - When I want information and ideas of how to get clean and sober I want them instantly. I do not want to make appointments in two weeks time.  
 - I need recognition that I am an individual and that I have a voice and something to offer. I can achieve this by completing my personal story. 
-- I want to feel understood, connected and hope.
+- I want to feel understood, connected and hopeful.
 - I want to believe that there is an awareness that addiction takes many forms. 
 - I may want to be able to filter out all the stories that have no relevance or interest to me easily. OR
 - I may be interested to learn that of the 21 addictions featured the method of recovery, feelings and distress are similar.
 - Privacy while I become ready to admit and accept that I have a problem.
 - Anonymity so that there is no risk of upsetting parents, partners, employers, collegues or friends. 
-- If I have social anxiety, the current recovery options that are widely avaiable will be a struggle for me, for example group therapy or 12 step meetings.
+- If I have social anxiety, the current recovery options that are widely available will be a struggle for me, for example group therapy or 12 step meetings.
 - I have tried recovery agencies, medical professionals or counsellors but their way does not work for me. 
 - I do not feel I can attend public group therapy or recovery agencies as I may bump in to an abuser or person from my past who will pose risk to me and my family. 
 - Confidentiality so that I do not risk my prospects or future opportunities by seeking help through professionals and having details on my medical records. 
@@ -124,11 +126,11 @@ The different types of addiction options currently added are:
 - If I live in a rural or isolated part of the world I many only access intervention when I am in crisis. 
 - Me and my friends have tried to get in to recovery countless times I have given up on the available treatments that have not worked. 
 - I want to see how others have done it because I do not know anyone who has got clean. All my friends use too.
-- I feel so ashamed. I could never admit to myself that it is a real problem for me I need to see similarities in stories to bust my denial.
-- I have recognised my problem from the outset and am to the app from the earliest stages of seeking help for an addiction problem. 
+- I feel so ashamed. I could never admit to myself that it is a real problem for me I need to see similarities in stories to bust my denial. OR
+- I have recognised my problem from the outset and looked to the app from the earliest stages of seeking help for an addiction problem. 
 - My aim is to stop the problem escalating. 
 - I may initially read the stories and believe I am not that bad yet the seed is sewn.  In the meantime I may try to moderate my using or reach out and try to get support in the earlier stages of the progressive illness.
-- I may still be in denial and may be put off by the term addiction so the app offers habit or problem or poison as alternative term to maximise the chance of engagement.
+- I may still be in denial and may be put off by the term addiction so the app offers habit or problem as alternative term to maximise the chance of engagement.
 - I am starting the process of recovery in my mind. Coming to believe that I have not got myself down a blind ally and recovery is possible. 
 - In summary, I want it but I want it on my terms and now. I want to hear this from someone who has walked in my shoes.
 
@@ -144,12 +146,12 @@ This means that when getting addiction free, I learnt that helping others is the
 - I need to feel relief that my life has changed.
 - I need to feel useful, healthy and a sense of gratitude that is essential to maintain my current level of good mental health.
 - I want to help other addicts to recover by sharing my experience, strength and hope. 
-- I beneift from access to information and links that are interesting and add to my knowledge of my addiction. 
+- I benefit from access to information and links that are interesting and add to my knowledge of my addiction. 
 - I will be reminded that I am taming the beast with added tools shared by other addicts. 
 - I want to know that my information will not be sold and that it is open source for the benefit of everyone, not for money or prestige. 
 - I would want to know that anyone may visit the site and complete the forms to get the benefits of gratitude and usefulness.
 - I do not want to spend too long filling in forms or struggle to submit them. 
-- I have previously found professionals and well meaning help made me more dependent as their choices become more important than my own. 
+- I have previously found professionals, and well meaning help, made me more dependent as their choices become more important than my own. 
 - I have seen the failings of currently available treatments and would like to support data collection to help develop new strategies.
 - I felt seized by the choices made by professionals for me. How can anyone who does not understand that feeling of desperation really help?
 
@@ -158,7 +160,7 @@ This means that when getting addiction free, I learnt that helping others is the
 - I expect to be able to see that the app is set out to provide and gather an abundance of useful information to help treat addiction. 
 - I want to know that the information is current, independent, unbiased and not influenced in any way that could effect the reliability or feasibility.
 - I want to be able to see the questions, the consistency of answers in the stories section and how encompassing and simple to understand the questions are in the forms.  
-- As a providers of currently available treatment for addictions I know that, the current solutions  for this global epidemic are costly (treatment costs for e.g. The Priory hospital are £18,000 per month). Depsite this high cost, I see that most of the time the treatments and therapies for addiction are ineffective. I want information from recovered addicts to be able to offer different solution strategies.
+- As a providers of currently available treatment for addictions I know that, the current solutions  for this global epidemic are costly (treatment costs for e.g. The Priory hospital are £18,000 per month). Despite this high cost, I see that most of the time the treatments and therapies for addiction are ineffective. I want information from recovered addicts to be able to offer different solution strategies.
 - I want to understand why/what will treat one person yet kill another. What are people who recover doing differently? is their background relevant to which strategy to use to treat them?
 - Frightening studies have revealed that women who receive the currently available treatment for alcohol addiction are more likely to die than women who do not get any treatment.
 David Nutt (the government advisor sacked for claiming that horse riding is more deadly than ecstasy) states that when , for example, Amy whitehouse got clean and sober, her tolerance went. I need data to understand why this is happening?
@@ -169,25 +171,25 @@ David Nutt (the government advisor sacked for claiming that horse riding is more
 - As an academic I would want to know that the collection of data has not been limited by sex, sexual orientation, creed, religion, lack or religion. 
 - Anything that diminished the potential accuracy and usefulness of the collected data was eradicated. i want to see that this has been considered when setting out the questions.
 - Because of the stigma and criminality of addiction I am aware that addicts will lie to me. Rarely revealing the extent of their using until they are in crisis. This has resulted in me misdiagnosing and treating the wrong issue. 
-For example, a patient who is smoking large amounts of undeclared crack cocaine but presents at the doctors with insomnia theefore be mistakenly treated with sleeping tablets. If the real problems is not tackled recovery is impossible. 
+For example, a patient who is smoking large amounts of undeclared crack cocaine but presents at the doctors with insomnia therefore be mistakenly treated with sleeping tablets. If the real problems is not tackled recovery is impossible. 
 - Currently most treatments available for drug addicts involve more drugs. This has been likened to offering a drowing man a drink of water. 
 - The more information from people who recovered the better the chances will be of finding a recipe tailored to the specific needs and circumstances of a patient.  
-- The data collected will reveal whether or not there is a more effective method of treating addiciton without the need for prohibitely expensive studies which the NHS can not afford and the drug companies or treatment centres will avoid in case the findings are unfavourable to them.
-- Addicts will explain it is easy to get clean but staying clean is the battle. We need more informatin to give to addicts to help stop them relapsing. 
+- The data collected will reveal whether or not there is a more effective method of treating addiction without the need for prohibitively expensive studies which the NHS can not afford and the drug companies or treatment centres will avoid in case the findings are unfavourable to them.
+- Addicts will explain it is easy to get clean but staying clean is the battle. We need more information to give to addicts to help stop them relapsing. 
 - With the dwindling availabilty of funding to treat addiction and mental health, validated evidence, gathered and made readily available could be a real help.
-- The current treatment programmes demand commitment that is unachievebale and unaffordable for normal life so are reserved for people in crisis rather than tackling the problem early. I want to be able to offer prevention and healing before crisis.
+- The current treatment programmes demand commitment that is unachieveable and unaffordable for normal life so are reserved for people in crisis rather than tackling the problem early. I want to be able to offer prevention and healing before crisis.
 - Early intervention can help stop issues escalating and prevent huge costs to the addict and the people around them including families, work places, social service, the NHS, the emergency services, hospitals and the criminal justice system.
-- Addiction is a progressive illness, left untreated most likely outcome will be prisons, institutions and  death by direct consequences, accident or suicide. I want data to be able to Offer realistic, achievable strategies to patients.
+- Addiction is a progressive illness, left untreated most likely outcome will be prisons, institutions and  death by direct consequences, accident or suicide. I want data to be able to offer realistic, achievable strategies to patients.
 - I work in A&E at anyone time we have numerous addicts waiting to be treated. Ambulance and medical resources would benefit from anything that may help. 
 
 ### Feedback and comments from user groups.
 
 People who are suffering from addiction, self destructive habits or problems with a substance or activity, have been asked whether or not this app could help. 
 The response of 100% people asked, who have current addictions to exercise, gaming, social media, alcohol, prescription and illegal drugs without exception fed back that this app will be useful. 
-Feeback comments included exciting, amazing, impressive, interesting and realistic.
+Feedback comments included exciting, amazing, impressive, interesting and realistic.
 
 Users and User/contributors  have been asked for their opinion during development. Specifically focusing on the questions in the forms. Questions have been amended to maximise engagement and submisson of the forms. 
-The main questions were who is collecting the data and why so I added the About Us page. 
+The main questions were 'who is collecting the data and why?' hence addition of the About Us page. 
 
 Academics have been asked whether this could be useful and how development should be shaped. Their guidance was considered throughout.
 
@@ -273,7 +275,7 @@ Anyone can remove it who is offended by it. There is an appreciation that this m
 
 The strategy considers the fact that the app may prove very popular and suddenly attract a lot of stories added within a short time. Fresh data can be continuosly uploaded while keeping a balance of what is available to view on the app by adding new collections to the MongoDb and changing the python to redirect the completed forms to a new collection within the database project. We can then change between old or fresh stories viewable and keeping the data store in tact. 
 
-If the app proves to be useful, the strategy would be similar to trip advisor whereby a user can visit the site and see all the stories but to add their story to be included within recovery stories they would be required to login. 
+If the app proves to be useful, the strategy could be similar to trip advisor whereby a user can visit the site and see all the stories but to add their story to be included within recovery stories they would be required to login. Alternatively, a suggestion discussed in slack would be to maintain the wikipedia open forum ability to add articles. 
 
 5. Strategic Future Goals:
 - Analysis of the data collected.
@@ -306,7 +308,7 @@ The scope of the project has been designed so that it is not throttled by the ne
 
 Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome page, with awarenes of the short attention span of the users. 
 Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
-To achieve this, user centered design methods, such as usability tests, user/contributor research and user flow diagrams. 
+To achieve this, user centered design methods were implemented, such as usability tests, user/contributor research and user flow diagrams. 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 
 ![IA](assets/balsamiq/IA_skeleton.png)
@@ -535,6 +537,8 @@ This may seem a large number but I believe that a huge dose of visuals will gene
 The font was been adjusted a number of times during the design phase. The recommended Materialize template and component font always appeared optimal. Materialize uses Roboto 2.0 as a standard font. 
 Audiowide was used sparingly due to being an intrusive looking font. It was used to command attention e.g. to check that required fields in form were completed to avoid aborted submission attempts.
 Lato and Ubuntu were chosen to add distinctive design to sections when needed with san serif back up. They were used to add a little contrast for interest.  
+
+In the final stages of development, user testing feedback influenced me to remove audiowide and Ubuntu fonts and test permanent marker font style to get attention e.g. to check required fields were filled in forms.
 
 Extensive colour work has been tested during development. Each time users were asked the simple shaded greys and white option was prefered. Previous github versions may display colours as far ranging as purple and lime green. These were abandoned after user feedback.
 Research shows that educational and information site templates on trend recommend duotones and the colour scheme adopted. 
