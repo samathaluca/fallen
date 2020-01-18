@@ -635,9 +635,12 @@ login will be a barrier to collecting data that is defined in the project purpos
 Considering defensive design we anticipate that this will result in a number of half completed forms being sent to the database but this in itself will help us gather information as to which questions the user and user/contributors believe to be relevant and engaging.
 The easier the form is to submit the more information we will be able to collect. 
 
-7. A single modal has been added to try to encourage submission of the 'soul searching' form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
+7. A modal has been added to try to encourage submission of the 'soul searching' form that requires a lot of effort with a longer list of more intrusive questions. We may add more modals in the interest of defensive design e.g. to the delete button. 
 
-8. Using MongoDB with the flexible data collection should minimise the chance of CRUD problems in the future if the App proved popular. 
+8. Using MongoDB with the flexible data collection should minimise the chance of CRUD problems in the future if the App proved popular. The app still runs if database collections have been emptied. Form data can still be created as a document and stored in an otherwise empty collection. 
+
+9. Late in development, a modal was added on click to admin only button, following feedback in slack peer-code-review channel. The preference was suggested by another student and then commented on by @yoni_ci who suggested a meesage along the lines of "These are the consequences, are you sure you want to do this?" I removed the warning which may be a challenge and replaced the wording to read 
+'Any lost or corrupted stories may delete someone's chance of recovering. Please only access if authorised or removing an untrue or abusive story.'
 
 ## MongoDB atlas
 
@@ -661,7 +664,7 @@ There are now 4 data collections stored in MongoDB for this project. We began wi
     4. Read on Story details page. One story/document/objectID per page. (https://fallen-but-not-broken.herokuapp.com/story_detail/5defc98797a1fd74efe492f4)
     5. Update and Read on Edit Story page (https://fallen-but-not-broken.herokuapp.com/edit_changes/5defc98797a1fd74efe492f4)
     6. Read and Delete from Edit and Delete page (https://fallen-but-not-broken.herokuapp.com/delete_edit_buttons)
-3. my_problem. Documents are created from form on the Tell you story page. (https://fallen-but-not-broken.herokuapp.com/my_problem)
+3. my_problem. Documents are created from form on the Early days/Tell you story page. (https://fallen-but-not-broken.herokuapp.com/my_problem)
 4. past_problem. Documents are created from form on the Soul searching page. (https://fallen-but-not-broken.herokuapp.com/past_problem)
 
 3 and 4 have same functionality but create and collect different types of data so are important for the project purpose. 
@@ -677,7 +680,7 @@ it offers immediate insight in to server status and query performance
 Schema visualisation will be very useful for our users. Once we have gathered enough stories to be statitsically significant we can display them within the app easily to show what could help most.
 
 
-###File tree and File names. Limitation dictated by MongoDB. 
+### File tree and File names. Limitation dictated by MongoDB. 
 The only limitation suffered was that we had to have the image file name matching the habit name in categories collection exactly. This meant that there had to be spaces in the file names. 
 
 All efforts were made to change the file names from those easiest to understand by the developer to file naming adhering to good software development practice. 
@@ -692,6 +695,7 @@ As I gain more experience as I understand that deciding strong file names is imp
 - Logo linking to home page. Extra large distinctive logo on device min-width 1000px. 
 - Nav bar or side navbar 0-1000px width.
 - Footer with links to information and 'admin only' link to deleteButton.html page.
+- Admin button with modal. 
 
 ### index.html page features
 - Recovery recipe image with link in materialize card. 
@@ -732,7 +736,8 @@ The text input fields show the stories as stored in the changes collection in mo
     3. Edit button submits updates from form input to changes collection in MongoDB.
 
 ### gratitude_list.html page features
-Text gratitude list suggestions.
+Gratitude list suggestions.
+Button link with more ideas.
 
 ### story_details.html page features 
 - Template loading each invidual story selected by the user. 
@@ -742,6 +747,7 @@ Buttons link to motivational articles.
 
 ### about_us.html
 Information and links
+Modal triggered on click of dig deeper button. 
 
 ## Future features
 I became aware of the phenomenon of scope creep during project development. 
@@ -795,6 +801,7 @@ Possible additional features that could be useful to attract user and user/contr
 - More modal and popups to communicate with the users me when forms have been completed and sent correctly. App currently provided information in page templates. Research suggested modals irritated agitated users. 
 - Login
 - Loading spinners when pages are taking a while to load. Heroku is quites slow to load. 
+- contact us page. - this will added once the app is being managed properly and queries will be reliably answered. Email has been added which allows those who really want correspondence to get a response as we will have a return email address. An unmanaged contact form on an app whose user's are emotionally vulnerable could exacerbate feelings of isolations and desperation. 
 
 
 ## Tech Used
@@ -1173,7 +1180,7 @@ All old comments were removed.
 
 - Heroku and app.py debug=true changed to debug = false. 
 
-app.py
+        1. app.py
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
@@ -1182,16 +1189,17 @@ if __name__ == '__main__':
 
 
 
-Heroku config vars checks 
+        2. Heroku config vars checks 
 
 Key	Value
 
 IP	0.0.0.0
+
 MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+
 PORT	5000
+
 DEBUG FALSE (added in the last stages of development when errors were not a common occurance)
-
-
 
 
 
@@ -1214,12 +1222,30 @@ check the veiw story grid issue when adding last stories
 
 Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
 
-My app has been testing by various student from the Slack community and by friends and family members where needed notes were made and identified bugs were fixed.
+
+- slack response end tests
+1. My app has been testing by various student from the Slack community and by friends and family members throughout development. When needed notes were made and identified bugs were fixed.
+The console error mentioned in the index.html section above still showed in opera but tutor advice was that this warning is pre-emptive and relating to futre versions of chrome so nothing can be done at the moment before next version launch.
+The final 2 problems of line length in app.py and env.py were corrected leaving one problem listed in app.py  as follows:
+```
+/workspace/fallen
+1
+[flake8]
+'env' imported but unused[F401](7, 5)
+```
+It says "imported but unused".
+
+It is actually doing what we want : when a file is imported, it get run.
+We want to file to get run, because then it's going to set our environment variable :
 
 From doing this I have been able to confidently say that my app is fully responsiveness across all devices.
 
+2. One student stated that the two similar forms were confusing in the nav bar so I have amended to name of 'tell your story' form in nav bar to 'early days'. For project purpose I believe this form is too important to omit fully but title on nav bar was changed to satisfy valued peer review. 
 
-testing extensively final time.
+3. There was extensive login debate when my project was reviewed by peers. ref peer-code-review channel 16th and 17th Jan 2020. Following guidance by yoni_ci , I added the modal to admin button. This was my reasoning posted in slack 
+![Slack comments](assets/testing/slack_peer_review.jpg)
+
+- testing extensively final time.
 Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
 
 ## Compatibility
@@ -1270,7 +1296,6 @@ Version control and Heroku deployment were initially done separately in the comm
 Version control was relied upon throughout the development process. A number of times changes were aborted and an old version was reverted to. For example github commit 50 reverted to app.py in commit 44.
 
 Many times previous version code was reused. This was particularly useful when gitpod refresh was not working as expected which created unexpected issues. For example, styling did not appear until 90 minutes after the change had been made or was only noticeable in the deployed app. 
-
 
 
 In summary, two methods of deployment were used. Both were successful but the second method was favoured because it allowed version control and deployment at the same time.
@@ -1351,8 +1376,11 @@ Set the following config vars:
 Key	Value
 
 IP	0.0.0.0
+
 MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
+
 PORT	5000
+
 
 In the heroku dashboard, click "Deploy".
 
@@ -1364,20 +1392,25 @@ The site is now successfully deployed.
 The only difference is that the MongoDb key values are stored in env.py for dev version (.gitignore file ensures MongoDB password is not revealed on github). For the live version MongoDB key values are stored and accessed in the config vars. 
 
 ## Credits
+
 ### Content
+
 The recovery recipes (recovery stories) were written anonymously by people in recovery. All other content is original. 
 ### Media
+
 The photograph images used in this site were mostly obtained from pixabay.com. 
 All the wok/fire digital images and logos were created to bespoke spec, using photoshop, by Paris Lyons. 
 The photograph/digital mix images were created using the image manipulation program GIMP (gimp.org) from google and pixabay images origins. 
 
 ### Inspiration
+
 I received inspiration for this project after years personally witnessing the struggle people have to find recovery from addiction, in all of the many forms. The prognosis for recovery is very poor and data collection to find out why could make a difference. 
 A few days before submitting my final project, my neighbour set his house on fire cooking while drunk. He has been trying to stop drinking for many years. After hearing his smoke alarms through the walls, we looked over the fence and saw his house filled with smoke. My neighbour had collapsed unconscious.
 I called 999 and watched 3 fire engines, 2 ambulances and 2 police cars arrive. The fire officer came round and told me that my neighbour had put his last drink on the calender the day he nearly burnt both our houses down. 
 My neighbour called me the next day and could not remember anything other than getting a taxi back from the hospital and going to buy a morning bottle of vodka.
 
 ### Acknowledgements
+
 Paris Lyons for the digital images, My mentor Brian Macharia for his thorough checks and clear direction.
 Thank you for the invaluable new screen share sessions offered by Code institute. Helpful when I hit a brick wall in my understanding a) when I was new to gitpod with Michael and Luca b) getting my update function working with Tim. 
 The tutor team support has been excellent. Knowing I can access Michael very early and Anna in the evenings has meant no problem has gone unsolved for long. 
