@@ -596,7 +596,7 @@ Defensive design considerations:
 - Input sanitisation/validation
 - Planning for contingencies
 - Anticipating misuse
-- Authentication (considered but not included considering the user zealous privacy/anonymity worries)
+- Authentication (considered but not included considering the user's zealous privacy/anonymity worries)
 
 The most significant defensive design decisions were
 1. To make alias a limited character number.
@@ -611,7 +611,11 @@ an auto added image chosen for each addiction. This would ensure that the home p
 3. to make the choice of habit linked to a photo a required field other wise lots of empty fields.
 4. Move the edit and delete button far apart so a user could not delete a story by mistake. 
 
-![button layout](assets/defensive_design/capture.jpg)- too close;
+![button layout original](assets/defensive_design/capture.jpg)- too close;
+
+![button layout new](assets/defensive_design/red_delete.jpg)- spaced edit and delete buttons;
+
+![Small screen missing delete button](assets/defensive_design/missing_delete.jpg)- missing delete buttons;
 
 In the real world it is possible that only authorised admin access will be able to delete stories in the future. 
 I am keen to prevent any barriers to collection of data. Login adds extra effort plus some online trust both of which bias the results towards more functional and computer savvy users who are not the user group who will benefit most.
