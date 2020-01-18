@@ -52,13 +52,14 @@ The different types of addiction options currently added are:
 
 ## Quick guide
 #### Home Page
-- **Early days** invites users to do tell their story anonymously. 
-- **Recovery Stories** links to step by step solution/identification guide presented as a list of collapsible questions and answers.
+- **Early days** invites users to tell their personal story anonymously. 
+- **Recovery Stories** links to stories created by people in recovery, presented as a list of collapsible questions and answers.
 - **Share you recovery** links to a form for contributors to create a recovery story. 
-- Once shared each recovery story is presented in three formats
-    1. Within the list of recovery stories
-    2. On home page as a small card with image, alias and habit.
-    3. A single story is presented on a single story details page reached by following the view story link in each card on the home page.
+- Once shared each recovery story is presented in four formats
+    1. Within the complete list of recovery stories (changes.html) ![complete List](assets/quick_guide/every_story.jpg)
+    2. Within the filtered list of recovery stories (change.html) if the type of addiction/habit is selected (filtered changes.html). ![filtered stories](assets/quick_guide/filter_story.jpg) ![filtered stories](assets/quick_guide/view_story.jpg)
+    3. On home page as a small card with image, alias and habit. ![filtered stories](assets/quick_guide/view_story.jpg)
+    4. A single story is presented on a single story details page reached by following the view story link in each card on the home page. ![filtered stories](assets/quick_guide/story_details.jpg)
 - **Gratitude list** is offered as a tool for contributors.
 - **About Us** Explains who is collecting the data, what it will be used for and why it is being collected.
 - From the **Admin only** link in the footer, recovery stories can be edited or deleted on the **Edit and Delete** page.
