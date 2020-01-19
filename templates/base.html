@@ -68,33 +68,22 @@
                </div>
             </div>
          </div>
-
-<div id="modal1" class="modal">
+         <!-- Modal to deter unauthorised edit or delete -->
+         <div id="modal1" class="modal">
             <div class="modal-content lightgrey">
-<i class="large material-icons">warning</i>
-<h5 class="darkred-text">Any lost or corrupted stories may delete someone's chance of recovering.</h5>
-<h6>Please only access if authorised or removing an untrue or abusive story.</h6>
-<i class="large material-icons">pan_tool</i>
+               <i class="large material-icons">warning</i>
+               <h5 class="red-text">Any lost or corrupted stories may delete someone's chance of recovering.</h5>
+               <h6>Please only access if authorised or removing an untrue or abusive story.</h6>
+               <i class="large material-icons">pan_tool</i>
             </div>
             <div class="modal-footer">
-            <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
-               <!-- <a href="{{ url_for('past_problem') }}" class="modal-close waves-effect waves-green btn-flat">Agree</a> -->
+               <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
             </div>
          </div>
          <!-- Modal Trigger -->
          <button data-target="modal1" id="adminButton" class="btn modal-trigger">ADMIN ONLY</button>
-         
-         
-</div>
-
-
-         <!-- <div class="footer-copyright">
-            <div class="container">
-               <a class="orange-text text-lighten-3" href="{{ url_for('delete_edit_buttons') }}">ADMIN ONLY</a>
-            </div>
-         </div> -->
+         </div>
       </footer>
-      </div>
       <!--  Scripts-->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
@@ -102,4 +91,3 @@
       <script src="{{ url_for('static', filename='js/init.js') }}"></script>
    </body>
 </html>
-

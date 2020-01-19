@@ -11,7 +11,6 @@ body {
 	background-color: rgb(241, 245, 250)
 }
 
-
 /* base.html styling */
 
 .white-text {
@@ -20,14 +19,12 @@ body {
 
 @media only screen and (max-width: 992px) {
 	#bigNav {
-		/* border-radius: 8px; */
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 993px) {
 	#smallNav {
-		/* border-radius: 8px; */
 		display: none;
 	}
 }
@@ -66,27 +63,11 @@ body {
 	}
 }
 
-
-/* @media only screen and (max-width: 800px) {
-	#wok {
-		display: none;
-	}
-} */
-
-
-/* @media only screen and (min-width: 801px) {
-	#wok2 {
-		display: none;
-	}
-} */
-
-
 /* my_problem.html styling */
 
 #justify {
 	text-align: justify;
 }
-
 
 /* add_changes.html */
 
@@ -94,7 +75,6 @@ body {
 	color: darkred;
 	font-family: 'Permanent Marker', cursive;
 }
-
 
 /* changes.html */
 
@@ -106,13 +86,11 @@ body {
 	background-color: Floralwhite;
 }
 
-
 /* gratitude_list */
 
 #gratitudeButton {
 	margin: 50px;
 }
-
 
 /* story_detail */
 
@@ -129,9 +107,8 @@ body {
 .clear {
 	margin: 0;
 	padding: 0;
-	color: darkgrey;
+	color: #546e7a;
 }
-
 
 /* delete_edit_button.html */
 
@@ -162,7 +139,6 @@ body {
 	}
 }
 
-
 /* about_us.html styling */
 
 #editButton2 {
@@ -183,4 +159,4 @@ body {
 #grey {
 	background-color: lightgrey;
 }
-}
+
