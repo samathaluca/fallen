@@ -1181,6 +1181,8 @@ Line too long, trailing white space, extra line. Corrected.
 All unused and experimental code was removed. 
 All old comments were removed.
 
+![Jquery](assets/testing/javascript_tests.jpg)
+
 - Heroku and app.py debug=true changed to debug = false. 
 
         1. app.py
