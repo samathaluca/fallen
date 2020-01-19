@@ -53,28 +53,30 @@ body {
 }
 
 @media only screen and (max-width: 800px) {
-	#fist {
+	#fist,
+    #wok {
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 801px) {
-	#fist2 {
+	#fist2, 
+    wok2 {
 		display: none;
 	}
 }
 
-@media only screen and (max-width: 800px) {
+/* @media only screen and (max-width: 800px) {
 	#wok {
 		display: none;
 	}
-}
+} */
 
-@media only screen and (min-width: 801px) {
+/* @media only screen and (min-width: 801px) {
 	#wok2 {
 		display: none;
 	}
-}
+} */
 
 
 /* my_problem.html styling */
@@ -117,6 +119,11 @@ body {
 	margin-top: 20px;
 	z-index: 20;
 }
+
+.clear {
+  margin: 0;
+  padding: 0; 
+  background-color: orange}
 
 
 /* delete_edit_button.html */
@@ -171,6 +178,7 @@ body {
 	color: black;
 }
 
-.clear {
-  margin: 0;
-  padding: 0; }
+
+#grey  {
+	background-color: lightgrey;
+}

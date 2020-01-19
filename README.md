@@ -1184,8 +1184,6 @@ if __name__ == '__main__':
             port=(os.environ.get('PORT')),
             debug=False)
 
-
-
         2. Heroku config vars checks 
 
 Key	Value
@@ -1222,7 +1220,29 @@ From doing this I have been able to confidently say that my app is fully respons
 
 
 - style.css and materialize component/template final tests.
+The initial use of the Materialize starter template aided very early development while flask app functionality was completed. 
+The starter template is unrecognizable now following the addition of multiple pages containing Materialise CSS/ javascript files and components added within each page.
 
+Extensive CSS changes have been added then deleted resulting in a simple external stylesheet stored in static folder as style.css file. 
+Most of the styling having been dictated by user test preference has been kept to the css materialize dependencies linked from the header. 
+Style changes have only been added to improve project purpose or responsivity. No unnecessary changes have been made. 
+
+Final testing and checks of unnecesaary repetition and unused classes resulted in the following changes:
+
+1.
+
+The names of the classes included in the css/javascript or component files relied on dependencies so non essential last minute changes have been avoided. 
+
+There are a small number of inline styles. Last tests moved these to within the style.css file unless they stopped working. 
+
+
+
+If the  on the templating language they were attached to.
+For example, the sizing of the photo 
+
+- Template language
+Jinja is Flask's default template engine which was imported with Flask from the outset of development. The validators always cite all jinja as errors but all template language source code funtions well.
+Jinja2 does not show in the requirements file as I initially expected during setup but is clearly running well as a flask component along with Werkzeug.
 
 template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
 
@@ -1238,9 +1258,7 @@ Responsiveness - My app is fully responsive; through the entire development and 
 Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
 
 mentor checks 
-tutor checksuser checks
-
-
+tutor checks user checks
 
 ## Compatibility
 
@@ -1255,7 +1273,6 @@ To ensure a broad range of users can successfully use this site, I tested it acr
 4. Safari
 
 5. Opera
-
 
 #### Devices tested
 
@@ -1277,7 +1294,6 @@ Laptop tested
 
 Desktop
 (unbranded Windows 7 OS) with different monitors 21 and 27inch.
-
 
 ## Version control and Heroku Deployment
 
@@ -1386,7 +1402,6 @@ IP	0.0.0.0
 MONGO_URI	mongodb+srv://<username>:<password>@<cluster_name>-qtxun.mongodb.net/<database_name>?retryWrites=true&w=majority
 
 PORT	5000
-
 
 In the heroku dashboard, click "Deploy".
 
