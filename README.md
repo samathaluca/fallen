@@ -311,7 +311,7 @@ Information Architecture has been implemented to create usable content structure
 To achieve this, user centered design methods were implemented, such as usability tests, user/contributor research and user flow diagrams. 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 
-![IA](assets/balsamiq/IA_skeleton.png)
+![IA](assets/balsamiq/ia_skeleton.png)
 ___________________________________________________________________________________________________________________
 
 #####  Base.html template: 
@@ -1299,7 +1299,7 @@ Tablets tested
 Laptop tested
 - MacBook pro,
 - Sony Vaio
-- HP 
+- HP Pavillion DV6
 
 Desktop
 (unbranded Windows 7 OS) with different monitors 21 and 27inch.
