@@ -54,23 +54,25 @@ body {
 
 @media only screen and (max-width: 800px) {
 	#fist,
-    #wok {
+	#wok {
 		display: none;
 	}
 }
 
 @media only screen and (min-width: 801px) {
-	#fist2, 
-    #wok2 {
+	#fist2,
+	#wok2 {
 		display: none;
 	}
 }
+
 
 /* @media only screen and (max-width: 800px) {
 	#wok {
 		display: none;
 	}
 } */
+
 
 /* @media only screen and (min-width: 801px) {
 	#wok2 {
@@ -120,18 +122,18 @@ body {
 	z-index: 20;
 }
 
-/*.clear {
-  margin: 0;
-  padding: 0; 
+.lightgrey {
+	background-color: lightgrey;
 }
 
-*/
+.clear {
+	margin: 0;
+	padding: 0;
+	color: darkgrey;
+}
+
 
 /* delete_edit_button.html */
-
-/* #editButton, #aboutButton {
-	margin-right: 150px;
-} */
 
 #editButton {
 	margin-right: 150px;
@@ -150,12 +152,12 @@ body {
 	height: 24px;
 	width: 60px;
 	line-height: 24px;
-	margin: 5px 5px;
 	padding: 0 0.5em;
 }
 
 @media only screen and (max-width: 350px) {
-	#deleteButton, .earlyDays {
+	#deleteButton,
+	.earlyDays {
 		display: none;
 	}
 }
@@ -178,18 +180,7 @@ body {
 	color: black;
 }
 
-
-#grey  {
+#grey {
 	background-color: lightgrey;
 }
-
-.lightgrey  {
-	background-color: lightgrey;
-}
-
-
-.clear  {
-    margin: 0;
-    padding: 0;
-    color: darkred;
 }
