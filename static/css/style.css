@@ -61,7 +61,7 @@ body {
 
 @media only screen and (min-width: 801px) {
 	#fist2, 
-    wok2 {
+    #wok2 {
 		display: none;
 	}
 }
@@ -120,11 +120,12 @@ body {
 	z-index: 20;
 }
 
-.clear {
+/*.clear {
   margin: 0;
   padding: 0; 
-  background-color: orange}
+}
 
+*/
 
 /* delete_edit_button.html */
 
@@ -180,5 +181,9 @@ body {
 
 
 #grey  {
+	background-color: lightgrey;
+}
+
+.lightgrey  {
 	background-color: lightgrey;
 }
