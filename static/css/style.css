@@ -17,6 +17,7 @@ body {
 	font-family: "Lato", cursive;
 }
 
+/* Responsive nav bar logo change for big and small screens using @media */
 @media only screen and (max-width: 992px) {
 	#bigNav {
 		display: none;
@@ -28,7 +29,6 @@ body {
 		display: none;
 	}
 }
-
 
 /* index.html styling */
 
@@ -132,13 +132,6 @@ body {
 	padding: 0 0.5em;
 }
 
-@media only screen and (max-width: 350px) {
-	#deleteButton,
-	.earlyDays {
-		display: none;
-	}
-}
-
 /* about_us.html styling */
 
 #editButton2 {
@@ -160,3 +153,22 @@ body {
 	background-color: lightgrey;
 }
 
+#modal2 {
+	background-color: pink;
+}
+
+
+/* Responsive remove text and buttons styling for screens <350px width */
+
+@media only screen and (max-width: 350px) {
+	#deleteButton,
+	.earlyDays {
+		display: none;
+	}
+}
+
+
+.sidenav {
+	background-color: lightgrey;
+
+}
