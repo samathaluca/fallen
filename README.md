@@ -1447,6 +1447,47 @@ Thank you for the invaluable new screen share sessions offered by Code institute
 The tutor team support has been excellent. Knowing I can access Michael very early and Anna in the evenings has meant no problem has gone unsolved for long. 
 Slack has been an asset and the final decision making help at the end the final push. 
 
+### Submission 
+
+#### Concerns
+Pre-submisson checklist mentions javascript but criteria does not list javascript within the marking scheme. 
+
+#### Assessment Criteria review
+Your Data Centric Development project will be assessed based on the following criteria:
+
+Usability and Visual Impact:
+
+Project Purpose
+UX design
+Suitability for purpose
+Navigation
+Ease of use
+Information Architecture
+Defensive Design
+
+Layout and Visual Impact:
+
+Responsive Design
+Image Presentation
+Colour scheme and typography
+Code Quality:
+Appropriate use of HTML
+Appropriate use of CSS
+Appropriate use of Python
+Appropriate use of the template language
+
+Software Development practices:
+
+Directory Structure and File Naming
+Version control
+Testing implementation
+Testing write-up
+Readme file
+Comments
+Data store integration
+Deployment implementation
+Deployment write-up
+
 
 
 
