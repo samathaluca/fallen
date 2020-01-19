@@ -140,7 +140,6 @@ body {
 #adminButton {
 	margin-left: 150px;
 	background-color: #546e7a;
-	color: orange;
 }
 
 #deleteButton {
@@ -187,3 +186,9 @@ body {
 .lightgrey  {
 	background-color: lightgrey;
 }
+
+
+.clear  {
+    color: darkred;
+}
+
