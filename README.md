@@ -1162,6 +1162,10 @@ An error in config in heroku had been overlooked for weeks as tests were complet
 
 All CRUD functionality is working correctly. 
 
+At the final stage of development and looking at some other student's README.md files I saw a lot of attention being focused on data type within MongoDB. Having read the code institute SQL lessons, I understand that SQL demands a data type selection from the outset. I see one of the main advatages of MongoDB being that you do not have to commit to data types too early so avoiding errors in admin further down the line in the real world. 
+For example, a house number may be 12 or 30 or 1250 or in the US 14500 so it would be first thought to choose the INT data type option. This would neglect the over sight that a flat number could be 12b so demand a string type. 
+I have left all data types to the auto allocated string type in Mongo anticipating that it is very easy to change. 
+
 - app.py tests
 10 problems shown in gitpod workspace. 
 Line too long, trailing white space, extra line. Corrected. 
@@ -1170,13 +1174,6 @@ Line too long, trailing white space, extra line. Corrected.
 (http://beautifytools.com/javascript-validator.php)- No syntax errors.
 All unused and experimental code was removed. 
 All old comments were removed.
-
-- style.css and materialize component/template final tests.
-
-
->>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-
 
 - Heroku and app.py debug=true changed to debug = false. 
 
@@ -1201,28 +1198,6 @@ PORT	5000
 
 DEBUG FALSE (added in the last stages of development when errors were not a common occurance)
 
-
-
-template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
-
-static file images checks 
-
-
-
-
-
-
-
-
-
-check the veiw story grid issue when adding last stories
-
-
-
-
-Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
-
-
 - slack response end tests
 1. My app has been testing by various student from the Slack community and by friends and family members throughout development. When needed notes were made and identified bugs were fixed.
 The console error mentioned in the index.html section above still showed in opera but tutor advice was that this warning is pre-emptive and relating to futre versions of chrome so nothing can be done at the moment before next version launch.
@@ -1245,10 +1220,30 @@ From doing this I have been able to confidently say that my app is fully respons
 3. There was extensive login debate when my project was reviewed by peers. ref peer-code-review channel 16th and 17th Jan 2020. Following guidance by yoni_ci , I added the modal to admin button. This was my reasoning posted in slack 
 ![Slack comments](assets/testing/slack_peer_review.jpg)
 
+
+- style.css and materialize component/template final tests.
+
+
+template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
+
+static file images checks 
+
+
+check the veiw story grid issue when adding last stories
+
+Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
+
+
 - testing extensively final time.
 Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
 
+mentor checks 
+tutor checksuser checks
+
+
+
 ## Compatibility
+
 To ensure a broad range of users can successfully use this site, I tested it across the 6 major browsers in desktop, tablet and mobile configuration. Different versions used by friends, family and other students. No issues.
 
 1. Chrome
@@ -1286,8 +1281,19 @@ Desktop
 
 ## Version control and Heroku Deployment
 
+For version control Github has been used. Github is a distributed Version Control Systems (DVCSs) recommended by Code Institute which ensures we have a store of all significant changes made during development.
+Using Gitpod alongside Github had moajor advantages in terms of how easy it was to stage, commit and push versions but I did get confused in the early days of using Gitpod because opening up previous versions and trying to save them did not commit as the most recent version which led to a number of different 
+worskpaces for the same repository listed in gitpod.io associated with one repository. 
+I found it easier to copy and paste previous changes in to the most recent worksspace which left clean development path releative to timeline. 
+In summary, gitpod offers all opened versions of a respository within https://gitpod.io/workspaces/. There is one master and numerous detached, previous versions that have been opened. I only worked within master after losing track of some changes within previous versions. 
+
+I was careful to use commit messages that I could find again if needed. I did notice some students had 800-900 commits for their projects. I have only made commits when there is a change made I believe is a step forward in development. The most basic changes such as, speelings, form questions, colour tests, link changes etc. have not been saved individually becasue I use version control as a working tool and want it as lean and easy to find amendments as possible.
+
+As detailed below I moved from version control and deployment via the command line terminal to setting up IDE to DVSC commits with automated deployment. This made version control and deployment effortless. 
+
 [Github repository](https://github.com/samathaluca/fallen)
-[Herokuapp.com](https://fallen-but-not-broken.herokuapp.com/)
+
+[Milestone 3 final deployed app](https://fallen-but-not-broken.herokuapp.com/)
 
 
 Github initial commit to repository and first heroku build were created on the same day. 
@@ -1342,7 +1348,7 @@ This was achieved by connecting heroku to github and selecting automatic deploys
 
 ![Github and heroku connected](assets/testing/heroku_and_github_connect.jpg)
 
-From that point on gitpod push to github automatically deployed to heroku and so github version control nad heroku build log mirrored each other. 
+From that point on gitpod push to github automatically deployed to heroku and so github version control and heroku build log mirrored each other perfectly. 
 
 ![Gitpod and github/heroku commit/deploy](assets/testing/version_save.png)
 
@@ -1396,6 +1402,7 @@ The only difference is that the MongoDb key values are stored in env.py for dev 
 ### Content
 
 The recovery recipes (recovery stories) were written anonymously by people in recovery. All other content is original. 
+
 ### Media
 
 The photograph images used in this site were mostly obtained from pixabay.com. 
@@ -1404,10 +1411,10 @@ The photograph/digital mix images were created using the image manipulation prog
 
 ### Inspiration
 
-I received inspiration for this project after years personally witnessing the struggle people have to find recovery from addiction, in all of the many forms. The prognosis for recovery is very poor and data collection to find out why could make a difference. 
-A few days before submitting my final project, my neighbour set his house on fire cooking while drunk. He has been trying to stop drinking for many years. After hearing his smoke alarms through the walls, we looked over the fence and saw his house filled with smoke. My neighbour had collapsed unconscious.
-I called 999 and watched 3 fire engines, 2 ambulances and 2 police cars arrive. The fire officer came round and told me that my neighbour had put his last drink on the calender the day he nearly burnt both our houses down. 
-My neighbour called me the next day and could not remember anything other than getting a taxi back from the hospital and going to buy a morning bottle of vodka.
+I received inspiration for this project after years personally witnessing the struggle people have to find recovery from addiction, in all of the many forms. The prognosis for recovery is very poor and data collection to find out why, could make a difference. 
+A few days before submitting my final project, my neighbour set his house on fire cooking while drunk. He has been trying to stop drinking for many years. After hearing his smoke alarms through the walls, my son and I looked over the fence and saw his house filled with smoke. My neighbour had collapsed and was lying next to the fire unconscious.
+I called 999 and watched 3 fire engines, 2 ambulances and 2 police cars arrive. The fire officers bust his door down and prevented our adjoining houses burning to the ground. 
+My neighbour called me the next day and could not remember anything other than getting a taxi back from the hospital and going to buy a morning bottle of vodka. Different methods need to be developed to help and I believe the more stories we can collect from people who have recovered, the more chance they is of alleviating suffering within this vunerable group.
 
 ### Acknowledgements
 
