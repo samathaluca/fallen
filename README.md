@@ -547,6 +547,11 @@ Materiliaze templates and components generally have colours of background and te
 
 ## Wireframes
 
+IA skeleton is the blueprint of the design structure which was used to generate the wireframes of the project. 
+
+The navigation system was designed to best fit the homepage on all screen sizes then follow through to the look on each of the other pages.
+
+
 ### Desktop Home page Wireframe
 ![Desktop Homepage Wireframe](assets/balsamiq/desktop_homepage_wireframe.png)
 
@@ -558,16 +563,17 @@ Materiliaze templates and components generally have colours of background and te
 
 ![Mobile Homepage Wireframe](assets/balsamiq/mobile_homepage_wireframe.png)
 
-### Form page example Wireframe
+###  Early days/tell you story/share your story/edit story/edit and delete story/soul searching Form page example Wireframe (all screen sizes)
 
 The form page layout is the same rendered on desktop/tablet and mobile excepting the navbar which converts to side navbar on tablets and mobile devices.
-Form pages include early days story/share your story/ edit story/ edit and delete story and soul searching.
 
-[Form page Wireframe](assets/balsamiq/form_pages_example(my_problem.html).png)
+Form pages include early days /tell you story/share your story/ edit story/ edit and delete story and soul searching.
 
-### Recovery stories Wireframe
+[Form page Wireframe- all screen sizes](assets/balsamiq/form_pages_example(my_problem.html).png)
 
-[Recovery stories Wireframe](assets/balsamiq/recovery_stories.png)
+### Recovery stories Wireframe (all screen sizes)
+
+[Recovery stories Wireframe- all screen sizes](assets/balsamiq/recovery_stories.png)
 
 ### Story Detail page desktop
 
@@ -833,8 +839,8 @@ js materiliaze
 ## Testing
 1. [Chrome Devtools](https://developers.google.com/web/tools/chrome-devtools/)
 2. [HTML Validator](https://validator.w3.org/)
-3. [CSS VALIDATOR](https://jigsaw.w3.org/css-validator/)
-4. [HTML AND CSS Beautifier](https://www.freeformatter.com/html-formatter.html) use format selection in beautify code
+3. [CSS Validator](https://jigsaw.w3.org/css-validator/)
+4. [HTML and CSS Beautifier](https://www.freeformatter.com/html-formatter.html) use format selection in beautify code
 5. [AutoPrefixer](https://autoprefixer.github.io/) -This project used AutoPrefixer to make sure the css code is valid for all browsers.
 6. [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 7. [PEP8 online](http://pep8online.com)- Not secure but ok for testing console errors.
@@ -1219,15 +1225,16 @@ From doing this I have been able to confidently say that my app is fully respons
 ![Slack comments](assets/testing/slack_peer_review.jpg)
 
 
-- style.css and materialize component/template final tests.
+- style.css and materialize css/javascrpit file and component final tests.
 The initial use of the Materialize starter template aided very early development while flask app functionality was completed. 
 The starter template is unrecognizable now following the addition of multiple pages containing Materialise CSS/ javascript files and components added within each page.
 
-Extensive CSS changes have been added then deleted resulting in a simple external stylesheet stored in static folder as style.css file. 
 Most of the styling having been dictated by user test preference has been kept to the css materialize dependencies linked from the header. 
 Style changes have only been added to improve project purpose or responsivity. No unnecessary changes have been made. 
 
-Final testing and checks of unnecesaary repetition and unused classes resulted in the following changes:
+Some final layout and colour changes were tested using Chrome developer tools allowing ideas to be testing with immediate results. No improvements to the appearance of the site were found, confirming earlier user preference tests. 
+
+Final testing and checks of unnecessary repetition and unused classes resulted in the following changes:
 
 1.
 
@@ -1249,6 +1256,8 @@ template language and mongo experiment a lot with getting look right. a lot of c
 static file images checks 
 
 
+
+materilaise colours not match well with some css so inline styling left as is 
 check the veiw story grid issue when adding last stories
 
 Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
@@ -1449,6 +1458,3 @@ Slack has been an asset and the final decision making help at the end the final 
 
 
 
-IA is a blueprint of the design structure which can be generated into wireframes and sitemaps of the project. UX designers use them as the basic materials so that they could plan navigation system.
-
-materilaise colours not match well with some css so inline styling left as is 
