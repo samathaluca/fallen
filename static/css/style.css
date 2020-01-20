@@ -63,12 +63,19 @@ body {
 	}
 }
 
-@media only screen and (min-width: 3000px) {
+@media only screen and (min-width: 2500px) {
 	#fist {
-		display: none;
-        position: relative;      
+		display: none;  
 	}
 }
+
+@media only screen and (min-width: 2500px) {
+	#wok {
+		width: 75%;
+        position: center;
+	}
+}
+
 
 
 /* my_problem.html styling */
