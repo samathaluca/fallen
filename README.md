@@ -692,7 +692,7 @@ The only limitation suffered was that we had to have the image file name matchin
 All efforts were made to change the file names from those easiest to understand by the developer to file naming adhering to good software development practice. 
 All template files were renamed once most of the development work had been done to be better understood better by people other than the developer. 
 
-As I gain more experience as I understand that deciding strong file names is important at the outset because changing file names, particularly collection names in the database is time consuming and carries some risk.
+As I gain more experience, I understand that deciding strong file names is important at the outset because changing file names, particularly collection names in the database is time consuming.
 
 
 ## Features
@@ -1227,49 +1227,46 @@ From doing this I have been able to confidently say that my app is fully respons
 ![Slack comments](assets/testing/slack_peer_review.jpg)
 
 
-- style.css and materialize css/javascrpit file and component final tests.
-The initial use of the Materialize starter template aided very early development while flask app functionality was completed. 
-The starter template is unrecognizable now following the addition of multiple pages containing Materialise CSS/ javascript files and components added within each page.
+- style.css and materialize css/component final tests.
 
-Most of the styling having been dictated by user test preference has been kept to the css materialize dependencies linked from the header. 
-Style changes have only been added to improve project purpose or responsivity. No unnecessary changes have been made. 
+1. Some final layout and colour changes were tested using Chrome developer tools allowing ideas to be testing with immediate results. No improvements to the appearance of the site were found, confirming earlier user preference tests. 
 
-Some final layout and colour changes were tested using Chrome developer tools allowing ideas to be testing with immediate results. No improvements to the appearance of the site were found, confirming earlier user preference tests. 
+2. Final testing and checks of unnecessary repetition and unused classes.
 
-Final testing and checks of unnecessary repetition and unused classes resulted in the following changes:
+3. The names of the classes included in the css/javascript or component files relied on dependencies so non essential last minute changes have been avoided. 
 
-1.
+4. There were a small number of inline styles left at the end of the project. Last tests moved these to within the style.css file. It is a feature of the Materialize files that colours are within the html, moving them to style.css, even though identical hex code was used, changed their appearance. Specificailly the blue-grey colour rendered differently.
 
-The names of the classes included in the css/javascript or component files relied on dependencies so non essential last minute changes have been avoided. 
-
-There are a small number of inline styles. Last tests moved these to within the style.css file unless they stopped working. 
-
-
-
-If the  on the templating language they were attached to.
-For example, the sizing of the photo 
+5. The custom stylesheet (style.css) was used to override Materialize file css source code, all experimental and unnecessary css code was removed. 
 
 - Template language
-Jinja is Flask's default template engine which was imported with Flask from the outset of development. The validators always cite all jinja as errors but all template language source code funtions well.
+Jinja is Flask's default template engine which was imported with Flask from the outset of development. The validators always cite all jinja as errors but all template language source code functions well.
 Jinja2 does not show in the requirements file as I initially expected during setup but is clearly running well as a flask component along with Werkzeug.
+Final checks on different devices and browsers was the evidence that Jinga2 was functioning well. No template language had been removed in error during the Beautifier or validator final tests.
 
-template language and mongo experiment a lot with getting look right. a lot of css within component left with it. colours eg tomato text repeated but in other places too much red. 
+- Mentor final checks, Tutor final tests, slack peer-code-review, friend and family testing all complete. 
 
-static file images checks 
+= Pre-submission checklist completed twice. First time raised a couple of concerns.
+    1. Mention of javascript loops. Javascript was not mentioned as a requirement for the project or in the marking scheme. 
+    2. File size of images . All image files load quickly and responsively.
+    3. 4K screen checks. No completed
 
+- Final responsiveness were checked on the morning of submission , detailed below.
 
+##  Responsiveness - Recipes for Recovery app is fully responsive; 
 
-materilaise colours not match well with some css so inline styling left as is 
-check the veiw story grid issue when adding last stories
+1. For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked.
+On the morning of submission, final responsiveness checks across all device screens ranging from extra small to extra-large and in each browser were completed. 
+Where needed I had used media queries to fix any resolution issues or responsiveness issues. The necessity and reliability of these were checked. 
+I have built my app from on the Materialize CSS starter framework but made changes to ensure it does not have issues on any screen. 
+Over the course of development I had found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate sometimes. For example, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the actual iphone6 or 6s devices tested. 
+The rendering on the device was considered to be the true reflection of responsivity. 
+It was found during final tests that phone settings could effect the app e.g. - Sony XA42 form tests, capitalised each input entry. There was also one gap in the grid which we believe was due to censorship. This could be explored further if the app proves to be useful in the real world.
 
-Responsiveness - My app is fully responsive; through the entire development and design process I continuously tested my app under Chrome Developer tools and testing various different screens sizes. By this I was able to perform periodic checks throughout the development process to ensure that my app was responsive across all device screens ranging from extra small to extra-large. Where needed I just used media queries to fix any resolution issues or responsiveness issues. I have built my app on the Materialize CSS framework. A modern responsive front-end framework based on Material Design but where custom design has been made I have added additional CSS within my own file to adding custom design to my app.
+Another issue that was noticed during development was the effect zoom has on large screens sometimes (though not repeatedly) on the view story layout. It seems to happen on zoom 0-50% though not reproduceably. 
+I believe this a limitation of Materialize cards as a lot more stories begin to be added. 
+Throughout development, I noticed that many of the other students had used Bootstrap again to avoid this issue which I also witnessed in other student projects. I believe the Bootstrap cards are fully responsive but the Materialize cards need some work e.g. I set the height of the habit name in the cards, before this the unpredictable resizing between devices made it impossible to create a pleasing design layout. 
 
-
-- testing extensively final time.
-Found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate. That is, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the iphone6 or 6s tested. the rendering on the device was considered to be the ture reflection of responsivity.
-
-mentor checks 
-tutor checks user checks
 
 ## Compatibility
 
@@ -1448,11 +1445,11 @@ Paris Lyons for the digital images, My mentor Brian Macharia for his thorough ch
 Thank you for the invaluable new screen share sessions offered by Code institute. Helpful when I hit a brick wall in my understanding a) when I was new to gitpod with Michael and Luca b) getting my update function working with Tim. 
 The tutor team support has been excellent. Knowing I can access Michael very early and Anna in the evenings has meant no problem has gone unsolved for long. 
 Slack has been an asset and the final decision making help at the end the final push. 
+I looked at other students work and particularly liked Shane Muirhead's design. (https://milestone4.herokuapp.com). My early balsamiq designes were inspired by this project. I did experiment using some of shane's code but it did contain some of the materiliaze card bug issues on zoom I mention in the responsiveness section. 
+His recipe card page layout inspired my story_detail.html page but he hard coded his recipes and mine were pulled from the details in the database. 
 
-### Submission 
 
-#### Concerns
-Pre-submisson checklist mentions javascript but criteria does not list javascript within the marking scheme. 
+### Submission
 
 #### Assessment Criteria review
 Your Data Centric Development project will be assessed based on the following criteria:
