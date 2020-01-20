@@ -63,6 +63,14 @@ body {
 	}
 }
 
+@media only screen and (min-width: 3000px) {
+	#fist {
+		display: none;
+        position: relative;      
+	}
+}
+
+
 /* my_problem.html styling */
 
 #justify {
