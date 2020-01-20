@@ -11,13 +11,24 @@ body {
 	background-color: rgb(241, 245, 250)
 }
 
-/* base.html styling */
+
+/* base.html styling , followed through on other pages*/
 
 .white-text {
 	font-family: "Lato", cursive;
 }
 
+.sidenav {
+	background-color: lightgrey;
+}
+
+#adminButton {
+	margin-left: 50px;
+	background-color: #546e7a;
+}
+
 /* Responsive nav bar logo change for big and small screens using @media */
+
 @media only screen and (max-width: 992px) {
 	#bigNav {
 		display: none;
@@ -29,6 +40,7 @@ body {
 		display: none;
 	}
 }
+
 
 /* index.html styling */
 
@@ -49,6 +61,9 @@ body {
 	text-shadow: 1px 1px 2px #000000;
 }
 
+
+/* Three different cards were used for top two card images on home page. Breakpoints were 800px and 2000px */
+
 @media only screen and (max-width: 800px) {
 	#fist,
 	#wok {
@@ -64,12 +79,11 @@ body {
 }
 
 @media only screen and (min-width: 2001px) {
-	#fist, 
-    #wok {
-		display: none;  
+	#fist,
+	#wok {
+		display: none;
 	}
 }
-
 
 @media only screen and (max-width: 2000px) {
 	#wok4k {
@@ -84,12 +98,14 @@ body {
 	text-align: justify;
 }
 
+
 /* add_changes.html */
 
 #check {
 	color: darkred;
 	font-family: 'Permanent Marker', cursive;
 }
+
 
 /* changes.html */
 
@@ -101,11 +117,13 @@ body {
 	background-color: Floralwhite;
 }
 
+
 /* gratitude_list */
 
 #gratitudeButton {
 	margin: 50px;
 }
+
 
 /* story_detail */
 
@@ -125,15 +143,11 @@ body {
 	color: #546e7a;
 }
 
+
 /* delete_edit_button.html */
 
 #editButton {
 	margin-right: 150px;
-}
-
-#adminButton {
-	margin-left: 150px;
-	background-color: #546e7a;
 }
 
 #deleteButton {
@@ -146,6 +160,7 @@ body {
 	line-height: 24px;
 	padding: 0 0.5em;
 }
+
 
 /* about_us.html styling */
 
@@ -169,7 +184,7 @@ body {
 }
 
 #modal2 {
-    font-family: "Lato", sans-serif;
+	font-family: "Lato", sans-serif;
 	background-color: lightgrey;
 }
 
@@ -181,10 +196,4 @@ body {
 	.earlyDays {
 		display: none;
 	}
-}
-
-
-.sidenav {
-	background-color: lightgrey;
-
 }

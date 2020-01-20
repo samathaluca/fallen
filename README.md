@@ -311,7 +311,7 @@ Information Architecture has been implemented to create usable content structure
 To achieve this, user centered design methods were implemented, such as usability tests, user/contributor research and user flow diagrams. 
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
 
-![IA](assets/balsamiq/ia_skeleton.png)
+![IA](assets/balsamiq/ia_structure.png)
 ___________________________________________________________________________________________________________________
 
 #####  Base.html template: 
@@ -1249,7 +1249,7 @@ Final checks on different devices and browsers was the evidence that Jinga2 was 
 = Pre-submission checklist completed twice. First time raised a couple of concerns.
     1. Mention of javascript loops. Javascript was not mentioned as a requirement for the project or in the marking scheme. 
     2. File size of images . All image files load quickly and responsively.
-    3. 4K screen checks. No completed
+    3. 4K resolution final screen checks. Changes were made as the two image cards at the top of the home page looked lost. 
 
 - Final responsiveness were checked on the morning of submission , detailed below.
 
@@ -1267,6 +1267,8 @@ Another issue that was noticed during development was the effect zoom has on lar
 I believe this a limitation of Materialize cards as a lot more stories begin to be added. 
 Throughout development, I noticed that many of the other students had used Bootstrap again to avoid this issue which I also witnessed in other student projects. I believe the Bootstrap cards are fully responsive but the Materialize cards need some work e.g. I set the height of the habit name in the cards, before this the unpredictable resizing between devices made it impossible to create a pleasing design layout. 
 
+The 4K resolution final screen checks revealed some changes that needed to be done as the two top images cards did not look good at 3840px. Extra media queries were added to display none less than 2000px with new card added with different alignment so header image could still be visible in a better format.
+Extra beautification and validation needed to be done. 
 
 ## Compatibility
 
