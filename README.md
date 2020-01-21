@@ -55,13 +55,21 @@ The different types of addiction options currently added are:
 - **Early days** invites users to tell their personal story anonymously. 
 - **Recovery Stories** links to stories created by people in recovery, presented as a list of collapsible questions and answers.
 - **Share you recovery** links to a form for contributors to create a recovery story. 
-- Once shared each recovery story is presented in four formats
+- Once shared each recovery story is presented in four formats as follows:
     1. Within the complete list of recovery stories (changes.html) ![complete List](assets/quick_guide/every_story.jpg)
+
     2. Within the filtered list of recovery stories (change.html) if the type of addiction/habit is selected (filtered changes.html). 
+
+    ![filtered stories](assets/quick_guide/booze_only.jpg).
+
+    The filtered results shown above is an example of the results rendered after completing the filter stories, example below:
+
     ![filtered stories](assets/quick_guide/filter_story.jpg) 
-    ![filtered stories](assets/quick_guide/booze_only.jpg)
+
     3. On home page as a small card with image, alias and habit. ![filtered stories](assets/quick_guide/view_story.jpg)
+
     4. A single story is presented on a single story details page reached by following the view story link in each card on the home page. ![filtered stories](assets/quick_guide/story_details.jpg)
+
 - **Gratitude list** is offered as a tool for contributors.
 - **About Us** Explains who is collecting the data, what it will be used for and why it is being collected.
 - From the **Admin only** link in the footer, recovery stories can be edited or deleted on the **Edit and Delete** page.
@@ -306,10 +314,13 @@ The scope of the project has been designed so that it is not throttled by the ne
 
 #### **The Structure plane**
 
-Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome page, with awarenes of the short attention span of the users. 
+Considering what would be logical and intuitive IA (Information Architecture), the structure has been kept as simple as possible on the welcome home page, with awarenes of the short attention span of the users. 
+
 Information Architecture has been implemented to create usable content structures, out of what was needed to satisfy the two different types of user with two different sets of informations. 
 To achieve this, user centered design methods were implemented, such as usability tests, user/contributor research and user flow diagrams. 
+
 Information architecture is just a small part of the User Experience but imperative to achieve the functionality without either users or user/contributors losing interest and leaving the site.
+The structure below was careful considered and tested before having been adapted slightly then developmentally implemented.
 
 ![IA](assets/balsamiq/ia_structure.png)
 ___________________________________________________________________________________________________________________
@@ -436,7 +447,7 @@ ________________________________________________________________________________
 ##### past_problem.html page 
 
 This page link was moved from the nav bar to a link within about_us.html following mentor comments. My mentor said that this page did not add anything to the project and the examiner may wonder why it is present.
-This page and additional pages of questions to be added later are very important for the strategy. Gathering as much information as possible from visitors to the site is important to understand recovery from addiction. 
+This page (along with additional pages of questions to be added later) are very important for the project purpose and strategy. Gathering as much information as possible from visitors to the site is important to understand recovery from addiction. 
 
 [Dig Deeper](https://fallen-but-not-broken.herokuapp.com/past_problem)
 Dig Deeper is a Materialize select form with drop down menu. The form currently has a smaller selection of questions than it is anticipated may be needed to gather significant data. 
@@ -599,12 +610,12 @@ Defensive design/ defensive programming considered Murphy's law.
 Murphy's law is an adage or epigram that is typically stated as: "Anything that can go wrong will go wrong".
 
 Defensive design considerations:
-- Input sanitisation/validation
+- Input limitations 
 - Planning for contingencies
 - Anticipating misuse
 - Authentication (considered but not included considering the user's zealous privacy/anonymity worries)
 
-The most significant defensive design decisions were
+Defensive design was considered at all stages in development. The most significant design changes made later, defensively, during development were
 1. To make alias a limited character number.
 
 ![Alias name too long](assets/defensive_design/alias.jpg)
@@ -635,7 +646,7 @@ I will comment on this in testing in more detail but 'login' in search bar revea
 login will be a barrier to collecting data that is defined in the project purpose. 
 
 
-5. Form design - simple without thinking too much, effortless. the selection questions prompt users and keep interest rather than being baffling or confusing. 
+5. Form design - simple without demanding too much thinking, effortless. the selection questions prompt users and keep interest rather than being baffling or confusing. 
 
 6. Form submission simplified. - The number of fields completed is not obligatory. To date there is only one required field for habit name needed for submission. 
 Considering defensive design we anticipate that this will result in a number of half completed forms being sent to the database but this in itself will help us gather information as to which questions the user and user/contributors believe to be relevant and engaging.
@@ -687,7 +698,7 @@ Schema visualisation will be very useful for our users. Once we have gathered en
 
 
 ### File tree and File names. Limitation dictated by MongoDB. 
-The only limitation suffered was that we had to have the image file name matching the habit name in categories collection exactly. This meant that there had to be spaces in the file names. 
+The only limitation suffered was that we had to have the image file name matching the habit name in categories collection exactly. This meant that there had to be spaces in the image file names. 
 
 All efforts were made to change the file names from those easiest to understand by the developer to file naming adhering to good software development practice. 
 All template files were renamed once most of the development work had been done to be better understood better by people other than the developer. 
@@ -695,7 +706,7 @@ All template files were renamed once most of the development work had been done 
 As I gain more experience, I understand that deciding strong file names is important at the outset because changing file names, particularly collection names in the database is time consuming.
 
 
-## Features
+## Features and design elements
 
 ### base.html features rendered in each page
 - Logo linking to home page. Extra large distinctive logo on device min-width 1000px. 
@@ -1066,7 +1077,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     A final review of 2020 modern design conventions reiterate that bold texts are still current. Business users had suggested that this is because of fast paced information gathering. 
     Informative and educational sites still show muted colours and Duotones which was set by the original Materialize template originally chosen and adapted for this project.
     Additional digital imagery is still being considered before submission.
-    2. Materiliaze Card component responsiveness illustrating the recovery stories has rendered unpredictably between browsers. Responsiveness has varied too much. Final tests using different set heights within the cards 
+    2. Materialize Card component responsiveness illustrating the recovery stories has rendered unpredictably between browsers. Responsiveness has varied too much. Final tests using different set heights within the cards 
     showed that a set height in the card mid section improved the responsiveness in each browser, device and device orientation. 
     The amendment to the recovery story cards in the main section of index.html was viewed in opera, google chrome and firefox. Chrome devtools were used to check the responsiveness expected on all the devices listed, plus the responsive option to test all widths between 250-1750px. Below 320px the alias name on the card stories begins to overlap the edge of the cards. Over 1500 the card stories begin to misalign. This will be explored further before submission. The alias can be omitted easily using media queries if deemed necessary. The misaligned stories begins at 1455px according to Chrome Devtools but this does not replciate on real screens tested.
     It was noticed during development that zoom of 0-50% detrimentally effects the card story responsivity. I will do some work increasing the spacing and padding between cards to see if this helps. 
@@ -1082,7 +1093,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     The social media, toxic relationship and attention cards each stopped the grid being fully responsive. 
 
 - my_problem.html file (Tell your story page)
-    1. HTML validator revealed stray </div> end tag revealing a missing opening <div> tag. Other small end tag errors rectified.
+    1. HTML validator revealed stray `</div>` end tag revealing a missing opening `<div>` tag. Other small end tag errors rectified.
     2. HTML beautifier made missing tag more obvious. I am surprised to see errors in tags at this late stage but there have been so many changes to the style human error has occured during development, proving that even the most basic tests need to be used at the end too.
     3. Full responsive design tests carried out between 200-3320. 
     4. Data was submitted to mongoDB between 150-3320px width when share button was clicked. MongoDB my_problem collection contained added documents for each device size.
@@ -1092,7 +1103,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     8. Comments checked and all old comments were removed.
 
 - changes.html file (recovery stories page)
-    1. HTML validator revealed stray </span> end tag. Tag was removed.
+    1. HTML validator revealed stray `</span>` end tag. Tag was removed.
     2. HTML beautifier format then ran through validator again. 
     3. Full responsive design tests carried out between 200-3320. 
     4. Data was received from mongoDB between 150-3320px width and story details were revealed when clicked.
@@ -1102,7 +1113,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     8. Comments checked and all old comments were removed.
 
 - add_changes.html file (Share your recovery page)
-    1. HTML validator revealed stray </div> end tag. Tag was removed.
+    1. HTML validator revealed stray `</div>` end tag. Tag was removed.
     2. HTML beautifier format then ran through validator again. 
     3. Full responsive design tests carried out between 200-3320. 
     4. Data was submitted to mongoDB using the 'ADD YOUR STORY' button. Various points between 150-3320px width submission was tested.
@@ -1139,7 +1150,7 @@ An error in config in heroku had been overlooked for weeks as tests were complet
     6. Comments checked and all old comments were removed.
 
 - edit_changes.html (Edit a recovery share page)
-    1. HTML validator revealed stray </div> end tag. Tag was removed.
+    1. HTML validator revealed stray `</div>` end tag. Tag was removed.
     2. HTML beautifier format then ran through validator again. 
     3. Full responsive design tests carried out between 200-3320. 
     4. Data was submitted to mongoDB using the 'Edit' button. Various points between 150-3320px width submission was tested.

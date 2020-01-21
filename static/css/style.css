@@ -11,7 +11,6 @@ body {
 	background-color: rgb(241, 245, 250)
 }
 
-
 /* base.html styling , followed through on other pages*/
 
 .white-text {
@@ -41,7 +40,6 @@ body {
 	}
 }
 
-
 /* index.html styling */
 
 .info-cards {
@@ -60,7 +58,6 @@ body {
 #shadow {
 	text-shadow: 1px 1px 2px #000000;
 }
-
 
 /* Three different cards were used for top two card images on home page. Breakpoints were 800px and 2000px */
 
@@ -91,13 +88,11 @@ body {
 	}
 }
 
-
 /* my_problem.html styling */
 
 #justify {
 	text-align: justify;
 }
-
 
 /* add_changes.html */
 
@@ -105,7 +100,6 @@ body {
 	color: darkred;
 	font-family: 'Permanent Marker', cursive;
 }
-
 
 /* changes.html */
 
@@ -116,7 +110,6 @@ body {
 #floral {
 	background-color: Floralwhite;
 }
-
 
 /* gratitude_list */
 
@@ -161,7 +154,6 @@ body {
 	padding: 0 0.5em;
 }
 
-
 /* about_us.html styling */
 
 #editButton2 {
@@ -188,8 +180,7 @@ body {
 	background-color: lightgrey;
 }
 
-
-/* Responsive remove text and buttons styling for screens <350px width */
+/* Responsive remove text and button styling for screens <350px width */
 
 @media only screen and (max-width: 350px) {
 	#deleteButton,
