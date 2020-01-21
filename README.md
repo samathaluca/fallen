@@ -856,8 +856,8 @@ js materiliaze
 6. [Markdown live-preview](https://markdownlivepreview.com/) -This project used markdown previewer to check the rendering of the readme.md file content.
 7. [PEP8 online](http://pep8online.com)- Not secure but ok for testing console errors.
 8. [Gitpod](https://www.gitpod.io/)- IDE used throughout the project. 
-9. [VSC code extensions](https://code.visualstudio.com/)- To est code when gitpod was not working well. 
-10. [IDLE](https://www.python.org)
+9. [VSC code extensions](https://code.visualstudio.com/)- To test code when gitpod was not working well. 
+10. [IDLE](https://www.python.org)- to check python code
 11. [Javascript](http://beautifytools.com/javascript-validator.php)- Tested to check Materialize initialization. 
 
 ### Early development testing.
@@ -892,11 +892,11 @@ def test_answer():
     assert func(3) == 5
 ```
 
-I also used the TDD examples in the CI lessons to check that Flask was running and that deployment of the app would be successful using Heroku. These lessons have since been remmoved and I understand that TDD is not essential for this project but I have included my attempts to understand and use TDD in this write up as evidence that I do grasp the importance of TDD and did try to implement it.
+I also used the TDD examples in the CI lessons to check that Flask was running and that deployment of the app would be successful using Heroku. These lessons have since been removed and I understand that TDD is not essential for this project but I have included my attempts to understand and use TDD in this write up as evidence that I do grasp the importance of TDD and did try to implement it.
 
 5. Debug=True within app.py file in Gitpod IDE  listed errors and helped me test development at every small stage. 
 
-6. The app was deployed to heroku early on because sometimes I did not understand why the code would not run from the debug and errors shown within Gitpod coomand line terminal. Manual testing of whether or not the app would run in heroku gave me more detailed explanatons of the error.  Heroku Debug was relied upon for early testing.
+6. The app was deployed to heroku early on because sometimes I did not understand why the code would not run from the debug and errors shown within Gitpod command line terminal. Manual testing of whether or not the app would run in heroku gave me more detailed explanatons of the error.  Heroku Debug was relied upon for early testing.
 
 7. Manual app.py test example.
 ```
@@ -1024,26 +1024,36 @@ Ran test then found request.form.get('firat') should be request.form.get('first'
 5. Form tests.
 
 To check that all form fields were working and correctly stored in MongoDB we would :
-    1. create new documents completing a form
+
+        - create new documents completing a form
+
         - my_problem.html then check my_problem collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 20
+
         - past_problem.html then check past_problem collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 9
+
         [Document added to MongoDB collection test](assets/testing/past_problem_mongo.jpg)
+
         - add_changes.html then check changes collection in MongoDB had added to document number count. TOTAL DOCUMENTS: 25
 
+
 Example using integers for fast testing. 
+
 Add change (share recovery story)  
 ![Changes form test](assets/testing/add_changes_test.jpg)
 
 Check added to MongoDB changes collection
+
 ![Check Mongo](assets/testing/changes_form_test.jpg)
 
 Check added to story detail page
+
 ![Check Story details](assets/testing/story_detail_test.jpg)
 
 Check added to recovery stories (changes.html) page
+
 ![Check recovery stories page](assets/testing/recovery_stories_test.jpg)
 
-Failed tests.
+Failed test and resolution example.
 
 Null fields or failed submissons of forms were tracked down using the heroku error.
 [Failed insert](assets/testing/testing_heroku.jpg)
@@ -1055,12 +1065,10 @@ If the function did not match the MongoDb collection fields then the insert or u
 
 6. Checking responsive design.
 The grid of stories on home page was not looking good on the Ipad pro. 
-I changed class="col s6 m4 l3" to class="col s6 m3" to improve the responsiveness of the view story cards in the grid in main section. 
+I changed from class="col s6 m4 l3" to class="col s6 m3" to improve the responsiveness of the view story cards in the grid in main section. 
 The images in the hero image card and the second card were too large on small screens. 
 Media queries were used as we did find that materialize card components were not fully responsive without them. 
 Long alias names did not look good. 
-
-
 
 ### Final Testing to demonstrate thorough testing carried out throughout development.
 
@@ -1198,11 +1206,12 @@ All old comments were removed.
 
         1. app.py
 
+```
 if __name__ == '__main__':
     app.run(host='0.0.0.0',
             port=(os.environ.get('PORT')),
-            debug=False)
-
+            debug=False)   
+```
         2. Heroku config vars checks 
 
 Key	Value
@@ -1217,7 +1226,7 @@ DEBUG FALSE (added in the last stages of development when errors were not a comm
 
 - slack response end tests
 1. My app has been testing by various student from the Slack community and by friends and family members throughout development. When needed notes were made and identified bugs were fixed.
-The console error mentioned in the index.html section above still showed in opera but tutor advice was that this warning is pre-emptive and relating to futre versions of chrome so nothing can be done at the moment before next version launch.
+The console error mentioned in the index.html section above still showed in opera but tutor advice was that this warning is pre-emptive and relating to future versions of chrome so nothing can be done at the moment before next version launch.
 The final 2 problems of line length in app.py and env.py were corrected leaving one problem listed in app.py  as follows:
 ```
 /workspace/fallen
@@ -1257,7 +1266,7 @@ Final checks on different devices and browsers was the evidence that Jinga2 was 
 
 - Mentor final checks, Tutor final tests, slack peer-code-review, friend and family testing all complete. 
 
-= Pre-submission checklist completed twice. First time raised a couple of concerns.
+- Pre-submission checklist completed twice. First time raised a couple of concerns.
     1. Mention of javascript loops. Javascript was not mentioned as a requirement for the project or in the marking scheme. 
     2. File size of images . All image files load quickly and responsively.
     3. 4K resolution final screen checks. Changes were made as the two image cards at the top of the home page looked lost. 
@@ -1319,12 +1328,14 @@ Desktop
 ## Version control and Heroku Deployment
 
 For version control Github has been used. Github is a distributed Version Control Systems (DVCSs) recommended by Code Institute which ensures we have a store of all significant changes made during development.
-Using Gitpod alongside Github had moajor advantages in terms of how easy it was to stage, commit and push versions but I did get confused in the early days of using Gitpod because opening up previous versions and trying to save them did not commit as the most recent version which led to a number of different 
+Using Gitpod alongside Github had major advantages in terms of how easy it was to stage, commit and push versions but I did get confused in the early days of using Gitpod because opening up previous versions and trying to save them did not commit as the most recent version which led to a number of different 
 worskpaces for the same repository listed in gitpod.io associated with one repository. 
+
 I found it easier to copy and paste previous changes in to the most recent worksspace which left clean development path releative to timeline. 
+
 In summary, gitpod offers all opened versions of a respository within https://gitpod.io/workspaces/. There is one master and numerous detached, previous versions that have been opened. I only worked within master after losing track of some changes within previous versions. 
 
-I was careful to use commit messages that I could find again if needed. I did notice some students had 800-900 commits for their projects. I have only made commits when there is a change made I believe is a step forward in development. The most basic changes such as, speelings, form questions, colour tests, link changes etc. have not been saved individually becasue I use version control as a working tool and want it as lean and easy to find amendments as possible.
+I was careful to use commit messages that I could find again if needed. I did notice some students had 800-900 commits for their projects. I have only made commits when there is a change made I believe is a step forward in development. The most basic changes such as, spellings, form questions, colour tests, link changes etc. have not been saved individually because I use version control as a working tool and want it as lean and easy to find amendments as possible.
 
 As detailed below I moved from version control and deployment via the command line terminal to setting up IDE to DVSC commits with automated deployment. This made version control and deployment effortless. 
 
@@ -1345,9 +1356,9 @@ In summary, two methods of deployment were used. Both were successful but the se
 
 To deploy Recipes for Recovery app to heroku, the following steps were taken:
 
-### Method one . For each version I initially pushed separately to github and and heroku. 
+### Method one . Initially, for each version I initially pushed separately to either github and and heroku. 
 
-I began deployment via the CLI in gitpod workspace terminal using the following commands in sequence:
+I began deployment via the CLI in gitpod workspace terminal using the following commands until I saw the build log in heroku or github repository showed successful deployment and/or new version commit:
 
 - npm install -g heroku
 
@@ -1469,35 +1480,37 @@ Your Data Centric Development project will be assessed based on the following cr
 
 Usability and Visual Impact:
 
-Project Purpose
-UX design
-Suitability for purpose
-Navigation
-Ease of use
-Information Architecture
-Defensive Design
+Project Purpose, 
+UX design,
+Suitability for purpose,
+Navigation,
+Ease of use,
+Information Architecture,
+Defensive Design,
 
 Layout and Visual Impact:
 
-Responsive Design
-Image Presentation
+Responsive Design,
+Image Presentation,
 Colour scheme and typography
+
 Code Quality:
-Appropriate use of HTML
-Appropriate use of CSS
-Appropriate use of Python
+
+Appropriate use of HTML,
+Appropriate use of CSS,
+Appropriate use of Python,
 Appropriate use of the template language
 
 Software Development practices:
 
-Directory Structure and File Naming
-Version control
-Testing implementation
-Testing write-up
-Readme file
-Comments
-Data store integration
-Deployment implementation
+Directory Structure and File Naming,
+Version control,
+Testing implementation,
+Testing write-up,
+Readme file,
+Comments,
+Data store integration,
+Deployment implementation,
 Deployment write-up
 
 
