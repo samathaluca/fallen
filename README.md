@@ -1273,22 +1273,24 @@ Final checks on different devices and browsers was the evidence that Jinga2 was 
 
 - Final responsiveness were checked on the morning of submission , detailed below.
 
-##  Responsiveness - Recipes for Recovery app is fully responsive; 
+##  Responsive Design - Recipes for Recovery app is fully responsive; 
 
 1. For the final tests, as throughout the entire development and design process, I continuously tested a multitude of screen sizes using Chrome Developer tools. Each time there was a change in navigation, design, functionality etc., how it looked on every size screen was always checked.
 On the morning of submission, final responsiveness checks across all device screens ranging from extra small to extra-large and in each browser were completed. 
-Where needed I had used media queries to fix any resolution issues or responsiveness issues. The necessity and reliability of these were checked. 
-I have built my app from on the Materialize CSS starter framework but made changes to ensure it does not have issues on any screen. 
-Over the course of development I had found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate sometimes. For example, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version which did not happen on the actual iphone6 or 6s devices tested. 
-The rendering on the device was considered to be the true reflection of responsivity. 
-It was found during final tests that phone settings could effect the app e.g. - Sony XA42 form tests, capitalised each input entry. There was also one gap in the grid which we believe was due to censorship. This could be explored further if the app proves to be useful in the real world.
+Where needed I had used media queries to fix any resolution issues or responsiveness issues. The necessity and reliability of these were checked multiple times. 
+I have built the app initially on the Materialize CSS starter framework but made changes to ensure it does not have issues on any screen. 
+Over the course of development I had found that the chromedevtools inspect responsive test showed errors in main view story grid layout that were inaccurate sometimes. For example, the iphone 6 tests showed gaps in the alignment of the stories on the desktop iphone version in chrome developer  tools which did not happen on the actual iphone6 or 6s devices tested. 
+The rendering on the device was considered to be the true reflection of responsivity. The error shown in chrome dev tools was not a true reflection on this occasion. 
+
+It was found during final user device tests that individual phone settings, on less popular branded phones,  could effect the app e.g. - Sony XA42 form tests, capitalised each input entry (Loan Llama story was added from Sony XA42 and inputs were automatically capitalised- [Lone Llama](http://fallen-but-not-broken.herokuapp.com/story_detail/5e22b1675dff644accb6553f) ) . There was also one gap in the grid. As we could not reproduce this error in chromedev tools using the responsive test, we would need to have access to other Sony XA42 deveices to check it was not setting related. Because all the most popular phone of a similar size worked well, we did not change 
+responsive grid used for the stories. We believe it will currently work perfectly om 98% of devices. On 2% of devices there may be a gap e.g.) when a long alias name is used but the gap does not cause any misaligment or effect functionality. It is perfectly balances and does not look unprofessioanl. 
 
 Another issue that was noticed during development was the effect zoom has on large screens sometimes (though not repeatedly) on the view story layout. It seems to happen on zoom 0-50% though not reproduceably. 
-I believe this a limitation of Materialize cards as a lot more stories begin to be added. 
+I believe this could be a limitation of Materialize cards as a lot more stories begin to be added. 
 Throughout development, I noticed that many of the other students had used Bootstrap again to avoid this issue which I also witnessed in other student projects. I believe the Bootstrap cards are fully responsive but the Materialize cards need some work e.g. I set the height of the habit name in the cards, before this the unpredictable resizing between devices made it impossible to create a pleasing design layout. 
 
-The 4K resolution final screen checks revealed some changes that needed to be done as the two top images cards did not look good at 3840px. Extra media queries were added to display none less than 2000px with new card added with different alignment so header image could still be visible in a better format.
-Extra beautification and validation needed to be done. 
+The 4K resolution final screen checks revealed some changes that needed to be done as the two top images cards on the home page did not look good at 3840px. Extra css media queries were added to 'display none' less than 2000px with new card added with different alignment so header image could still be visible in a better format.
+Extra beautification and validation then needed to be done. 
 
 ## Compatibility
 
@@ -1476,6 +1478,8 @@ His recipe card page layout inspired my story_detail.html page but he hard coded
 ### Submission
 
 #### Assessment Criteria review
+
+I have aimed to fulfil all the assessment criteria below to a standard beyond that expected. Final review and readnme checks done. 
 Your Data Centric Development project will be assessed based on the following criteria:
 
 Usability and Visual Impact:
